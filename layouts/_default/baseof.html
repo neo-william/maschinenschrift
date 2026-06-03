@@ -22,6 +22,7 @@
     <meta property="og:locale:alternate" content="{{ .Language.Lang }}">
   {{ end }}
 
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/main.css">
   {{ with .OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">

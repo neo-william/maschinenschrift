@@ -10,7 +10,7 @@ other = "Offener Standard zur Selbstdeklaration sprachsubstrat-vermittelter Lite
 other = "Werke"
 
 [navSeal]
-other = "Siegel"
+other = "Siegel-Generator"
 
 [navFoundation]
 other = "Foundation"
@@ -43,6 +43,9 @@ other = "Datenschutz"
 other = "Sprache wechseln"
 
 # Homepage
+[homeLead]
+other = "Eine offene Notation, mit der Autoren erklären, was ein Large Language Model zu einem Text beigetragen hat."
+
 [workOfTheDay]
 other = "Werk des Tages"
 
@@ -163,7 +166,7 @@ other = "Heute im Katalog:"
 other = "Allein verfasst. Korrespondenz belegt."
 
 [stateMid]
-other = "Teils substrat-vermittelt. Korrespondenz belegt."
+other = "Teils maschinell beigetragen. Korrespondenz belegt."
 
 [stateFull]
-other = "Überwiegend substrat-erzeugt. Korrespondenz ausstehend."
+other = "Überwiegend maschinell beigetragen. Korrespondenz ausstehend."

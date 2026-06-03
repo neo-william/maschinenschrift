@@ -3,7 +3,7 @@ title: Spezifikationen
 description: Kanonische technische Spezifikationen des Maschinenschrift-Standards.
 ---
 
-Diese Seite versammelt die technischen Spezifikationen, die fuer eine
+Diese Seite versammelt die technischen Spezifikationen, die für eine
 Spec-konforme Implementierung des Maschinenschrift-Siegels und seiner
 Achsensemantik verbindlich sind.
 
@@ -16,7 +16,7 @@ Achsensemantik verbindlich sind.
 
 - [Siegel-Spec v5](/de/spec/siegel-v5/) — eingefrorener historischer Stand.
   Geometrie identisch mit v6; Achsen-Vokabular F/S/V (Form / Substanz /
-  Verifikation) mit binaeren Werten `verified` / `unverified`.
+  Verifikation) mit binären Werten `verified` / `unverified`.
 
 ## Verbundene Dokumente
 
@@ -27,22 +27,22 @@ Achsensemantik verbindlich sind.
 
 ## Versionsdisziplin
 
-Aenderungen an einer Spec passieren ausschliesslich gegen eine neue
-Versionsnummer. Eine bereits veroeffentlichte Spec-Fassung bleibt unter
+Änderungen an einer Spec passieren ausschließlich gegen eine neue
+Versionsnummer. Eine bereits veröffentlichte Spec-Fassung bleibt unter
 ihrem URL erreichbar.
 
-Die historischen Vorgaenger der aktuellen Siegel-Spec (v1–v4) sind
-nicht oeffentlich publiziert. Ihre Aenderungen gegenueber v5 und v6
+Die historischen Vorgänger der aktuellen Siegel-Spec (v1–v4) sind
+nicht öffentlich publiziert. Ihre Änderungen gegenüber v5 und v6
 sind in der [Versionshistorie der v6-Seite](/de/spec/siegel-v6/#versionshistorie)
 zusammengefasst.
 
 ## Implementationen
 
 Die Referenz-Implementation des Siegel-Generators ist in Python
-geschrieben und im Site-Repository unter `scripts/siegel.py` zu finden.
-Eine zur Spec gegenueber identische JavaScript-Implementation fuer
+geschrieben und im Site-Repository unter `siegel-generator/src/siegel.py`
+zu finden. Eine zur Spec identische JavaScript-Implementation für
 Client-seitige Live-Preview liegt unter `static/js/live-preview.js`.
 
 Implementationen in anderen Sprachen sind willkommen. Eine korrekt
-implementierte Variante muss die drei kanonischen Zustaende aus
+implementierte Variante muss die drei kanonischen Zustände aus
 [Spec v6](/de/spec/siegel-v6/#kanonische-zustaende) byte-genau reproduzieren.

@@ -1,14 +1,10 @@
 ---
 title: Maschinenschrift
-description: Offener Standard zur Selbstdeklaration sprachsubstrat-vermittelter Literatur.
+description: Offener Standard zur Selbstdeklaration von Literatur, die mit Large Language Models geschrieben wurde.
 ---
 
-Eine Maschine schreibt nicht. Sie liefert Sprache. Wer schreibt, ist, wer wählt.
+Eine Maschine schreibt nicht. Sie liefert Sprache. Geschrieben hat, wer auswählt, was bleibt — und das Siegel sagt, wie viel von der Maschine kam.
 
-Maschinenschrift macht sichtbar, wie viel die Maschine geliefert hat. Das Siegel notiert drei Achsen: **Diktion** (sprachliche Oberfläche), **Geist** (Inhalt, Idee, Argument), **Korrespondenz** (bibliografische Bestätigung). Ein leeres Siegel ist die Default-Position — die Autorin war allein. Punkte zählen, was die Maschine zugeliefert hat. Ein Halbstrich in der unteren Zeile markiert, dass der Text kohärent ist und keine Korrespondenz hinsichtlich der Wahrheit stattfand.
+Das Siegel liest sich entlang dreier Achsen. **Diktion** ist die Oberfläche: die Sätze, der Tonfall, die Wortwahl. ***Geist*** ist der Geist eines Werks — seine Ideen, sein Argument, seine Gestalt. **Korrespondenz** vermerkt, ob die Aussagen gegen Quellen geprüft sind. Punkte in den oberen Reihen zählen, was die Maschine beigesteuert hat; ein Halbstrich unten heißt, der Text steht in sich, doch eine Korrespondenz zur Wirklichkeit ist noch nicht belegt. Ein leeres Siegel heißt: alleine geschrieben.
 
-Die Diagnose-Formel des Projekts lautet *Geist aus der Maschine*: wie viel des sichtbaren Geistes eines Werks aus der Maschine importiert ist. Das Siegel macht es lesbar.
-
-Adoption erfolgt durch Selbstdeklaration — keine Anmeldung, keine Wartezeit, keine Genehmigung. Wer im [Verzeichnis](/verzeichnis/) erscheinen will, schickt eine Mail; geprüft wird die Stimmigkeit der Angabe, nicht die Wahrheit der Behauptung.
-
-Die [Idee](/idee/) führt aus, was *Sprachsubstrat* meint, in welcher Linie *Maschinenschrift* steht und was die drei Achsen anzeigen.
+Das Siegel setzen Sie selbst und stellen es neben den Verfassernamen. Wer im [Verzeichnis](/verzeichnis/) erscheinen möchte, [schickt eine kurze Nachricht](/eintragen/) — keine Gebühr, keine Prüfung des Anspruchs, nur seiner inneren Schlüssigkeit. Die längere Erzählung steht unter [Idee](/idee/); das Warum unter [Motivation](/motivation/).

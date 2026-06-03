@@ -1,44 +1,34 @@
 ---
 title: Motivation
-description: Warum es Maschinenschrift gibt. Anlass, Adressat, Position — entlang der Granta- und Tokarczuk-Vorfälle vom Mai 2026.
+description: Ein Transparenz-Standard für Literatur, die mit Sprachmodellen geschrieben wurde. Die Autorin erklärt selbst — auf drei Achsen, in eigener Hand —, wo und wie viel die Maschine geholfen hat.
 ---
 
-*We have to talk.*
+## Das Problem.
 
-Es gibt zwei Lager, die einander nicht zuhören.
+Viele Autorinnen und Autoren schreiben mit Hilfe von Sprachmodellen. Sie nutzen die Maschine zur Recherche, zur Glättung, zum Brainstorming, manchmal für eine Passage. Die meisten verschweigen es. Eine offene Auskunft kann einen Vertrag kosten, einen Preis, einen Ruf.
 
-Die *Schweigenden* nutzen Sprachmodelle beim Schreiben — vorsichtig, gelegentlich, zur Recherche, zur Glättung — und schweigen darüber, weil ehrliche Auskunft die Karriere kosten kann.
+Also weiß niemand, wie viel sprachmodell-gestütztes Schreiben längst in den Regalen steht. Die Zahl ist dunkel, und an die Stelle der fehlenden Auskunft tritt der Verdacht. Leser werden zu Ermittlern, Autorinnen zu Verdächtigen. Erkennungs-Software verspricht, die Frage zu klären, und tut es nicht — sie trifft die Falschen, besonders Stimmen, die nicht in der Mitte der Kurve sitzen.
 
-Die *Traditionalisten* halten jeden maschinellen Eingriff in literarische Sprache für eine Korruption und fordern Reinheit. Was als Sorge um die Literatur beginnt, kippt unter dem Druck der Lage in Verdacht, und Verdacht in Verfolgung.
+Unter diesen Bedingungen gewinnt das Lügen. Die ehrliche Autorin wird bestraft. Die vorsichtige Lügnerin kommt durch. Die Lesenden können keinem Signal mehr trauen.
 
-Beide Lager haben Gründe. Beide reden aneinander vorbei. Solange das so bleibt, gewinnt das Lügen — und mit ihm die Falschen.
+## Die Lösung.
 
-## Was im Mai 2026 passiert ist
+Maschinenschrift verschiebt die Auskunft zur Autorin. Sie sagt selbst, in eigener Hand, wo die Maschine geholfen hat und wie viel.
 
-Eine Granta-Story holte den Commonwealth-Preis und wurde von einem unabhängigen Detektor zu hundert Prozent als KI-geschrieben klassifiziert. Eine Literaturnobelpreisträgerin sagte in Posen, ein Sprachmodell erweitere ihr kreatives Denken — und zog die Aussage 48 Stunden später unter Druck zurück. Die Institutionen reagierten mit Vertrauen, das niemand überprüfen kann, und mit Detektoren, die die Falschen treffen.
+Ein Standard, kein Urteil. Kein Reinheits-Stempel. Keine Qualitäts-Aussage. Kein Mensch-allein-Abzeichen. Freiwillig. Keine Anmeldung. Ein Buch ohne Siegel wird nicht beschuldigt; ein Buch mit Siegel nicht für gut erklärt.
 
-Innocent Chizaram Ilo, selbst Commonwealth-Preisträger 2020, formuliert für *Literary Hub* den schärfsten Befund der Woche: *„Everyone is an AI Cop Now."* In dem Moment, in dem eine Institution keine Sprache hat, mit der maschinelle Vermittlung im Werk verhandelt werden kann, übernimmt der öffentliche Verdacht. Jeder Leser wird Ermittler, jede Autorin wird verdächtig, jede stilistische Eigenheit wird zur *red flag*. Die Detektoren bestätigen, was die Mob-Logik schon entschieden hat. Die Beweislast kippt: Die Beschuldigten sollen ihr Innenleben offenbaren, um das Werk freizukaufen.
+Die Frage ändert ihre Form. Nicht *hat sie ein Sprachmodell benutzt?* — sondern *was sagt das Werk selbst darüber, wie es entstanden ist?*
 
-## Wen die Polizei trifft
+## Das Siegel.
 
-Ilo nennt, was die amerikanische Lektorin Alyssa Matesic nur vorsichtig andeutet: Es sind unverhältnismäßig oft *writers of color* und *emerging writers*, die als KI-Verdächtige aufgerufen werden. Detektions-Software liest Distanz vom standard-anglophonen Idiom als Distanz vom Menschlichen. Stimmen, die aus Trinidad, Malta, Kerala in den englischen Literatur-Kanon hineinschreiben, klingen den Modellen *unwahrscheinlich genug*, um als Maschine markiert zu werden. Die Asymmetrie ist strukturell, nicht zufällig.
+Drei Achsen. Die Autorin markiert jede einzeln.
 
-Sobald der Verdacht im Raum steht, finden sich Stimmen, die ihn als Munition gegen *„wokewashing"* oder *„postcolonial garbage"* aufgreifen. Aus der KI-Detektions-Frage wird Kulturkampf gegen Autor:innen, die ohnehin um Sichtbarkeit kämpfen.
+- **Diktion** — wie viel der Oberfläche (Sätze, Wortwahl, Rhythmus) von der Maschine kam.
+- ***Geist*** — wie viel der Substanz (Ideen, Argument, Struktur) von der Maschine kam.
+- **Korrespondenz** — ob die sachlichen Aussagen gegen Quellen geprüft wurden.
 
-## Was Maschinenschrift ist. Und was nicht.
+Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: die Korrespondenz steht noch aus. Die Autorin setzt das Siegel selbst und platziert es bei der Verfasserzeile — Cover, Titelseite, Impressum.
 
-Maschinenschrift schlägt eine dritte Möglichkeit vor, neben dem absoluten Vertrauen, das niemand mehr trägt, und der absoluten Kontrolle, die niemand will. Drei Achsen — **Diktion**, **Geist**, **Korrespondenz** — auf denen Autor:innen am Werk selbst auskunftsfähig werden.
+Das ist die ganze Notation.
 
-Maschinenschrift ist *kein* „human-authored badge". Das Siegel zertifiziert keine Reinheit. Es trägt keinen Maschine-frei-Stempel. Es deklariert — auf drei Stufen pro Achse —, in welchem Grad und in welcher Dimension das Werk vermittelt ist. Ein D=0/G=0/K=0-Eintrag ist die Behauptung, ohne Sprachmodell-Substrat geschrieben zu haben. Ein D=1/G=2-Eintrag ist eine andere, gleichberechtigte Auskunft. Das Siegel macht beide Aussagen *sagbar*. Es bevorzugt keine.
-
-Damit verliert die AI-Cop-Logik ihren Gegenstand. Wenn ein Werk selbst sagt, wie es entstanden ist, bleibt nichts zu enttarnen. Die Frage ist nicht mehr *„hat sie Maschine benutzt"* — die Frage wird *„was hat die Maschine im Werk getan, und sagt das Werk es?"*. Detektoren werden überflüssig. Verdacht wird gegenstandslos.
-
-## Eine Bitte
-
-An die Schweigenden: Eine Sprache zu haben kostet weniger als zu schweigen.
-
-An die Traditionalisten: Eine Tradition zu verteidigen, die es so nie gab, kostet mehr als zuzulassen, was schon da ist.
-
-An alle, die in den letzten Wochen Polizist:innen geworden sind: Es gibt einen Ausweg, der das Werk verteidigt, ohne den Menschen anzuklagen, der es schrieb.
-
-Drei Achsen, drei Werte, eine Erklärung. Die Notation steht in der [Foundation](/de/foundation/). Ein durchdeklarierter Beispiel-Eintrag wartet in den [Werken](/de/werke/).
+[Eigenes Siegel zusammenstellen](/de/siegel/) · [In das Verzeichnis eintragen](/de/eintragen/)

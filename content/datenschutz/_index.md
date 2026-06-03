@@ -6,11 +6,11 @@ url: /privacy/
 
 ## 1. Controller
 
-Neo William Khala
-c/o POSTFLEX PFX-132-796
-Emsdettener Straße 10
-48268 Greven, Germany
-Email: `contact [at] maschinenschrift [dot] com`
+Neo William Khala\
+c/o POSTFLEX PFX-132-796\
+Emsdettener Straße 10\
+48268 Greven, Germany\
+Email: `contact [at] maschinenschrift [dot] com`\
 Phone: plus four nine one five six seven eight three three nine three four nine
 
 ## 2. Scope
@@ -39,23 +39,11 @@ transfer rests on the EU Standard Contractual Clauses and on
 Cloudflare's certification under the EU–U.S. Data Privacy Framework
 (Commission adequacy decision of 10 July 2023).
 
-## 4. Catalog repository
+## 4. Source-code repository
 
-The site's content is generated from a public GitHub repository, hosted
-by GitHub, Inc. (88 Colin P. Kelly Jr. Street, San Francisco, CA 94107,
-USA). The build pipeline runs as a GitHub Actions workflow. GitHub
-processes contributor data (account name, email if set, commit metadata)
-on push and during builds. Visitors of `maschinenschrift.com` do not
-interact with GitHub directly; the rendered site is delivered solely
-via Cloudflare Pages (§ 3).
+The site's source code lives in a public repository hosted by GitHub, Inc. (88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Visitors of `maschinenschrift.com` do not interact with GitHub directly; the rendered site is delivered solely via Cloudflare Pages (§ 3). GitHub only processes contributor data on push (account name, email if set, commit metadata), not visitor data.
 
-Legal basis: Art. 6 (1) lit. f GDPR — legitimate interest in versioned,
-auditable catalogue maintenance and reproducible builds.
-
-Third-country transfer: GitHub, Inc. is based in the USA. The transfer
-rests on the EU Standard Contractual Clauses and on GitHub's
-certification under the EU–U.S. Data Privacy Framework. Details in the
-[GitHub privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
+Third-country transfer: GitHub, Inc. is based in the USA. The transfer rests on the EU Standard Contractual Clauses and on GitHub's certification under the EU–U.S. Data Privacy Framework. Details in the [GitHub privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 
 ## 5. Email handling
 
@@ -85,4 +73,4 @@ Ludwig-Erhard-Straße 22, 7. OG, 20459 Hamburg, Germany —
 ## 8. Changes
 
 This statement may be adapted to reflect changed legal situations or
-changes to the service. Current version: 2 June 2026.
+changes to the service. Current version: 3 June 2026.

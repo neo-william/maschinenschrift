@@ -37,8 +37,8 @@ the [version history of the v6 page](/spec/siegel-v6/#version-history).
 ## Implementations
 
 The reference implementation of the seal generator is written in Python
-and found in the site repository under `scripts/siegel.py`. A
-spec-identical JavaScript implementation for client-side live preview
+and found in the site repository under `siegel-generator/src/siegel.py`.
+A spec-identical JavaScript implementation for client-side live preview
 lives under `static/js/live-preview.js`.
 
 Implementations in other languages are welcome. A correctly implemented

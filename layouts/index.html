@@ -1,9 +1,6 @@
 {{ define "main" }}
-<section class="hero">
-  {{ .Content }}
-  {{ with .Site.GetPage "/beitragen" }}
-    <p class="hero-cta"><a href="{{ .RelPermalink }}">{{ i18n "heroAdoptCta" }}</a></p>
-  {{ end }}
+<section class="lead">
+  <p>{{ i18n "homeLead" }}</p>
 </section>
 
 <section class="states" aria-label="Example seal states">
@@ -19,6 +16,13 @@
     {{ partial "siegel.html" (dict "diktion" 5 "geist" 5 "korrespondenz" "ausstehend" "class" "siegel-state") }}
     <p class="state-caption">{{ i18n "stateFull" }}</p>
   </div>
+</section>
+
+<section class="hero">
+  {{ .Content }}
+  {{ with .Site.GetPage "/beitragen" }}
+    <p class="hero-cta"><a href="{{ .RelPermalink }}">{{ i18n "heroAdoptCta" }}</a></p>
+  {{ end }}
 </section>
 
 {{ $werke := where .Site.RegularPages "Section" "werke" }}

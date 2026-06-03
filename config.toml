@@ -6,7 +6,7 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Open standard for the self-declaration of language-substrate-mediated literature."
+  description = "Open standard for the self-declaration of literature written with large language models."
   declared_year_start = 2026
   ogImage = "/og/maschinenschrift.png"
 
@@ -15,14 +15,14 @@ disableKinds = ["taxonomy", "term"]
   weight = 1
   title = "Maschinenschrift"
   [languages.en.params]
-    description = "Open standard for the self-declaration of language-substrate-mediated literature."
+    description = "Open standard for the self-declaration of literature written with large language models."
 
 [languages.de]
   label = "Deutsch"
   weight = 2
   title = "Maschinenschrift"
   [languages.de.params]
-    description = "Offener Standard zur Selbstdeklaration sprachsubstrat-vermittelter Literatur."
+    description = "Offener Standard zur Selbstdeklaration von Literatur, die mit Large Language Models geschrieben wurde."
 
 [markup.goldmark.renderer]
   unsafe = true

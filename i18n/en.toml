@@ -11,7 +11,7 @@ other = "Open standard for the self-declaration of language-substrate-mediated l
 other = "Works"
 
 [navSeal]
-other = "Seal"
+other = "Seal Generator"
 
 [navFoundation]
 other = "Foundation"
@@ -44,6 +44,9 @@ other = "Privacy"
 other = "Switch language"
 
 # Homepage
+[homeLead]
+other = "An open notation authors adopt to declare what a large language model contributed to a text."
+
 [workOfTheDay]
 other = "Work of the day"
 
@@ -164,7 +167,7 @@ other = "Today's pick:"
 other = "Authored alone. Correspondence documented."
 
 [stateMid]
-other = "Partly substrate-mediated. Correspondence documented."
+other = "Partly machine-delivered. Correspondence documented."
 
 [stateFull]
-other = "Predominantly substrate-generated. Correspondence pending."
+other = "Predominantly machine-delivered. Correspondence pending."

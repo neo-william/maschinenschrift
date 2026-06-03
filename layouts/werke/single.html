@@ -52,16 +52,5 @@
     </section>
   {{ end }}
 
-  <aside class="werk-downloads">
-    <h2>{{ i18n "werkDownloadsHeading" }}</h2>
-    {{ $name := printf "d%d-g%d-%s" $z.diktion $z.geist $z.korrespondenz }}
-    <ul>
-      <li><a href="/siegel/assets/{{ $name }}.svg" download>{{ i18n "werkDownloadSvg" }}</a></li>
-      <li><a href="/siegel/assets/{{ $name }}-512.png" download>PNG 512&nbsp;px</a></li>
-      <li><a href="/siegel/assets/{{ $name }}-1024.png" download>PNG 1024&nbsp;px</a></li>
-      <li><a href="/siegel/assets/{{ $name }}-2048.png" download>PNG 2048&nbsp;px</a></li>
-    </ul>
-    <p class="license-hint">{{ i18n "werkLicenseHint" }}</p>
-  </aside>
 </article>
 {{ end }}

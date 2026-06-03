@@ -3,7 +3,7 @@ title: "Siegel-Spec v5"
 description: Canonical geometric specification of the Maschinenschrift seal.
 ---
 
-**Status:** Superseded by v6 (2026-05-24). The geometry is unchanged, but the axes are now D/G/K (Diktion, *Geist*, Korrespondenz) and the binary K-axis uses `belegt`/`ausstehend` instead of `verified`/`unverified`. See the canonical v6 source under [`_quellen/maschinenschrift-siegel-prompt-v6.md`](https://github.com/maschinenschrift/maschinenschrift-site) and the project's [Foundation §7](/foundation/#7-seal-axis-semantics).
+**Status:** Superseded by [Siegel-Spec v6](/spec/siegel-v6/) (2026-05-24). Frozen historical snapshot at 2026-05-21 — content and path references are no longer maintained. The geometry is unchanged, but the axes are now D/G/K (Diktion, *Geist*, Korrespondenz) and the binary K-axis uses `belegt`/`ausstehend` instead of `verified`/`unverified`. See the canonical v6 source under [`_quellen/maschinenschrift-siegel-prompt-v6.md`](https://github.com/maschinenschrift/maschinenschrift-site) and the project's [Foundation §7](/foundation/#7-seal-axis-semantics).
 
 This page documents the v5 state for historical reference. New implementations should follow v6.
 

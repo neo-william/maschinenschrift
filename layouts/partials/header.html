@@ -1,11 +1,13 @@
 <header class="site-header">
-  <a class="site-title" href="{{ "/" | relLangURL }}">Maschinenschrift</a>
+  <a class="site-title" href="{{ "/" | relLangURL }}">
+    {{ partial "siegel.html" (dict "diktion" 0 "geist" 0 "korrespondenz" "belegt" "class" "site-logo") }}
+    <span class="site-title-text">Maschinenschrift</span>
+  </a>
   <nav class="site-nav">
     {{ with .Site.GetPage "/motivation" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-    {{ with .Site.GetPage "/werke" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
     {{ with .Site.GetPage "/siegel" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-    {{ with .Site.GetPage "/foundation" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-    {{ with .Site.GetPage "/beitragen" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+    {{ with .Site.GetPage "/verzeichnis" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+    {{ with .Site.GetPage "/marginalien" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
   </nav>
   {{ if .AllTranslations }}
     <nav class="lang-switch" aria-label="{{ i18n "langSwitchAria" }}">

@@ -1,44 +1,34 @@
 ---
 title: Motivation
-description: Why Maschinenschrift exists. Occasion, addressee, position — along the Granta and Tokarczuk incidents of May 2026.
+description: A transparency standard for literature written with large language models. The author declares — on three axes, by their own hand — where and how much the machine helped.
 ---
 
-*We have to talk.*
+## The problem.
 
-Two camps. Neither listens to the other.
+Many authors write with help from large language models. They use the machine for research, for polish, for brainstorming, sometimes for a passage. Most of them hide it. Saying so can cost a contract, a prize, a reputation.
 
-*The silent* use language models when writing — cautiously, occasionally, for research, for polish — and stay quiet about it, because honest disclosure can cost a career.
+So nobody knows how much LLM-assisted writing is already in print. The number is dark, and suspicion fills the gap. Readers turn into investigators. Writers turn into suspects. Detection tools promise to settle it and don't — they flag the wrong people, especially writers whose prose sits outside the average.
 
-*The purists* treat any machine-mediation of literary language as corruption and demand purity. What begins as concern for literature, under pressure, tips into suspicion, and suspicion into pursuit.
+Under those conditions, lying wins. The honest author is punished. The careful liar gets away. The reader can't trust either signal.
 
-Both camps have reasons. Both talk past each other. As long as that holds, lying wins — and the wrong people lose.
+## The solution.
 
-## What happened in May 2026
+Maschinenschrift moves the disclosure to the author. The author says, in their own hand, where the machine helped and how much.
 
-A Granta-published story won the Commonwealth Short Story Prize and was flagged by an independent detector at 100 % AI-generated. A Nobel laureate said in Poznań that a language model deepens her creative thinking — and walked the statement back under pressure 48 hours later. The institutions responded with trust no one can verify, and with detectors that catch the wrong people.
+A standard, not a verdict. No purity stamp. No quality claim. No human-only badge. Voluntary. No registration. A book without a seal is not accused; a book with one is not certified.
 
-Innocent Chizaram Ilo, a Commonwealth Prize winner himself (African region, 2020), wrote the week's sharpest diagnosis for *Literary Hub*: *"Everyone is an AI Cop Now."* The moment an institution lacks a language for negotiating machine-mediation in a work, public suspicion takes over. Every reader becomes an investigator, every writer a suspect, every stylistic quirk a *red flag*. The detectors confirm what the mob has already decided. The burden of proof flips: the accused must expose their inner process to buy the work back.
+The question changes shape. Not *did she use AI?* — but *what does the work itself say about how it was made?*
 
-## Who the police find
+## The seal.
 
-Ilo names what Alyssa Matesic, the American book editor, only carefully suggests: it is disproportionately *writers of color* and *emerging writers* who get called out as AI-suspects. Detection software reads distance from standard-Anglophone idiom as distance from the human. Voices writing from Trinidad, Malta, Kerala into the English literary canon sound *improbable enough* to the models to be flagged as machine. The asymmetry is structural, not incidental.
+Three axes. The author marks each one.
 
-Once the suspicion is in the air, voices appear who take it up as ammunition against *wokewashing* or *postcolonial garbage*. The AI-detection question becomes culture-war material against the very writers already fighting for visibility.
+- **Diction** — how much of the surface (sentences, word choice, rhythm) came from the machine.
+- ***Geist*** — how much of the substance (ideas, argument, structure) came from the machine.
+- **Correspondence** — whether the factual claims have been checked against sources.
 
-## What Maschinenschrift is. And what it isn't.
+Two rows of dots, zero to five per axis, count the machine's share. A half-stroke below means correspondence is still pending. The author sets the seal and places it near the byline — cover, title page, about page.
 
-Maschinenschrift proposes a third option, between the absolute trust no one carries anymore and the absolute control no one wants. Three axes — **Diktion**, **Geist**, **Correspondence** — on which authors become accountable *at the work itself*.
+That is the whole notation.
 
-Maschinenschrift is *not* a "human-authored badge." The seal certifies no purity. It carries no machine-free stamp. It declares — in three steps per axis — to what degree and in what dimension the work is mediated. A D=0/G=0/K=0 entry is the claim of having written without language-model substrate. A D=1/G=2 entry is a different, equally legitimate disclosure. The seal makes both statements *sayable*. It prefers neither.
-
-That dissolves the AI-cop logic by removing its object. When a work itself says how it came to be, there is nothing left to unmask. The question is no longer *"did she use the machine"* — the question becomes *"what did the machine do in the work, and does the work say it?"*. Detectors become superfluous. Suspicion becomes pointless.
-
-## A request
-
-To the silent: having a language costs less than silence.
-
-To the purists: defending a tradition that never existed in pure form costs more than admitting what is already there.
-
-To everyone who, these last weeks, has become an AI cop: there is a way out that defends the work without indicting the person who wrote it.
-
-Three axes, three values, one declaration. The notation lives in the [Foundation](/foundation/). A fully declared example waits in the [Works](/works/).
+[Configure your own seal](/seal/) · [Join the registry](/submit/)
