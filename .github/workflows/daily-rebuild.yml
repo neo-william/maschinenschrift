@@ -1,0 +1,38 @@
+# Tägliche Werk-des-Tages-Rotation.
+#
+# Cloudflare Pages rebuildet automatisch bei jedem Push auf main. Diese Workflow
+# triggert den Rebuild zusätzlich einmal täglich um 00:05 UTC, damit `now.YearDay`
+# in der Featured-Slot-Logik inkrementiert.
+#
+# Setup-Voraussetzung (einmalig):
+#   1. In Cloudflare-Pages-Projekt: Settings → Builds & deployments → Deploy hooks
+#      → Add deploy hook → Name "daily-cron" → Branch "main" → "Create hook"
+#   2. Den generierten Hook-URL im GitHub-Repo unter Settings → Secrets and
+#      variables → Actions → New repository secret → Name CLOUDFLARE_DEPLOY_HOOK
+#      → Value <hook-url>
+
+name: daily-rebuild
+
+on:
+  schedule:
+    - cron: '5 0 * * *'   # 00:05 UTC täglich
+  workflow_dispatch:       # Manueller Trigger über die Actions-UI, für Ad-hoc-Rebuilds
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Cloudflare Pages rebuild
+        run: |
+          if [ -z "${CLOUDFLARE_DEPLOY_HOOK}" ]; then
+            echo "::error::CLOUDFLARE_DEPLOY_HOOK secret is not set. See workflow file for setup steps."
+            exit 1
+          fi
+          response=$(curl -sS -o /dev/null -w "%{http_code}" -X POST "${CLOUDFLARE_DEPLOY_HOOK}")
+          if [ "${response}" != "200" ] && [ "${response}" != "201" ]; then
+            echo "::error::Deploy hook returned HTTP ${response}"
+            exit 1
+          fi
+          echo "Cloudflare Pages rebuild triggered (HTTP ${response})"
+        env:
+          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}

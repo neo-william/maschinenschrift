@@ -1,0 +1,97 @@
+{{ define "main" }}
+<article class="werke-section">
+  <header>
+    <h1>{{ .Title }}</h1>
+    <p>{{ i18n "catalogIntro" }}</p>
+  </header>
+
+  {{ $werke := .Pages }}
+  {{ $count := len $werke }}
+
+  {{ if gt $count 0 }}
+    {{ $doy := now.YearDay }}
+    {{ $idx := mod $doy $count }}
+    {{ $featured := index $werke $idx }}
+    {{ $z := $featured.Params.zeichen }}
+    {{ $lang := .Site.Language.Lang }}
+    {{ $narration := "" }}
+    {{ with $featured.Params.narration }}
+      {{ $narration = index . $lang }}
+      {{ if not $narration }}
+        {{ $narration = index . "en" }}
+      {{ end }}
+    {{ end }}
+    <aside class="werk-des-tages" aria-labelledby="werk-des-tages-heading">
+      <header>
+        <h2 id="werk-des-tages-heading">{{ i18n "workOfTheDay" }}</h2>
+        <p class="rotation-hint">{{ i18n "rotationHint" (dict "Count" $count) }}</p>
+      </header>
+      <div class="werk-des-tages-card">
+        <a class="werk-des-tages-link" href="{{ $featured.RelPermalink }}">
+          <div class="werk-des-tages-glyph">
+            {{ partial "siegel.html" (dict
+                "diktion" $z.diktion
+                "geist" $z.geist
+                "korrespondenz" $z.korrespondenz
+                "class" "siegel-featured"
+                "label" (printf "Siegel: D=%d G=%d K=%s" $z.diktion $z.geist $z.korrespondenz)
+            ) }}
+          </div>
+          <div class="werk-des-tages-text">
+            <h3>{{ $featured.Title }}</h3>
+            <p class="werk-des-tages-author">{{ $featured.Params.author }}{{ with $featured.Params.year }}, {{ . }}{{ end }}</p>
+            {{ with $narration }}
+              <p class="werk-des-tages-narration">{{ . | safeHTML | truncate 280 }}</p>
+            {{ end }}
+          </div>
+        </a>
+      </div>
+    </aside>
+  {{ end }}
+
+  {{ if eq $count 0 }}
+    <p>{{ i18n "catalogEmpty" }}</p>
+  {{ else }}
+    <p class="werke-count">{{ i18n "worksCount" (dict "Count" $count) }}</p>
+
+    <ul class="werke-list werke-list-detail">
+      {{ range $werke }}
+        {{ $z := .Params.zeichen }}
+        <li>
+          <a href="{{ .RelPermalink }}" class="werke-list-entry">
+            <span class="werke-list-glyph">
+              {{ partial "siegel.html" (dict
+                  "diktion" $z.diktion
+                  "geist" $z.geist
+                  "korrespondenz" $z.korrespondenz
+                  "class" "siegel-list"
+                  "label" (printf "Siegel: D=%d G=%d K=%s" $z.diktion $z.geist $z.korrespondenz)
+              ) }}
+            </span>
+            <span class="werke-list-meta">
+              <span class="werke-list-title">{{ .Title }}</span>
+              <span class="werke-list-author">{{ .Params.author }}{{ with .Params.year }}, {{ . }}{{ end }}</span>
+              {{ with .Params.genre }}<span class="werke-list-genre">{{ . }}</span>{{ end }}
+            </span>
+            <span class="werke-list-axes" aria-label="{{ i18n "axisLabel" }}">
+              <span class="axis">D&nbsp;{{ $z.diktion }}</span>
+              <span class="axis">G&nbsp;{{ $z.geist }}</span>
+              <span class="axis axis-k">K&nbsp;{{ $z.korrespondenz }}{{ if eq $z.korrespondenz "ausstehend" }}&nbsp;†{{ end }}</span>
+            </span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  <aside class="werke-section-aside">
+    <h2>{{ i18n "contributeAsideHeading" }}</h2>
+    <p>{{ i18n "contributeAsideIntro" }}</p>
+    <ol>
+      <li>{{ i18n "contributeStep1" }}</li>
+      <li>{{ i18n "contributeStep2" }}</li>
+      <li>{{ i18n "contributeStep3" }}</li>
+    </ol>
+  </aside>
+</article>
+{{ end }}

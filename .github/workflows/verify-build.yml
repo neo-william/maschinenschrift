@@ -1,0 +1,66 @@
+# Build-Verifikation bei jedem Push und Pull Request.
+#
+# Cloudflare Pages baut die Site selbst — diese Workflow ist ein Sicherheitsnetz,
+# das Build-Fehler vor dem Cloudflare-Versuch sichtbar macht und den
+# Atlas-Inline-Smoke-Test gegen die 72 erwarteten Siegel laufen lässt.
+
+name: verify-build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  HUGO_VERSION: '0.161.1'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install librsvg2-bin (für PNG-Rasterung)
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+
+      - name: Install Hugo (extended)
+        run: |
+          wget -q -O hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i hugo.deb
+          hugo version
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate SVG assets
+        run: python scripts/build-assets.py static/siegel/assets
+
+      - name: Rasterize SVGs to PNGs
+        run: bash scripts/build-pngs.sh static/siegel/assets
+
+      - name: Rasterize OG image (1200x630)
+        run: rsvg-convert -w 1200 -h 630 static/og/maschinenschrift.svg -o static/og/maschinenschrift.png
+
+      - name: Generate werke content stubs from works/*.yaml
+        run: python scripts/build-content.py
+
+      - name: Hugo build
+        run: hugo --minify
+
+      - name: Smoke-Test — seal pages link the live-preview generator
+        run: |
+          grep -q 'live-preview.js' public/seal/index.html
+          grep -q 'live-preview.js' public/de/siegel/index.html
+          grep -q 'id="siegel-preview"' public/seal/index.html
+          grep -q 'id="siegel-preview"' public/de/siegel/index.html
+          echo "Both seal pages link the generator script."
+
+      - name: Smoke-Test — inaugural entry seal correct
+        run: |
+          test -f public/siegel/assets/d4-g2-ausstehend.svg
+          test -f public/works/la-scuola-dei-silenzi/index.html
+          test -f public/de/werke/la-scuola-dei-silenzi/index.html

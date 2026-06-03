@@ -1,0 +1,54 @@
+{{/*
+  Maschinenschrift-Siegel — Hugo-Partial (Inline-SVG).
+
+  Kanonische Quelle: ../../../siegel-generator/src/siegel-partial.html
+  Diese Kopie wird vom Site-Build verwendet. Aenderungen bitte zuerst in der
+  kanonischen Quelle, dann hierher synchronisieren (Makefile-Target
+  `make sync-partial` im siegel-generator/).
+
+  Erwartet ein Dict mit den Schluesseln (Spec v6, seit 2026-05-24):
+    diktion         int  0..5  (Diktion-Achse, D)
+    geist           int  0..5  (Geist-Achse, G)
+    korrespondenz   str  "belegt" oder "ausstehend" (K)
+    class           str  optional, wird als CSS-Klasse auf den <svg>-Wrapper gesetzt
+    label           str  optional, wird als <span class="sr-only"> fuer Screenreader vorangestellt
+
+  Backwards-Compat: akzeptiert weiterhin die v5-Schluessel (form, substance,
+  verification) und mappt sie auf v6 (gleiche numerische Werte; verified→belegt,
+  unverified→ausstehend). Aufrufstellen sollten zur v6-Form migrieren.
+
+  Liest das pre-generierte SVG aus static/siegel/assets/. Der Python-Generator
+  (siegel-generator/src/build-assets.py) muss vor dem Hugo-Build gelaufen sein.
+*/}}
+{{- $diktion := 0 -}}
+{{- $geist := 0 -}}
+{{- $korrespondenz := "belegt" -}}
+{{- if isset . "diktion" -}}
+  {{- $diktion = int .diktion -}}
+{{- else if isset . "form" -}}
+  {{- $diktion = int .form -}}
+{{- end -}}
+{{- if isset . "geist" -}}
+  {{- $geist = int .geist -}}
+{{- else if isset . "substance" -}}
+  {{- $geist = int .substance -}}
+{{- end -}}
+{{- if isset . "korrespondenz" -}}
+  {{- $korrespondenz = .korrespondenz -}}
+{{- else if isset . "verification" -}}
+  {{- if eq .verification "verified" -}}
+    {{- $korrespondenz = "belegt" -}}
+  {{- else -}}
+    {{- $korrespondenz = "ausstehend" -}}
+  {{- end -}}
+{{- end -}}
+{{- $class := default "" .class -}}
+{{- $label := default "" .label -}}
+{{- $name := printf "d%d-g%d-%s.svg" $diktion $geist $korrespondenz -}}
+{{- $path := printf "static/siegel/assets/%s" $name -}}
+{{- $svg := readFile $path -}}
+{{- if $class -}}
+  {{- $svg = replace $svg "<svg " (printf "<svg class=%q " $class) 1 -}}
+{{- end -}}
+{{- if $label -}}<span class="sr-only">{{ $label }}</span>{{- end -}}
+{{ $svg | safeHTML }}

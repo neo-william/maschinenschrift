@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article class="section-list">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}
+    <div class="section-intro">{{ . }}</div>
+  {{ end }}
+
+  {{ if eq .Section "werke" }}
+    <ul class="werke-list">
+      {{ range .Pages }}
+        {{ $z := .Params.zeichen }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            <span class="werke-list-glyph">
+              {{ partial "siegel.html" (dict
+                  "diktion" $z.diktion
+                  "geist" $z.geist
+                  "korrespondenz" $z.korrespondenz
+                  "class" "siegel-small"
+              ) }}
+            </span>
+            <span class="werke-list-title">{{ .Title }}</span>
+            <span class="werke-list-author">{{ .Params.author }}{{ with .Params.year }}, {{ . }}{{ end }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <ul>
+      {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</article>
+{{ end }}

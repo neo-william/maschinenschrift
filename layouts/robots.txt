@@ -1,0 +1,64 @@
+# maschinenschrift.com — robots.txt
+#
+# Position: AI training crawlers are blocked; search/inference crawlers
+# that surface this site in conversational answers are allowed.
+# Cloudflare AI Crawl Control enforces the same distinction at the edge.
+
+# --- AI training crawlers: blocked ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+# --- AI search/inference: allowed (real-time answers, citations) ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# --- All other crawlers (search engines etc.): allowed ---
+User-agent: *
+Allow: /
+
+Sitemap: {{ "/sitemap.xml" | absURL }}

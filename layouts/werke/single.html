@@ -1,0 +1,67 @@
+{{ define "main" }}
+{{ $z := .Params.zeichen }}
+{{ $lang := .Site.Language.Lang }}
+{{ $narration := "" }}
+{{ with .Params.narration }}
+  {{ $narration = index . $lang }}
+  {{ if not $narration }}
+    {{ $narration = index . "en" }}
+  {{ end }}
+{{ end }}
+<article class="werk-detail">
+  <header class="werk-header">
+    <div class="werk-glyph">
+      {{ partial "siegel.html" (dict
+          "diktion" $z.diktion
+          "geist" $z.geist
+          "korrespondenz" $z.korrespondenz
+          "class" "siegel-detail"
+          "label" (printf "Siegel: D=%d G=%d K=%s" $z.diktion $z.geist $z.korrespondenz)
+      ) }}
+    </div>
+    <div class="werk-meta">
+      <h1>{{ .Title }}</h1>
+      <p class="werk-author">{{ .Params.author }}{{ with .Params.year }}, {{ . }}{{ end }}</p>
+      <dl class="werk-facts">
+        {{ with .Params.genre }}<dt>{{ i18n "werkGenre" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with .Params.language }}<dt>{{ i18n "werkLanguage" }}</dt><dd>{{ . }}</dd>{{ end }}
+        <dt>{{ i18n "werkDiktionAxis" }}</dt><dd>{{ $z.diktion }} / 5</dd>
+        <dt>{{ i18n "werkGeistAxis" }}</dt><dd>{{ $z.geist }} / 5</dd>
+        <dt>{{ i18n "werkKorrespondenzAxis" }}</dt><dd>
+          {{ $z.korrespondenz }}{{ if eq $z.korrespondenz "ausstehend" }} <abbr title="{{ i18n "ausstehendTitle" }}">†</abbr>{{ end }}
+        </dd>
+        {{ with .Params.declared_at }}<dt>{{ i18n "werkDeclared" }}</dt><dd><time datetime="{{ . }}">{{ . }}</time></dd>{{ end }}
+      </dl>
+    </div>
+  </header>
+
+  {{ with $narration }}
+    <section class="werk-narration">
+      <h2>{{ i18n "werkNarrationHeading" }}</h2>
+      <p>{{ . | safeHTML }}</p>
+    </section>
+  {{ end }}
+
+  {{ with .Params.links }}
+    <section class="werk-links">
+      <h2>{{ i18n "werkLinksHeading" }}</h2>
+      <ul>
+        {{ with .canonical }}<li><a href="{{ . }}" rel="external">{{ i18n "werkLinkCanonical" }}</a></li>{{ end }}
+        {{ with .author_site }}<li><a href="{{ . }}" rel="external">{{ i18n "werkLinkAuthor" }}</a></li>{{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  <aside class="werk-downloads">
+    <h2>{{ i18n "werkDownloadsHeading" }}</h2>
+    {{ $name := printf "d%d-g%d-%s" $z.diktion $z.geist $z.korrespondenz }}
+    <ul>
+      <li><a href="/siegel/assets/{{ $name }}.svg" download>{{ i18n "werkDownloadSvg" }}</a></li>
+      <li><a href="/siegel/assets/{{ $name }}-512.png" download>PNG 512&nbsp;px</a></li>
+      <li><a href="/siegel/assets/{{ $name }}-1024.png" download>PNG 1024&nbsp;px</a></li>
+      <li><a href="/siegel/assets/{{ $name }}-2048.png" download>PNG 2048&nbsp;px</a></li>
+    </ul>
+    <p class="license-hint">{{ i18n "werkLicenseHint" }}</p>
+  </aside>
+</article>
+{{ end }}

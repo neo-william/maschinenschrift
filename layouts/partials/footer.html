@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <p>
+    {{ i18n "footerLine" }}
+    <a href="https://github.com/maschinenschrift/maschinenschrift-site">{{ i18n "footerGitHub" }}</a>.
+    {{ i18n "footerLicenseContent" }}
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC&nbsp;BY&nbsp;4.0</a>,
+    {{ i18n "footerLicenseCode" }}
+  </p>
+  <nav class="footer-nav">
+    {{ with .Site.GetPage "/impressum" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+    {{ with .Site.GetPage "/datenschutz" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+    <span class="footer-note">{{ i18n "footerNoTrackers" }}</span>
+  </nav>
+</footer>

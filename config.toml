@@ -1,0 +1,35 @@
+baseURL = "https://maschinenschrift.com/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+title = "Maschinenschrift"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Open standard for the self-declaration of language-substrate-mediated literature."
+  declared_year_start = 2026
+  ogImage = "/og/maschinenschrift.png"
+
+[languages.en]
+  label = "English"
+  weight = 1
+  title = "Maschinenschrift"
+  [languages.en.params]
+    description = "Open standard for the self-declaration of language-substrate-mediated literature."
+
+[languages.de]
+  label = "Deutsch"
+  weight = 2
+  title = "Maschinenschrift"
+  [languages.de.params]
+    description = "Offener Standard zur Selbstdeklaration sprachsubstrat-vermittelter Literatur."
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[security.funcs]
+  getenv = ["^HUGO_", "^CI$"]

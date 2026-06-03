@@ -1,0 +1,169 @@
+# Deutsche UI-Strings.
+
+[siteTitle]
+other = "Maschinenschrift"
+
+[siteDescription]
+other = "Offener Standard zur Selbstdeklaration sprachsubstrat-vermittelter Literatur."
+
+[navWorks]
+other = "Werke"
+
+[navSeal]
+other = "Siegel"
+
+[navFoundation]
+other = "Foundation"
+
+[navContribute]
+other = "Beitragen"
+
+[footerLine]
+other = "Maschinenschrift ist ein offener Standard, kuratiert via"
+
+[footerGitHub]
+other = "GitHub"
+
+[footerLicenseContent]
+other = "Inhalte unter"
+
+[footerLicenseCode]
+other = "Code unter Apache 2.0."
+
+[footerNoTrackers]
+other = "Keine Cookies. Kein Tracking."
+
+[footerImprint]
+other = "Impressum"
+
+[footerPrivacy]
+other = "Datenschutz"
+
+[langSwitchAria]
+other = "Sprache wechseln"
+
+# Homepage
+[workOfTheDay]
+other = "Werk des Tages"
+
+[rotationHint]
+one = "Tägliche Rotation, derzeit {{ .Count }} Werk im Katalog."
+other = "Tägliche Rotation, derzeit {{ .Count }} Werke im Katalog."
+
+[catalogHeading]
+other = "Katalog"
+
+[catalogEmpty]
+other = "Noch keine deklarierten Werke im Katalog."
+
+# Werke-Listing
+[catalogIntro]
+other = "Eine kuratierte Liste der im Maschinenschrift-Standard deklarierten Werke. Aufnahme erfolgt nach Selbstdeklaration und kuratorischer Prüfung über das öffentliche Katalog-Repository."
+
+[worksCount]
+one = "{{ .Count }} Werk im Katalog."
+other = "{{ .Count }} Werke im Katalog."
+
+[axisLabel]
+other = "Achsen-Notation"
+
+[contributeAsideHeading]
+other = "Eintrag beitragen"
+
+[contributeAsideIntro]
+other = "Adoption ist selbstdeklarations-basiert. Der Weg zur Aufnahme:"
+
+[contributeStep1]
+other = "Eigene D/G/K-Werte gemäß Foundation §7 bestimmen (Diktion, Geist, Korrespondenz)."
+
+[contributeStep2]
+other = "Pull Request gegen das works-Verzeichnis mit einer YAML-Datei nach dem Schema des inauguralen Eintrags."
+
+[contributeStep3]
+other = "Alternativ: Anfrage per Mail an contact [at] maschinenschrift [dot] com."
+
+# Werks-Detail
+[werkGenre]
+other = "Gattung"
+
+[werkLanguage]
+other = "Sprache"
+
+[werkDiktionAxis]
+other = "Diktion (D)"
+
+[werkGeistAxis]
+other = "Geist (G)"
+
+[werkKorrespondenzAxis]
+other = "Korrespondenz (K)"
+
+[werkDeclared]
+other = "Deklariert"
+
+[werkNarrationHeading]
+other = "Narration"
+
+[werkLinksHeading]
+other = "Verweise"
+
+[werkLinkCanonical]
+other = "Werks-Seite"
+
+[werkLinkAuthor]
+other = "Autor-Seite"
+
+[werkDownloadsHeading]
+other = "Siegel herunterladen"
+
+[werkDownloadSvg]
+other = "SVG (vektor)"
+
+[werkLicenseHint]
+other = "Lizenz: CC BY 4.0. Verwendung als Herkunftszeichen setzt öffentliche Selbstdeklaration im Maschinenschrift-Standard voraus."
+
+[ausstehendTitle]
+other = "Selbstdeklaration, bibliographische Korrespondenz ausstehend"
+
+# Siegel-Seite
+[atlasIntro]
+other = "Das Siegel kodiert drei Achsen der Entstehung eines Textes: Diktion (D, sprachliche Oberfläche, 0–5), Geist (G, Inhalt, 0–5) und Korrespondenz (K, bibliographische Bestätigung, binär). Diagnose-Formel: *Geist aus der Maschine*. Bedeutung und Vokabular: <a href=\"/de/foundation/\">Foundation</a>. Geometrie: <a href=\"/de/spec/siegel-v6/\">Siegel-Spec v6</a>."
+
+[siegelUseIntro]
+other = "Autorinnen und Autoren bilden das Siegel im eigenen Werk ab — auf der Impressumsseite, auf dem Cover, oder an einer anderen Stelle des Werks. Die D/G/K-Werte mit dem Generator unten setzen und das Siegel als SVG (Vektor, für den Satz) oder PNG (1024 px) herunterladen."
+
+[siegelNoscript]
+other = "Der Generator benötigt JavaScript. Ohne JavaScript liegen die 72 vor-generierten Siegel-Assets direkt unter <code>/siegel/assets/d{D}-g{G}-{belegt|ausstehend}.svg</code>, jeweils auch als PNG in 512, 1024 und 2048 px."
+
+[atlasLicenseHeading]
+other = "Lizenz"
+
+[atlasLicenseBody]
+other = "Die Siegel-Assets stehen unter CC BY 4.0. Freie Verwendung mit Attribution durch Verweis auf maschinenschrift.com. Verwendung als Herkunftszeichen setzt voraus, dass das Werk im Maschinenschrift-Standard öffentlich deklariert ist (siehe Foundation)."
+
+# 404
+[notFoundHeading]
+other = "404"
+
+[notFoundBody]
+other = "Diese Seite existiert nicht im Katalog."
+
+[notFoundLinkHome]
+other = "Zurück zur Startseite"
+
+# CTAs
+[heroAdoptCta]
+other = "Eigenes Werk deklarieren →"
+
+[todaysPick]
+other = "Heute im Katalog:"
+
+# Drei Beispiel-Zustände auf der Homepage
+[stateEmpty]
+other = "Allein verfasst. Korrespondenz belegt."
+
+[stateMid]
+other = "Teils substrat-vermittelt. Korrespondenz belegt."
+
+[stateFull]
+other = "Überwiegend substrat-erzeugt. Korrespondenz ausstehend."

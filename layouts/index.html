@@ -1,0 +1,59 @@
+{{ define "main" }}
+<section class="hero">
+  {{ .Content }}
+  {{ with .Site.GetPage "/beitragen" }}
+    <p class="hero-cta"><a href="{{ .RelPermalink }}">{{ i18n "heroAdoptCta" }}</a></p>
+  {{ end }}
+</section>
+
+<section class="states" aria-label="Example seal states">
+  <div class="state">
+    {{ partial "siegel.html" (dict "diktion" 0 "geist" 0 "korrespondenz" "belegt" "class" "siegel-state") }}
+    <p class="state-caption">{{ i18n "stateEmpty" }}</p>
+  </div>
+  <div class="state">
+    {{ partial "siegel.html" (dict "diktion" 2 "geist" 3 "korrespondenz" "belegt" "class" "siegel-state") }}
+    <p class="state-caption">{{ i18n "stateMid" }}</p>
+  </div>
+  <div class="state">
+    {{ partial "siegel.html" (dict "diktion" 5 "geist" 5 "korrespondenz" "ausstehend" "class" "siegel-state") }}
+    <p class="state-caption">{{ i18n "stateFull" }}</p>
+  </div>
+</section>
+
+{{ $werke := where .Site.RegularPages "Section" "werke" }}
+{{ $count := len $werke }}
+<section class="catalog-summary">
+  <h2>{{ i18n "catalogHeading" }}</h2>
+  {{ if gt $count 0 }}
+    {{ $doy := now.YearDay }}
+    {{ $idx := mod $doy $count }}
+    {{ $featured := index $werke $idx }}
+    <p class="todays-pick">
+      <span class="todays-pick-label">{{ i18n "todaysPick" }}</span>
+      <a href="{{ $featured.RelPermalink }}">{{ $featured.Title }}</a>
+    </p>
+    <ul class="werke-list">
+      {{ range $werke }}
+        {{ $wz := .Params.zeichen }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            <span class="werke-list-glyph">
+              {{ partial "siegel.html" (dict
+                  "diktion" $wz.diktion
+                  "geist" $wz.geist
+                  "korrespondenz" $wz.korrespondenz
+                  "class" "siegel-small"
+              ) }}
+            </span>
+            <span class="werke-list-title">{{ .Title }}</span>
+            <span class="werke-list-author">{{ .Params.author }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p>{{ i18n "catalogEmpty" }}</p>
+  {{ end }}
+</section>
+{{ end }}

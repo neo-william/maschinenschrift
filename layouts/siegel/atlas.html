@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="siegel-page">
+  <header>
+    <h1>{{ .Title }}</h1>
+    <p>{{ i18n "atlasIntro" }}</p>
+  </header>
+
+  <section class="siegel-use">
+    <p>{{ i18n "siegelUseIntro" | safeHTML }}</p>
+  </section>
+
+  <section id="siegel-preview" class="siegel-preview" aria-live="polite">
+    <noscript>
+      <p>{{ i18n "siegelNoscript" | safeHTML }}</p>
+    </noscript>
+  </section>
+
+  <aside class="siegel-license">
+    <h2>{{ i18n "atlasLicenseHeading" }}</h2>
+    <p>{{ i18n "atlasLicenseBody" }}</p>
+  </aside>
+
+  <script src="/js/live-preview.js" defer></script>
+</article>
+{{ end }}

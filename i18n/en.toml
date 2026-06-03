@@ -1,0 +1,170 @@
+# English UI strings.
+# Used in layouts via {{ i18n "key" }}.
+
+[siteTitle]
+other = "Maschinenschrift"
+
+[siteDescription]
+other = "Open standard for the self-declaration of language-substrate-mediated literature."
+
+[navWorks]
+other = "Works"
+
+[navSeal]
+other = "Seal"
+
+[navFoundation]
+other = "Foundation"
+
+[navContribute]
+other = "Contribute"
+
+[footerLine]
+other = "Maschinenschrift is an open standard, curated via"
+
+[footerGitHub]
+other = "GitHub"
+
+[footerLicenseContent]
+other = "Content under"
+
+[footerLicenseCode]
+other = "code under Apache 2.0."
+
+[footerNoTrackers]
+other = "No cookies. No trackers."
+
+[footerImprint]
+other = "Imprint"
+
+[footerPrivacy]
+other = "Privacy"
+
+[langSwitchAria]
+other = "Switch language"
+
+# Homepage
+[workOfTheDay]
+other = "Work of the day"
+
+[rotationHint]
+one = "Daily rotation, currently {{ .Count }} work in the catalog."
+other = "Daily rotation, currently {{ .Count }} works in the catalog."
+
+[catalogHeading]
+other = "Catalog"
+
+[catalogEmpty]
+other = "No declared works in the catalog yet."
+
+# Werke-Listing
+[catalogIntro]
+other = "A curated list of works declared under the Maschinenschrift standard. Inclusion is by self-declaration and editorial check via the public catalog repository."
+
+[worksCount]
+one = "{{ .Count }} work in the catalog."
+other = "{{ .Count }} works in the catalog."
+
+[axisLabel]
+other = "Axis notation"
+
+[contributeAsideHeading]
+other = "Contribute an entry"
+
+[contributeAsideIntro]
+other = "Adoption is self-declaration-based. To enter the catalog:"
+
+[contributeStep1]
+other = "Determine your D/G/K values per Foundation §7 (Diktion, Geist, Correspondence)."
+
+[contributeStep2]
+other = "Pull request against the works directory with a YAML file following the inaugural entry's schema."
+
+[contributeStep3]
+other = "Or send a request by email to contact [at] maschinenschrift [dot] com."
+
+# Werks-Detail
+[werkGenre]
+other = "Genre"
+
+[werkLanguage]
+other = "Language"
+
+[werkDiktionAxis]
+other = "Diktion (D)"
+
+[werkGeistAxis]
+other = "Geist (G)"
+
+[werkKorrespondenzAxis]
+other = "Correspondence (K)"
+
+[werkDeclared]
+other = "Declared"
+
+[werkNarrationHeading]
+other = "Narration"
+
+[werkLinksHeading]
+other = "Links"
+
+[werkLinkCanonical]
+other = "Work page"
+
+[werkLinkAuthor]
+other = "Author page"
+
+[werkDownloadsHeading]
+other = "Download seal"
+
+[werkDownloadSvg]
+other = "SVG (vector)"
+
+[werkLicenseHint]
+other = "License: CC BY 4.0. Use as origin mark requires public self-declaration in the Maschinenschrift standard."
+
+[ausstehendTitle]
+other = "Self-declared, bibliographic correspondence pending"
+
+# Seal page
+[atlasIntro]
+other = "The seal encodes three axes of the genesis of a text: Diction (D, linguistic surface, 0–5), Geist (G, content, 0–5; German, untranslated — *Geist* in the sense of Hegel and Geisteswissenschaften, an occasional gloss being *Ghost from the Machine*), and Correspondence (K, bibliographic confirmation, binary). Diagnostic formula: *Geist aus der Maschine*. Meaning and vocabulary: <a href=\"/foundation/\">Foundation</a>. Geometry: <a href=\"/spec/siegel-v6/\">Siegel-Spec v6</a>."
+
+[siegelUseIntro]
+other = "Authors reproduce the seal in their own book — on the copyright page, on the cover, or elsewhere in the work. Set the D/G/K values with the generator below and download the seal as SVG (vector, for typesetting) or PNG (1024 px)."
+
+[siegelNoscript]
+other = "The generator requires JavaScript. Without it, the 72 pre-rendered seal assets are available directly at <code>/siegel/assets/d{D}-g{G}-{belegt|ausstehend}.svg</code>, each also as PNG in 512, 1024, and 2048 px."
+
+[atlasLicenseHeading]
+other = "License"
+
+[atlasLicenseBody]
+other = "The seal assets are licensed under CC BY 4.0. Free use with attribution by a reference to maschinenschrift.com. Use as origin mark requires that the work is publicly declared in the Maschinenschrift standard (see Foundation)."
+
+# 404
+[notFoundHeading]
+other = "404"
+
+[notFoundBody]
+other = "This page does not exist in the catalog."
+
+[notFoundLinkHome]
+other = "Back to homepage"
+
+# CTAs
+[heroAdoptCta]
+other = "Declare your own work →"
+
+[todaysPick]
+other = "Today's pick:"
+
+# Three example states on the homepage
+[stateEmpty]
+other = "Authored alone. Correspondence documented."
+
+[stateMid]
+other = "Partly substrate-mediated. Correspondence documented."
+
+[stateFull]
+other = "Predominantly substrate-generated. Correspondence pending."

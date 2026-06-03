@@ -1,0 +1,21 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Bridge-generated content (regenerated from works/ at each build)
+content/werke/*.md
+
+# Generator-produced static assets (regenerated from siegel-generator/ at each build)
+static/siegel/assets/*.svg
+static/siegel/assets/*.png
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor/OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

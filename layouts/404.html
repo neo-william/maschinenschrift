@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="not-found">
+  <div class="seal-decoration" aria-hidden="true">
+    {{ partial "siegel.html" (dict "diktion" 0 "geist" 0 "korrespondenz" "belegt") }}
+  </div>
+
+  <h1>{{ i18n "notFoundHeading" }}</h1>
+  <p>{{ i18n "notFoundBody" }}</p>
+
+  <p>
+    <a href="{{ "/" | relLangURL }}">{{ i18n "notFoundLinkHome" }}</a> &middot;
+    {{ with .Site.GetPage "/werke" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &middot;{{ end }}
+    {{ with .Site.GetPage "/foundation" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &middot;{{ end }}
+    {{ with .Site.GetPage "/siegel" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+  </p>
+</article>
+{{ end }}
