@@ -1,19 +1,26 @@
 <header class="site-header">
-  <a class="site-title" href="{{ "/" | relLangURL }}">
-    {{ partial "siegel.html" (dict "diktion" 0 "geist" 0 "korrespondenz" "belegt" "class" "site-logo") }}
-    <span class="site-title-text">Maschinenschrift</span>
+  <a class="site-brand" href="{{ "/" | relLangURL }}">
+    <span class="site-brand-mark">
+      {{ partial "siegel.html" (dict "diktion" 5 "geist" 3 "korrespondenz" "ausstehend" "class" "site-logo") }}
+    </span>
+    <span class="site-brand-text">
+      <span class="site-brand-title">Maschinenschrift</span>
+      <span class="site-brand-subtitle">{{ i18n "siteDescription" }}</span>
+    </span>
   </a>
-  <nav class="site-nav">
-    {{ with .Site.GetPage "/motivation" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-    {{ with .Site.GetPage "/siegel" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-    {{ with .Site.GetPage "/verzeichnis" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-    {{ with .Site.GetPage "/marginalien" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-  </nav>
-  {{ if .AllTranslations }}
-    <nav class="lang-switch" aria-label="{{ i18n "langSwitchAria" }}">
-      {{ range .AllTranslations }}
-        <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
-      {{ end }}
+  <div class="site-header-meta">
+    <nav class="site-nav">
+      {{ with .Site.GetPage "/siegel" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+      {{ with .Site.GetPage "/verzeichnis" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+      {{ with .Site.GetPage "/motivation" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+      {{ with .Site.GetPage "/notizen" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
     </nav>
-  {{ end }}
+    {{ if .AllTranslations }}
+      <nav class="lang-switch" aria-label="{{ i18n "langSwitchAria" }}">
+        {{ range .AllTranslations }}
+          <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
+        {{ end }}
+      </nav>
+    {{ end }}
+  </div>
 </header>

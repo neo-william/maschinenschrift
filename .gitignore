@@ -3,6 +3,9 @@ public/
 resources/_gen/
 .hugo_build.lock
 
+# Deploy-Artefakte (Direkt-Upload-Zips)
+*.zip
+
 # Bridge-generated content (regenerated from works/ at each build)
 content/werke/*.md
 

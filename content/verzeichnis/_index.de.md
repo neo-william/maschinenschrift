@@ -11,4 +11,6 @@ Geprüft wird allein die Stimmigkeit der Angabe — passt die Deklaration zum We
 
 Wer eingetragen ist, hat das Siegel angelegt und steht öffentlich dazu. Die Eintragung ist eine Selbstdeklaration, kein Zertifikat.
 
+[Die Liste der deklarierten Werke](/de/werke/)
+
 [Wie man sich einträgt](/de/eintragen/)

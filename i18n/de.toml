@@ -42,6 +42,12 @@ other = "Datenschutz"
 [langSwitchAria]
 other = "Sprache wechseln"
 
+[breadcrumbAria]
+other = "Pfad"
+
+[breadcrumbHome]
+other = "Maschinenschrift"
+
 # Homepage
 [homeLead]
 other = "Eine offene Notation, mit der Autoren erklären, was ein Large Language Model zu einem Text beigetragen hat."
@@ -129,11 +135,26 @@ other = "Lizenz: CC BY 4.0. Verwendung als Herkunftszeichen setzt öffentliche S
 other = "Selbstdeklaration, bibliographische Korrespondenz ausstehend"
 
 # Siegel-Seite
-[atlasIntro]
-other = "Das Siegel kodiert drei Achsen der Entstehung eines Textes: Diktion (D, sprachliche Oberfläche, 0–5), Geist (G, Inhalt, 0–5) und Korrespondenz (K, bibliographische Bestätigung, binär). Diagnose-Formel: *Geist aus der Maschine*. Bedeutung und Vokabular: <a href=\"/de/foundation/\">Foundation</a>. Geometrie: <a href=\"/de/spec/siegel-v6/\">Siegel-Spec v6</a>."
+[atlasLead]
+other = "Das Siegel ist eine Selbst-Auskunft. Die Autorin sagt, in eigener Hand, wie viel die Maschine geholfen hat."
+
+[atlasAxesHeading]
+other = "Die drei Achsen"
+
+[atlasAxes]
+other = """- **Diktion** — wie viel der Oberfläche, also Sätze, Wortwahl, Rhythmus, von der Maschine kam.
+- ***Geist*** — wie viel der Substanz, also Ideen, Argument, Struktur, von der Maschine kam.
+- **Korrespondenz** — ob die sachlichen Aussagen gegen Quellen geprüft wurden.
+
+Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: die Korrespondenz steht noch aus.
+
+*Geist* bleibt deutsch. Das Wort trägt Hegel und die Geisteswissenschaften mit. Die Diagnose-Formel lautet *Geist aus der Maschine*. Vokabular: [Idee](/de/idee/)."""
+
+[atlasUseHeading]
+other = "Wie das Siegel gesetzt wird"
 
 [siegelUseIntro]
-other = "Autorinnen und Autoren bilden das Siegel im eigenen Werk ab — auf der Impressumsseite, auf dem Cover, oder an einer anderen Stelle des Werks. Die D/G/K-Werte mit dem Generator unten setzen und das Siegel als SVG (Vektor, für den Satz) oder PNG (1024 px) herunterladen."
+other = "Die Autorin setzt die D/G/K-Werte am Generator. Sie lädt das Siegel als SVG oder als PNG mit 1024 Pixeln. Sie platziert es bei der Verfasserzeile — Cover, Titelseite, Impressum. Kolophon-Zeile und HTML-Embed tragen dieselbe Deklaration in Impressen und auf Webseiten."
 
 [siegelNoscript]
 other = "Der Generator benötigt JavaScript. Ohne JavaScript liegen die 72 vor-generierten Siegel-Assets direkt unter <code>/siegel/assets/d{D}-g{G}-{belegt|ausstehend}.svg</code>, jeweils auch als PNG in 512, 1024 und 2048 px."
@@ -142,7 +163,7 @@ other = "Der Generator benötigt JavaScript. Ohne JavaScript liegen die 72 vor-g
 other = "Lizenz"
 
 [atlasLicenseBody]
-other = "Die Siegel-Assets stehen unter CC BY 4.0. Freie Verwendung mit Attribution durch Verweis auf maschinenschrift.com. Verwendung als Herkunftszeichen setzt voraus, dass das Werk im Maschinenschrift-Standard öffentlich deklariert ist (siehe Foundation)."
+other = "Die Siegel-Assets stehen unter CC BY 4.0. Frei verwendbar mit Verweis auf maschinenschrift.com. Als Herkunftszeichen gilt das Siegel nur, wo das Werk im Standard deklariert ist (siehe [Idee](/de/idee/))."
 
 # 404
 [notFoundHeading]
@@ -157,6 +178,13 @@ other = "Zurück zur Startseite"
 # CTAs
 [heroAdoptCta]
 other = "Eigenes Werk deklarieren →"
+
+# Mini-Generator auf der Startseite
+[homeGenAria]
+other = "Siegel setzen — Live-Vorschau"
+
+[homeGenDownload]
+other = "Als SVG oder PNG herunterladen — Siegel-Generator →"
 
 [todaysPick]
 other = "Heute im Katalog:"

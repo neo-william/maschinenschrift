@@ -26,11 +26,13 @@
       {{ end }}
     </ul>
   {{ else }}
-    <ul>
-      {{ range .Pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
+    {{ with .Pages }}
+      <ul>
+        {{ range . }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
   {{ end }}
 </article>
 {{ end }}

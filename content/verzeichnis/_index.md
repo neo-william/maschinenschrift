@@ -12,4 +12,6 @@ What is checked is the consistency of the statement — whether the declaration 
 
 Whoever is registered has set the seal and stands publicly by it. Registration is a self-declaration, not a certificate.
 
+[The list of declared works](/catalog/)
+
 [How to be listed](/submit/)

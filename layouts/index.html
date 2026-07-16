@@ -3,7 +3,16 @@
   <p>{{ i18n "homeLead" }}</p>
 </section>
 
-<section class="states" aria-label="Example seal states">
+<!-- Mini-Generator: das lebende Siegel. Ohne JS bleibt er versteckt,
+     und die drei statischen Beispiel-Zustaende darunter sind die Baseline. -->
+<section class="home-generator" id="home-generator" hidden aria-label="{{ i18n "homeGenAria" }}">
+  <div id="home-generator-ui"></div>
+  <p class="home-generator-cta">
+    <a id="home-generator-link" href="{{ (.Site.GetPage "/siegel").RelPermalink }}">{{ i18n "homeGenDownload" }}</a>
+  </p>
+</section>
+
+<section class="states" id="home-states" aria-label="Example seal states">
   <div class="state">
     {{ partial "siegel.html" (dict "diktion" 0 "geist" 0 "korrespondenz" "belegt" "class" "siegel-state") }}
     <p class="state-caption">{{ i18n "stateEmpty" }}</p>
@@ -20,7 +29,7 @@
 
 <section class="hero">
   {{ .Content }}
-  {{ with .Site.GetPage "/beitragen" }}
+  {{ with .Site.GetPage "/eintragen" }}
     <p class="hero-cta"><a href="{{ .RelPermalink }}">{{ i18n "heroAdoptCta" }}</a></p>
   {{ end }}
 </section>
@@ -60,4 +69,6 @@
     <p>{{ i18n "catalogEmpty" }}</p>
   {{ end }}
 </section>
+
+<script src="/js/live-preview.js" defer></script>
 {{ end }}

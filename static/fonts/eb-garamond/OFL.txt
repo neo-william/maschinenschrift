@@ -1,0 +1,8 @@
+EB Garamond
+SIL Open Font License, Version 1.1.
+
+Source: https://github.com/georgd/EB-Garamond
+Maintained by Georg Duffner; based on Robert Granjon's Garamond cuts
+from the Egenolff-Berner specimen (1592).
+
+Full OFL 1.1 text: https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web

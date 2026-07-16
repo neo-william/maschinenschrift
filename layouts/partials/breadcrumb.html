@@ -1,0 +1,16 @@
+{{/*
+  Breadcrumb-Partial — zeigt den Pfad zur aktuellen Seite.
+  Erscheint nur, wenn der Pfad mindestens eine Zwischenstufe hat (also nicht
+  Home und nicht Top-Level-Sections wie /motivation/ oder /seal/, die nur
+  "Maschinenschrift › Motivation" wiederholen würden).
+*/}}
+{{- $ancestors := .Ancestors -}}
+{{- if and (not .IsHome) (gt (len $ancestors) 1) -}}
+<nav class="breadcrumb" aria-label="{{ i18n "breadcrumbAria" }}">
+  {{- range $ancestors.Reverse -}}
+    <a href="{{ .RelPermalink }}">{{ if .IsHome }}{{ i18n "breadcrumbHome" }}{{ else }}{{ .Title }}{{ end }}</a>
+    <span class="breadcrumb-sep" aria-hidden="true">›</span>
+  {{- end -}}
+  <span class="breadcrumb-current" aria-current="page">{{ .Title }}</span>
+</nav>
+{{- end -}}

@@ -65,4 +65,4 @@ Wer den Standard adoptiert, legt das Siegel an. Wer im **Verzeichnis** erscheine
 
 Die Form ist nicht neu. Das *Stationers' Register* hielt seit dem sechzehnten Jahrhundert fest, welcher Drucker welches Werk druckte. Maschinenschrift erweitert die Tradition auf die nächste Vermittlungsstufe: nicht *wer hat gedruckt*, sondern *wer hat vermittelt und in welchem Maß*.
 
-Eine Liste der eingetragenen Werke steht unter [Verzeichnis](/verzeichnis/). Das erste Werk ist *[La Scuola dei Silenzi](/verzeichnis/la-scuola-dei-silenzi/)* von I. O. Vargas, deklariert mit D=4, G=2, Korrespondenz ausstehend.
+Eine Liste der eingetragenen Werke steht unter [Verzeichnis](/de/verzeichnis/).

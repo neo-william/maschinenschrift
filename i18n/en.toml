@@ -43,6 +43,12 @@ other = "Privacy"
 [langSwitchAria]
 other = "Switch language"
 
+[breadcrumbAria]
+other = "Breadcrumb"
+
+[breadcrumbHome]
+other = "Maschinenschrift"
+
 # Homepage
 [homeLead]
 other = "An open notation authors adopt to declare what a large language model contributed to a text."
@@ -130,11 +136,24 @@ other = "License: CC BY 4.0. Use as origin mark requires public self-declaration
 other = "Self-declared, bibliographic correspondence pending"
 
 # Seal page
-[atlasIntro]
-other = "The seal encodes three axes of the genesis of a text: Diction (D, linguistic surface, 0–5), Geist (G, content, 0–5; German, untranslated — *Geist* in the sense of Hegel and Geisteswissenschaften, an occasional gloss being *Ghost from the Machine*), and Correspondence (K, bibliographic confirmation, binary). Diagnostic formula: *Geist aus der Maschine*. Meaning and vocabulary: <a href=\"/foundation/\">Foundation</a>. Geometry: <a href=\"/spec/siegel-v6/\">Siegel-Spec v6</a>."
+[atlasLead]
+other = "A small mark, set by the author. It says where the machine helped, and how much."
+
+[atlasAxesHeading]
+other = "The three axes"
+
+[atlasAxes]
+other = """- **Diction** (D, 0–5) — how much of the surface (sentences, word choice, rhythm) came from the machine.
+- ***Geist*** (G, 0–5) — how much of the substance (ideas, argument, structure) came from the machine.
+- **Correspondence** (K, binary) — whether the factual claims have been checked against sources.
+
+*Geist* stays in German. Hegel and *Geisteswissenschaften* stand behind the word. The gloss in English is *Ghost from the Machine*. The diagnostic formula is *Geist aus der Maschine*. Meaning and vocabulary belong to the [Idea](/idea/)."""
+
+[atlasUseHeading]
+other = "How the seal is set"
 
 [siegelUseIntro]
-other = "Authors reproduce the seal in their own book — on the copyright page, on the cover, or elsewhere in the work. Set the D/G/K values with the generator below and download the seal as SVG (vector, for typesetting) or PNG (1024 px)."
+other = "The author sets D, G, and K with the generator. The seal downloads as SVG for typesetting, or as PNG at 1024 px. It then goes into the book near the byline — cover, title page, about page. The colophon line and the HTML embed carry the same declaration into imprints and websites."
 
 [siegelNoscript]
 other = "The generator requires JavaScript. Without it, the 72 pre-rendered seal assets are available directly at <code>/siegel/assets/d{D}-g{G}-{belegt|ausstehend}.svg</code>, each also as PNG in 512, 1024, and 2048 px."
@@ -143,7 +162,7 @@ other = "The generator requires JavaScript. Without it, the 72 pre-rendered seal
 other = "License"
 
 [atlasLicenseBody]
-other = "The seal assets are licensed under CC BY 4.0. Free use with attribution by a reference to maschinenschrift.com. Use as origin mark requires that the work is publicly declared in the Maschinenschrift standard (see Foundation)."
+other = "The seal assets are released under CC BY 4.0. Attribute by linking to maschinenschrift.com. Use it as an origin mark only if the work declares itself in the Maschinenschrift standard — see the [Idea](/idea/)."
 
 # 404
 [notFoundHeading]
@@ -158,6 +177,13 @@ other = "Back to homepage"
 # CTAs
 [heroAdoptCta]
 other = "Declare your own work →"
+
+# Mini-Generator auf der Startseite
+[homeGenAria]
+other = "Set your seal — live preview"
+
+[homeGenDownload]
+other = "Download as SVG or PNG — Seal Generator →"
 
 [todaysPick]
 other = "Today's pick:"

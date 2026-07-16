@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="section-list marginalien">
+<article class="section-list notizen">
   <h1>{{ .Title }}</h1>
   {{ with .Content }}
     <div class="section-intro">{{ . }}</div>
@@ -7,12 +7,12 @@
 
   {{ $pieces := .Pages }}
   {{ if gt (len $pieces) 0 }}
-    <ul class="marginalien-list">
+    <ul class="notizen-list">
       {{ range $pieces.ByDate.Reverse }}
         <li>
           <a href="{{ .RelPermalink }}">
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-            <span class="marginalien-list-title">{{ .Title }}</span>
+            <span class="notizen-list-title">{{ .Title }}</span>
           </a>
         </li>
       {{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="single notiz">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ with .Params.deklaration }}
+  {{/* Notiz mit eigener Selbstdeklaration: Coda-Siegel trägt die deklarierten Werte.
+       Die semantische Auskunft steht im Notiz-Text; das Glyph bleibt illustrativ. */}}
+  <div class="notiz-coda" aria-hidden="true">
+    {{ partial "siegel.html" (dict "diktion" .diktion "geist" .geist "korrespondenz" (default "belegt" .korrespondenz) "class" "siegel-coda") }}
+  </div>
+  {{ else }}
+  <div class="notiz-coda" aria-hidden="true">
+    {{ partial "siegel.html" (dict "diktion" 5 "geist" 3 "korrespondenz" "ausstehend" "class" "siegel-coda") }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

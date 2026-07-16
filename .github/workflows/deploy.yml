@@ -1,0 +1,74 @@
+# Deploy zu Cloudflare Pages via Wrangler.
+#
+# Hintergrund: Die offizielle "Cloudflare Workers and Pages"-GitHub-App war zum
+# Setup-Zeitpunkt nicht im Marketplace auffindbar. Statt Connect-to-Git nutzt
+# dieser Workflow die Wrangler-Action mit einem API-Token aus den Repo-Secrets.
+#
+# Voraussetzungen im Repo (Settings → Secrets and variables → Actions):
+#   - CLOUDFLARE_API_TOKEN  Account-Token mit "Cloudflare Pages: Edit"
+#   - CLOUDFLARE_ACCOUNT_ID Account-ID aus dem Cloudflare-Dashboard
+#
+# Voraussetzungen in Cloudflare:
+#   - Pages-Projekt "maschinenschrift" muss existieren (Workers & Pages →
+#     Create application → Pages → Upload assets → einmalig Dummy hochladen).
+#     Wrangler legt das Projekt NICHT automatisch an.
+
+name: deploy-cloudflare-pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-cloudflare-pages
+  cancel-in-progress: true
+
+env:
+  HUGO_VERSION: '0.161.1'
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install librsvg2-bin (für PNG-Rasterung)
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+
+      - name: Install Hugo (extended)
+        run: |
+          wget -q -O hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i hugo.deb
+          hugo version
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate SVG assets
+        run: python scripts/build-assets.py static/siegel/assets
+
+      - name: Rasterize SVGs to PNGs
+        run: bash scripts/build-pngs.sh static/siegel/assets
+
+      - name: Rasterize OG image (1200x630)
+        run: rsvg-convert -w 1200 -h 630 static/og/maschinenschrift.svg -o static/og/maschinenschrift.png
+
+      - name: Generate werke content stubs from works/*.yaml
+        run: python scripts/build-content.py
+
+      - name: Hugo build
+        run: hugo --minify
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=maschinenschrift --branch=main

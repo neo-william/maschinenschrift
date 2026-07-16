@@ -66,4 +66,4 @@ Whoever adopts the standard sets the seal. Whoever wants to appear in the **regi
 
 The form is not new. The *Stationers' Register* recorded, from the sixteenth century onward, which printer printed which work. Maschinenschrift extends this tradition to the next stage of mediation: not *who printed* but *who mediated and to what degree*.
 
-A list of registered works stands under [Registry](/registry/). The first work is *[La Scuola dei Silenzi](/registry/la-scuola-dei-silenzi/)* by I. O. Vargas, declared D=4, G=2, Correspondence pending.
+A list of registered works stands under [Registry](/registry/).
