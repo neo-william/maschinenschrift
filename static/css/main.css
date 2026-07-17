@@ -60,6 +60,15 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/* Auszeichnung im Fließtext: Fett nutzt die echte Garamond-Semibold (600,
+   Browser-Default 700 würde synthetisch verbreitern); Unterstreichung in
+   Tinte mit Abstand — klar getrennt vom grünen Link-Unterstrich. */
+main strong { font-weight: 600; }
+main u {
+  text-decoration-thickness: 0.055em;
+  text-underline-offset: 0.16em;
+}
+
 main a {
   color: var(--color-accent);
   text-decoration: none;
