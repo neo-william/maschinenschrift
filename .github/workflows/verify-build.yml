@@ -55,8 +55,10 @@ jobs:
         run: |
           grep -q 'live-preview.js' public/seal/index.html
           grep -q 'live-preview.js' public/de/siegel/index.html
-          grep -q 'id="siegel-preview"' public/seal/index.html
-          grep -q 'id="siegel-preview"' public/de/siegel/index.html
+          # hugo --minify entfernt Attribut-Quotes: id="siegel-preview" -> id=siegel-preview.
+          # Deshalb quoting-agnostisch matchen.
+          grep -qE 'id="?siegel-preview"?' public/seal/index.html
+          grep -qE 'id="?siegel-preview"?' public/de/siegel/index.html
           echo "Both seal pages link the generator script."
 
       - name: Smoke-Test — inaugural entry seal correct
