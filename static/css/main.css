@@ -105,14 +105,14 @@ main h1 {
 main h1 + p { text-indent: 0; }
 main h2 {
   margin-top: 2.75rem; margin-bottom: 1rem;
-  font-weight: 400; font-size: 1rem;
+  font-weight: 600; font-size: 1rem;
   text-transform: uppercase; letter-spacing: 0.18em;
   text-align: center;
 }
 main h2 + p, main h2 + ul, main h2 + ol { text-indent: 0; }
 main h3 {
   margin-top: 2rem; margin-bottom: 0.5rem;
-  font-weight: 400; font-size: 0.9rem;
+  font-weight: 600; font-size: 0.9rem;
   text-transform: uppercase; letter-spacing: 0.12em;
 }
 main ul, main ol { text-align: left; hyphens: manual; }
