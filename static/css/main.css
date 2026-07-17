@@ -40,7 +40,7 @@
   --color-page: #fdfdfb;
   --color-accent: #1e8e4a;
   --color-accent-hover: #1a1a1a;
-  --color-mark: #ffe45c; /* Textmarker-Gelb, nur für ::selection */
+  --color-mark: #f8f251; /* Textmarker-Zitronengelb, nur für ::selection */
 }
 
 /* Markieren wie mit dem Textmarker: die Geste des Lesers auf dem Dokument.
