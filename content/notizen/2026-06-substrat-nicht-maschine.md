@@ -6,7 +6,7 @@ bucket: lineage
 url: /notes/2026-06-substrate-not-machine/
 ---
 
-## The occasion
+## The decision
 
 In the texts of this project, the word *Sprachsubstrat* — language substrate — stands where others say *AI*, *LLM*, or *assistant*. This is **a decision, not a quirk**. It calls for explanation, because the chosen word is unfamiliar and the customary ones are so familiar that their aftertaste scarcely registers.
 

@@ -5,7 +5,7 @@ date: 2026-06-04
 bucket: lineage
 ---
 
-## Anlass
+## Die Entscheidung
 
 In den Texten dieses Projekts steht das Wort *Sprachsubstrat*, wo andere von *KI*, *LLM* oder *Assistent* sprechen. Das ist **eine Entscheidung, keine Marotte**. Sie ist erklärungsbedürftig, weil das gewählte Wort ungewohnt ist und die geläufigen so vertraut, dass ihr Beigeschmack kaum mehr auffällt.
 

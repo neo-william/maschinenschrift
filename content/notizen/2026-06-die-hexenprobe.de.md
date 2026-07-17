@@ -17,7 +17,7 @@ sources:
     note: "Substrat-Detektoren (Pangram, GPTZero) klassifizierten Teile der Enzyklika als maschinell vermittelt; Snopes-Verdict: claim unproven."
 ---
 
-## Anlass
+## Eine Enzyklika und eine Zahl
 
 Im Mai 2026 veröffentlicht Papst Leo XIV. die Enzyklika *Magnifica Humanitas*, das gewichtigste religiöse Dokument des Jahres und eine Verteidigung des Menschen in der Zeit der Sprachmodelle. Wenige Tage nach dem Erscheinen reicht jemand den Text durch einen Substrat-Detektor — ein Werkzeug, das einen Text auf maschinelle Vermittlung scannt. Das Werkzeug meldet: ein erheblicher Teil sei maschinell vermittelt.
 

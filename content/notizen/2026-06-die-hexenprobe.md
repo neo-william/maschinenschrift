@@ -18,7 +18,7 @@ sources:
     note: "Substrate detectors (Pangram, GPTZero) flagged portions of the encyclical as machine-mediated; Snopes verdict: claim unproven."
 ---
 
-## The occasion
+## An encyclical and a number
 
 In May 2026, Pope Leo XIV publishes the encyclical *Magnifica Humanitas* — the year's weightiest religious document and a defense of the human in the age of language models. Days after its release, someone runs the text through a substrate detector — a tool that scans a text for machine mediation. The tool reports: a substantial portion is machine-mediated.
 

@@ -15,7 +15,7 @@ sources:
     note: "Kursreihe der Anthropic Academy; Framework-Dokumentation unter aifluencyframework.org; Materialien CC BY-NC-SA 4.0."
 ---
 
-## Anlass
+## Vier Kompetenzen
 
 2025 veröffentlicht Anthropic — das Unternehmen hinter dem Sprachmodell Claude — gemeinsam mit den Hochschullehrern Rick Dakan und Joseph Feller ein Lehr-Framework unter dem Titel *AI Fluency*. Es beschreibt die Fähigkeit, mit „AI systems" zu arbeiten: „effective, efficient, ethical, and safe". Vier Kompetenzen tragen das Gerüst. *Delegation* — entscheiden, welche Arbeit an die Maschine geht. *Description* — der Maschine die Aufgabe präzise mitteilen. *Discernment* — ihre Ausgaben kritisch beurteilen. *Diligence* — verantwortlich mit dem Ganzen umgehen. Die Materialien stehen frei unter Creative-Commons-Lizenz; das Framework wird an Hochschulen unterrichtet.
 

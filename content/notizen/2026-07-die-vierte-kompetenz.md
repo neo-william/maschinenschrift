@@ -16,7 +16,7 @@ sources:
     note: "Course series on Anthropic Academy; framework documentation at aifluencyframework.org; materials CC BY-NC-SA 4.0."
 ---
 
-## The occasion
+## Four competencies
 
 In 2025, Anthropic — the company behind the language model Claude — publishes a teaching framework titled *AI Fluency*, together with the academics Rick Dakan and Joseph Feller. It describes the ability to work with "AI systems": "effective, efficient, ethical, and safe." Four competencies carry the frame. *Delegation* — deciding which work goes to the machine. *Description* — telling the machine the task with precision. *Discernment* — judging its outputs critically. *Diligence* — handling the whole responsibly. The materials are freely available under a Creative Commons license; the framework is taught at universities.
 
