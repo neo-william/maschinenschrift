@@ -70,5 +70,5 @@
   {{ end }}
 </section>
 
-<script src="/js/live-preview.js" defer></script>
+<script src="/js/live-preview.js?v={{ substr (md5 (readFile "static/js/live-preview.js")) 0 8 }}" defer></script>
 {{ end }}

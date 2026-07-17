@@ -23,7 +23,9 @@
   {{ end }}
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/css/main.css">
+  {{- /* Content-Hash als Cache-Buster: /css/* ist immutable-gecacht (siehe static/_headers),
+         ohne Versionierung erreichen CSS-Aenderungen den Browser nie. */}}
+  <link rel="stylesheet" href="/css/main.css?v={{ substr (md5 (readFile "static/css/main.css")) 0 8 }}">
   {{ with .OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
   {{ end }}
