@@ -67,7 +67,7 @@ Die Selbstdeklaration ist das Gegenteil. Die Autorin sagt selbst, welche Rolle d
 
 Die Hexenprobe lebt vom verborgenen Wesen. Wo das Verborgene ausgesprochen ist, hat sie keinen Boden mehr. Wer deklariert, entwaffnet den Detektor — nicht durch Versteck, sondern durch Antwort. Das ist die Wendung: **Nicht das Schweigen schützt vor der Jagd, sondern das Sagen.**
 
-## Schluss
+## Die einzige Probe
 
 **Maschinenschrift detektiert nicht. Sie deklariert.** Ein Text will gelesen werden, nicht gescannt. Das ist keine Sentimentalität — es ist die einzige Probe, die je etwas über einen Text ausgesagt hat: ihn zu lesen und zu prüfen, ob er trägt.
 

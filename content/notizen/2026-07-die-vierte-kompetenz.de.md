@@ -45,7 +45,7 @@ Die Maschinenschrift-Position ist eine andere: **Am Schreibtisch sitzt kein zwei
 
 Das Framework selbst hält das Bild nicht durch. Die vierte Kompetenz legt die Verantwortung ungeteilt beim Menschen ab: „taking accountability for AI-assisted work". **Ein Partner, dem sich keine Verantwortung übertragen lässt, ist keiner.** Die Diligence dementiert das Vokabular der anderen drei Kompetenzen — und dieses Dementi ist die ehrlichste Stelle des Frameworks. Übrig bleibt, was Maschinenschrift von Anfang an sagt: ein Medium, und ein Mensch, der für das Geschriebene einsteht.
 
-## Schluss
+## Die Schnittstelle
 
 *AI Fluency* ordnet den Prozess: wie delegiert, beschrieben, beurteilt wird, während geschrieben wird. Maschinenschrift verzeichnet die Spur: was vom Substrat im fertigen Werk steht, lesbar für alle, die es wissen müssen. Das eine richtet sich an die Schreibende, das andere an die Leserin. Beides ist vereinbar. Die Schnittstelle ist die vierte Kompetenz.
 

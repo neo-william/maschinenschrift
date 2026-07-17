@@ -46,7 +46,7 @@ The Maschinenschrift position is a different one: **no second thinker sits at th
 
 The framework itself does not sustain the image. The fourth competency places responsibility undividedly with the human: "taking accountability for AI-assisted work." **A partner to whom no responsibility can be transferred is none.** Diligence disavows the vocabulary of the other three competencies — and this disavowal is the framework's most honest moment. What remains is what Maschinenschrift has said from the start: a medium, and a human who stands behind what is written.
 
-## Closing
+## The interface
 
 *AI Fluency* orders the process: how to delegate, describe, and judge while the writing happens. Maschinenschrift records the trace: what of the substrate stands in the finished work, legible to everyone who needs to know. One addresses the writer, the other the reader. The two are compatible. The interface is the fourth competency.
 

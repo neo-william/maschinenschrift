@@ -68,7 +68,7 @@ Self-declaration is the opposite. The author says herself what role the *Sprachs
 
 The witch trial lives on the hidden being. Where the hidden has been spoken, the trial has no ground left. Whoever declares disarms the detector — not by concealment, but by answer. That is the turn: **not silence protects against the hunt, but speech.**
 
-## Closing
+## The only trial
 
 **Maschinenschrift does not detect. It declares.** A text wants to be read, not scanned. That is no sentiment — it is the only trial that has ever said anything about a text: to read it and test whether it carries.
 
