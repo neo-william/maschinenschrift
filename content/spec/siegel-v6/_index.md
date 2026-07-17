@@ -106,7 +106,7 @@ A Python reference implementation that adheres to this spec exactly lives in the
 
 ## Version history
 
-- **v6** (2026-05-24): Axis vocabulary changed from F/S/V (Form, Substance, Verification) to D/G/K (Diktion, *Geist*, Correspondence). Binary K-axis values renamed from `verified`/`unverified` to `belegt`/`ausstehend`. Geometry unchanged. *Geist* is untranslated in English, analogous to *Maschinenschrift*. The shift reflects the move from a verification-language to a documentation-language ([ADR 0008](https://github.com/maschinenschrift/maschinenschrift-site)).
+- **v6** (2026-05-24): Axis vocabulary changed from F/S/V (Form, Substance, Verification) to D/G/K (Diktion, *Geist*, Correspondence). Binary K-axis values renamed from `verified`/`unverified` to `belegt`/`ausstehend`. Geometry unchanged. *Geist* is untranslated in English, analogous to *Maschinenschrift*. The shift reflects the move from a verification-language to a documentation-language (ADR 0008).
 - **v5** (2026-05-21): Verification marker changed from centered full-stroke (x=36..92, height 3.4) to right-aligned half-stroke (x=70..92, height 2.4). Axis vocabulary harmonized to F/S/V. Frozen historical record at [/spec/siegel-v5/](/spec/siegel-v5/).
 - **v4**: First version with full axis geometry. Verification marker as centered full-stroke. Axis vocabulary K/T/R — superseded by Foundation §7.
 - **v1–v3**: Predecessors, discarded by v4.

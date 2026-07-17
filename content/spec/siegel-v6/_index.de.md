@@ -106,7 +106,7 @@ Eine Python-Referenz-Implementation, die diese Spec exakt einhält, liegt im Rep
 
 ## Versionshistorie
 
-- **v6** (2026-05-24): Achsen-Vokabular von F/S/V (Form, Substanz, Verifikation) auf D/G/K (Diktion, *Geist*, Korrespondenz) umgestellt. Binäre K-Achse: Werte `verified`/`unverified` → `belegt`/`ausstehend`. Geometrie unverändert. *Geist* bleibt im Englischen unübersetzt, analog zu *Maschinenschrift*. Die Umstellung reflektiert die Verschiebung von Verifikations-Sprache zu Dokumentations-Sprache ([ADR 0008](https://github.com/maschinenschrift/maschinenschrift-site)).
+- **v6** (2026-05-24): Achsen-Vokabular von F/S/V (Form, Substanz, Verifikation) auf D/G/K (Diktion, *Geist*, Korrespondenz) umgestellt. Binäre K-Achse: Werte `verified`/`unverified` → `belegt`/`ausstehend`. Geometrie unverändert. *Geist* bleibt im Englischen unübersetzt, analog zu *Maschinenschrift*. Die Umstellung reflektiert die Verschiebung von Verifikations-Sprache zu Dokumentations-Sprache (ADR 0008).
 - **v5** (2026-05-21): Verifikations-Marker geändert von zentriertem Vollstrich (x=36..92, Höhe 3.4) auf rechtsbündigen Halbstrich (x=70..92, Höhe 2.4). Achsen-Vokabular auf F/S/V harmonisiert. Eingefrorener historischer Stand unter [/de/spec/siegel-v5/](/de/spec/siegel-v5/).
 - **v4**: Erste Fassung mit voller Achsen-Geometrie. Verifikations-Marker als zentrierter Vollstrich. Achsen-Vokabular K/T/R — abgelöst durch Foundation §7.
 - **v1–v3**: Vorgänger, durch v4 verworfen.
