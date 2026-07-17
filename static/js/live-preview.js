@@ -343,6 +343,9 @@
           document.body.appendChild(a);
           a.click();
           document.body.removeChild(a);
+        }).catch(() => {
+          // Rasterisierung fehlgeschlagen: SVG-Download als Rueckfallebene.
+          ctrls.dlSvg.click();
         });
       };
 
@@ -354,20 +357,33 @@
     }
 
     function rasterize(svgText, widthPx) {
-      return new Promise((resolve) => {
-        const svgBlob = new Blob([svgText], { type: 'image/svg+xml' });
+      return new Promise((resolve, reject) => {
+        const ratio = 100 / 130;
+        const heightPx = Math.round(widthPx * ratio);
+        // Explizite Pixelmasse ins SVG schreiben: ohne intrinsische Groesse
+        // laedt Firefox das <img> mit naturalWidth 0 und drawImage zeichnet leer.
+        const sized = svgText.replace(
+          '<svg ',
+          `<svg width="${widthPx}" height="${heightPx}" `,
+        );
+        const svgBlob = new Blob([sized], { type: 'image/svg+xml' });
         const url = URL.createObjectURL(svgBlob);
         const img = new Image();
         img.onload = function () {
-          const ratio = 100 / 130;
-          const heightPx = Math.round(widthPx * ratio);
           const canvas = document.createElement('canvas');
           canvas.width = widthPx;
           canvas.height = heightPx;
           const ctx = canvas.getContext('2d');
           ctx.drawImage(img, 0, 0, widthPx, heightPx);
           URL.revokeObjectURL(url);
-          canvas.toBlob((blob) => resolve(URL.createObjectURL(blob)), 'image/png');
+          canvas.toBlob((blob) => {
+            if (blob) resolve(URL.createObjectURL(blob));
+            else reject(new Error('toBlob returned null'));
+          }, 'image/png');
+        };
+        img.onerror = function () {
+          URL.revokeObjectURL(url);
+          reject(new Error('SVG rasterization failed to load'));
         };
         img.src = url;
       });
