@@ -17,13 +17,15 @@ sources:
 
 ## Vier Kompetenzen
 
-2025 veröffentlicht Anthropic — das Unternehmen hinter dem Sprachmodell Claude — gemeinsam mit den Hochschullehrern Rick Dakan und Joseph Feller ein Lehr-Framework unter dem Titel *AI Fluency*. Es beschreibt die Fähigkeit, mit „AI systems" zu arbeiten: „effective, efficient, ethical, and safe". Vier Kompetenzen tragen das Gerüst. *Delegation* — entscheiden, welche Arbeit an die Maschine geht. *Description* — der Maschine die Aufgabe präzise mitteilen. *Discernment* — ihre Ausgaben kritisch beurteilen. *Diligence* — verantwortlich mit dem Ganzen umgehen. Die Materialien stehen frei unter Creative-Commons-Lizenz; das Framework wird an Hochschulen unterrichtet.
+2025 veröffentlicht Anthropic — das Unternehmen hinter dem Sprachmodell Claude — gemeinsam mit den Hochschullehrern Rick Dakan und Joseph Feller ein Lehr-Framework unter dem Titel *AI Fluency*. Es beschreibt die Fähigkeit, mit „AI systems" zu arbeiten: „effective, efficient, ethical, and safe". Die Materialien stehen frei unter Creative-Commons-Lizenz; das Framework wird an Hochschulen unterrichtet.
 
-Die vierte Kompetenz hat drei Teile. *Transparency Diligence*: **„Being honest about AI's role in your work with everyone who needs to know."** *Deployment Diligence*: „Taking responsibility for verifying and vouching for the outputs you use or share." *Creation Diligence*: Sorgfalt bei der Wahl der Systeme selbst.
+Vier Kompetenzen tragen das Gerüst. Drei davon ordnen die Arbeit mit der Maschine: *Delegation* — entscheiden, welche Arbeit an sie geht. *Description* — ihr die Aufgabe präzise mitteilen. *Discernment* — ihre Ausgaben kritisch beurteilen. Die vierte richtet sich auf etwas anderes: *Diligence* — einstehen für das, was so entsteht.
+
+Das Framework gliedert diese vierte Kompetenz in drei Teile. *Transparency Diligence*: **„Being honest about AI's role in your work with everyone who needs to know."** *Deployment Diligence*: „Taking responsibility for verifying and vouching for the outputs you use or share." *Creation Diligence*: Sorgfalt bei der Wahl der Systeme selbst. Von dieser vierten Kompetenz handelt die Notiz: von der Bestätigung, die in ihr liegt, und von dem einen Wort des Frameworks, das vor ihr nicht besteht.
 
 ## Die Bestätigung
 
-Der Hersteller des Sprachsubstrats — das, was ein Sprachmodell an statistisch wahrscheinlicher Formulierung bereitstellt — erklärt die Ehrlichkeit über dessen Rolle zur Kompetenz. Das ist dieselbe Diagnose, auf der Maschinenschrift gebaut ist, formuliert von der anderen Seite des Schreibtischs: **Die Auskunft über die Rolle der Maschine gehört zum Schreiben selbst.** Sie ist keine Beichte und keine Schwäche. Sie ist Teil des Handwerks.
+Der Hersteller des Sprachsubstrats — das, was ein Sprachmodell an statistisch wahrscheinlicher Formulierung bereitstellt — erklärt die Ehrlichkeit über dessen Rolle zur Kompetenz. Das ist dieselbe Diagnose, auf der Maschinenschrift gebaut ist, formuliert von der anderen Seite des Schreibtischs: nicht von einer Autorin, die mit dem Substrat schreibt, sondern von dem Unternehmen, das es herstellt. **Die Auskunft über die Rolle der Maschine gehört zum Schreiben selbst.** Sie ist keine Beichte und keine Schwäche. Sie ist Teil des Handwerks.
 
 Auch der zweite Teil konvergiert. „Vouching" — sich verbürgen für das, was man teilt — ist der Doppelcharakter der Selbstdeklaration: Wer deklariert, gibt eine Auskunft und setzt zugleich die eigene Reputation als Pfand dafür, dass die Auskunft stimmt. Die Deklaration ist Aussage und Verbürgung in einem Akt.
 
@@ -31,23 +33,23 @@ Der dritte Teil — die Wahl der Systeme — liegt außerhalb dessen, was Maschi
 
 ## Die fehlende Form
 
-**Eine Kompetenz ist eine Eigenschaft der Person. Eine Auskunft ist eine Eigenschaft des Werks.** Zwischen beiden liegt die Form.
+**Eine Kompetenz ist eine Eigenschaft der Person. Eine Auskunft ist eine Eigenschaft des Werks.** Das Framework schult die Person; das Werk löst sich von ihr — es wird verkauft, verliehen, weitergereicht. Was fehlt, ist die Form, in der aus der Ehrlichkeit der Autorin eine Auskunft des Werks wird.
 
-„Everyone who needs to know" — bei einem Werk der Literatur ist das nicht die Kollegin im Projekt und nicht der Auftraggeber. Es ist die Leserin, auch die in dreißig Jahren, die das Buch antiquarisch findet und wissen will, wie es gemacht wurde. Für sie genügt die gute Absicht der Autorin nicht. Sie braucht <u>eine Notation, die am Werk bleibt: benennbar, vergleichbar, haltbar</u>.
+„Everyone who needs to know" — bei einem Werk der Literatur ist das nicht die Kollegin im Projekt und nicht der Auftraggeber. Es ist die Leserin, auch die in dreißig Jahren, die das Buch antiquarisch findet und wissen will, wie es gemacht wurde. Die Autorin ist dann nicht mehr zu befragen, und ihre gute Absicht genügt nicht. Was genügt, ist <u>eine Notation, die am Werk bleibt: benennbar, vergleichbar, haltbar</u>.
 
 Das ist die Stelle, an der Maschinenschrift ansetzt. Das Siegel gibt der geforderten Ehrlichkeit eine Form: drei Achsen — *Diktion* (wie viel der sprachlichen Oberfläche das Substrat geliefert hat), *Geist* (wie viel der Ideen, Argumente, Strukturen) und *Korrespondenz* (ob das Werk bibliographisch belegt ist). Das Framework verlangt die Auskunft. Das Siegel ist eine Sprache, in der sie gegeben werden kann — und die bleibt.
 
 ## Die Differenz
 
-Ein Wort im Framework trägt nicht. Der mittlere der drei Interaktionsmodi, *Augmentation*, beschreibt Mensch und Maschine als „thinking partners", die zusammenarbeiten.
+Ein Wort im Framework trägt nicht. Der mittlere seiner drei Interaktionsmodi, *Augmentation*, beschreibt Mensch und Maschine als „thinking partners", die zusammenarbeiten.
 
-Die Maschinenschrift-Position ist eine andere: **Am Schreibtisch sitzt kein zweiter Denkender.** Das Substrat hat keinen Standpunkt, keine Absicht, keinen Willen zur Aussage — es liefert die statistisch wahrscheinliche Fortsetzung dessen, was je geschrieben wurde. Es ist Medium, nicht Partner; näher an der Druckerpresse als am Lektorat. Für ein Lehr-Framework ist das Partner-Bild verständlich. Es senkt die Schwelle, es spricht die Sprache derer, die den Umgang erst lernen. Aber es hat Folgen: Wer im Partner-Rahmen schreibt, verteilt die Autorschaft — und mit ihr, unausgesprochen, die Verantwortung.
+Die Maschinenschrift-Position ist eine andere: **Am Schreibtisch sitzt kein zweiter Denkender.** Das Substrat hat keinen Standpunkt, keine Absicht, keinen Willen zur Aussage — es liefert die statistisch wahrscheinliche Fortsetzung dessen, was je geschrieben wurde. Es ist Medium, nicht Partner; näher an der Druckerpresse als am Lektorat. Für ein Lehr-Framework ist das Partner-Bild verständlich: Es senkt die Schwelle, es spricht die Sprache derer, die den Umgang erst lernen. Aber es hat einen Preis. Wer im Partner-Rahmen schreibt, verteilt die Autorschaft — und mit ihr, unausgesprochen, die Verantwortung.
 
-Das Framework selbst hält das Bild nicht durch. Die vierte Kompetenz legt die Verantwortung ungeteilt beim Menschen ab: „taking accountability for AI-assisted work". **Ein Partner, dem sich keine Verantwortung übertragen lässt, ist keiner.** Die Diligence dementiert das Vokabular der anderen drei Kompetenzen — und dieses Dementi ist die ehrlichste Stelle des Frameworks. Übrig bleibt, was Maschinenschrift von Anfang an sagt: ein Medium, und ein Mensch, der für das Geschriebene einsteht.
+Das Framework selbst hält das Bild nicht durch. Die vierte Kompetenz weist die Verantwortung ungeteilt dem Menschen zu: „taking accountability for AI-assisted work". **Ein Partner, dem sich keine Verantwortung übertragen lässt, ist keiner.** Die Diligence dementiert das Vokabular der ersten drei Kompetenzen — und dieses Dementi ist die ehrlichste Stelle des Frameworks. Übrig bleibt, was Maschinenschrift von Anfang an sagt: ein Medium, und ein Mensch, der für das Geschriebene einsteht.
 
 ## Die Schnittstelle
 
-*AI Fluency* ordnet den Prozess: wie delegiert, beschrieben, beurteilt wird, während geschrieben wird. Maschinenschrift verzeichnet die Spur: was vom Substrat im fertigen Werk steht, lesbar für alle, die es wissen müssen. Das eine richtet sich an die Schreibende, das andere an die Leserin. Beides ist vereinbar. Die Schnittstelle ist die vierte Kompetenz.
+*AI Fluency* ordnet den Prozess: wie delegiert, beschrieben, beurteilt wird, während geschrieben wird — die ersten drei Kompetenzen, gerichtet an die Schreibende. Maschinenschrift verzeichnet die Spur: was vom Substrat im fertigen Werk steht, lesbar für alle, die es wissen müssen — gerichtet an die Leserin. Beides ist vereinbar. Die Schnittstelle ist die vierte Kompetenz.
 
 Sie ist zugleich die Stelle, an der das Framework auf etwas außerhalb seiner selbst angewiesen ist. **Ehrlichkeit über die Rolle der Maschine braucht eine Form, in der sie gesagt werden kann.** Maschinenschrift ist eine solche Form.
 
