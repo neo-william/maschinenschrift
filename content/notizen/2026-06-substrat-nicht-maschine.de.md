@@ -39,7 +39,7 @@ Es ist das lateinische Wort für *Unterlage*, *das Darunterliegende*. In der Che
 
 Drei Dinge gewinnt das Wort, die *KI* und *LLM* nicht liefern.
 
-**Erstens.** Es vermeidet die Subjekt-Unterstellung in der Wurzel, nicht erst auf der Höflichkeits-Ebene. Ein Substrat *liefert*, *trägt*, *steht bereit*. Es *will* nichts, *sagt* nichts. Die Verantwortung für das, was am Ende dasteht, bleibt bei dem, der schreibt.
+**Erstens.** Es vermeidet die Subjekt-Unterstellung in der Wurzel, nicht erst auf der Höflichkeits-Ebene. Ein Substrat *liefert*, *trägt*, *steht bereit*. Es *will* nichts, *sagt* nichts. Die Verantwortung für das, was am Ende dasteht, bleibt bei der, die schreibt.
 
 **Zweitens.** Es macht eine Reihe sichtbar. *Schrifttechnik* — Druckpresse, Schreibmaschine, jetzt Substrat — ist eine Linie, in der das Substrat ein neues, nicht aber ein erstes Glied ist. Jede dieser Stationen hat verändert, *wie* Texte entstehen, ohne den schreibenden Menschen abzuschaffen. Das Substrat wird **nicht zur Ausnahme, sondern zum nächsten Kapitel**.
 

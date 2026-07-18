@@ -17,7 +17,7 @@ Das Siegel dokumentiert drei Achsen der Entstehung eines Textes:
 - **Mittlere Zeile — Substanz (S).** Null bis fünf Punkte. Grad der Substratvermittlung am Inhalt selbst.
 - **Untere Zeile — Verifikation (V).** Binär. Kein Strich: bibliographisch verifiziert. Halbstrich rechts: Verifikation steht aus.
 
-Punkte bedeuten Substratvermittlung. Die Abwesenheit bedeutet den Autor allein. Der Halbstrich ist Marker für ausstehende Verifikation, nicht Wertung.
+Punkte bedeuten Substratvermittlung. Die Abwesenheit bedeutet die Autorin allein. Der Halbstrich ist Marker für ausstehende Verifikation, nicht Wertung.
 
 ## Parameter
 

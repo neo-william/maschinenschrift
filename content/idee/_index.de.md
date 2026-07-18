@@ -17,7 +17,7 @@ Wir nennen das, was die Maschine liefert, **Sprachsubstrat** — ein Wort, das i
 
 Das Substrat hat keine Absicht und keinen Standpunkt. Es liefert die statistisch wahrscheinliche Formulierung — die Verdichtung aller Texte, auf denen es trainiert wurde, zu einer Oberfläche, von der sich abrufen lässt, was einem Prompt nahesteht. Es ist Echo, nicht Stimme.
 
-In sozialer Hinsicht trägt das Substrat die Form einer **aggregierten Anonymität** — keine identifizierbare andere Stimme, sondern die statistische Summe aller Stimmen im Trainingskorpus. Der Leser kann nicht mehr fragen, *wer* geschrieben hat, und eine einzelne Antwort erwarten — solange er nicht weiß, dass durch das Substrat geschrieben wurde.
+In sozialer Hinsicht trägt das Substrat die Form einer **aggregierten Anonymität** — keine identifizierbare andere Stimme, sondern die statistische Summe aller Stimmen im Trainingskorpus. Die Leserin kann nicht mehr fragen, *wer* geschrieben hat, und eine einzelne Antwort erwarten — solange sie nicht weiß, dass durch das Substrat geschrieben wurde.
 
 Wer durch das Substrat schreibt, schreibt **vermittelt** — wie alles Schreiben durch Schrifttechniken vermittelt ist, nur dichter und auf einer Stufe, die früheren Vermittlungen unbekannt war. Der Akt heißt *Vermittlung*, das Ergebnis ist *maschinell vermittelte Schrift*.
 

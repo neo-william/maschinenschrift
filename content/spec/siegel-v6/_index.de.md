@@ -13,7 +13,7 @@ Das Siegel dokumentiert drei Achsen der Entstehung eines Textes:
 - **Mittlere Zeile — Geist (G).** Null bis fünf Punkte. Grad der Substratvermittlung am Geist des Werks — Inhalt, Ideen, Struktur. *Geist* bleibt im Englischen unübersetzt, analog zu *Maschinenschrift*. Diagnose-Formel: *Geist aus der Maschine* — wie viel von dem, was als Geist des Werks erscheint, wurde aus der Maschine importiert?
 - **Untere Zeile — Korrespondenz (K).** Binär. Kein Strich: bibliographische Korrespondenz belegt. Halbstrich rechts: Korrespondenz steht aus.
 
-Punkte bedeuten Substratvermittlung. Die Abwesenheit bedeutet den Autor allein. Der Halbstrich ist Marker für ausstehende bibliographische Korrespondenz, nicht Wertung des Werks.
+Punkte bedeuten Substratvermittlung. Die Abwesenheit bedeutet die Autorin allein. Der Halbstrich ist Marker für ausstehende bibliographische Korrespondenz, nicht Wertung des Werks.
 
 ## Parameter
 

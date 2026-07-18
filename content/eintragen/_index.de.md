@@ -30,7 +30,7 @@ Was **nicht** geprüft wird: literarische Qualität, kommerzieller Status, die W
 - Keine Qualitätsaussage.
 - Keine Verlagsbeziehung.
 - Kein Ausschluss aus anderen Verzeichnissen.
-- Keine Festlegung für künftige Werke desselben Autors.
+- Keine Festlegung für künftige Werke derselben Autorin.
 
 ## Änderungen und Rückzug
 

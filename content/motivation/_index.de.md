@@ -5,9 +5,9 @@ description: Ein Transparenz-Standard für Literatur, die mit Sprachmodellen ges
 
 ## Das Problem.
 
-Viele Autorinnen und Autoren schreiben mit Hilfe von Sprachmodellen. Sie nutzen die Maschine zur Recherche, zur Glättung, zum Brainstorming, manchmal für eine Passage. Die meisten verschweigen es. Eine offene Auskunft kann einen Vertrag kosten, einen Preis, einen Ruf.
+Viele Autorinnen schreiben mit Hilfe von Sprachmodellen. Sie nutzen die Maschine zur Recherche, zur Glättung, zum Brainstorming, manchmal für eine Passage. Die meisten verschweigen es. Eine offene Auskunft kann einen Vertrag kosten, einen Preis, einen Ruf.
 
-Also weiß niemand, wie viel sprachmodell-gestütztes Schreiben längst in den Regalen steht. Die Zahl ist dunkel, und an die Stelle der fehlenden Auskunft tritt der Verdacht. Leser werden zu Ermittlern, Autorinnen zu Verdächtigen. Erkennungs-Software verspricht, die Frage zu klären, und tut es nicht — sie trifft die Falschen, besonders Stimmen, die nicht in der Mitte der Kurve sitzen.
+Also weiß niemand, wie viel sprachmodell-gestütztes Schreiben längst in den Regalen steht. Die Zahl ist dunkel, und an die Stelle der fehlenden Auskunft tritt der Verdacht. Leserinnen werden zu Ermittlerinnen, Autorinnen zu Verdächtigen. Erkennungs-Software verspricht, die Frage zu klären, und tut es nicht — sie trifft die Falschen, besonders Stimmen, die nicht in der Mitte der Kurve sitzen.
 
 Unter diesen Bedingungen gewinnt das Lügen. Die ehrliche Autorin wird bestraft. Die vorsichtige Lügnerin kommt durch. Die Lesenden können keinem Signal mehr trauen.
 
