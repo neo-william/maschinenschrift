@@ -8,14 +8,14 @@
   {{ if eq .Section "werke" }}
     <ul class="werke-list">
       {{ range .Pages }}
-        {{ $z := .Params.zeichen }}
+        {{ $z := partial "zeichen.html" .Params.zeichen }}
         <li>
           <a href="{{ .RelPermalink }}">
             <span class="werke-list-glyph">
               {{ partial "siegel.html" (dict
-                  "diktion" $z.diktion
+                  "wortlaut" $z.wortlaut
                   "geist" $z.geist
-                  "korrespondenz" $z.korrespondenz
+                  "beleg" $z.beleg
                   "class" "siegel-small"
               ) }}
             </span>

@@ -1,22 +1,29 @@
 """Maschinenschrift-Siegel Generator (Python reference implementation).
 
-Quelle: ../_quellen/maschinenschrift-siegel-prompt-v6.md (kanonisch, seit 2026-05-24).
+Quelle: ../_quellen/maschinenschrift-siegel-prompt-v6.md (Geometrie, unveraendert).
 
-Erzeugt SVG-Strings nach Siegel-Spec v6. Geometrie unveraendert gegenueber v5;
-geaendert sind nur die Achsen-Namen (form/substance/verification ->
-diktion/geist/korrespondenz) und die Werte der binaeren Achse
-(verified/unverified -> belegt/ausstehend). Keine externen Abhaengigkeiten
-ausser der Python-Standardbibliothek. Funktioniert in Python 3.9+.
+Erzeugt SVG-Strings nach Siegel-Spec v7 (seit 2026-08-02). Die Geometrie ist
+seit v5 unveraendert; geaendert wurden zweimal nur die Achsen-Namen:
+
+    v5 -> v6  form/substance/verification -> diktion/geist/korrespondenz
+              verified/unverified         -> belegt/ausstehend
+    v6 -> v7  diktion/korrespondenz       -> wortlaut/beleg   (geist bleibt)
+              Notation D/G/K              -> W/G/B
+
+Keine externen Abhaengigkeiten ausser der Python-Standardbibliothek.
+Funktioniert in Python 3.9+.
 
 Verwendung als Modul:
     from siegel import build_seal
-    svg = build_seal(diktion=4, geist=2, korrespondenz='ausstehend')
+    svg = build_seal(wortlaut=4, geist=2, beleg='ausstehend')
 
 Verwendung als CLI:
     python siegel.py 4 2 ausstehend > seal.svg
 
-Backwards-Compat: die alte Signatur (form, substance, verification) wird via
-build_seal_v5() Alias weiterhin unterstuetzt, gibt aber DeprecationWarning aus.
+Backwards-Compat: die aelteren Signaturen werden ueber build_seal_v6()
+(diktion/geist/korrespondenz) und build_seal_v5() (form/substance/
+verification) weiterhin unterstuetzt, geben aber DeprecationWarning aus.
+Die numerischen Werte sind in allen drei Fassungen identisch.
 """
 
 from __future__ import annotations
@@ -25,7 +32,10 @@ import sys
 import warnings
 from typing import Literal
 
-KorrespondenzState = Literal['belegt', 'ausstehend']
+BelegState = Literal['belegt', 'ausstehend']
+
+# Deprecated alias, seit Spec v7. Nur fuer Fremdcode, der den v6-Namen importiert.
+KorrespondenzState = BelegState
 
 SLOT_CENTERS_X = (40, 52, 64, 76, 88)
 DOT_RADIUS = 2.2
@@ -37,9 +47,9 @@ BRACKET_LEFT_SERIF_END_X = 24
 BRACKET_RIGHT_VERT_X = 114
 BRACKET_RIGHT_SERIF_START_X = 106
 
-ROW_DIKTION_Y = 36
+ROW_WORTLAUT_Y = 36
 ROW_GEIST_Y = 50
-ROW_KORRESPONDENZ_Y = 64
+ROW_BELEG_Y = 64
 
 PENDING_BAR_START_X = 70
 PENDING_BAR_END_X = 92
@@ -92,11 +102,11 @@ def build_dot_row(num_dots: int, y_center: float) -> str:
     )
 
 
-def build_korrespondenz_row(state: KorrespondenzState, y_center: float) -> str:
+def build_beleg_row(state: BelegState, y_center: float) -> str:
     if state == 'belegt':
         return ''
     if state != 'ausstehend':
-        raise ValueError(f"korrespondenz must be 'belegt' or 'ausstehend', got {state!r}")
+        raise ValueError(f"beleg must be 'belegt' or 'ausstehend', got {state!r}")
     bar_width = PENDING_BAR_END_X - PENDING_BAR_START_X
     return _rect(
         PENDING_BAR_START_X,
@@ -106,10 +116,10 @@ def build_korrespondenz_row(state: KorrespondenzState, y_center: float) -> str:
     )
 
 
-def build_entry_label(entry_id: str, korrespondenz: KorrespondenzState) -> str:
+def build_entry_label(entry_id: str, beleg: BelegState) -> str:
     if not entry_id:
         return ''
-    if korrespondenz == 'ausstehend' and not entry_id.endswith('†'):
+    if beleg == 'ausstehend' and not entry_id.endswith('†'):
         label = entry_id + '†'
     else:
         label = entry_id
@@ -121,27 +131,27 @@ def build_entry_label(entry_id: str, korrespondenz: KorrespondenzState) -> str:
 
 
 def build_seal(
-    diktion: int,
+    wortlaut: int,
     geist: int,
-    korrespondenz: KorrespondenzState,
+    beleg: BelegState,
     stroke_width: float = DEFAULT_STROKE_WIDTH,
     entry_id: str = '',
 ) -> str:
-    """Render Siegel als SVG-String nach Spec v6 (D/G/K, seit 2026-05-24).
+    """Render Siegel als SVG-String nach Spec v7 (W/G/B, seit 2026-08-02).
 
-    diktion: 0..5 — Substrat-Beitrag zur sprachlichen Oberflaeche.
+    wortlaut: 0..5 — Substrat-Beitrag zur sprachlichen Oberflaeche.
     geist: 0..5 — Substrat-Beitrag zum Geist des Werks.
-    korrespondenz: 'belegt' oder 'ausstehend'.
+    beleg: 'belegt' oder 'ausstehend'.
     entry_id: optionale Registernummer; unter Pfad A meist leer, mit
         Genese-Register-Aktivierung (ADR 0009) wieder aktiv.
     """
     view_box_height = 110 if entry_id else 100
     inner = (
         build_brackets(stroke_width)
-        + build_dot_row(diktion, ROW_DIKTION_Y)
+        + build_dot_row(wortlaut, ROW_WORTLAUT_Y)
         + build_dot_row(geist, ROW_GEIST_Y)
-        + build_korrespondenz_row(korrespondenz, ROW_KORRESPONDENZ_Y)
-        + build_entry_label(entry_id, korrespondenz)
+        + build_beleg_row(beleg, ROW_BELEG_Y)
+        + build_entry_label(entry_id, beleg)
     )
     return (
         f'<svg viewBox="0 0 130 {view_box_height}" '
@@ -149,36 +159,47 @@ def build_seal(
     )
 
 
-# Backwards-compat shim. Aufrufstellen sollten zur v6-API migrieren.
-def build_seal_v5(form, substance, verification, **kwargs):
-    """DEPRECATED. v5-API mit form/substance/verification. Auf build_seal() umstellen."""
+# Backwards-compat shims. Aufrufstellen sollten zur v7-API migrieren.
+def build_seal_v6(diktion, geist, korrespondenz, **kwargs):
+    """DEPRECATED. v6-API mit diktion/geist/korrespondenz. Auf build_seal() umstellen."""
     warnings.warn(
-        'build_seal_v5() ist veraltet. Nutze build_seal(diktion, geist, korrespondenz). '
-        'Mapping: form->diktion, substance->geist, verified->belegt, unverified->ausstehend.',
+        'build_seal_v6() ist veraltet. Nutze build_seal(wortlaut, geist, beleg). '
+        'Mapping: diktion->wortlaut, korrespondenz->beleg. Werte unveraendert.',
         DeprecationWarning,
         stacklevel=2,
     )
-    korrespondenz = 'belegt' if verification == 'verified' else 'ausstehend'
-    return build_seal(form, substance, korrespondenz, **kwargs)
+    return build_seal(diktion, geist, korrespondenz, **kwargs)
+
+
+def build_seal_v5(form, substance, verification, **kwargs):
+    """DEPRECATED. v5-API mit form/substance/verification. Auf build_seal() umstellen."""
+    warnings.warn(
+        'build_seal_v5() ist veraltet. Nutze build_seal(wortlaut, geist, beleg). '
+        'Mapping: form->wortlaut, substance->geist, verified->belegt, unverified->ausstehend.',
+        DeprecationWarning,
+        stacklevel=2,
+    )
+    beleg = 'belegt' if verification == 'verified' else 'ausstehend'
+    return build_seal(form, substance, beleg, **kwargs)
 
 
 def main(argv: list[str]) -> int:
     if len(argv) < 4 or len(argv) > 6:
         print(
-            'Usage: python siegel.py <diktion 0-5> <geist 0-5> <belegt|ausstehend> '
+            'Usage: python siegel.py <wortlaut 0-5> <geist 0-5> <belegt|ausstehend> '
             '[stroke_width=1.8] [entry_id]',
             file=sys.stderr,
         )
         return 2
-    diktion = int(argv[1])
+    wortlaut = int(argv[1])
     geist = int(argv[2])
-    korrespondenz = argv[3]
-    if korrespondenz not in ('belegt', 'ausstehend'):
-        print(f'korrespondenz must be belegt|ausstehend, got {korrespondenz!r}', file=sys.stderr)
+    beleg = argv[3]
+    if beleg not in ('belegt', 'ausstehend'):
+        print(f'beleg must be belegt|ausstehend, got {beleg!r}', file=sys.stderr)
         return 2
     stroke_width = float(argv[4]) if len(argv) >= 5 else DEFAULT_STROKE_WIDTH
     entry_id = argv[5] if len(argv) >= 6 else ''
-    svg = build_seal(diktion, geist, korrespondenz, stroke_width=stroke_width, entry_id=entry_id)
+    svg = build_seal(wortlaut, geist, beleg, stroke_width=stroke_width, entry_id=entry_id)
     sys.stdout.write(svg + '\n')
     return 0
 

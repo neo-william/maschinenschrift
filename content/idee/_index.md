@@ -28,13 +28,13 @@ The seal is the notation in which a work declares its mediation. It consists of 
 
 Three axes carry the statement:
 
-- **Diction** (D) — how much the substrate contributed to the linguistic surface. Idiom, sentence flow, stylistic register. Scale 0–5.
+- **Wortlaut** (W) — *wording*; how much the substrate contributed to the linguistic surface. Idiom, sentence flow, stylistic register. Scale 0–5.
 - ***Geist*** (G) — German for *spirit* in the sense of Hegel and *Geisteswissenschaften*; how much the substrate contributed to the work's *Geist*. Ideas, arguments, structural decisions, content. Scale 0–5.
-- **Correspondence** (K) — whether the work is documented in the bibliographic world. Binary: *belegt* (documented) or *ausstehend* (pending).
+- **Beleg** (B) — the *record*; whether the work is documented in the bibliographic world. Binary: *belegt* (documented) or *ausstehend* (pending).
 
 An **empty seal** `[ ]` is the default position: the author was alone, no substrate involved. Dots count what was imported — not what was achieved. The axes measure the machine's contribution, not the human's. This polarity is the institution's foundational decision. The writing human is the unmarked default.
 
-Correspondence stands in a logic of its own. Where Diction and *Geist* measure mediation, Correspondence checks a relation: whether the work the declaration refers to stands in the bibliographic world — findable, datable, identifiable. As long as this is not confirmed, the seal carries a **half-stroke** on the right of the lower row — marker for *ausstehend*. The axis is no verdict; it is the narrow point at which Maschinenschrift binds itself, in a controlled way, back to the world.
+*Beleg* stands in a logic of its own. Where *Wortlaut* and *Geist* measure mediation, *Beleg* checks a relation: whether the work the declaration refers to stands in the bibliographic world — findable, datable, identifiable. As long as this is not confirmed, the seal carries a **half-stroke** on the right of the lower row — marker for *ausstehend*. The axis is no verdict; it is the narrow point at which Maschinenschrift binds itself, in a controlled way, back to the world.
 
 ## Geist aus der Maschine
 
@@ -50,7 +50,7 @@ Wording and meaning were always scarce. Whoever could produce correct, idiomatic
 
 At this level the substrate lacks something, and it is not understanding. It enters into no commitment. It asserts nothing, for to assert is to expose oneself to accountability, and it has nothing to lose. What accrues without this act is not speech but material — language waiting on someone else's performance. Hence the word *substrate*: a substrate is that on which someone else works.
 
-Hence also the number three. Diction counts what was imported at the linguistic surface, *Geist* what was added in ideas and structure, Correspondence whether the work is documented in the world. What someone stands behind is not counted, for it cannot be imported. Standing behind the work is not a fourth axis; it is the act the seal performs. Whoever sets it declares not what was meant, but who answers for what.
+Hence also the number three. *Wortlaut* counts what was imported at the linguistic surface, *Geist* what was added in ideas and structure, *Beleg* whether the work is documented in the world. What someone stands behind is not counted, for it cannot be imported. Standing behind the work is not a fourth axis; it is the act the seal performs. Whoever sets it declares not what was meant, but who answers for what.
 
 ## What Maschinenschrift Addresses — and What It Does Not
 

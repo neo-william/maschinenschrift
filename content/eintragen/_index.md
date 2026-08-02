@@ -12,7 +12,7 @@ Write to `contact [at] maschinenschrift [dot] com` and include:
 
 1. **Title** of the work.
 2. **At least one platform** where the published EPUB or printed book is publicly findable (Amazon, Apple Books, your publisher's catalog, your own site — any verifiable listing).
-3. **Confirmation that the seal is visibly placed** on the work itself, with the declared D/G/K values. State where the seal sits (cover, title page, colophon, about page, footer).
+3. **Confirmation that the seal is visibly placed** on the work itself, with the declared W/G/B values. State where the seal sits (cover, title page, colophon, about page, footer).
 
 No links to the work are followed from the email. Verification happens by searching for the title independently on the named platform.
 
@@ -24,7 +24,7 @@ If the entry is consistent with the declaration and the seal is present, the wor
 - The seal is visible on the work in the values you declared.
 - The declaration is internally consistent.
 
-What is **not** checked: literary quality, commercial standing, the truth of factual claims in the work itself, the accuracy of the D/G/K assessment beyond plausibility.
+What is **not** checked: literary quality, commercial standing, the truth of factual claims in the work itself, the accuracy of the W/G/B assessment beyond plausibility.
 
 ## What an entry does not imply
 

@@ -1,29 +1,27 @@
 ---
-title: "Siegel-Spec v6"
+title: "Siegel-Spec v7"
 description: Kanonische geometrische Spezifikation des Maschinenschrift-Siegels.
 ---
 
-**Status:** Abgelöst durch [Siegel-Spec v7](/de/spec/siegel-v7/) (2026-08-02). Eingefrorener historischer Stand — Inhalt und Pfad-Angaben werden nicht mehr nachgeführt. Die Geometrie ist unverändert, aber die Achsen heißen jetzt W/G/B (Wortlaut, *Geist*, Beleg), und die Asset-Dateinamen folgen dem Schema `w{W}-g{G}-{Zustand}.svg`. Siehe die aktuelle kanonische Spezifikation unter [/de/spec/siegel-v7/](/de/spec/siegel-v7/).
-
-**Historischer Status (2026-05-24):** Aktuell kanonisch. Die Geometrie ist unverändert gegenüber v5; die Achsen heißen jetzt D/G/K (Diktion, *Geist*, Korrespondenz), und die binäre K-Achse verwendet `belegt` / `ausstehend` statt `verified` / `unverified`. Semantische Grundlage: [Foundation §7](/de/foundation/#7-seal-axis-semantics). Der Vorgänger v5 ist eingefroren unter [/de/spec/siegel-v5/](/de/spec/siegel-v5/).
+**Status:** Aktuell kanonisch (seit 2026-08-02). Die Geometrie ist unverändert gegenüber v5; die Achsen heißen jetzt **W/G/B — Wortlaut, *Geist*, Beleg**, und die binäre B-Achse verwendet `belegt` / `ausstehend`. Semantische Grundlage: [Foundation §7](/de/foundation/#7-seal-axis-semantics). Die Vorgänger v6 und v5 sind eingefroren unter [/de/spec/siegel-v6/](/de/spec/siegel-v6/) und [/de/spec/siegel-v5/](/de/spec/siegel-v5/).
 
 ## Achsen
 
 Das Siegel dokumentiert drei Achsen der Entstehung eines Textes:
 
-- **Obere Zeile — Diktion (D).** Null bis fünf Punkte. Grad der Substratvermittlung an der sprachlichen Oberfläche.
+- **Obere Zeile — Wortlaut (W).** Null bis fünf Punkte. Grad der Substratvermittlung an der sprachlichen Oberfläche.
 - **Mittlere Zeile — Geist (G).** Null bis fünf Punkte. Grad der Substratvermittlung am Geist des Werks — Inhalt, Ideen, Struktur. *Geist* bleibt im Englischen unübersetzt, analog zu *Maschinenschrift*. Diagnose-Formel: *Geist aus der Maschine* — wie viel von dem, was als Geist des Werks erscheint, wurde aus der Maschine importiert?
-- **Untere Zeile — Korrespondenz (K).** Binär. Kein Strich: bibliographische Korrespondenz belegt. Halbstrich rechts: Korrespondenz steht aus.
+- **Untere Zeile — Beleg (B).** Binär. Kein Strich: bibliografischer Beleg erbracht. Halbstrich rechts: der Beleg steht aus.
 
-Punkte bedeuten Substratvermittlung. Die Abwesenheit bedeutet die Autorin allein. Der Halbstrich ist Marker für ausstehende bibliographische Korrespondenz, nicht Wertung des Werks.
+Punkte bedeuten Substratvermittlung. Die Abwesenheit bedeutet die Autorin allein. Der Halbstrich ist Marker für einen ausstehenden bibliografischen Beleg, nicht Wertung des Werks.
 
 ## Parameter
 
 Drei Eingaben:
 
-- `diktion` — ganze Zahl von 0 bis 5. D-Punkte, obere Zeile.
+- `wortlaut` — ganze Zahl von 0 bis 5. W-Punkte, obere Zeile.
 - `geist` — ganze Zahl von 0 bis 5. G-Punkte, mittlere Zeile.
-- `korrespondenz` — Enum `belegt` oder `ausstehend`. K-Zustand, untere Zeile.
+- `beleg` — Enum `belegt` oder `ausstehend`. B-Zustand, untere Zeile.
 
 Optional:
 
@@ -56,15 +54,15 @@ Eine Zeile mit `n` Punkten füllt die ersten `n` Slots von links. Position 1 ist
 
 Y-Koordinaten der drei Zeilen:
 
-- Diktion: `y = 36`
+- Wortlaut: `y = 36`
 - Geist: `y = 50`
-- Korrespondenz: `y = 64`
+- Beleg: `y = 64`
 
-### Korrespondenz-Halbstrich
+### Beleg-Halbstrich
 
-Bei `korrespondenz = 'belegt'`: keine Darstellung. Die Zeile bleibt leer.
+Bei `beleg = 'belegt'`: keine Darstellung. Die Zeile bleibt leer.
 
-Bei `korrespondenz = 'ausstehend'`: ein horizontales Rechteck, rechtsbündig:
+Bei `beleg = 'ausstehend'`: ein horizontales Rechteck, rechtsbündig:
 
 - Von `x = 70` bis `x = 92` (Breite 22 Einheiten)
 - Zentriert auf `y = 64`
@@ -104,10 +102,11 @@ Eine Python-Referenz-Implementation, die diese Spec exakt einhält, liegt im Rep
 - Keine vertikale Balkengrafik, keine Sternebewertung, keine Prozent-Darstellung.
 - Keine dekorativen Serifen am Glyph selbst, keine typografische Verzierung, keine Textur.
 - Keine Farbunterscheidung zwischen den Zeilen. Alles in `currentColor`.
-- Der Korrespondenz-Halbstrich darf nicht zentriert oder linksbündig sein. Rechtsbündigkeit ist Teil der Spec.
+- Der Beleg-Halbstrich darf nicht zentriert oder linksbündig sein. Rechtsbündigkeit ist Teil der Spec.
 
 ## Versionshistorie
 
+- **v7** (2026-08-02): Achsen-Vokabular von D/G/K (Diktion, *Geist*, Korrespondenz) auf **W/G/B (Wortlaut, *Geist*, Beleg)** umgestellt. Geometrie unverändert; die binären Werte `belegt`/`ausstehend` unverändert. *Geist* behält Namen und Buchstaben. Asset-Dateinamen von `d{D}-g{G}-{Zustand}.svg` auf `w{W}-g{G}-{Zustand}.svg` geändert; die Feldnamen in `works/*.yaml` von `diktion`/`korrespondenz` auf `wortlaut`/`beleg`. Die Zahlenwerte sind unverändert — eine Deklaration D 4 · G 2 ist eine Deklaration W 4 · G 2. Die Umstellung macht die Achsen ohne Glossar lesbar (ADR 0032). **Das ist ein Breaking Change an der Notation**; die Referenz-Implementation behält die Shims `build_seal_v6()` und `build_seal_v5()`, das Hugo-Partial akzeptiert weiterhin die v6- und v5-Dict-Schlüssel.
 - **v6** (2026-05-24): Achsen-Vokabular von F/S/V (Form, Substanz, Verifikation) auf D/G/K (Diktion, *Geist*, Korrespondenz) umgestellt. Binäre K-Achse: Werte `verified`/`unverified` → `belegt`/`ausstehend`. Geometrie unverändert. *Geist* bleibt im Englischen unübersetzt, analog zu *Maschinenschrift*. Die Umstellung reflektiert die Verschiebung von Verifikations-Sprache zu Dokumentations-Sprache (ADR 0008).
 - **v5** (2026-05-21): Verifikations-Marker geändert von zentriertem Vollstrich (x=36..92, Höhe 3.4) auf rechtsbündigen Halbstrich (x=70..92, Höhe 2.4). Achsen-Vokabular auf F/S/V harmonisiert. Eingefrorener historischer Stand unter [/de/spec/siegel-v5/](/de/spec/siegel-v5/).
 - **v4**: Erste Fassung mit voller Achsen-Geometrie. Verifikations-Marker als zentrierter Vollstrich. Achsen-Vokabular K/T/R — abgelöst durch Foundation §7.

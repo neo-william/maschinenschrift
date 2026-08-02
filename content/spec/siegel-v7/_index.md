@@ -1,29 +1,27 @@
 ---
-title: "Siegel-Spec v6"
+title: "Siegel-Spec v7"
 description: Canonical geometric specification of the Maschinenschrift seal.
 ---
 
-**Status:** Superseded by [Siegel-Spec v7](/spec/siegel-v7/) (2026-08-02). Frozen historical snapshot — content and path references are no longer maintained. The geometry is unchanged, but the axes are now W/G/B (Wortlaut, *Geist*, Beleg) and asset filenames follow `w{W}-g{G}-{state}.svg`. See the current canonical specification at [/spec/siegel-v7/](/spec/siegel-v7/).
-
-**Historical status (2026-05-24):** Current canonical. Geometry is unchanged from v5; the axes are now D/G/K (Diktion, *Geist*, Correspondence), and the binary K-axis uses `belegt` / `ausstehend` instead of `verified` / `unverified`. The semantic basis lives in [Foundation §7](/foundation/#7-seal-axis-semantics). The predecessor v5 is frozen at [/spec/siegel-v5/](/spec/siegel-v5/).
+**Status:** Current canonical (since 2026-08-02). Geometry is unchanged from v5; the axes are now **W/G/B — Wortlaut, *Geist*, Beleg** (in English contexts glossed *Wording*, *Geist*, *Record*), and the binary B-axis uses `belegt` / `ausstehend`. The letters follow the German canon, as *Geist* always has. The semantic basis lives in [Foundation §7](/foundation/#7-seal-axis-semantics). The predecessors v6 and v5 are frozen at [/spec/siegel-v6/](/spec/siegel-v6/) and [/spec/siegel-v5/](/spec/siegel-v5/).
 
 ## Axes
 
 The seal documents three axes of the genesis of a text:
 
-- **Top row — Diktion (D).** Zero to five dots. Degree of substrate mediation of the linguistic surface.
+- **Top row — Wortlaut (W).** Zero to five dots. Degree of substrate mediation of the linguistic surface.
 - **Middle row — Geist (G).** Zero to five dots. Degree of substrate mediation of the *Geist* — the content, the ideas, the structure. *Geist* is German, untranslated; an occasional gloss is *Ghost from the Machine*. The project's diagnostic formula is *Geist aus der Maschine*: how much of what appears as the work's spirit was imported from the machine?
-- **Bottom row — Correspondence (K).** Binary. No bar: bibliographic correspondence documented. Right-aligned half-stroke: correspondence pending.
+- **Bottom row — Beleg (B).** Binary, glossed *Record* in English. No bar: the bibliographic record is documented. Right-aligned half-stroke: the record is pending.
 
-Dots mean substrate mediation. Their absence means the author alone. The half-stroke is a marker for pending bibliographic correspondence, not a judgment of the work.
+Dots mean substrate mediation. Their absence means the author alone. The half-stroke is a marker for a pending bibliographic record, not a judgment of the work.
 
 ## Parameters
 
 Three inputs:
 
-- `diktion` — integer from 0 to 5. D dots, top row.
+- `wortlaut` — integer from 0 to 5. W dots, top row.
 - `geist` — integer from 0 to 5. G dots, middle row.
-- `korrespondenz` — enum `belegt` or `ausstehend`. K state, bottom row.
+- `beleg` — enum `belegt` or `ausstehend`. B state, bottom row.
 
 Optional:
 
@@ -56,15 +54,15 @@ A row with `n` dots fills the first `n` slots from the left. Position 1 is occup
 
 Y coordinates of the three rows:
 
-- Diktion: `y = 36`
+- Wortlaut: `y = 36`
 - Geist: `y = 50`
-- Correspondence: `y = 64`
+- Beleg: `y = 64`
 
-### Correspondence half-stroke
+### Beleg half-stroke
 
-With `korrespondenz = 'belegt'`: no rendering. The row stays empty.
+With `beleg = 'belegt'`: no rendering. The row stays empty.
 
-With `korrespondenz = 'ausstehend'`: a horizontal rectangle, right-aligned:
+With `beleg = 'ausstehend'`: a horizontal rectangle, right-aligned:
 
 - From `x = 70` to `x = 92` (width 22 units)
 - Centered on `y = 64`
@@ -104,10 +102,11 @@ A Python reference implementation that adheres to this spec exactly lives in the
 - No vertical bar graphic, no star rating, no percent display.
 - No decorative serifs on the glyph itself, no typographic embellishment, no texture.
 - No color distinction between rows. Everything in `currentColor`.
-- The correspondence half-stroke must not be centered or left-aligned. Right-alignment is part of the spec.
+- The Beleg half-stroke must not be centered or left-aligned. Right-alignment is part of the spec.
 
 ## Version history
 
+- **v7** (2026-08-02): Axis vocabulary changed from D/G/K (Diktion, *Geist*, Korrespondenz) to **W/G/B (Wortlaut, *Geist*, Beleg)**. Geometry unchanged; the binary values `belegt`/`ausstehend` unchanged. *Geist* keeps both its name and its letter. Asset filenames changed from `d{D}-g{G}-{state}.svg` to `w{W}-g{G}-{state}.svg`; the `works/*.yaml` field names changed from `diktion`/`korrespondenz` to `wortlaut`/`beleg`. Numeric values are unchanged, so a D 4 · G 2 declaration is a W 4 · G 2 declaration. The change makes the axes readable without a glossary (ADR 0032). **This is a breaking change to the notation**; the reference implementation keeps `build_seal_v6()` and `build_seal_v5()` shims, and the Hugo partial still accepts the v6 and v5 dict keys.
 - **v6** (2026-05-24): Axis vocabulary changed from F/S/V (Form, Substance, Verification) to D/G/K (Diktion, *Geist*, Correspondence). Binary K-axis values renamed from `verified`/`unverified` to `belegt`/`ausstehend`. Geometry unchanged. *Geist* is untranslated in English, analogous to *Maschinenschrift*. The shift reflects the move from a verification-language to a documentation-language (ADR 0008).
 - **v5** (2026-05-21): Verification marker changed from centered full-stroke (x=36..92, height 3.4) to right-aligned half-stroke (x=70..92, height 2.4). Axis vocabulary harmonized to F/S/V. Frozen historical record at [/spec/siegel-v5/](/spec/siegel-v5/).
 - **v4**: First version with full axis geometry. Verification marker as centered full-stroke. Axis vocabulary K/T/R — superseded by Foundation §7.

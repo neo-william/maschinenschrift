@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $z := .Params.zeichen }}
+{{ $z := partial "zeichen.html" .Params.zeichen }}
 {{ $lang := .Site.Language.Lang }}
 {{ $narration := "" }}
 {{ with .Params.narration }}
@@ -12,11 +12,11 @@
   <header class="werk-header">
     <div class="werk-glyph">
       {{ partial "siegel.html" (dict
-          "diktion" $z.diktion
+          "wortlaut" $z.wortlaut
           "geist" $z.geist
-          "korrespondenz" $z.korrespondenz
+          "beleg" $z.beleg
           "class" "siegel-detail"
-          "label" (printf "Siegel: D=%d G=%d K=%s" $z.diktion $z.geist $z.korrespondenz)
+          "label" (printf "Siegel: W=%d G=%d B=%s" $z.wortlaut $z.geist $z.beleg)
       ) }}
     </div>
     <div class="werk-meta">
@@ -25,10 +25,10 @@
       <dl class="werk-facts">
         {{ with .Params.genre }}<dt>{{ i18n "werkGenre" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{ with .Params.language }}<dt>{{ i18n "werkLanguage" }}</dt><dd>{{ . }}</dd>{{ end }}
-        <dt>{{ i18n "werkDiktionAxis" }}</dt><dd>{{ $z.diktion }} / 5</dd>
+        <dt>{{ i18n "werkWortlautAxis" }}</dt><dd>{{ $z.wortlaut }} / 5</dd>
         <dt>{{ i18n "werkGeistAxis" }}</dt><dd>{{ $z.geist }} / 5</dd>
-        <dt>{{ i18n "werkKorrespondenzAxis" }}</dt><dd>
-          {{ $z.korrespondenz }}{{ if eq $z.korrespondenz "ausstehend" }} <abbr title="{{ i18n "ausstehendTitle" }}">†</abbr>{{ end }}
+        <dt>{{ i18n "werkBelegAxis" }}</dt><dd>
+          {{ $z.beleg }}{{ if eq $z.beleg "ausstehend" }} <abbr title="{{ i18n "ausstehendTitle" }}">†</abbr>{{ end }}
         </dd>
         {{ with .Params.declared_at }}<dt>{{ i18n "werkDeclared" }}</dt><dd><time datetime="{{ . }}">{{ . }}</time></dd>{{ end }}
       </dl>

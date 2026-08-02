@@ -9,19 +9,24 @@ axis semantics.
 
 ## Current spec
 
-- [**Siegel-Spec v6**](/spec/siegel-v6/) — geometry and rendering rules of
-  the seal SVG. As of 2026-05-24. Current canonical version.
+- [**Siegel-Spec v7**](/spec/siegel-v7/) — geometry and rendering rules of
+  the seal SVG. As of 2026-08-02. Current canonical version. Axis
+  vocabulary W/G/B (Wortlaut / *Geist* / Beleg), glossed *Wording*,
+  *Geist*, *Record*.
 
 ## Superseded versions
 
+- [Siegel-Spec v6](/spec/siegel-v6/) — frozen historical record. Same
+  geometry as v7; axis vocabulary D/G/K (Diktion / *Geist* /
+  Korrespondenz). Numeric values are identical to v7.
 - [Siegel-Spec v5](/spec/siegel-v5/) — frozen historical record. Same
-  geometry as v6; axis vocabulary F/S/V (Form / Substance / Verification)
+  geometry as v7; axis vocabulary F/S/V (Form / Substance / Verification)
   with binary values `verified` / `unverified`.
 
 ## Related documents
 
 - [**Foundation**](/foundation/) — linguistic basis and axis semantics
-  (D, G, K). Non-technical, but precedes every spec implementation.
+  (W, G, B). Non-technical, but precedes every spec implementation.
 - [Data-model schema](/contribute/#2-write-the-yaml) — YAML structure of
   a catalog entry. Part of the [Contribution guide](/contribute/).
 
@@ -31,8 +36,8 @@ Changes to a spec happen exclusively against a new version number. A
 published spec version remains reachable at its URL.
 
 The historical predecessors of the current seal spec (v1–v4) are not
-publicly published. Their differences from v5 and v6 are summarized in
-the [version history of the v6 page](/spec/siegel-v6/#version-history).
+publicly published. Their differences from v5, v6 and v7 are summarized in
+the [version history of the v7 page](/spec/siegel-v7/#version-history).
 
 ## Implementations
 
@@ -43,4 +48,4 @@ lives under `static/js/live-preview.js`.
 
 Implementations in other languages are welcome. A correctly implemented
 variant must reproduce the three canonical states from
-[Spec v6](/spec/siegel-v6/#canonical-states) byte-for-byte.
+[Spec v7](/spec/siegel-v7/#canonical-states) byte-for-byte.

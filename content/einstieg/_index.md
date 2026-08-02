@@ -45,15 +45,15 @@ That is the situation. What is missing is not technology and not morality. **Wha
 
 *Maschinenschrift* (German: machine-script) is an open standard and a mark. The author states for herself, in her own hand, what a language model contributed to her work — on three axes, in a notation that fits on a book cover.
 
-- **Diction (D)** — how much of the linguistic surface came from the model: sentence construction, word choice, rhythm. Scale 0 to 5.
+- **Wortlaut (W)** — *wording*; how much of the linguistic surface came from the model: sentence construction, word choice, rhythm. Scale 0 to 5.
 - **Geist (G)** — German for spirit, intellectual presence: how much of the ideas, arguments, and structural decisions came from the model. Scale 0 to 5.
-- **Correspondence (K)** — whether the work is bibliographically documented and findable. Two states: documented or pending.
+- **Beleg (B)** — the *record*; whether the work is bibliographically documented and findable. Two states: documented or pending.
 
 The mark itself is two square brackets with three rows of five slots each. Dots count what the model contributed. An **empty seal** is the normal case: the author was alone. That direction is the most important decision in the whole construction. What is counted is not the human's achievement but the machine's share. Whoever writes without a model has nothing to demonstrate — she is the unmarked case.
 
 The seal goes where the author's name goes: title page, imprint, back cover. It is voluntary, costs nothing, requires no registration, and is approved by no one.
 
-For comparison, here is what exists today instead. Anyone self-publishing on Amazon ticks a box stating whether the book is *AI-generated* or *AI-assisted*. Two boxes for the entire space between a model that looks up facts and a model that supplies the sentences. What does not fit in that box is the sentence that would be true of many books: *The sentences are largely the machine's; the characters, the structure, and the argument are mine.* That sentence has a form in the seal. It reads D 4 · G 2.
+For comparison, here is what exists today instead. Anyone self-publishing on Amazon ticks a box stating whether the book is *AI-generated* or *AI-assisted*. Two boxes for the entire space between a model that looks up facts and a model that supplies the sentences. What does not fit in that box is the sentence that would be true of many books: *The sentences are largely the machine's; the characters, the structure, and the argument are mine.* That sentence has a form in the seal. It reads W 4 · G 2.
 
 ## What it is not
 
@@ -77,7 +77,7 @@ The name is older than the project. In the twentieth century, *Maschinenschrift*
 
 So that none of this can later belong to one person, it was given away before it had value: content and notation under Creative Commons, the code under a free license, the word mark left dormant. Whoever uses the standard today cannot be cut off from it tomorrow — not even by its originator. The registry is designed to last fifty years and lives in text files, not in a database somebody has to operate. There are no accounts, no cookies, no trackers. Running it costs about as much per year as one dinner.
 
-The novel it all started with declares **D 4 · G 2 · K pending** — much machine in the language, little in the *Geist*, no bibliographic correspondence, because fiction documents nothing. That is the most uncomfortable account this project had to give, and it stands at the top of it. Whoever proposes a form for honesty has to answer first.
+The novel it all started with declares **W 4 · G 2 · B pending** — much machine in the language, little in the *Geist*, no bibliographic record, because fiction documents nothing. That is the most uncomfortable account this project had to give, and it stands at the top of it. Whoever proposes a form for honesty has to answer first.
 
 ## The objection that remains
 

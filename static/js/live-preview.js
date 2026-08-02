@@ -9,7 +9,7 @@
 //      Beispiel-Zustaende (#home-states) dienen als Baseline.
 //
 // Geometrie ist identisch zur Python-Referenz (scripts/siegel.py).
-// Spec v6 (seit 2026-05-24): Achsen D/G/K (Diktion, Geist, Korrespondenz),
+// Spec v7 (seit 2026-08-02): Achsen W/G/B (Wortlaut, Geist, Beleg),
 // K-Werte belegt/ausstehend. Default ist ausstehend — belegt wird behauptet,
 // nicht vorausgesetzt.
 // Quelle: /spec/siegel-v6/ bzw. _quellen/maschinenschrift-siegel-prompt-v6.md.
@@ -27,7 +27,7 @@
     leftVertX: 16, leftSerifEndX: 24,
     rightVertX: 114, rightSerifStartX: 106,
   };
-  const ROW_Y = { diktion: 36, geist: 50, korrespondenz: 64 };
+  const ROW_Y = { wortlaut: 36, geist: 50, beleg: 64 };
   const PENDING_BAR = { startX: 70, endX: 92, height: 2.4 };
   const DEFAULT_STROKE = 1.8;
   const DEFAULT_COLOR = '#1a1a1a';
@@ -66,7 +66,7 @@
     return s;
   }
 
-  function buildKorrespondenzRow(state, y, color) {
+  function buildBelegRow(state, y, color) {
     if (state === 'belegt') return '';
     return rect(
       PENDING_BAR.startX,
@@ -77,14 +77,14 @@
     );
   }
 
-  function buildSeal(diktion, geist, korrespondenz, stroke, color) {
+  function buildSeal(wortlaut, geist, beleg, stroke, color) {
     stroke = stroke || DEFAULT_STROKE;
     color = color || DEFAULT_COLOR;
     const inner =
       buildBrackets(stroke, color) +
-      buildDotRow(diktion, ROW_Y.diktion, color) +
+      buildDotRow(wortlaut, ROW_Y.wortlaut, color) +
       buildDotRow(geist, ROW_Y.geist, color) +
-      buildKorrespondenzRow(korrespondenz, ROW_Y.korrespondenz, color);
+      buildBelegRow(beleg, ROW_Y.beleg, color);
     return `<svg viewBox="0 0 130 100" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`;
   }
 
@@ -92,14 +92,15 @@
   // Akzeptiert die kanonischen (deutschen) K-Werte sowie die englischen
   // Synonyme documented/pending; kanonisiert immer auf belegt/ausstehend.
   function parseStateHash(hash) {
-    const m = /^#?d([0-5])-g([0-5])-(belegt|ausstehend|documented|pending)$/i.exec(hash || '');
+    // Akzeptiert w* (Spec v7) und weiterhin d* (Spec v6), damit geteilte Links gueltig bleiben.
+    const m = /^#?[dw]([0-5])-g([0-5])-(belegt|ausstehend|documented|pending)$/i.exec(hash || '');
     if (!m) return null;
     const k = /belegt|documented/i.test(m[3]) ? 'belegt' : 'ausstehend';
     return { d: parseInt(m[1], 10), g: parseInt(m[2], 10), k };
   }
 
   function stateHash(d, g, k) {
-    return `#d${d}-g${g}-${k}`;
+    return `#w${d}-g${g}-${k}`;
   }
 
   // --- Color helpers --------------------------------------------------------
@@ -127,9 +128,9 @@
   // --- i18n -----------------------------------------------------------------
   const STRINGS = {
     en: {
-      diktionLabel: 'Diction (D)',
+      wortlautLabel: 'Wording (W)',
       geistLabel: 'Geist (G)',
-      korrespondenzLegend: 'Correspondence (K)',
+      belegLegend: 'Record (B)',
       colorLegend: 'Color',
       swatchBlack: 'Black',
       swatchWhite: 'White',
@@ -140,21 +141,21 @@
       kAusstehendLabel: 'pending',
       dlSvg: 'Download SVG',
       dlPng: 'Download PNG (1024 px)',
-      capDiction: 'Diction',
+      capWortlaut: 'Wording',
       capGeist: 'Geist',
-      capKBelegt: 'correspondence documented',
-      capKAusstehend: 'correspondence pending',
+      capBBelegt: 'record documented',
+      capBAusstehend: 'record pending',
       colophonLabel: 'Colophon line',
       embedLabel: 'HTML embed',
       copyLabel: 'Copy',
       copiedLabel: 'Copied',
       embedAria: (d, g, k) =>
-        `Maschinenschrift seal: diction ${d} of 5, Geist ${g} of 5, correspondence ${k === 'belegt' ? 'documented' : 'pending'}`,
+        `Maschinenschrift seal: wording ${d} of 5, Geist ${g} of 5, record ${k === 'belegt' ? 'documented' : 'pending'}`,
     },
     de: {
-      diktionLabel: 'Diktion (D)',
+      wortlautLabel: 'Wortlaut (W)',
       geistLabel: 'Geist (G)',
-      korrespondenzLegend: 'Korrespondenz (K)',
+      belegLegend: 'Beleg (B)',
       colorLegend: 'Farbe',
       swatchBlack: 'Schwarz',
       swatchWhite: 'Weiß',
@@ -165,16 +166,16 @@
       kAusstehendLabel: 'ausstehend',
       dlSvg: 'SVG herunterladen',
       dlPng: 'PNG herunterladen (1024 px)',
-      capDiction: 'Diktion',
+      capWortlaut: 'Wortlaut',
       capGeist: 'Geist',
-      capKBelegt: 'Korrespondenz belegt',
-      capKAusstehend: 'Korrespondenz ausstehend',
+      capBBelegt: 'Beleg belegt',
+      capBAusstehend: 'Beleg ausstehend',
       colophonLabel: 'Kolophon-Zeile',
       embedLabel: 'HTML-Embed',
       copyLabel: 'Kopieren',
       copiedLabel: 'Kopiert',
       embedAria: (d, g, k) =>
-        `Maschinenschrift-Siegel: Diktion ${d} von 5, Geist ${g} von 5, Korrespondenz ${k}`,
+        `Maschinenschrift-Siegel: Wortlaut ${d} von 5, Geist ${g} von 5, Beleg ${k}`,
     },
   };
 
@@ -183,10 +184,10 @@
     return STRINGS[lang] || STRINGS.en;
   }
 
-  // Eine Zustandszeile in Prosa: "Diktion 2/5 · Geist 3/5 · Korrespondenz belegt".
+  // Eine Zustandszeile in Prosa: "Wortlaut 2/5 · Geist 3/5 · Beleg belegt".
   function captionLine(t, d, g, k) {
-    const kWord = k === 'belegt' ? t.capKBelegt : t.capKAusstehend;
-    return `${t.capDiction} ${d}/5 · ${t.capGeist} ${g}/5 · ${kWord}`;
+    const kWord = k === 'belegt' ? t.capBBelegt : t.capBAusstehend;
+    return `${t.capWortlaut} ${d}/5 · ${t.capGeist} ${g}/5 · ${kWord}`;
   }
 
   // Kolophon-Zeile = Zustandszeile + Herkunft.
@@ -245,7 +246,7 @@
     container.innerHTML = `
       <div class="preview-glyph" id="preview-glyph"></div>
       <div class="preview-controls">
-        <label>${t.diktionLabel}
+        <label>${t.wortlautLabel}
           <input type="range" id="ctrl-d" min="0" max="5" step="1" value="${initial.d}">
           <output id="out-d">${initial.d}</output>
         </label>
@@ -254,7 +255,7 @@
           <output id="out-g">${initial.g}</output>
         </label>
         <fieldset class="preview-k">
-          <legend>${t.korrespondenzLegend}</legend>
+          <legend>${t.belegLegend}</legend>
           <label><input type="radio" name="ctrl-k" value="belegt"${initial.k === 'belegt' ? ' checked' : ''}> ${t.kBelegtLabel}</label>
           <label><input type="radio" name="ctrl-k" value="ausstehend"${initial.k === 'ausstehend' ? ' checked' : ''}> ${t.kAusstehendLabel}</label>
         </fieldset>
@@ -332,14 +333,14 @@
       const blob = new Blob([svg], { type: 'image/svg+xml' });
       const svgUrl = URL.createObjectURL(blob);
       ctrls.dlSvg.href = svgUrl;
-      ctrls.dlSvg.download = `siegel-d${d}-g${g}-${k}-${color.slice(1)}.svg`;
+      ctrls.dlSvg.download = `siegel-w${d}-g${g}-${k}-${color.slice(1)}.svg`;
 
       ctrls.dlPng.onclick = function (ev) {
         ev.preventDefault();
         rasterize(svg, 1024).then((url) => {
           const a = document.createElement('a');
           a.href = url;
-          a.download = `siegel-d${d}-g${g}-${k}-${color.slice(1)}-1024.png`;
+          a.download = `siegel-w${d}-g${g}-${k}-${color.slice(1)}-1024.png`;
           document.body.appendChild(a);
           a.click();
           document.body.removeChild(a);
@@ -418,7 +419,7 @@
     bindCopyButton($('copy-colophon'), t, () => ctrls.outColophon.value);
     bindCopyButton($('copy-embed'), t, () => ctrls.outEmbed.value);
 
-    // Geteilter Link (#d3-g2-belegt) wird nachtraeglich angewandt.
+    // Geteilter Link (#w3-g2-belegt) wird nachtraeglich angewandt.
     window.addEventListener('hashchange', () => {
       const s = parseStateHash(location.hash);
       if (!s) return;
@@ -443,7 +444,7 @@
       <div class="preview-glyph" id="hg-glyph"></div>
       <p class="home-generator-caption" id="hg-caption"></p>
       <div class="preview-controls">
-        <label>${t.diktionLabel}
+        <label>${t.wortlautLabel}
           <input type="range" id="hg-d" min="0" max="5" step="1" value="0">
           <output id="hg-out-d">0</output>
         </label>
@@ -452,7 +453,7 @@
           <output id="hg-out-g">0</output>
         </label>
         <fieldset class="preview-k">
-          <legend>${t.korrespondenzLegend}</legend>
+          <legend>${t.belegLegend}</legend>
           <label><input type="radio" name="hg-k" value="belegt"> ${t.kBelegtLabel}</label>
           <label><input type="radio" name="hg-k" value="ausstehend" checked> ${t.kAusstehendLabel}</label>
         </fieldset>

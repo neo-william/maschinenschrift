@@ -64,7 +64,7 @@ Here lies the distinction that matters.
 
 The detector is accusation. It comes from outside, against the author's will, and claims to see what she has concealed. It asks about being, not about deed.
 
-Self-declaration is the opposite. The author says herself what role the *Sprachsubstrat* — the language substrate — has played: how much of the Diction, how much of the Geist, whether the work stands in the bibliographic world. The disclosure is given, not extracted. It does not replace reading. It accompanies it. It says: *This is how it was made. Now read.*
+Self-declaration is the opposite. The author says herself what role the *Sprachsubstrat* — the language substrate — has played: how much of the Wortlaut, how much of the Geist, whether the work stands in the bibliographic world. The disclosure is given, not extracted. It does not replace reading. It accompanies it. It says: *This is how it was made. Now read.*
 
 The witch trial lives on the hidden being. Where the hidden has been spoken, the trial has no ground left. Whoever declares disarms the detector — not by concealment, but by answer. That is the turn: **not silence protects against the hunt, but speech.**
 

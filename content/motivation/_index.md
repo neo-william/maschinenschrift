@@ -23,9 +23,9 @@ The question changes shape. Not *did she use AI?* — but *what does the work it
 
 Three axes. The author marks each one.
 
-- **Diction** — how much of the surface (sentences, word choice, rhythm) came from the machine.
+- **Wortlaut** — *wording*; how much of the surface (sentences, word choice, rhythm) came from the machine.
 - ***Geist*** — how much of the substance (ideas, argument, structure) came from the machine.
-- **Correspondence** — whether the factual claims have been checked against sources.
+- **Beleg** — the *record*; whether the work stands in the bibliographic world: findable, datable, identifiable.
 
 Two rows of dots, zero to five per axis, count the machine's share. A half-stroke below means correspondence is still pending. The author sets the seal and places it near the byline — cover, title page, about page.
 

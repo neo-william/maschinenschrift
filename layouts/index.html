@@ -14,15 +14,15 @@
 
 <section class="states" id="home-states" aria-label="Example seal states">
   <div class="state">
-    {{ partial "siegel.html" (dict "diktion" 0 "geist" 0 "korrespondenz" "belegt" "class" "siegel-state") }}
+    {{ partial "siegel.html" (dict "wortlaut" 0 "geist" 0 "beleg" "belegt" "class" "siegel-state") }}
     <p class="state-caption">{{ i18n "stateEmpty" }}</p>
   </div>
   <div class="state">
-    {{ partial "siegel.html" (dict "diktion" 2 "geist" 3 "korrespondenz" "belegt" "class" "siegel-state") }}
+    {{ partial "siegel.html" (dict "wortlaut" 2 "geist" 3 "beleg" "belegt" "class" "siegel-state") }}
     <p class="state-caption">{{ i18n "stateMid" }}</p>
   </div>
   <div class="state">
-    {{ partial "siegel.html" (dict "diktion" 5 "geist" 5 "korrespondenz" "ausstehend" "class" "siegel-state") }}
+    {{ partial "siegel.html" (dict "wortlaut" 5 "geist" 5 "beleg" "ausstehend" "class" "siegel-state") }}
     <p class="state-caption">{{ i18n "stateFull" }}</p>
   </div>
 </section>
@@ -48,14 +48,14 @@
     </p>
     <ul class="werke-list">
       {{ range $werke }}
-        {{ $wz := .Params.zeichen }}
+        {{ $wz := partial "zeichen.html" .Params.zeichen }}
         <li>
           <a href="{{ .RelPermalink }}">
             <span class="werke-list-glyph">
               {{ partial "siegel.html" (dict
-                  "diktion" $wz.diktion
+                  "wortlaut" $wz.wortlaut
                   "geist" $wz.geist
-                  "korrespondenz" $wz.korrespondenz
+                  "beleg" $wz.beleg
                   "class" "siegel-small"
               ) }}
             </span>

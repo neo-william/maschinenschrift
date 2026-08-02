@@ -12,7 +12,7 @@
     {{ $doy := now.YearDay }}
     {{ $idx := mod $doy $count }}
     {{ $featured := index $werke $idx }}
-    {{ $z := $featured.Params.zeichen }}
+    {{ $z := partial "zeichen.html" $featured.Params.zeichen }}
     {{ $lang := .Site.Language.Lang }}
     {{ $narration := "" }}
     {{ with $featured.Params.narration }}
@@ -30,11 +30,11 @@
         <a class="werk-des-tages-link" href="{{ $featured.RelPermalink }}">
           <div class="werk-des-tages-glyph">
             {{ partial "siegel.html" (dict
-                "diktion" $z.diktion
+                "wortlaut" $z.wortlaut
                 "geist" $z.geist
-                "korrespondenz" $z.korrespondenz
+                "beleg" $z.beleg
                 "class" "siegel-featured"
-                "label" (printf "Siegel: D=%d G=%d K=%s" $z.diktion $z.geist $z.korrespondenz)
+                "label" (printf "Siegel: W=%d G=%d B=%s" $z.wortlaut $z.geist $z.beleg)
             ) }}
           </div>
           <div class="werk-des-tages-text">
@@ -56,16 +56,16 @@
 
     <ul class="werke-list werke-list-detail">
       {{ range $werke }}
-        {{ $z := .Params.zeichen }}
+        {{ $z := partial "zeichen.html" .Params.zeichen }}
         <li>
           <a href="{{ .RelPermalink }}" class="werke-list-entry">
             <span class="werke-list-glyph">
               {{ partial "siegel.html" (dict
-                  "diktion" $z.diktion
+                  "wortlaut" $z.wortlaut
                   "geist" $z.geist
-                  "korrespondenz" $z.korrespondenz
+                  "beleg" $z.beleg
                   "class" "siegel-list"
-                  "label" (printf "Siegel: D=%d G=%d K=%s" $z.diktion $z.geist $z.korrespondenz)
+                  "label" (printf "Siegel: W=%d G=%d B=%s" $z.wortlaut $z.geist $z.beleg)
               ) }}
             </span>
             <span class="werke-list-meta">
@@ -74,9 +74,9 @@
               {{ with .Params.genre }}<span class="werke-list-genre">{{ . }}</span>{{ end }}
             </span>
             <span class="werke-list-axes" aria-label="{{ i18n "axisLabel" }}">
-              <span class="axis">D&nbsp;{{ $z.diktion }}</span>
+              <span class="axis">W&nbsp;{{ $z.wortlaut }}</span>
               <span class="axis">G&nbsp;{{ $z.geist }}</span>
-              <span class="axis axis-k">K&nbsp;{{ $z.korrespondenz }}{{ if eq $z.korrespondenz "ausstehend" }}&nbsp;†{{ end }}</span>
+              <span class="axis axis-b">B&nbsp;{{ $z.beleg }}{{ if eq $z.beleg "ausstehend" }}&nbsp;†{{ end }}</span>
             </span>
           </a>
         </li>

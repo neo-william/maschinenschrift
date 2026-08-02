@@ -38,7 +38,7 @@ The third part — the choice of systems — lies outside what Maschinenschrift 
 
 "Everyone who needs to know" — for a work of literature, that is not the colleague on the project and not the client. It is the reader, including the one thirty years from now who finds the book secondhand and wants to know how it was made. The author can no longer be asked, and her good intention is not enough. What suffices is <u>a notation that stays with the work: nameable, comparable, durable</u>.
 
-This is where Maschinenschrift begins. The seal gives the required honesty a form: three axes — *Diction* (how much of the linguistic surface the substrate supplied), *Geist* (German: spirit, intellectual presence — how much of the ideas, arguments, structures), and *Correspondence* (whether the work is bibliographically documented). The framework demands the account. The seal is a language in which it can be given — and which lasts.
+This is where Maschinenschrift begins. The seal gives the required honesty a form: three axes — *Wortlaut* (wording: how much of the linguistic surface the substrate supplied), *Geist* (German: spirit, intellectual presence — how much of the ideas, arguments, structures), and *Beleg* (the record: whether the work is bibliographically documented). The framework demands the account. The seal is a language in which it can be given — and which lasts.
 
 ## The difference
 
@@ -58,4 +58,4 @@ More on the form and the lineage: [Idea](/idea/). Why the project says *Sprachsu
 
 ---
 
-*Self-declaration of this note: **D 5 · G 3**. Draft and most of the linguistic surface substrate-generated, the comparative argument substrate-mediated; occasion, selection, review, and responsibility with the editor. A note on the maker's demand for transparency carries its own account.*
+*Self-declaration of this note: **W 5 · G 3**. Draft and most of the linguistic surface substrate-generated, the comparative argument substrate-mediated; occasion, selection, review, and responsibility with the editor. A note on the maker's demand for transparency carries its own account.*

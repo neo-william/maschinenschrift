@@ -63,7 +63,7 @@ Hier liegt die Unterscheidung, auf die es ankommt.
 
 Der Detektor ist Anklage. Er kommt von außen, gegen den Willen der Autorin, und behauptet zu sehen, was sie verborgen hat. Er fragt nach Wesen, nicht nach Tat.
 
-Die Selbstdeklaration ist das Gegenteil. Die Autorin sagt selbst, welche Rolle das Sprachsubstrat gespielt hat — wie viel zur Diktion, wie viel zum Geist, ob das Werk in der bibliographischen Welt belegt ist. Die Auskunft wird gegeben, nicht entrissen. Sie ersetzt das Lesen nicht. Sie begleitet es. Sie sagt: *So ist das gemacht. Nun lies.*
+Die Selbstdeklaration ist das Gegenteil. Die Autorin sagt selbst, welche Rolle das Sprachsubstrat gespielt hat — wie viel zum Wortlaut, wie viel zum Geist, ob das Werk in der bibliografischen Welt belegt ist. Die Auskunft wird gegeben, nicht entrissen. Sie ersetzt das Lesen nicht. Sie begleitet es. Sie sagt: *So ist das gemacht. Nun lies.*
 
 Die Hexenprobe lebt vom verborgenen Wesen. Wo das Verborgene ausgesprochen ist, hat sie keinen Boden mehr. Wer deklariert, entwaffnet den Detektor — nicht durch Versteck, sondern durch Antwort. Das ist die Wendung: **Nicht das Schweigen schützt vor der Jagd, sondern das Sagen.**
 

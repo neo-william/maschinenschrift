@@ -58,4 +58,4 @@ More on the form: [Idea](/idea/). Why the project says *Sprachsubstrat* rather t
 
 ---
 
-*Self-declaration of this note: **D 5 · G 3**. Core ideas from a workshop sketch of May 2026, distilled in dialogue with the substrate; the anchor mapping and most of the linguistic surface substrate-generated; selection, review, and responsibility with the editor.*
+*Self-declaration of this note: **W 5 · G 3**. Core ideas from a workshop sketch of May 2026, distilled in dialogue with the substrate; the anchor mapping and most of the linguistic surface substrate-generated; selection, review, and responsibility with the editor.*

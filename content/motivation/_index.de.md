@@ -23,11 +23,11 @@ Die Frage ändert ihre Form. Nicht *hat sie ein Sprachmodell benutzt?* — sonde
 
 Drei Achsen. Die Autorin markiert jede einzeln.
 
-- **Diktion** — wie viel der Oberfläche (Sätze, Wortwahl, Rhythmus) von der Maschine kam.
+- **Wortlaut** — wie viel der Oberfläche (Sätze, Wortwahl, Rhythmus) von der Maschine kam.
 - ***Geist*** — wie viel der Substanz (Ideen, Argument, Struktur) von der Maschine kam.
-- **Korrespondenz** — ob die sachlichen Aussagen gegen Quellen geprüft wurden.
+- **Beleg** — ob das Werk in der bibliografischen Welt steht: findbar, datierbar, identifizierbar.
 
-Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: die Korrespondenz steht noch aus. Die Autorin setzt das Siegel selbst und platziert es bei der Verfasserzeile — Cover, Titelseite, Impressum.
+Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: der Beleg steht noch aus. Die Autorin setzt das Siegel selbst und platziert es bei der Verfasserzeile — Cover, Titelseite, Impressum.
 
 Das ist die ganze Notation.
 

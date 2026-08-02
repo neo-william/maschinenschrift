@@ -1,0 +1,51 @@
+{{/*
+  Normalisiert den `zeichen`-Block eines Katalog-Eintrags auf das v7-Schema.
+
+  Nimmt `.Params.zeichen` und gibt ein Dict mit genau drei Schluesseln zurueck:
+    wortlaut  int  0..5
+    geist     int  0..5
+    beleg     str  "belegt" | "ausstehend"
+
+  Damit brechen Alt-Schema-Eintraege den Build nicht. Akzeptiert:
+    v7  wortlaut / geist / beleg
+    v6  diktion  / geist / korrespondenz
+    v5  form     / substance / verification (verified -> belegt)
+
+  Aufruf:
+    {{ $z := partial "zeichen.html" .Params.zeichen }}
+    {{ $z.wortlaut }} {{ $z.geist }} {{ $z.beleg }}
+
+  Ein fehlender oder leerer Block ergibt das leere Siegel mit erbrachtem Beleg.
+*/}}
+{{- $w := 0 -}}
+{{- $g := 0 -}}
+{{- $b := "belegt" -}}
+{{- with . -}}
+  {{- if isset . "wortlaut" -}}
+    {{- $w = int .wortlaut -}}
+  {{- else if isset . "diktion" -}}
+    {{- $w = int .diktion -}}
+  {{- else if isset . "form" -}}
+    {{- $w = int .form -}}
+  {{- end -}}
+  {{- if isset . "geist" -}}
+    {{- $g = int .geist -}}
+  {{- else if isset . "substance" -}}
+    {{- $g = int .substance -}}
+  {{- end -}}
+  {{- if isset . "beleg" -}}
+    {{- $b = .beleg -}}
+  {{- else if isset . "korrespondenz" -}}
+    {{- $b = .korrespondenz -}}
+  {{- else if isset . "verification" -}}
+    {{- if eq .verification "verified" -}}
+      {{- $b = "belegt" -}}
+    {{- else -}}
+      {{- $b = "ausstehend" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if and (ne $b "belegt") (ne $b "ausstehend") -}}
+  {{- errorf "zeichen.beleg muss 'belegt' oder 'ausstehend' sein, ist %q" $b -}}
+{{- end -}}
+{{- return dict "wortlaut" $w "geist" $g "beleg" $b -}}

@@ -84,7 +84,7 @@ other = "Contribute an entry"
 other = "Adoption is self-declaration-based. To enter the catalog:"
 
 [contributeStep1]
-other = "Determine your D/G/K values per Foundation §7 (Diktion, Geist, Correspondence)."
+other = "Determine your W/G/B values per Foundation §7 (Wortlaut / Wording, Geist, Beleg / Record)."
 
 [contributeStep2]
 other = "Pull request against the works directory with a YAML file following the inaugural entry's schema."
@@ -99,14 +99,14 @@ other = "Genre"
 [werkLanguage]
 other = "Language"
 
-[werkDiktionAxis]
-other = "Diktion (D)"
+[werkWortlautAxis]
+other = "Wording (W)"
 
 [werkGeistAxis]
 other = "Geist (G)"
 
-[werkKorrespondenzAxis]
-other = "Correspondence (K)"
+[werkBelegAxis]
+other = "Record (B)"
 
 [werkDeclared]
 other = "Declared"
@@ -133,7 +133,7 @@ other = "SVG (vector)"
 other = "License: CC BY 4.0. Use as origin mark requires public self-declaration in the Maschinenschrift standard."
 
 [ausstehendTitle]
-other = "Self-declared, bibliographic correspondence pending"
+other = "Self-declared, bibliographic record pending"
 
 # Seal page
 [atlasLead]
@@ -143,9 +143,9 @@ other = "A small mark, set by the author. It says where the machine helped, and 
 other = "The three axes"
 
 [atlasAxes]
-other = """- **Diction** (D, 0–5) — how much of the surface (sentences, word choice, rhythm) came from the machine.
+other = """- **Wording** (W, 0–5) — how much of the surface (sentences, word choice, rhythm) came from the machine.
 - ***Geist*** (G, 0–5) — how much of the substance (ideas, argument, structure) came from the machine.
-- **Correspondence** (K, binary) — whether the factual claims have been checked against sources.
+- **Record** (B, binary) — whether the work stands in the bibliographic world: findable, datable, identifiable.
 
 *Geist* stays in German. Hegel and *Geisteswissenschaften* stand behind the word. The gloss in English is *Ghost from the Machine*. The diagnostic formula is *Geist aus der Maschine*. Meaning and vocabulary belong to the [Idea](/idea/)."""
 
@@ -153,10 +153,10 @@ other = """- **Diction** (D, 0–5) — how much of the surface (sentences, word
 other = "How the seal is set"
 
 [siegelUseIntro]
-other = "The author sets D, G, and K with the generator. The seal downloads as SVG for typesetting, or as PNG at 1024 px. It then goes into the book near the byline — cover, title page, about page. The colophon line and the HTML embed carry the same declaration into imprints and websites."
+other = "The author sets W, G, and B with the generator. The seal downloads as SVG for typesetting, or as PNG at 1024 px. It then goes into the book near the byline — cover, title page, about page. The colophon line and the HTML embed carry the same declaration into imprints and websites."
 
 [siegelNoscript]
-other = "The generator requires JavaScript. Without it, the 72 pre-rendered seal assets are available directly at <code>/siegel/assets/d{D}-g{G}-{belegt|ausstehend}.svg</code>, each also as PNG in 512, 1024, and 2048 px."
+other = "The generator requires JavaScript. Without it, the 72 pre-rendered seal assets are available directly at <code>/siegel/assets/w{W}-g{G}-{belegt|ausstehend}.svg</code>, each also as PNG in 512, 1024, and 2048 px."
 
 [atlasLicenseHeading]
 other = "License"
@@ -190,10 +190,10 @@ other = "Today's pick:"
 
 # Three example states on the homepage
 [stateEmpty]
-other = "Authored alone. Correspondence documented."
+other = "Authored alone. Record documented."
 
 [stateMid]
-other = "Partly machine-delivered. Correspondence documented."
+other = "Partly machine-delivered. Record documented."
 
 [stateFull]
-other = "Predominantly machine-delivered. Correspondence pending."
+other = "Predominantly machine-delivered. Record pending."

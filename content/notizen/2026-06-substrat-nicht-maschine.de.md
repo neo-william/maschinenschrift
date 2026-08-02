@@ -53,4 +53,4 @@ Die anderen Wörter — *KI*, *LLM*, *Sprachmodell* — werden nicht verboten. S
 
 ---
 
-Mehr zur Sache: [Idee](/de/idee/). Mehr zur Form des Siegels und der Achsen Diktion · Geist · Korrespondenz: ebenda. Eine erste Anwendung der hier hergeleiteten Position: [Die Hexenprobe](/de/notizen/2026-06-die-hexenprobe/).
+Mehr zur Sache: [Idee](/de/idee/). Mehr zur Form des Siegels und der Achsen Wortlaut · Geist · Beleg: ebenda. Eine erste Anwendung der hier hergeleiteten Position: [Die Hexenprobe](/de/notizen/2026-06-die-hexenprobe/).

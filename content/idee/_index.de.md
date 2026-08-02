@@ -27,13 +27,13 @@ Das Siegel ist die Notation, in der ein Werk seine Vermittlung erklärt. Es best
 
 Drei Achsen tragen die Aussage:
 
-- **Diktion** (D) — wie viel das Substrat zur sprachlichen Oberfläche beigetragen hat. Idiomatische Wendung, Satzfluss, Stilregister. Skala 0–5.
+- **Wortlaut** (W) — wie viel das Substrat zur sprachlichen Oberfläche beigetragen hat. Idiomatische Wendung, Satzfluss, Stilregister. Skala 0–5.
 - **Geist** (G) — wie viel das Substrat zum Geist des Werks beigetragen hat. Ideen, Argumente, strukturelle Entscheidungen, Inhalt. Skala 0–5.
-- **Korrespondenz** (K) — ob das Werk in der bibliografischen Welt belegt ist. Binär: belegt oder ausstehend.
+- **Beleg** (B) — ob das Werk in der bibliografischen Welt belegt ist. Binär: belegt oder ausstehend.
 
 Ein **leeres Siegel** `[ ]` ist die Default-Position: die Autorin war allein, kein Substrat beteiligt. Punkte zählen, was importiert wurde — nicht, was geleistet wurde. Die Achsen messen den Beitrag der Maschine, nicht den des Menschen. Diese Polarität ist die institutionelle Grundentscheidung. Der schreibende Mensch ist der unmarkierte Normalfall.
 
-Korrespondenz steht in einer eigenen Logik. Wo Diktion und Geist Vermittlung messen, prüft Korrespondenz eine Relation: ob das Werk, auf das die Deklaration sich bezieht, in der bibliografischen Welt steht — findbar, datierbar, identifizierbar. Solange das nicht bestätigt ist, trägt das Siegel rechts unten einen **Halbstrich** — Marker für *ausstehend*. Die Achse ist keine Wertung; sie ist die schmale Stelle, an der Maschinenschrift sich kontrolliert in die Welt zurückbindet.
+Der Beleg steht in einer eigenen Logik. Wo Wortlaut und Geist Vermittlung messen, prüft der Beleg eine Relation: ob das Werk, auf das die Deklaration sich bezieht, in der bibliografischen Welt steht — findbar, datierbar, identifizierbar. Solange das nicht bestätigt ist, trägt das Siegel rechts unten einen **Halbstrich** — Marker für *ausstehend*. Die Achse ist keine Wertung; sie ist die schmale Stelle, an der Maschinenschrift sich kontrolliert in die Welt zurückbindet.
 
 ## Geist aus der Maschine
 
@@ -49,7 +49,7 @@ Wortlaut und Bedeutung waren immer knapp. Wer korrekte, idiomatische, klar gemei
 
 Auf dieser Ebene fehlt dem Substrat etwas, und es ist nicht das Verstehen. Es geht keine Verpflichtung ein. Es behauptet nichts, denn Behaupten heißt, sich der Zurechnung auszusetzen, und es hat nichts zu verlieren. Was ohne diesen Akt anfällt, ist keine Rede, sondern Material — Sprache, die auf einen fremden Vollzug wartet. Daher das Wort *Substrat*: ein Substrat ist das, worauf jemand anderes arbeitet.
 
-Daher auch die Zahl drei. Diktion zählt, was an der sprachlichen Oberfläche importiert wurde, Geist, was an Ideen und Struktur hinzukam, Korrespondenz, ob das Werk in der Welt belegt ist. Wofür jemand einsteht, wird nicht mitgezählt, denn es lässt sich nicht importieren. Das Einstehen ist keine vierte Achse; es ist der Akt, den das Siegel vollzieht. Wer es setzt, erklärt nicht, was gemeint war, sondern wer wofür geradesteht.
+Daher auch die Zahl drei. Wortlaut zählt, was an der sprachlichen Oberfläche importiert wurde, Geist, was an Ideen und Struktur hinzukam, Beleg, ob das Werk in der Welt belegt ist. Wofür jemand einsteht, wird nicht mitgezählt, denn es lässt sich nicht importieren. Das Einstehen ist keine vierte Achse; es ist der Akt, den das Siegel vollzieht. Wer es setzt, erklärt nicht, was gemeint war, sondern wer wofür geradesteht.
 
 ## Was Maschinenschrift adressiert — und was nicht
 

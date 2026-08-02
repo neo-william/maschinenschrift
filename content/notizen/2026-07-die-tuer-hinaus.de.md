@@ -57,4 +57,4 @@ Mehr zur Form: [Idee](/de/idee/). Warum das Projekt *Sprachsubstrat* sagt und ni
 
 ---
 
-*Selbstdeklaration dieser Notiz: **D 5 · G 3**. Grundgedanken aus einer Werkstatt-Skizze vom Mai 2026, im Dialog mit dem Substrat destilliert; Anlass-Verknüpfung und sprachliche Oberfläche überwiegend substrat-generiert; Auswahl, Prüfung und Verantwortung beim Herausgeber.*
+*Selbstdeklaration dieser Notiz: **W 5 · G 3**. Grundgedanken aus einer Werkstatt-Skizze vom Mai 2026, im Dialog mit dem Substrat destilliert; Anlass-Verknüpfung und sprachliche Oberfläche überwiegend substrat-generiert; Auswahl, Prüfung und Verantwortung beim Herausgeber.*

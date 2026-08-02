@@ -44,15 +44,15 @@ Damit ist die Lage beschrieben. Es fehlt nicht an Technik und nicht an Moral. **
 
 Maschinenschrift ist ein offener Standard und ein Zeichen. Die Autorin erklärt selbst, in eigener Hand, was ein Sprachmodell zu ihrem Werk beigetragen hat — auf drei Achsen, in einer Notation, die auf einen Buchdeckel passt.
 
-- **Diktion (D)** — wie viel der sprachlichen Oberfläche vom Modell kam: Satzbau, Wortwahl, Rhythmus. Skala 0 bis 5.
+- **Wortlaut (W)** — wie viel der sprachlichen Oberfläche vom Modell kam: Satzbau, Wortwahl, Rhythmus. Skala 0 bis 5.
 - **Geist (G)** — wie viel der Ideen, Argumente und strukturellen Entscheidungen vom Modell kam. Skala 0 bis 5.
-- **Korrespondenz (K)** — ob das Werk bibliografisch belegt und auffindbar ist. Zwei Zustände: belegt oder ausstehend.
+- **Beleg (B)** — ob das Werk bibliografisch belegt und auffindbar ist. Zwei Zustände: belegt oder ausstehend.
 
 Das Zeichen selbst sind zwei eckige Klammern mit drei Zeilen und je fünf Feldern. Punkte zählen, was das Modell beigetragen hat. Ein **leeres Siegel** ist der Normalfall: die Autorin war allein. Diese Richtung ist die wichtigste Entscheidung der ganzen Konstruktion. Gezählt wird nicht die Leistung des Menschen, sondern der Anteil der Maschine. Wer ohne Modell schreibt, muss nichts nachweisen — er ist der unmarkierte Fall.
 
 Das Siegel steht dort, wo die Verfasserzeile steht: Titelseite, Impressum, Umschlagrückseite. Es ist freiwillig, kostet nichts, verlangt keine Anmeldung und wird von niemandem genehmigt.
 
-Zum Vergleich, was heute stattdessen existiert: Wer bei Amazon selbst veröffentlicht, kreuzt an, ob das Buch *KI-generiert* oder *KI-unterstützt* ist. Zwei Kästchen für den ganzen Raum zwischen einem Modell, das Fakten nachschlägt, und einem, das die Sätze liefert. In dieses Kästchen passt nicht der Satz, der bei vielen Büchern der wahre wäre: *Die Sätze sind größtenteils maschinell, die Figuren, der Bau und das Argument sind meine.* Genau dieser Satz hat im Siegel eine Form. Er lautet D 4 · G 2.
+Zum Vergleich, was heute stattdessen existiert: Wer bei Amazon selbst veröffentlicht, kreuzt an, ob das Buch *KI-generiert* oder *KI-unterstützt* ist. Zwei Kästchen für den ganzen Raum zwischen einem Modell, das Fakten nachschlägt, und einem, das die Sätze liefert. In dieses Kästchen passt nicht der Satz, der bei vielen Büchern der wahre wäre: *Die Sätze sind größtenteils maschinell, die Figuren, der Bau und das Argument sind meine.* Genau dieser Satz hat im Siegel eine Form. Er lautet W 4 · G 2.
 
 ## Was es nicht ist
 
@@ -76,7 +76,7 @@ Der Name ist älter als das Projekt. *Maschinenschrift* hieß im zwanzigsten Jah
 
 Damit das Ganze nicht später einer Person gehört, ist es weggegeben, bevor es Wert hat: Inhalte und Notation stehen unter Creative Commons, der Code unter einer freien Lizenz, die Wortmarke bleibt schlafend. Wer den Standard heute benutzt, kann morgen nicht davon abgeschnitten werden — auch nicht von seinem Urheber. Das Verzeichnis ist auf fünfzig Jahre angelegt und liegt in Textdateien, nicht in einer Datenbank, die jemand betreiben muss. Es gibt keine Konten, keine Cookies, keine Tracker. Der laufende Betrieb kostet etwa so viel wie ein Abendessen im Jahr.
 
-Der Roman, mit dem alles anfing, deklariert **D 4 · G 2 · K ausstehend** — viel Maschine in der Sprache, wenig im Geist, keine bibliografische Korrespondenz, weil Fiktion nichts belegt. Das ist die unbequemste Auskunft, die dieses Projekt zu geben hatte, und sie steht an seiner Spitze. Wer eine Form für Ehrlichkeit vorschlägt, hat zuerst selbst zu antworten.
+Der Roman, mit dem alles anfing, deklariert **W 4 · G 2 · B ausstehend** — viel Maschine in der Sprache, wenig im Geist, keinen bibliografischen Beleg, weil Fiktion nichts belegt. Das ist die unbequemste Auskunft, die dieses Projekt zu geben hatte, und sie steht an seiner Spitze. Wer eine Form für Ehrlichkeit vorschlägt, hat zuerst selbst zu antworten.
 
 ## Der Einwand, der bleibt
 

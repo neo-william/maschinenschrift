@@ -83,7 +83,7 @@ other = "Eintrag beitragen"
 other = "Adoption ist selbstdeklarations-basiert. Der Weg zur Aufnahme:"
 
 [contributeStep1]
-other = "Eigene D/G/K-Werte gemäß Foundation §7 bestimmen (Diktion, Geist, Korrespondenz)."
+other = "Eigene W/G/B-Werte gemäß Foundation §7 bestimmen (Wortlaut, Geist, Beleg)."
 
 [contributeStep2]
 other = "Pull Request gegen das works-Verzeichnis mit einer YAML-Datei nach dem Schema des inauguralen Eintrags."
@@ -98,14 +98,14 @@ other = "Gattung"
 [werkLanguage]
 other = "Sprache"
 
-[werkDiktionAxis]
-other = "Diktion (D)"
+[werkWortlautAxis]
+other = "Wortlaut (W)"
 
 [werkGeistAxis]
 other = "Geist (G)"
 
-[werkKorrespondenzAxis]
-other = "Korrespondenz (K)"
+[werkBelegAxis]
+other = "Beleg (B)"
 
 [werkDeclared]
 other = "Deklariert"
@@ -132,7 +132,7 @@ other = "SVG (vektor)"
 other = "Lizenz: CC BY 4.0. Verwendung als Herkunftszeichen setzt öffentliche Selbstdeklaration im Maschinenschrift-Standard voraus."
 
 [ausstehendTitle]
-other = "Selbstdeklaration, bibliographische Korrespondenz ausstehend"
+other = "Selbstdeklaration, bibliografischer Beleg ausstehend"
 
 # Siegel-Seite
 [atlasLead]
@@ -142,11 +142,11 @@ other = "Das Siegel ist eine Selbst-Auskunft. Die Autorin sagt, in eigener Hand,
 other = "Die drei Achsen"
 
 [atlasAxes]
-other = """- **Diktion** — wie viel der Oberfläche, also Sätze, Wortwahl, Rhythmus, von der Maschine kam.
-- ***Geist*** — wie viel der Substanz, also Ideen, Argument, Struktur, von der Maschine kam.
-- **Korrespondenz** — ob die sachlichen Aussagen gegen Quellen geprüft wurden.
+other = """- **Wortlaut** (W, 0–5) — wie viel der Oberfläche, also Sätze, Wortwahl, Rhythmus, von der Maschine kam.
+- ***Geist*** (G, 0–5) — wie viel der Substanz, also Ideen, Argument, Struktur, von der Maschine kam.
+- **Beleg** (B, binär) — ob das Werk in der bibliografischen Welt steht: findbar, datierbar, identifizierbar.
 
-Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: die Korrespondenz steht noch aus.
+Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: der Beleg steht noch aus.
 
 *Geist* bleibt deutsch. Das Wort trägt Hegel und die Geisteswissenschaften mit. Die Diagnose-Formel lautet *Geist aus der Maschine*. Vokabular: [Idee](/de/idee/)."""
 
@@ -154,10 +154,10 @@ Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. E
 other = "Wie das Siegel gesetzt wird"
 
 [siegelUseIntro]
-other = "Die Autorin setzt die D/G/K-Werte am Generator. Sie lädt das Siegel als SVG oder als PNG mit 1024 Pixeln. Sie platziert es bei der Verfasserzeile — Cover, Titelseite, Impressum. Kolophon-Zeile und HTML-Embed tragen dieselbe Deklaration in Impressen und auf Webseiten."
+other = "Die Autorin setzt die W/G/B-Werte am Generator. Sie lädt das Siegel als SVG oder als PNG mit 1024 Pixeln. Sie platziert es bei der Verfasserzeile — Cover, Titelseite, Impressum. Kolophon-Zeile und HTML-Embed tragen dieselbe Deklaration in Impressen und auf Webseiten."
 
 [siegelNoscript]
-other = "Der Generator benötigt JavaScript. Ohne JavaScript liegen die 72 vor-generierten Siegel-Assets direkt unter <code>/siegel/assets/d{D}-g{G}-{belegt|ausstehend}.svg</code>, jeweils auch als PNG in 512, 1024 und 2048 px."
+other = "Der Generator benötigt JavaScript. Ohne JavaScript liegen die 72 vor-generierten Siegel-Assets direkt unter <code>/siegel/assets/w{W}-g{G}-{belegt|ausstehend}.svg</code>, jeweils auch als PNG in 512, 1024 und 2048 px."
 
 [atlasLicenseHeading]
 other = "Lizenz"
@@ -191,10 +191,10 @@ other = "Heute im Katalog:"
 
 # Drei Beispiel-Zustände auf der Homepage
 [stateEmpty]
-other = "Allein verfasst. Korrespondenz belegt."
+other = "Allein verfasst. Belegt."
 
 [stateMid]
-other = "Teils maschinell beigetragen. Korrespondenz belegt."
+other = "Teils maschinell beigetragen. Belegt."
 
 [stateFull]
-other = "Überwiegend maschinell beigetragen. Korrespondenz ausstehend."
+other = "Überwiegend maschinell beigetragen. Beleg ausstehend."
