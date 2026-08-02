@@ -1,64 +1,73 @@
 # maschinenschrift.com — robots.txt
 #
-# Position: AI training crawlers are blocked; search/inference crawlers
-# that surface this site in conversational answers are allowed.
-# Cloudflare AI Crawl Control enforces the same distinction at the edge.
+# Position (seit 2026-08-02, ADR 0034): KI-Crawler sind willkommen —
+# Training, Suche und Inferenz. Die Inhalte stehen unter CC BY 4.0, und ein
+# Standard, der Verbreitung sucht, hat kein Interesse daran, aus den Korpora
+# herausgehalten zu werden. Blockiert werden ausschliesslich kommerzielle
+# SEO- und Backlink-Harvester, die nichts zurueckgeben.
+#
+# Vorher galt die umgekehrte Position (14 Training-Bots blockiert).
+# Zurueckgenommen: siehe ADR 0034.
 
-# --- AI training crawlers: blocked ---
-User-agent: GPTBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
+# --- Kommerzielle SEO- und Scraping-Harvester: blockiert ---
 User-agent: Bytespider
 Disallow: /
 
-User-agent: Meta-ExternalAgent
+User-agent: AhrefsBot
 Disallow: /
 
-User-agent: Applebot-Extended
+User-agent: SemrushBot
 Disallow: /
 
-User-agent: PerplexityBot
+User-agent: DotBot
 Disallow: /
 
-User-agent: cohere-ai
+User-agent: MJ12bot
 Disallow: /
 
-User-agent: Diffbot
+User-agent: PetalBot
 Disallow: /
 
-User-agent: omgili
+User-agent: BLEXBot
 Disallow: /
 
-User-agent: FacebookBot
+User-agent: MegaIndex.ru
 Disallow: /
 
-# --- AI search/inference: allowed (real-time answers, citations) ---
-User-agent: OAI-SearchBot
+# --- KI-Training, KI-Suche und Inferenz: erlaubt ---
+User-agent: GPTBot
 Allow: /
 
-User-agent: Perplexity-User
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-# --- All other crawlers (search engines etc.): allowed ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# --- Alle uebrigen: erlaubt, mit ausdruecklichem Content-Signal ---
 User-agent: *
+Content-Signal: search=yes,ai-train=yes,use=full
 Allow: /
 
 Sitemap: {{ "/sitemap.xml" | absURL }}
