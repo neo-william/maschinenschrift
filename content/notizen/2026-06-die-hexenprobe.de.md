@@ -1,6 +1,7 @@
 ---
 title: "Die Hexenprobe"
-description: "Warum Maschinenschrift den Detektor verweigert. Eine Notiz zu Magnifica Humanitas und dem Substrat-Detektor."
+description: "Warum Maschinenschrift den KI-Detektor verweigert. Eine Notiz zur päpstlichen Enzyklika, zum Snopes-Befund und dazu, was Detektion nicht klären kann."
+seotitle: "Die Hexenprobe — warum KI-Detektoren nichts klären"
 date: 2026-06-04
 bucket: aktuelle-anknuepfung
 sources:

@@ -1,6 +1,7 @@
 ---
 title: Impressum
-description: Angaben gemäß § 5 TMG.
+description: "Impressum für maschinenschrift.com gemäß § 5 TMG: Betreiber, Anschrift, Kontakt und Verantwortlichkeit für den Inhalt nach § 18 (2) MStV."
+seotitle: "Impressum — maschinenschrift.com"
 ---
 
 ## Anbieter

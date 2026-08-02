@@ -1,6 +1,7 @@
 ---
 title: Registry
-description: Catalog of works declared under the Maschinenschrift standard.
+description: "Catalog of books declared under the Maschinenschrift standard, each with its seal. Admission by self-declaration: no fee, no review board, no gatekeeping."
+seotitle: "Registry — Books That Declare Their AI Use"
 url: /registry/
 aliases:
   - /works/

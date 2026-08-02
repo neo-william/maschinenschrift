@@ -1,6 +1,7 @@
 ---
 title: "Siegel-Spec v7"
-description: Kanonische geometrische Spezifikation des Maschinenschrift-Siegels.
+description: "Kanonische Spezifikation des KI-Siegels seit dem 2026-08-02: Geometrie, Rendering-Regeln und die Achsen Wortlaut, Geist, Beleg (W/G/B)."
+seotitle: "Siegel-Spec v7 — aktuelle Spezifikation (W/G/B)"
 ---
 
 **Status:** Aktuell kanonisch (seit 2026-08-02). Die Geometrie ist unverändert gegenüber v5; die Achsen heißen jetzt **W/G/B — Wortlaut, *Geist*, Beleg**, und die binäre B-Achse verwendet `belegt` / `ausstehend`. Semantische Grundlage: [Foundation §7](/de/foundation/#7-seal-axis-semantics). Die Vorgänger v6 und v5 sind eingefroren unter [/de/spec/siegel-v6/](/de/spec/siegel-v6/) und [/de/spec/siegel-v5/](/de/spec/siegel-v5/).

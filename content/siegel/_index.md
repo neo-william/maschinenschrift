@@ -1,6 +1,7 @@
 ---
 title: Seal Generator
-description: Configure and download the Maschinenschrift seal for your own work. SVG (vector) or PNG.
+description: "Create the AI disclosure seal for your own book: set the three axes, download it as SVG or PNG. Free, no account, no registration. For ebook and print."
+seotitle: "Seal Generator — Free AI Disclosure Label for Your Book"
 layout: atlas
 url: /seal/
 ---

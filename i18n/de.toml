@@ -198,3 +198,7 @@ other = "Teils maschinell beigetragen. Belegt."
 
 [stateFull]
 other = "Überwiegend maschinell beigetragen. Beleg ausstehend."
+
+# Meta-Description-Fallback für Katalogeinträge ohne eigene Beschreibung
+[werkMetaDescription]
+other = "Im Maschinenschrift-Standard deklariert, mit Siegel am Werk: Wortlaut, Geist, Beleg."

@@ -1,6 +1,7 @@
 ---
 title: Submit
-description: How to submit a work for inclusion in the Maschinenschrift catalog.
+description: "How to list a book that declares its AI use: send the title, a platform where it is findable, and where the seal sits on the work. By email, no fee."
+seotitle: "Submit a Book — Maschinenschrift AI Disclosure Registry"
 url: /submit/
 aliases:
   - /contribute/

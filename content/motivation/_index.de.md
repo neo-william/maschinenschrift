@@ -1,6 +1,7 @@
 ---
 title: Motivation
-description: Ein Transparenz-Standard für Literatur, die mit Sprachmodellen geschrieben wurde. Die Autorin erklärt selbst — auf drei Achsen, in eigener Hand —, wo und wie viel die Maschine geholfen hat.
+description: "Ein Transparenz-Standard für Literatur, die mit Large Language Models geschrieben wurde. Die Autorin gibt selbst an, wie viel KI im Buch steckt."
+seotitle: "Motivation — warum KI-Nutzung im Buch deklariert wird"
 ---
 
 ## Das Problem.

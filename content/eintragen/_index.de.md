@@ -1,6 +1,7 @@
 ---
 title: Eintragen
-description: Wie ein Werk in das Maschinenschrift-Verzeichnis aufgenommen wird.
+description: "Wie ein Buch mit deklarierter KI-Nutzung ins Verzeichnis kommt: Titel, eine auffindbare Plattform und die Stelle, an der das Siegel sitzt. Per E-Mail."
+seotitle: "Eintragen — Buch ins Maschinenschrift-Verzeichnis"
 aliases:
   - /beitragen/
 ---

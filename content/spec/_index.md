@@ -1,6 +1,7 @@
 ---
 title: Specifications
-description: Canonical technical specifications of the Maschinenschrift standard.
+description: "Technical specifications of the Maschinenschrift AI disclosure seal: geometry, rendering rules, axis semantics. Current version v7; v6 and v5 are frozen."
+seotitle: "Specifications — Seal Geometry and Axes (v5 to v7)"
 ---
 
 This page collects the technical specifications that are binding for a

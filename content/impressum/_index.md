@@ -1,6 +1,7 @@
 ---
 title: Imprint
-description: Imprint per § 5 TMG.
+description: "Imprint for maschinenschrift.com per § 5 TMG: operator, address, contact, and responsibility for content per § 18 (2) MStV."
+seotitle: "Imprint — maschinenschrift.com"
 url: /imprint/
 ---
 

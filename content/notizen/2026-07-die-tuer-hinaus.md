@@ -1,6 +1,7 @@
 ---
 title: "The Door Out"
-description: "Language models are more creative than the average, a study measures — and hit a ceiling. On combinatorial and generative novelty, and why the human is the only door out."
+description: "AI language models score above the human average for creativity, a study finds — and hit a ceiling. On combinatorial versus generative novelty."
+seotitle: "The Door Out — Are AI Language Models Creative?"
 date: 2026-07-18
 bucket: lineage
 url: /notes/2026-07-the-door-out/

@@ -1,6 +1,7 @@
 ---
 title: Maschinenschrift
-description: Offener Standard zur Selbstdeklaration von Literatur, die mit Large Language Models geschrieben wurde.
+description: "Offener Standard zur Selbstdeklaration von Literatur, die mit Large Language Models geschrieben wurde. Den KI-Anteil selbst angeben, auf drei Achsen."
+seotitle: "Maschinenschrift — KI-Kennzeichnung für Bücher"
 ---
 
 Eine Maschine schreibt nicht. Sie liefert Sprache. Geschrieben hat, wer auswählt, was bleibt — und das Siegel sagt, wie viel von der Maschine kam.

@@ -1,10 +1,35 @@
 <!doctype html>
 <html lang="{{ .Site.Language.Lang }}">
+{{- /*
+  SEO-Titel und -Beschreibung.
+
+  `seotitle` im Front Matter ueberschreibt den <title>, ohne .Title anzutasten
+  — .Title bleibt Ueberschrift, Navigations- und Breadcrumb-Label und muss
+  darum kurz bleiben. Ohne seotitle gilt "<Titel> — Maschinenschrift".
+
+  Die Beschreibung faellt von .Description auf eine aus den Werk-Daten
+  gebaute Zeile (Sektion werke) und zuletzt auf die Site-Beschreibung zurueck.
+  Ohne den Werke-Zweig traegt jeder Katalogeintrag dieselbe Beschreibung.
+*/ -}}
+{{- $title := "" -}}
+{{- with .Params.seotitle -}}
+  {{- $title = . -}}
+{{- else -}}
+  {{- $title = cond .IsHome .Site.Title (printf "%s — %s" .Title .Site.Title) -}}
+{{- end -}}
+{{- $desc := .Site.Params.description -}}
+{{- with .Description -}}
+  {{- $desc = . -}}
+{{- else -}}
+  {{- if eq .Section "werke" -}}
+    {{- $desc = printf "%s%s — %s. %s" .Title (cond (isset .Params "year") (printf " (%v)" .Params.year) "") .Params.author (i18n "werkMetaDescription") -}}
+  {{- end -}}
+{{- end -}}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ $desc }}">
   <link rel="canonical" href="{{ .Permalink }}">
 
   {{ range .AllTranslations }}
@@ -12,15 +37,20 @@
   {{ end }}
   <link rel="alternate" hreflang="x-default" href="{{ "/" | absURL }}">
 
-  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
-  <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $desc }}">
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="{{ (.Site.Params.ogImage | default "/og/maschinenschrift.png") | absURL }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
   <meta property="og:locale" content="{{ .Site.Language.Lang }}">
   {{ range .Translations }}
     <meta property="og:locale:alternate" content="{{ .Language.Lang }}">
   {{ end }}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $title }}">
+  <meta name="twitter:description" content="{{ $desc }}">
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   {{- /* Content-Hash als Cache-Buster: /css/* ist immutable-gecacht (siehe static/_headers),

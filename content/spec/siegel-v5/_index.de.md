@@ -1,6 +1,7 @@
 ---
 title: "Siegel-Spec v5"
-description: Kanonische geometrische Spezifikation des Maschinenschrift-Siegels.
+description: "Eingefrorener historischer Stand der Siegel-Spezifikation, 2026-05-21. Achsen F/S/V (Form, Substanz, Verifikation). Abgelöst durch v7."
+seotitle: "Siegel-Spec v5 — abgelöste Spezifikation (F/S/V)"
 ---
 
 **Status:** Abgelöst durch [Siegel-Spec v7](/de/spec/siegel-v7/); zwischenzeitlich galt [v6](/de/spec/siegel-v6/) (2026-05-24). Eingefrorener historischer Stand vom 2026-05-21 — Inhalt und Pfad-Angaben werden nicht mehr nachgeführt. Die Geometrie ist unverändert, aber die Achsen heißen jetzt D/G/K (Diktion, *Geist*, Korrespondenz), und die binäre K-Achse verwendet `belegt`/`ausstehend` statt `verified`/`unverified`. Siehe die aktuelle kanonische Spezifikation unter [/de/spec/siegel-v6/](/de/spec/siegel-v6/) und [Foundation §7](/foundation/#7-seal-axis-semantics).

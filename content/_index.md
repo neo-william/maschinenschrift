@@ -1,6 +1,7 @@
 ---
 title: Maschinenschrift
-description: Open standard for the self-declaration of literature written with large language models.
+description: "Open standard for the self-declaration of literature written with large language models. Declare how much AI is in your book, on three axes. Free, no sign-up."
+seotitle: "Maschinenschrift — The AI Disclosure Standard for Books"
 ---
 
 A machine does not write. It delivers language. The one who writes is the one who chooses what to keep — and the seal says how much came from the machine.

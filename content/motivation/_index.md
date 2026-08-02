@@ -1,6 +1,7 @@
 ---
 title: Motivation
-description: A transparency standard for literature written with large language models. The author declares — on three axes, by their own hand — where and how much the machine helped.
+description: "A transparency standard for literature written with large language models. The author declares on three axes, by their own hand, how much AI is in the book."
+seotitle: "Motivation — Why AI-Assisted Books Are Declared"
 ---
 
 ## The problem.

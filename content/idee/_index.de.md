@@ -1,6 +1,7 @@
 ---
 title: Idee
-description: Was Maschinenschrift ist, in welcher Linie sie steht, was das Siegel anzeigt.
+description: "Was Maschinenschrift ist: KI als Schreibtechnik in der Linie von Druckerpresse und Schreibmaschine — und was das Siegel an einem Buch anzeigt."
+seotitle: "Die Idee — KI als Schreibtechnik, nicht als Co-Autor"
 aliases:
   - /foundation/
 ---

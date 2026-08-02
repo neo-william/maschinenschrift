@@ -1,6 +1,7 @@
 ---
 title: "Die vierte Kompetenz"
-description: "Anthropics AI-Fluency-Framework verlangt Ehrlichkeit über die Rolle der Maschine. Eine Notiz über eine Bestätigung aus unerwarteter Richtung — und über das Wort, das nicht trägt."
+description: "Anthropics AI-Fluency-Framework verlangt Ehrlichkeit über die Rolle der KI. Eine Bestätigung aus unerwarteter Richtung — und das Wort, das nicht trägt."
+seotitle: "Die vierte Kompetenz — AI Fluency und die Offenlegung"
 date: 2026-07-14
 bucket: aktuelle-anknuepfung
 deklaration:

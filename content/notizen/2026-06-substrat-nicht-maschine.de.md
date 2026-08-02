@@ -1,6 +1,7 @@
 ---
 title: "Substrat, nicht Maschine"
-description: "Warum Maschinenschrift Sprachsubstrat sagt — und nicht LLM, KI oder Assistent."
+description: "Warum Maschinenschrift Sprachsubstrat sagt und nicht KI, LLM oder Assistent. Das Wort spricht der Maschine keine Intelligenz zu, die sie nicht hat."
+seotitle: "Substrat, nicht Maschine — das Wort für das, was KI liefert"
 date: 2026-06-04
 bucket: lineage
 ---

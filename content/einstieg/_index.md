@@ -1,6 +1,7 @@
 ---
 title: Introduction
-description: Why a standard that lets authors state for themselves what AI models contributed to their book. The situation, the idea, how it came about — in plain language.
+description: "Why authors should state for themselves what AI contributed to their book, instead of being judged by detectors. The situation, the idea, in plain language."
+seotitle: "Introduction — Why Books Should Declare Their AI Use"
 url: /introduction/
 weight: 1
 ---

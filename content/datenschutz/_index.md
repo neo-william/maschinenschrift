@@ -1,6 +1,7 @@
 ---
 title: Privacy
-description: Privacy policy per Art. 13 GDPR.
+description: "Privacy policy for maschinenschrift.com per Art. 13 GDPR. Static site on Cloudflare Pages: no cookies, no tracking, no third-party fonts."
+seotitle: "Privacy — maschinenschrift.com"
 url: /privacy/
 ---
 

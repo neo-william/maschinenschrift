@@ -1,6 +1,7 @@
 ---
 title: Idea
-description: What Maschinenschrift is, the lineage in which it stands, what the seal shows.
+description: "What Maschinenschrift is: AI as writing technology in the line of the printing press and the typewriter — and what the seal on a declared book shows."
+seotitle: "The Idea — AI as Writing Technology, Not Co-Author"
 url: /idea/
 aliases:
   - /foundation/

@@ -1,6 +1,7 @@
 ---
 title: Spezifikationen
-description: Kanonische technische Spezifikationen des Maschinenschrift-Standards.
+description: "Technische Spezifikationen des Maschinenschrift-Siegels zur KI-Kennzeichnung: Geometrie, Rendering-Regeln, Achsensemantik. Aktuell v7, v6 und v5 eingefroren."
+seotitle: "Spezifikationen — Geometrie und Achsen des KI-Siegels"
 ---
 
 Diese Seite versammelt die technischen Spezifikationen, die für eine

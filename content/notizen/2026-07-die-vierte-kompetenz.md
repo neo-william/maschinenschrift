@@ -1,6 +1,7 @@
 ---
 title: "The Fourth Competency"
-description: "Anthropic's AI Fluency framework demands honesty about the machine's role. A note on a confirmation from an unexpected direction — and on the word that does not hold."
+description: "Anthropic's AI Fluency framework demands honesty about the machine's role. A confirmation from an unexpected direction — and the word that does not hold."
+seotitle: "The Fourth Competency — AI Fluency and Disclosure"
 date: 2026-07-14
 bucket: current-response
 url: /notes/2026-07-the-fourth-competency/

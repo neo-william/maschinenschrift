@@ -1,6 +1,7 @@
 ---
 title: "Substrate, not Machine"
-description: "Why Maschinenschrift says Sprachsubstrat — and not LLM, AI, or assistant."
+description: "Why Maschinenschrift says language substrate and not AI, LLM, or assistant. The word grants the machine no intelligence it does not have."
+seotitle: "Substrate, not Machine — The Word for What AI Delivers"
 date: 2026-06-04
 bucket: lineage
 url: /notes/2026-06-substrate-not-machine/

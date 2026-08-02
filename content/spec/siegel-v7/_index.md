@@ -1,6 +1,7 @@
 ---
 title: "Siegel-Spec v7"
-description: Canonical geometric specification of the Maschinenschrift seal.
+description: "Current canonical specification of the AI disclosure seal, since 2026-08-02: geometry, rendering rules, and the axes Wortlaut, Geist, Beleg (W/G/B)."
+seotitle: "Siegel-Spec v7 — Current Seal Specification (W/G/B)"
 ---
 
 **Status:** Current canonical (since 2026-08-02). Geometry is unchanged from v5; the axes are now **W/G/B — Wortlaut, *Geist*, Beleg** (in English contexts glossed *Wording*, *Geist*, *Record*), and the binary B-axis uses `belegt` / `ausstehend`. The letters follow the German canon, as *Geist* always has. The semantic basis lives in [Foundation §7](/foundation/#7-seal-axis-semantics). The predecessors v6 and v5 are frozen at [/spec/siegel-v6/](/spec/siegel-v6/) and [/spec/siegel-v5/](/spec/siegel-v5/).

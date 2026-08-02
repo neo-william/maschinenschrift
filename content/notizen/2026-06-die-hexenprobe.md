@@ -1,6 +1,7 @@
 ---
 title: "The Witch Trial"
-description: "Why Maschinenschrift refuses the detector. A note on Magnifica Humanitas and the substrate detector."
+description: "Why Maschinenschrift refuses the AI detector. A note on the papal encyclical, the Snopes verdict, and what detection cannot establish."
+seotitle: "The Witch Trial — Why AI Detectors Settle Nothing"
 date: 2026-06-04
 bucket: current-response
 url: /notes/2026-06-the-witch-trial/

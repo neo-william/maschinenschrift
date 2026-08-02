@@ -1,6 +1,7 @@
 ---
 title: "Die Tür hinaus"
-description: "Sprachmodelle sind kreativer als der Durchschnitt, misst eine Studie — und stoßen an eine Decke. Über kombinatorische und generative Neuheit, und warum der Mensch die einzige Tür hinaus ist."
+description: "KI-Sprachmodelle liegen über dem menschlichen Durchschnitt, misst eine Studie — und stoßen an eine Decke. Über kombinatorische und generative Neuheit."
+seotitle: "Die Tür hinaus — sind KI-Sprachmodelle kreativ?"
 date: 2026-07-18
 bucket: lineage
 deklaration:

@@ -1,6 +1,7 @@
 ---
 title: "Siegel-Spec v6"
-description: Canonical geometric specification of the Maschinenschrift seal.
+description: "Frozen historical snapshot of the Maschinenschrift seal specification, 2026-05-24. Axes D/G/K (Diktion, Geist, Korrespondenz). Superseded by v7."
+seotitle: "Siegel-Spec v6 — Superseded Seal Specification (D/G/K)"
 ---
 
 **Status:** Superseded by [Siegel-Spec v7](/spec/siegel-v7/) (2026-08-02). Frozen historical snapshot — content and path references are no longer maintained. The geometry is unchanged, but the axes are now W/G/B (Wortlaut, *Geist*, Beleg) and asset filenames follow `w{W}-g{G}-{state}.svg`. See the current canonical specification at [/spec/siegel-v7/](/spec/siegel-v7/).

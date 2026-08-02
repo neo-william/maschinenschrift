@@ -1,6 +1,7 @@
 ---
 title: "Siegel-Spec v6"
-description: Kanonische geometrische Spezifikation des Maschinenschrift-Siegels.
+description: "Eingefrorener historischer Stand der Siegel-Spezifikation, 2026-05-24. Achsen D/G/K (Diktion, Geist, Korrespondenz). Abgelöst durch v7."
+seotitle: "Siegel-Spec v6 — abgelöste Spezifikation (D/G/K)"
 ---
 
 **Status:** Abgelöst durch [Siegel-Spec v7](/de/spec/siegel-v7/) (2026-08-02). Eingefrorener historischer Stand — Inhalt und Pfad-Angaben werden nicht mehr nachgeführt. Die Geometrie ist unverändert, aber die Achsen heißen jetzt W/G/B (Wortlaut, *Geist*, Beleg), und die Asset-Dateinamen folgen dem Schema `w{W}-g{G}-{Zustand}.svg`. Siehe die aktuelle kanonische Spezifikation unter [/de/spec/siegel-v7/](/de/spec/siegel-v7/).

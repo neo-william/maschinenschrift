@@ -1,6 +1,7 @@
 ---
 title: Einstieg
-description: Wozu ein Standard, der Autorinnen selbst erklären lässt, was KI-Modelle zu ihrem Buch beigetragen haben. Die Lage, die Idee, die Entstehung — in einfacher Sprache.
+description: "Warum Autorinnen selbst angeben sollten, was KI zu ihrem Buch beigetragen hat, statt von Detektoren beurteilt zu werden. Die Lage, die Idee, einfach erklärt."
+seotitle: "Einstieg — warum Bücher ihre KI-Nutzung angeben sollten"
 weight: 1
 ---
 
