@@ -7,7 +7,7 @@ bucket: current-response
 url: /notes/2026-08-what-the-law-does-not-require/
 deklaration:
   wortlaut: 5
-  geist: 4
+  geist: 3
   beleg: belegt
 sources:
   - title: "Regulation (EU) 2024/1689 (AI Act), Article 50 — Transparency obligations for providers and deployers of certain AI systems"
@@ -88,4 +88,4 @@ On the form in which the account is given: [Idea](/idea/). On the axes and their
 
 ---
 
-*Self-declaration of this note: **W 5 · G 4**. Occasion and position with the editor. A machine-generated outside draft was on the table; its central factual claim — that Google compels every advertiser to declare on pain of account suspension — did not survive checking, and was replaced along with the argument built on it. Legal position, course of argument, and linguistic surface substrate-mediated; selection, review, and responsibility with the editor.*
+*Self-declaration of this note: **W 5 · G 3**. Conception, occasion, and position with the editor. The elaboration ran through two language substrates: the first supplied a version whose central factual claim — that Google compels every advertiser to declare on pain of account suspension — did not survive checking. The second checked it, discarded it, and rebuilt the argument. Legal position and linguistic surface substrate-mediated; selection, review, and responsibility with the editor.*

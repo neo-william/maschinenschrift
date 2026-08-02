@@ -6,7 +6,7 @@ date: 2026-08-03T01:00:00+02:00
 bucket: aktuelle-anknuepfung
 deklaration:
   wortlaut: 5
-  geist: 4
+  geist: 3
   beleg: belegt
 sources:
   - title: "Verordnung (EU) 2024/1689 (KI-Verordnung), Artikel 50 — Transparenzpflichten für Anbieter und Betreiber bestimmter KI-Systeme"
@@ -87,4 +87,4 @@ Zur Form, in der die Auskunft gegeben wird: [Idee](/de/idee/). Zu den Achsen und
 
 ---
 
-*Selbstdeklaration dieser Notiz: **W 5 · G 4**. Anlass und Position beim Herausgeber. Ein maschinell erzeugter Fremdentwurf lag vor; seine zentrale Tatsachenbehauptung — Google zwinge alle Werbetreibenden unter Androhung der Kontosperrung zur Deklaration — hielt der Prüfung nicht stand und wurde samt der darauf gebauten Argumentation ersetzt. Rechtslage, Argumentgang und sprachliche Oberfläche substrat-vermittelt; Auswahl, Prüfung und Verantwortung beim Herausgeber.*
+*Selbstdeklaration dieser Notiz: **W 5 · G 3**. Konzeption, Anlass und Position beim Herausgeber. Die Ausarbeitung lief durch zwei Sprachsubstrate: Das erste lieferte eine Fassung, deren zentrale Tatsachenbehauptung — Google zwinge alle Werbetreibenden unter Androhung der Kontosperrung zur Deklaration — der Prüfung nicht standhielt. Das zweite hat geprüft, verworfen und die Argumentation neu gebaut. Rechtslage und sprachliche Oberfläche substrat-vermittelt; Auswahl, Prüfung und Verantwortung beim Herausgeber.*
