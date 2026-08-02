@@ -10,6 +10,7 @@
   </a>
   <div class="site-header-meta">
     <nav class="site-nav">
+      {{ with .Site.GetPage "/einstieg" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
       {{ with .Site.GetPage "/siegel" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
       {{ with .Site.GetPage "/verzeichnis" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
       {{ with .Site.GetPage "/motivation" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}

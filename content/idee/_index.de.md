@@ -41,6 +41,16 @@ Die Diagnose-Formel des Projekts lautet *Geist aus der Maschine*. Sie kehrt das 
 
 Ein leeres Siegel sagt: keiner. Der Geist kommt gänzlich aus der Autorin. Punkte zählen das, was hinzukam.
 
+## Vollzug und Einstehen
+
+Zwei Texte können Wort für Wort übereinstimmen und sich in allem unterscheiden, was aus ihnen folgt. Beim einen ist jemand befragbar, widerruft, trägt die Konsequenz; beim anderen ist niemand da, den etwas trifft. Der Unterschied steht nicht in den Sätzen. Er steht in dem, was mit ihnen getan wird. Die Frage der Autorschaft entscheidet sich deshalb nicht daran, woraus ein Text besteht und was er bedeutet, sondern daran, wer mit ihm was tut und wofür er einsteht.
+
+Wortlaut und Bedeutung waren immer knapp. Wer korrekte, idiomatische, klar gemeinte Sätze herstellen konnte, hatte etwas, das nicht jeder hatte. Diese Knappheit ist fort; Sprache dieser Art steht jetzt in jeder Menge und in jedem Register bereit. Was dabei nicht mitgeliefert wird, ist die Person, die etwas meint, jemanden adressiert, widerruft und die Folgen trägt. Wird eine Ebene beliebig verfügbar, wandert das Gewicht auf die nächste.
+
+Auf dieser Ebene fehlt dem Substrat etwas, und es ist nicht das Verstehen. Es geht keine Verpflichtung ein. Es behauptet nichts, denn Behaupten heißt, sich der Zurechnung auszusetzen, und es hat nichts zu verlieren. Was ohne diesen Akt anfällt, ist keine Rede, sondern Material — Sprache, die auf einen fremden Vollzug wartet. Daher das Wort *Substrat*: ein Substrat ist das, worauf jemand anderes arbeitet.
+
+Daher auch die Zahl drei. Diktion zählt, was an der sprachlichen Oberfläche importiert wurde, Geist, was an Ideen und Struktur hinzukam, Korrespondenz, ob das Werk in der Welt belegt ist. Wofür jemand einsteht, wird nicht mitgezählt, denn es lässt sich nicht importieren. Das Einstehen ist keine vierte Achse; es ist der Akt, den das Siegel vollzieht. Wer es setzt, erklärt nicht, was gemeint war, sondern wer wofür geradesteht.
+
 ## Was Maschinenschrift adressiert — und was nicht
 
 Maschinenschrift hält drei Dinge fest:

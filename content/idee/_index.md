@@ -42,6 +42,16 @@ The project's diagnostic formula is *Geist aus der Maschine* — an inversion of
 
 An empty seal says: none. The *Geist* comes entirely from the author. Dots count what was added.
 
+## Act and Accountability
+
+Two texts can agree word for word and differ in everything that follows from them. In the one case someone can be asked, retracts, carries the consequence; in the other there is no one for anything to reach. The difference is not in the sentences. It is in what is done with them. The question of authorship is therefore not decided by what a text consists of and what it means, but by who does what with it and what they stand behind.
+
+Wording and meaning were always scarce. Whoever could produce correct, idiomatic, clearly meant sentences held something not everyone held. That scarcity is gone; language of this kind now stands ready in any quantity and in any register. What is not delivered with it is the person who means something, addresses someone, retracts, and carries the consequences. When a level becomes freely available, the weight moves to the next one.
+
+At this level the substrate lacks something, and it is not understanding. It enters into no commitment. It asserts nothing, for to assert is to expose oneself to accountability, and it has nothing to lose. What accrues without this act is not speech but material — language waiting on someone else's performance. Hence the word *substrate*: a substrate is that on which someone else works.
+
+Hence also the number three. Diction counts what was imported at the linguistic surface, *Geist* what was added in ideas and structure, Correspondence whether the work is documented in the world. What someone stands behind is not counted, for it cannot be imported. Standing behind the work is not a fourth axis; it is the act the seal performs. Whoever sets it declares not what was meant, but who answers for what.
+
 ## What Maschinenschrift Addresses — and What It Does Not
 
 Maschinenschrift records three things:
