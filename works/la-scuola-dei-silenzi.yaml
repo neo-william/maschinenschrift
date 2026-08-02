@@ -16,8 +16,8 @@ narration:
     The substrate supplied, in quantity: material, variants, proposals for
     characters, architecture and canon; which move stands, I decided. The same
     division across all iterations. The linguistic surface is predominantly
-    substrate-mediated; I do not claim it as my own wording. Research material
-    was structured through the substrate, not verified.
+    substrate-mediated. Research material was structured through the substrate,
+    not verified.
   de: >
     Der Ausgangsgedanke ist meiner. Einzelne Figuren, Orte und Motive ebenso:
     freie Setzungen, die vor jedem Vorschlag standen. Meine sind auch die
@@ -25,9 +25,8 @@ narration:
     vom Substrat. Das Substrat legte vor, in großer Zahl: Material, Varianten,
     Vorschläge zu Figuren, Aufbau und Kanon; welcher Zug gilt, entschied ich.
     Dieselbe Teilung über alle Iterationen. Die sprachliche Oberfläche ist
-    überwiegend substratvermittelt; ich beanspruche sie nicht als eigenen
-    Wortlaut. Recherchematerial wurde über das Substrat strukturiert, nicht
-    verifiziert.
+    überwiegend substratvermittelt. Recherchematerial wurde über das Substrat
+    strukturiert, nicht verifiziert.
 links:
   canonical: https://iovargas.com/lascuola
   author_site: https://iovargas.com
@@ -41,6 +40,12 @@ declared_at: "2026-06-01"
 # pre-2026-05-24-Fassung F=4 / S=2 — bis dahin waren nur die Achsen umbenannt
 # (ADR 0032). Die Anhebung auf 5/3 ist die erste inhaltliche Neubewertung.
 # Narration am 2026-08-02 neu gefasst (ADR 0044): Setzungen und Stilgesetzgebung
-# stehen jetzt im Text, weil G=3 sonst nicht lesbar ist; der Wortlaut bleibt
-# ausdrücklich unbeansprucht, sonst kippt W=5.
+# stehen jetzt im Text, weil G=3 sonst nicht lesbar ist.
+# Am 2026-08-03 gestrichen (ADR 0050): der Anspruchsverzicht „ich beanspruche
+# sie nicht als eigenen Wortlaut" / „I do not claim it as my own wording".
+# W=5 bleibt davon unberührt — die Achse misst, wie viel der sprachlichen
+# Oberfläche vom Modell kam, und 5 ist ihr Maximum; der beschreibende Satz
+# „die sprachliche Oberfläche ist überwiegend substratvermittelt" steht weiter.
+# Die Deklaration sagt damit unverändert, was der Fall ist, und verzichtet
+# nicht mehr zusätzlich auf einen Anspruch.
 updated_at: "2026-08-02"
