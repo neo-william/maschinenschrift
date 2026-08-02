@@ -75,7 +75,7 @@ The first version of the answer was an authority. A register with a submission f
 
 The name is older than the project. In the twentieth century, *Maschinenschrift* meant the product of the typewriter — text that had passed through a technical apparatus, written by a human, mediated by a machine. No one ever claimed the typewriter was the author. The same distinction is now needed one stage further on.
 
-So that none of this can later belong to one person, it was given away before it had value: content and notation under Creative Commons, the code under a free license, the word mark left dormant. Whoever uses the standard today cannot be cut off from it tomorrow — not even by its originator. The registry is designed to last fifty years and lives in text files, not in a database somebody has to operate. There are no accounts, no cookies, no trackers. Running it costs about as much per year as one dinner.
+So that none of this can later belong to one person, it was given away before it had value: content and notation under Creative Commons, the code under a free license, the word mark left dormant. Whoever uses the standard today cannot be cut off from it tomorrow — not even by its originator. The registry lives in text files, not in a database somebody has to operate. There are no accounts, no cookies, no trackers. Running it costs about as much per year as one dinner.
 
 The novel it all started with declares **W 4 · G 2 · B pending** — much machine in the language, little in the *Geist*, no bibliographic record, because fiction documents nothing. That is the most uncomfortable account this project had to give, and it stands at the top of it. Whoever proposes a form for honesty has to answer first.
 
