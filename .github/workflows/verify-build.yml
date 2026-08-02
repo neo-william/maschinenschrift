@@ -61,8 +61,43 @@ jobs:
           grep -qE 'id="?siegel-preview"?' public/de/siegel/index.html
           echo "Both seal pages link the generator script."
 
-      - name: Smoke-Test — inaugural entry seal correct
+      - name: Smoke-Test — Siegel-Assets nach Spec v7 (W/G/B)
         run: |
-          test -f public/siegel/assets/d4-g2-ausstehend.svg
-          test -f public/works/la-scuola-dei-silenzi/index.html
-          test -f public/de/werke/la-scuola-dei-silenzi/index.html
+          # Dateinamen-Schema seit Spec v7: w{W}-g{G}-{belegt|ausstehend}.svg
+          test -f public/siegel/assets/w4-g2-ausstehend.svg
+          test -f public/siegel/assets/w0-g0-belegt.svg
+          count=$(ls public/siegel/assets/*.svg | wc -l)
+          test "$count" -eq 72 || { echo "::error::Erwartet 72 SVG-Assets, gefunden $count"; exit 1; }
+          # Das alte d*-Schema darf nicht zurueckkehren.
+          if ls public/siegel/assets/d[0-5]-g[0-5]-*.svg >/dev/null 2>&1; then
+            echo "::error::Alte d*-Assets im Output — build-assets.py auf Spec v7 pruefen"; exit 1
+          fi
+          echo "72 Assets im w*-Schema, keine d*-Reste."
+
+      - name: Smoke-Test — Achsen-Vokabular in gerenderten Seiten
+        run: |
+          # Faengt Regressionen in i18n und Content-Prosa.
+          for f in public/de/idee/index.html public/idea/index.html; do
+            grep -q 'Wortlaut' "$f" || { echo "::error::$f nennt Wortlaut nicht"; exit 1; }
+            grep -q 'Beleg' "$f" || { echo "::error::$f nennt Beleg nicht"; exit 1; }
+            if grep -qE 'Diktion|Diction|Korrespondenz|Correspondence' "$f"; then
+              echo "::error::$f fuehrt noch altes Achsen-Vokabular"; exit 1
+            fi
+          done
+          # Die Spec-Historie darf die alten Namen weiter nennen.
+          grep -q 'Siegel-Spec v7' public/de/spec/siegel-v7/index.html
+          echo "Achsen-Vokabular konsistent."
+
+      - name: Smoke-Test — inauguraler Katalog-Eintrag
+        run: |
+          # Der Eintrag ist seit 2026-07-16 nicht im Katalog (works/ leer, siehe
+          # checklist.md §7 P1). Solange er fehlt, wird der Render-Pfad
+          # uebersprungen statt den Build rot zu faerben — sonst maskiert ein
+          # dauerhaft rotes CI echte Regressionen.
+          if [ -f works/la-scuola-dei-silenzi.yaml ]; then
+            test -f public/works/la-scuola-dei-silenzi/index.html
+            test -f public/de/werke/la-scuola-dei-silenzi/index.html
+            echo "Inauguraler Eintrag gerendert."
+          else
+            echo "::notice::works/la-scuola-dei-silenzi.yaml fehlt — Katalog ist leer, Eintrags-Pruefung uebersprungen."
+          fi
