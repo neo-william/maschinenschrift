@@ -15,11 +15,15 @@ Repo-spezifische Details.
 Der häufigste Beitragsweg. Schema und Schritt-für-Schritt-Anleitung
 unter [maschinenschrift.com/beitragen/](https://maschinenschrift.com/beitragen/).
 
-Pflichtfelder: `slug`, `title`, `author`, `year`, `zeichen` (mit `form`,
-`substance`, `verification`), `declared_at`.
+Pflichtfelder: `slug`, `title`, `author`, `year`, `zeichen` (mit `wortlaut`,
+`geist`, `beleg`), `declared_at`.
 
 Empfohlene Felder: `language`, `genre`, `narration`, `links.canonical`,
 `links.author_site`.
+
+`narration` ist eine Sprach-Map mit den Schlüsseln `en` und `de`, nicht ein
+einzelner String — die Layouts lesen `index .Params.narration $lang`. Fehlt
+`de`, greift der Fallback auf `en`; umgekehrt nicht.
 
 ### Spec-Erweiterungen
 

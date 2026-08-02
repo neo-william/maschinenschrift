@@ -8,6 +8,10 @@ resources/_gen/
 
 # Bridge-generated content (regenerated from works/ at each build)
 content/werke/*.md
+# ... aber die Sektionsseiten sind handgeschrieben und muessen mit ins Repo,
+# sonst fehlen sie im Cloudflare-Build (frischer Clone) und /catalog/ faellt weg.
+!content/werke/_index.md
+!content/werke/_index.de.md
 
 # Generator-produced static assets (regenerated from siegel-generator/ at each build)
 static/siegel/assets/*.svg

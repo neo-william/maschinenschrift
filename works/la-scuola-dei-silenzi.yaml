@@ -1,0 +1,46 @@
+slug: la-scuola-dei-silenzi
+title: La Scuola dei Silenzi
+author: I.O. Vargas
+year: 2026
+language: en
+genre: Roman
+zeichen:
+  wortlaut: 5
+  geist: 3
+  beleg: ausstehend
+narration:
+  en: >
+    The originating idea is mine. So are individual characters, places and
+    motifs: free positings that stood before any proposal. Mine too are the
+    rules the language was to follow — set by me, executed by the substrate.
+    The substrate supplied, in quantity: material, variants, proposals for
+    characters, architecture and canon; which move stands, I decided. The same
+    division across all iterations. The linguistic surface is predominantly
+    substrate-mediated; I do not claim it as my own wording. Research material
+    was structured through the substrate, not verified.
+  de: >
+    Der Ausgangsgedanke ist meiner. Einzelne Figuren, Orte und Motive ebenso:
+    freie Setzungen, die vor jedem Vorschlag standen. Meine sind auch die
+    Regeln, nach denen die Sprache laufen sollte — gesetzt von mir, ausgeführt
+    vom Substrat. Das Substrat legte vor, in großer Zahl: Material, Varianten,
+    Vorschläge zu Figuren, Aufbau und Kanon; welcher Zug gilt, entschied ich.
+    Dieselbe Teilung über alle Iterationen. Die sprachliche Oberfläche ist
+    überwiegend substratvermittelt; ich beanspruche sie nicht als eigenen
+    Wortlaut. Recherchematerial wurde über das Substrat strukturiert, nicht
+    verifiziert.
+links:
+  canonical: https://iovargas.com/lascuola
+  author_site: https://iovargas.com
+declared_at: "2026-06-01"
+# Werte auf W=5 / G=3 nachgezogen am 2026-08-02: das ausgelieferte Cover
+# cover_v11.png trägt seit 2026-07-31 das Siegel 5/3/ausstehend im Bild, und
+# der Druck ist die verbindliche Deklaration (ADR 0035). Die Anhebung 4→5 / 2→3
+# spiegelt die Phasen 7–11, in denen die sprachliche Oberfläche durchgehend
+# substratvermittelt überarbeitet wurde.
+# Achsen-Historie: Erstdeklaration 2026-06-01 als D=4 / G=2, identisch mit der
+# pre-2026-05-24-Fassung F=4 / S=2 — bis dahin waren nur die Achsen umbenannt
+# (ADR 0032). Die Anhebung auf 5/3 ist die erste inhaltliche Neubewertung.
+# Narration am 2026-08-02 neu gefasst (ADR 0044): Setzungen und Stilgesetzgebung
+# stehen jetzt im Text, weil G=3 sonst nicht lesbar ist; der Wortlaut bleibt
+# ausdrücklich unbeansprucht, sonst kippt W=5.
+updated_at: "2026-08-02"

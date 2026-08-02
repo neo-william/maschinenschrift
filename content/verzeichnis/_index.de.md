@@ -1,8 +1,7 @@
 ---
 title: Verzeichnis
-description: Katalog der im Maschinenschrift-Standard deklarierten Werke.
-aliases:
-  - /werke/
+description: "Katalog der im Maschinenschrift-Standard deklarierten Bücher, jedes mit seinem Siegel. Aufnahme durch Selbstdeklaration: keine Gebühr, kein Gremium."
+seotitle: "Verzeichnis — Bücher mit deklarierter KI-Nutzung"
 ---
 
 Das Verzeichnis sammelt Werke, die ihre eigene Entstehung deklariert haben. Aufnahme erfolgt durch Selbstdeklaration. Es gibt keine Gebühr, kein Lektorats-Urteil, keine Prüfkommission.
