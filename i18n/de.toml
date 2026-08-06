@@ -42,6 +42,9 @@ other = "Datenschutz"
 [langSwitchAria]
 other = "Sprache wechseln"
 
+[themeToggleAria]
+other = "Dunkles Schema"
+
 [breadcrumbAria]
 other = "Pfad"
 

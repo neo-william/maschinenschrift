@@ -43,6 +43,9 @@ other = "Privacy"
 [langSwitchAria]
 other = "Switch language"
 
+[themeToggleAria]
+other = "Dark scheme"
+
 [breadcrumbAria]
 other = "Breadcrumb"
 

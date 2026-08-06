@@ -55,6 +55,10 @@
   <meta name="theme-color" content="#fdfdfb" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#151513" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  {{- /* Synchron, ohne defer: setzt einen gespeicherten Schema-Override auf
+         <html data-theme>, bevor der erste Paint laeuft (kein Aufblitzen).
+         CSP script-src 'self' laesst kein Inline-Script zu. */}}
+  <script src="/js/theme.js?v={{ substr (md5 (readFile "static/js/theme.js")) 0 8 }}"></script>
   {{- /* Content-Hash als Cache-Buster: /css/* ist immutable-gecacht (siehe static/_headers),
          ohne Versionierung erreichen CSS-Aenderungen den Browser nie. */}}
   <link rel="stylesheet" href="/css/main.css?v={{ substr (md5 (readFile "static/css/main.css")) 0 8 }}">
