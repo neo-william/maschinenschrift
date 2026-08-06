@@ -478,7 +478,9 @@
 
       outD.value = String(dv);
       outG.value = String(gv);
-      glyph.innerHTML = buildSeal(dv, gv, kv, DEFAULT_STROKE, DEFAULT_COLOR);
+      // currentColor statt DEFAULT_COLOR: das Siegel folgt der Tinte und
+      // bleibt damit auch im Dark Mode sichtbar.
+      glyph.innerHTML = buildSeal(dv, gv, kv, DEFAULT_STROKE, 'currentColor');
       caption.textContent = captionLine(t, dv, gv, kv);
 
       // Der Zustand wandert in den Generator-Link mit.
