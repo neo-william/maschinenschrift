@@ -202,3 +202,16 @@ other = "Überwiegend maschinell beigetragen. Beleg ausstehend."
 # Meta-Description-Fallback für Katalogeinträge ohne eigene Beschreibung
 [werkMetaDescription]
 other = "Im Maschinenschrift-Standard deklariert, mit Siegel am Werk: Wortlaut, Geist, Beleg."
+
+# Notizen-Rubriken (bucket-Werte aus dem Frontmatter, DE- und EN-Schreibweise)
+[bucket-aktuelle-anknuepfung]
+other = "Anknüpfung"
+
+[bucket-current-response]
+other = "Anknüpfung"
+
+[bucket-lineage]
+other = "Lineage"
+
+[bucket-standards-update]
+other = "Standards"

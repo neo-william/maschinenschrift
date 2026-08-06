@@ -280,6 +280,46 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
 /* Schluss-Marke unter Notiz-Artikeln */
 .notiz-coda { margin: 3rem 0 0; text-align: center; }
 
+/* Notizen-Register (Uebersicht /notizen/ bzw. /notes/).
+   Eintraege dreizeilig: Datum + Rubrik, Titel, Beschreibungssatz.
+   Haarlinien statt Kasten; die Overrides loesen die Liste aus dem
+   generischen `main > article > ul`-Aufzaehlungskasten. */
+.notizen-register {
+  list-style: none;
+  margin: 2.2rem 0 0;
+  padding: 0;
+  background: none;
+  border-left: 0;
+  border-bottom: 1px solid #e0e0d8;
+  text-align: left;
+}
+.notizen-register > li { border-top: 1px solid #e0e0d8; padding: 1.2rem 0 1.35rem; }
+.notizen-register > li + li { margin-top: 0; }
+.notizen-register > li::before { content: none; }
+.reg-meta {
+  margin: 0;
+  font-size: 0.76rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+  font-feature-settings: "kern", "liga", "lnum", "tnum";
+  text-indent: 0;
+}
+.reg-title {
+  margin: 0.4rem 0 0.35rem;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  text-indent: 0;
+}
+.reg-desc {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #3c3c38;
+  max-width: 33em;
+  text-indent: 0;
+}
+
 /* Werk des Tages */
 .werk-des-tages {
   margin: 2.5rem 0;

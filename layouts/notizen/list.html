@@ -7,13 +7,14 @@
 
   {{ $pieces := .Pages }}
   {{ if gt (len $pieces) 0 }}
-    <ul class="notizen-list">
+    <ul class="notizen-register">
       {{ range $pieces.ByDate.Reverse }}
         <li>
-          <a href="{{ .RelPermalink }}">
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-            <span class="notizen-list-title">{{ .Title }}</span>
-          </a>
+          <p class="reg-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.bucket }} · <span class="reg-bucket">{{ i18n (printf "bucket-%s" .) | default . }}</span>{{ end }}
+          </p>
+          <p class="reg-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+          {{ with .Description }}<p class="reg-desc">{{ . }}</p>{{ end }}
         </li>
       {{ end }}
     </ul>

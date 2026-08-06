@@ -201,3 +201,16 @@ other = "Predominantly machine-delivered. Record pending."
 # Meta-description fallback for catalog entries without their own description
 [werkMetaDescription]
 other = "Declared under the Maschinenschrift standard, with the seal on the work: Wortlaut, Geist, Beleg."
+
+# Note buckets (frontmatter bucket values, DE and EN spellings)
+[bucket-current-response]
+other = "Response"
+
+[bucket-aktuelle-anknuepfung]
+other = "Response"
+
+[bucket-lineage]
+other = "Lineage"
+
+[bucket-standards-update]
+other = "Standards"
