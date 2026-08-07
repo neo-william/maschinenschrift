@@ -75,7 +75,7 @@
     --color-ink-soft: #c9c7bf;
     --color-page: #151513;
     --color-accent: #2ea25d;
-    --color-mark: #007fff; /* Textmarker-Azurblau im Dark Mode */
+    --color-mark: #4da6ff; /* Textmarker-Azurblau im Dark Mode, aufgehellt (ADR 0058) */
     --color-mark-ink: #0e0e0c;
     --color-muted: #a39f96;
     --color-faint: #807d75;
@@ -96,7 +96,7 @@
   --color-ink-soft: #c9c7bf;
   --color-page: #151513;
   --color-accent: #2ea25d;
-  --color-mark: #007fff; /* Textmarker-Azurblau im Dark Mode */
+  --color-mark: #4da6ff; /* Textmarker-Azurblau im Dark Mode, aufgehellt (ADR 0058) */
   --color-mark-ink: #0e0e0c;
   --color-muted: #a39f96;
   --color-faint: #807d75;
