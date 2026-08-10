@@ -5,6 +5,7 @@ braucht Content-Files unter content/werke/, mit YAML als Front Matter.
 
 Multilanguage: pro Werk werden ZWEI Content-Files erzeugt:
   - content/werke/<slug>.md      English-Version mit url: /works/<slug>/
+                                 und JSON-Ausgabe nach /works/<slug>/index.json
   - content/werke/<slug>.de.md   Deutsche Version (Hugo praefixiert mit /de/)
 
 Beide enthalten denselben YAML-Body (inkl. nested narration mit en/de-Keys).
@@ -44,7 +45,15 @@ def main() -> int:
         # English version: explicit url override to /works/<slug>/ (Hugo's
         # default language uses the root path; without override the URL would
         # use the section name 'werke').
-        en_frontmatter = body + f'\nurl: /works/{slug}/'
+        #
+        # outputs traegt zusaetzlich die JSON-Ausgabe (layouts/werke/single.json)
+        # nach /works/<slug>/index.json. Nur an der englischen Fassung: das JSON
+        # fuehrt beide Narrationen und braucht keine zweite Adresse unter /de/.
+        en_frontmatter = (
+            body
+            + f'\nurl: /works/{slug}/'
+            + '\noutputs: [HTML, JSON]'
+        )
         (content_dir / f'{slug}.md').write_text(
             f'---\n{en_frontmatter}\n---\n', encoding='utf-8'
         )

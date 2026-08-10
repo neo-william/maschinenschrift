@@ -1,0 +1,20 @@
+{{/*
+  Der Umschlag jeder maschinenlesbaren Auslieferung: welcher Standard, welche
+  Spec-Version, welche Achsen in welcher Reihenfolge, unter welcher Lizenz.
+
+  Jede JSON-Datei traegt ihn, auch die Einzeldeklaration. Eine Deklaration, die
+  nur im Verzeichnis-Kontext lesbar waere, ist keine Deklaration — wer eine
+  einzelne Datei findet, muss ohne zweiten Abruf wissen, wonach sie gebaut ist.
+
+  Aufruf (ohne Argument, liest aus site.Params):
+    {{ $meta := partial "standard-json.html" . }}
+*/}}
+{{- $v := site.Params.spec_version -}}
+{{- return dict
+    "standard" "Maschinenschrift"
+    "standard_url" (absURL "/")
+    "spec" (absURL (printf "/spec/siegel-%s/" $v))
+    "spec_version" $v
+    "axes" (slice "wortlaut" "geist" "beleg")
+    "license" "https://creativecommons.org/licenses/by/4.0/"
+-}}

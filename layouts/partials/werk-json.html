@@ -1,0 +1,40 @@
+{{/*
+  Serialisiert einen Katalog-Eintrag zu einem Dict, das `jsonify` direkt
+  ausgeben kann. Eine Quelle fuer Verzeichnis und Einzeleintrag, damit beide
+  nicht auseinanderlaufen koennen.
+
+  Der `zeichen`-Block laeuft ueber partials/zeichen.html und ist damit im
+  Ausgabe-JSON immer v7-normalisiert — auch wenn ein works/*.yaml noch das
+  v5- oder v6-Vokabular traegt. Was die Site anzeigt und was sie ausliefert,
+  ist dieselbe Zahl.
+
+  Die Narration wird zweisprachig ausgeliefert, unabhaengig von der Sprache
+  der Seite: das JSON gibt es nur einmal (an der englischen Ausgabe), und eine
+  Deklaration in nur einer Sprache waere eine halbe Auskunft.
+
+  `url` geht ueber .OutputFormats.Get "html" und nicht ueber .Permalink: in
+  einem JSON-Layout zeigt .Permalink auf die JSON-Datei selbst, und damit haette
+  der Eintrag keinen Verweis mehr auf die lesbare Seite.
+
+  Aufruf mit der Werk-Seite als Kontext:
+    {{ $werk := partial "werk-json.html" . }}
+*/}}
+{{- $z := partial "zeichen.html" .Params.zeichen -}}
+{{- $narration := dict -}}
+{{- range $lang, $text := (.Params.narration | default dict) -}}
+  {{- $narration = merge $narration (dict $lang (chomp $text)) -}}
+{{- end -}}
+{{- return dict
+    "slug" (.Params.slug | default .File.ContentBaseName)
+    "title" .Title
+    "author" .Params.author
+    "year" .Params.year
+    "language" .Params.language
+    "genre" .Params.genre
+    "zeichen" $z
+    "narration" $narration
+    "links" (.Params.links | default dict)
+    "declared_at" .Params.declared_at
+    "updated_at" .Params.updated_at
+    "url" (.OutputFormats.Get "html").Permalink
+-}}

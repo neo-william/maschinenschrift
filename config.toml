@@ -9,6 +9,11 @@ disableKinds = ["taxonomy", "term"]
   description = "Open standard for the self-declaration of literature written with large language models."
   declared_year_start = 2026
   ogImage = "/og/maschinenschrift.png"
+  # Kanonische Spec-Version. Steht im Umschlag jeder JSON-Ausgabe
+  # (layouts/partials/standard-json.html), damit eine ausgelieferte Deklaration
+  # sagt, nach welcher Fassung sie gebaut ist. Bei einer neuen Spec hier
+  # nachziehen — die Versionsdisziplin steht in content/spec/_index.md.
+  spec_version = "v7"
 
 [languages.en]
   label = "English"

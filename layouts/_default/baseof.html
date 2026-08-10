@@ -75,6 +75,12 @@
   {{ with .OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
   {{ end }}
+  {{- /* Maschinenlesbare Fassung derselben Seite, wo es eine gibt: Verzeichnis
+         und Werkseiten. Der Link-Header in static/_headers kann das nicht
+         leisten, weil er den Slug der Werkseite nicht kennt. */}}
+  {{ with .OutputFormats.Get "JSON" }}
+    <link rel="alternate" type="application/json" href="{{ .Permalink }}">
+  {{ end }}
 </head>
 <body>
   {{ partial "header.html" . }}

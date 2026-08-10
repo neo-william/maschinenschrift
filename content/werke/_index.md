@@ -5,4 +5,10 @@ seotitle: "Catalog — Books With Declared AI Use"
 url: /catalog/
 aliases:
   - /werke/
+# RSS muss mitgenannt werden: `outputs` im Front Matter ersetzt den Wert aus
+# config.toml, es ergaenzt ihn nicht. Ohne die Zeile faellt der Katalog-Feed weg.
+outputs:
+  - HTML
+  - RSS
+  - JSON
 ---

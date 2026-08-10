@@ -1,0 +1,9 @@
+{{- /*
+  Eine einzelne Deklaration, maschinenlesbar: /works/<slug>/index.json
+
+  Traegt denselben Umschlag wie das Verzeichnis, damit die Datei fuer sich
+  allein steht: wer sie ueber den Link-Header der Werkseite oder ueber den
+  <link rel="alternate"> im Seitenkopf findet, hat Standard, Spec-Version und
+  Achsenreihenfolge ohne zweiten Abruf.
+*/ -}}
+{{- merge (partial "standard-json.html" .) (partial "werk-json.html" .) | jsonify (dict "indent" "  ") -}}

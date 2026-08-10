@@ -5,6 +5,15 @@
 # Auslieferung.
 #
 # Pfad-A-Profil: cookielos, keine Drittparteien-Requests, restriktive CSP.
+#
+# Der Link-Header (RFC 8288) fuehrt ausschliesslich Relationen, die zutreffen:
+# `describedby` auf die Spec, `license` auf CC BY 4.0, `privacy-policy` auf die
+# Pflichtangabe. Kein service-doc, kein api-catalog — die Site hat keine API.
+# Begruendung: ADR 0061.
+#
+# Der Verweis auf die JSON-Fassung einer Seite steht nicht hier, sondern als
+# <link rel="alternate"> im Seitenkopf: die Werkseiten tragen ihren Slug im
+# Pfad, und den kennt diese Datei nicht.
 
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
@@ -13,6 +22,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
   Content-Security-Policy: default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
+  Link: </spec/>; rel="describedby", <https://creativecommons.org/licenses/by/4.0/>; rel="license", </privacy/>; rel="privacy-policy"
 
 /siegel/assets/*
   Cache-Control: public, max-age=31536000, immutable

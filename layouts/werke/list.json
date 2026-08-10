@@ -1,0 +1,22 @@
+{{- /*
+  Das Verzeichnis, maschinenlesbar: /catalog/index.json
+
+  Ein Standard zur Selbstdeklaration, dessen einzige Ausgabe HTML ist, laesst
+  sich nur durch Parsen einer Seite lesen. Diese Datei ist die Serialisierung
+  desselben Bestands, aus derselben Quelle (works/*.yaml) und ueber dieselben
+  Partials — es gibt keinen zweiten Wahrheitsstand.
+
+  Nur die englische, also die Default-Ausgabe traegt JSON. Die Narration ist
+  darin zweisprachig; ein zweites /de/-JSON waere derselbe Inhalt unter einer
+  zweiten Adresse und damit eine Einladung zum Auseinanderlaufen.
+*/ -}}
+{{- $works := slice -}}
+{{- range .Pages -}}
+  {{- $works = $works | append (partial "werk-json.html" .) -}}
+{{- end -}}
+{{- $out := merge (partial "standard-json.html" .) (dict
+    "url" (.OutputFormats.Get "html").Permalink
+    "count" (len $works)
+    "works" $works
+) -}}
+{{- $out | jsonify (dict "indent" "  ") -}}
