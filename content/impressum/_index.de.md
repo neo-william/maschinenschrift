@@ -11,6 +11,8 @@ c/o POSTFLEX PFX-132-796\
 Emsdettener Straße 10\
 48268 Greven
 
+Personenseite: <https://neokhala.com>
+
 ## Kontakt
 
 E-Mail: `info [at] maschinenschrift [dot] com`\

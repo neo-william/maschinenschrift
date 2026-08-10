@@ -13,6 +13,8 @@ Emsdettener Straße 10\
 48268 Greven\
 Germany
 
+Personal site: <https://neokhala.com>
+
 ## Contact
 
 Email: `info [at] maschinenschrift [dot] com`\
