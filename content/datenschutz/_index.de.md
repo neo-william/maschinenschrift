@@ -2,6 +2,7 @@
 title: Datenschutz
 description: "Datenschutzerklärung für maschinenschrift.com gemäß Art. 13 DSGVO. Statische Seite auf Cloudflare Pages: keine Cookies, kein Tracking, keine Drittfonts."
 seotitle: "Datenschutz — maschinenschrift.com"
+noindex: true
 ---
 
 ## 1. Verantwortlicher

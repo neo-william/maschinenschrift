@@ -31,6 +31,16 @@
   <title>{{ $title }}</title>
   <meta name="description" content="{{ $desc }}">
   <link rel="canonical" href="{{ .Permalink }}">
+  {{- /*
+    Pflichtangaben-Seiten bleiben aus dem Index: Boilerplate ohne Suchwert.
+    `follow` statt `nofollow`, damit der Crawler den Links zurueck in die Site
+    folgt. Kein Disallow in der robots.txt — was nicht gecrawlt werden darf,
+    kann den noindex nicht lesen. Schalter: `noindex: true` im Front Matter,
+    dieselbe Bedingung filtert layouts/sitemap.xml.
+  */ -}}
+  {{- with .Params.noindex }}
+  <meta name="robots" content="noindex, follow">
+  {{- end }}
 
   {{ range .AllTranslations }}
     <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
