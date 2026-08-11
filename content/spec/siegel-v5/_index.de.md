@@ -4,11 +4,11 @@ description: "Eingefrorener historischer Stand der Siegel-Spezifikation, 2026-05
 seotitle: "Siegel-Spec v5 — abgelöste Spezifikation (F/S/V)"
 ---
 
-**Status:** Abgelöst durch [Siegel-Spec v7](/de/spec/siegel-v7/); zwischenzeitlich galt [v6](/de/spec/siegel-v6/) (2026-05-24). Eingefrorener historischer Stand vom 2026-05-21 — Inhalt und Pfad-Angaben werden nicht mehr nachgeführt. Die Geometrie ist unverändert, aber die Achsen heißen jetzt D/G/K (Diktion, *Geist*, Korrespondenz), und die binäre K-Achse verwendet `belegt`/`ausstehend` statt `verified`/`unverified`. Siehe die aktuelle kanonische Spezifikation unter [/de/spec/siegel-v6/](/de/spec/siegel-v6/) und [Foundation §7](/foundation/#7-seal-axis-semantics).
+**Status:** Abgelöst durch [Siegel-Spec v7](/de/spec/siegel-v7/); zwischenzeitlich galt [v6](/de/spec/siegel-v6/) (2026-05-24). Eingefrorener historischer Stand vom 2026-05-21 — Inhalt und Pfad-Angaben werden nicht mehr nachgeführt. Die Geometrie ist unverändert, aber die Achsen heißen jetzt W/G/B (Wortlaut, *Geist*, Beleg), und die binäre B-Achse verwendet `belegt`/`ausstehend` statt `verified`/`unverified`. Siehe die aktuelle kanonische Spezifikation unter [/de/spec/siegel-v7/](/de/spec/siegel-v7/) und [Foundation §7](/de/foundation/#7-seal-axis-semantics).
 
-Diese Seite dokumentiert den v5-Stand für historische Referenz. Neue Implementationen sollen v6 folgen.
+Diese Seite dokumentiert den v5-Stand für historische Referenz. Neue Implementationen sollen v7 folgen.
 
-Die semantische Bedeutung der Achsen findet sich in der [Foundation](/foundation/) §7.
+Die semantische Bedeutung der Achsen findet sich in der [Foundation](/de/foundation/) §7.
 
 ## Achsen
 

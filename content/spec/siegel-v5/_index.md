@@ -4,9 +4,9 @@ description: "Frozen historical snapshot of the Maschinenschrift seal specificat
 seotitle: "Siegel-Spec v5 — Superseded Seal Specification (F/S/V)"
 ---
 
-**Status:** Superseded by [Siegel-Spec v7](/spec/siegel-v7/); v6 applied in the interim ([v6](/spec/siegel-v6/), 2026-05-24). Frozen historical snapshot at 2026-05-21 — content and path references are no longer maintained. The geometry is unchanged, but the axes are now D/G/K (Diktion, *Geist*, Korrespondenz) and the binary K-axis uses `belegt`/`ausstehend` instead of `verified`/`unverified`. See the current canonical specification at [/spec/siegel-v6/](/spec/siegel-v6/) and the project's [Foundation §7](/foundation/#7-seal-axis-semantics).
+**Status:** Superseded by [Siegel-Spec v7](/spec/siegel-v7/); v6 applied in the interim ([v6](/spec/siegel-v6/), 2026-05-24). Frozen historical snapshot at 2026-05-21 — content and path references are no longer maintained. The geometry is unchanged, but the axes are now W/G/B (Wortlaut, *Geist*, Beleg) and the binary B-axis uses `belegt`/`ausstehend` instead of `verified`/`unverified`. See the current canonical specification at [/spec/siegel-v7/](/spec/siegel-v7/) and the project's [Foundation §7](/foundation/#7-seal-axis-semantics).
 
-This page documents the v5 state for historical reference. New implementations should follow v6.
+This page documents the v5 state for historical reference. New implementations should follow v7.
 
 The semantic meaning of the axes is found in the [Foundation](/foundation/) §7.
 

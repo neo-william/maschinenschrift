@@ -20,12 +20,14 @@ Ein Standard, kein Urteil. Kein Reinheits-Stempel. Keine Qualitäts-Aussage. Kei
 
 Die Frage ändert ihre Form. Nicht *hat sie ein Sprachmodell benutzt?* — sondern *was sagt das Werk selbst darüber, wie es entstanden ist?*
 
+Ein Einwand bleibt, und er wird hier nicht weggeräumt: Wer eine Form bereitstellt, macht das Geformte sichtbarer. Eine saubere Notation für vermittelte Literatur normalisiert vermittelte Literatur, auch ohne dass jemand für sie wirbt. Das Projekt nimmt das in Kauf, weil die Alternative nicht die Abwesenheit der Vermittlung ist, sondern ihre Unsichtbarkeit. Verglichen wird nicht ein Label gegen nichts, sondern **Auskunft gegen Verschweigen**.
+
 ## Das Siegel.
 
 Drei Achsen. Die Autorin markiert jede einzeln.
 
 - **Wortlaut** — wie viel der Oberfläche (Sätze, Wortwahl, Rhythmus) von der Maschine kam.
-- ***Geist*** — wie viel der Substanz (Ideen, Argument, Struktur) von der Maschine kam.
+- ***Geist*** — wie viel der Substanz (Ideen, Argumente, Strukturentscheidungen, Faktenmaterial, Inhalt) von der Maschine kam.
 - **Beleg** — ob das Werk in der bibliografischen Welt steht: findbar, datierbar, identifizierbar.
 
 Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: der Beleg steht noch aus. Die Autorin setzt das Siegel selbst und platziert es bei der Verfasserzeile — Cover, Titelseite, Impressum.

@@ -71,7 +71,7 @@ other = "No declared works in the catalog yet."
 
 # Werke-Listing
 [catalogIntro]
-other = "A curated list of works declared under the Maschinenschrift standard. Inclusion is by self-declaration and editorial check via the public catalog repository."
+other = "A curated list of works declared under the Maschinenschrift standard. Inclusion happens by email, on self-declaration. What is checked: the work is findable under the named title on the named platform, the seal is visible on the work in the declared values, and the declaration is internally consistent."
 
 [worksCount]
 one = "{{ .Count }} work in the catalog."
@@ -87,13 +87,13 @@ other = "Contribute an entry"
 other = "Adoption is self-declaration-based. To enter the catalog:"
 
 [contributeStep1]
-other = "Determine your W/G/B values per Foundation §7 (Wortlaut / Wording, Geist, Beleg / Record)."
+other = "Determine your W/G/B values per Foundation §7 (Wortlaut / Wording, Geist, Beleg / Record) and place the seal visibly on the work."
 
 [contributeStep2]
-other = "Pull request against the works directory with a YAML file following the inaugural entry's schema."
+other = "Email contact [at] maschinenschrift [dot] com: the title, at least one platform where the work is publicly findable, and where the seal sits."
 
 [contributeStep3]
-other = "Or send a request by email to contact [at] maschinenschrift [dot] com."
+other = "What is checked: findability under the named title, the visible seal, and the internal consistency of the declaration. Links in the email are not followed."
 
 # Werks-Detail
 [werkGenre]
@@ -147,7 +147,7 @@ other = "The three axes"
 
 [atlasAxes]
 other = """- **Wording** (W, 0–5) — how much of the surface (sentences, word choice, rhythm) came from the machine.
-- ***Geist*** (G, 0–5) — how much of the substance (ideas, argument, structure) came from the machine.
+- ***Geist*** (G, 0–5) — how much of the substance (ideas, arguments, structural decisions, factual material, content) came from the machine.
 - **Record** (B, binary) — whether the work stands in the bibliographic world: findable, datable, identifiable.
 
 *Geist* stays in German. Hegel and *Geisteswissenschaften* stand behind the word. The gloss in English is *Ghost from the Machine*. The diagnostic formula is *Geist aus der Maschine*. Meaning and vocabulary belong to the [Idea](/idea/)."""
@@ -204,6 +204,10 @@ other = "Predominantly machine-delivered. Record pending."
 # Meta-description fallback for catalog entries without their own description
 [werkMetaDescription]
 other = "Declared under the Maschinenschrift standard, with the seal on the work: Wortlaut, Geist, Beleg."
+
+# Source block at the end of a note (partials/quellen.html)
+[sourcesHeading]
+other = "Sources"
 
 # Note buckets (frontmatter bucket values, DE and EN spellings)
 [bucket-current-response]

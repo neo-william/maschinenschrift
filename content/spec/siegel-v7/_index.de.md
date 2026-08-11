@@ -16,6 +16,8 @@ Das Siegel dokumentiert drei Achsen der Entstehung eines Textes:
 
 Punkte bedeuten Substratvermittlung. Die Abwesenheit bedeutet die Autorin allein. Der Halbstrich ist Marker für einen ausstehenden bibliografischen Beleg, nicht Wertung des Werks.
 
+**Textuelle Notation.** Der ausstehende Beleg wird auf zwei Ebenen markiert: im Glyph durch den Halbstrich, am textuellen Identifikator durch ein nachgestelltes `†` (etwa `W 4 · G 2 · B ausstehend †`). Das Kreuz steht neben der Notation, nicht am Zeichen; die Negativliste unten bleibt unberührt. Grundlage: [Foundation §7](/de/foundation/#7-seal-axis-semantics).
+
 ## Parameter
 
 Drei Eingaben:

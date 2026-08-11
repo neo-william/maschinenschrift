@@ -74,7 +74,7 @@ In literature the warning runs empty. Whoever opens a novel need not be protecte
 
 <u>The warning label asks whether a machine was involved. Self-declaration states in what proportion.</u>
 
-The seal is therefore not a checkbox. It carries three axes: **Wortlaut** — how much of the linguistic surface came from the *Sprachsubstrat*, the language substrate. **Geist** — how much of the ideas, the structure, the content. **Beleg** — whether the bibliographic record has been established. Two scales from zero to five and one binary state, where the law has a box. It does not accuse; it records.
+The seal is therefore not a checkbox. It carries three axes: **Wortlaut** — how much of the linguistic surface came from the *Sprachsubstrat*, the language substrate. **Geist** — how much of the ideas, the arguments, the structural decisions, the factual material, the content. **Beleg** — whether the bibliographic record has been established. Two scales from zero to five and one binary state, where the law has a box. It does not accuse; it records.
 
 ## Where the law is silent
 

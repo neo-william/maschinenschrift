@@ -70,7 +70,7 @@ other = "Noch keine deklarierten Werke im Katalog."
 
 # Werke-Listing
 [catalogIntro]
-other = "Eine kuratierte Liste der im Maschinenschrift-Standard deklarierten Werke. Aufnahme erfolgt nach Selbstdeklaration und kuratorischer Prüfung über das öffentliche Katalog-Repository."
+other = "Eine kuratierte Liste der im Maschinenschrift-Standard deklarierten Werke. Aufnahme erfolgt per Mail, auf Selbstdeklaration. Geprüft wird, ob das Werk unter dem genannten Titel auf der genannten Plattform auffindbar ist, ob das Siegel in den deklarierten Werten sichtbar am Werk sitzt und ob die Deklaration in sich stimmig ist."
 
 [worksCount]
 one = "{{ .Count }} Werk im Katalog."
@@ -86,13 +86,13 @@ other = "Eintrag beitragen"
 other = "Adoption ist selbstdeklarations-basiert. Der Weg zur Aufnahme:"
 
 [contributeStep1]
-other = "Eigene W/G/B-Werte gemäß Foundation §7 bestimmen (Wortlaut, Geist, Beleg)."
+other = "Eigene W/G/B-Werte gemäß Foundation §7 bestimmen (Wortlaut, Geist, Beleg) und das Siegel sichtbar am Werk anbringen."
 
 [contributeStep2]
-other = "Pull Request gegen das works-Verzeichnis mit einer YAML-Datei nach dem Schema des inauguralen Eintrags."
+other = "Mail an contact [at] maschinenschrift [dot] com: Titel, mindestens eine Plattform, auf der das Werk öffentlich auffindbar ist, und die Stelle, an der das Siegel sitzt."
 
 [contributeStep3]
-other = "Alternativ: Anfrage per Mail an contact [at] maschinenschrift [dot] com."
+other = "Geprüft wird die Auffindbarkeit unter dem genannten Titel, das sichtbare Siegel und die Stimmigkeit der Deklaration. Links in der Mail werden nicht angeklickt."
 
 # Werks-Detail
 [werkGenre]
@@ -146,7 +146,7 @@ other = "Die drei Achsen"
 
 [atlasAxes]
 other = """- **Wortlaut** (W, 0–5) — wie viel der Oberfläche, also Sätze, Wortwahl, Rhythmus, von der Maschine kam.
-- ***Geist*** (G, 0–5) — wie viel der Substanz, also Ideen, Argument, Struktur, von der Maschine kam.
+- ***Geist*** (G, 0–5) — wie viel der Substanz, also Ideen, Argumente, Strukturentscheidungen, Faktenmaterial, Inhalt, von der Maschine kam.
 - **Beleg** (B, binär) — ob das Werk in der bibliografischen Welt steht: findbar, datierbar, identifizierbar.
 
 Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: der Beleg steht noch aus.
@@ -205,6 +205,10 @@ other = "Überwiegend maschinell beigetragen. Beleg ausstehend."
 # Meta-Description-Fallback für Katalogeinträge ohne eigene Beschreibung
 [werkMetaDescription]
 other = "Im Maschinenschrift-Standard deklariert, mit Siegel am Werk: Wortlaut, Geist, Beleg."
+
+# Quellenblock am Notiz-Ende (partials/quellen.html)
+[sourcesHeading]
+other = "Quellen"
 
 # Notizen-Rubriken (bucket-Werte aus dem Frontmatter, DE- und EN-Schreibweise)
 [bucket-aktuelle-anknuepfung]

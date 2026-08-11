@@ -32,10 +32,10 @@ die nicht eingehalten wird.
 Das heisst:
 
 - Sie duerfen das Siegel zeichnen, einbetten, drucken, abwandeln. CC BY 4.0 deckt das.
-- Sie duerfen das Siegel mit den Punkten D=*x* / G=*y* / K=*z* nur dann zur
-  Anzeige Ihrer eigenen Selbstdeklaration verwenden, wenn diese D/G/K-Werte
+- Sie duerfen das Siegel mit den Punkten W=*x* / G=*y* / B=*z* nur dann zur
+  Anzeige Ihrer eigenen Selbstdeklaration verwenden, wenn diese W/G/B-Werte
   die in der [Foundation](https://maschinenschrift.com/foundation/) §7 definierte
-  Bedeutung tragen und die [aktuelle Siegel-Spec](https://maschinenschrift.com/spec/siegel-v6/)
+  Bedeutung tragen und die [aktuelle Siegel-Spec](https://maschinenschrift.com/spec/siegel-v7/)
   geometrisch eingehalten wird.
 
 Diese Trennung ist analog zur Verwendung des Wikipedia-Logos: das Bild ist frei

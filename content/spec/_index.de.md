@@ -27,8 +27,9 @@ Achsensemantik verbindlich sind.
 
 - [**Foundation**](/de/foundation/) — linguistische Grundlage und Achsensemantik
   (W, G, B). Nicht-technisch, aber jeder Spec-Implementation vorangestellt.
-- [Datenmodell-Schema](/de/beitragen/#2-yaml-schreiben) — YAML-Struktur eines
-  Katalog-Eintrags. Teil der [Beitrags-Anleitung](/de/beitragen/).
+- [Eintragen](/de/eintragen/) — wie ein Werk in den Katalog kommt: per Mail,
+  auf Selbstdeklaration. Die Schlüssel der Datenschicht (`wortlaut`, `geist`,
+  `beleg`) stehen in [Foundation §9](/de/foundation/#9-data-layer-directives).
 
 ## Versionsdisziplin
 

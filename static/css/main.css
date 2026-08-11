@@ -360,6 +360,17 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
 /* Schluss-Marke unter Notiz-Artikeln */
 .notiz-coda { margin: 3rem 0 0; text-align: center; }
 
+/* Quellenblock unter Notiz-Artikeln (ADR 0075).
+   Traegt den `sources`-Apparat in der Form des handgesetzten Blocks unter
+   `einstieg`; die Aufzaehlung erbt den Panel-Kasten aus
+   `main > article > section > ul`, die Trennlinie ersetzt dessen <hr>. */
+.notiz-quellen {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-hairline-warm);
+}
+.notiz-quellen > h2 { margin-top: 0; }
+
 /* Notizen-Register (Uebersicht /notizen/ bzw. /notes/).
    Eintraege dreizeilig: Datum + Rubrik, Titel, Beschreibungssatz.
    Haarlinien statt Kasten; die Overrides loesen die Liste aus dem

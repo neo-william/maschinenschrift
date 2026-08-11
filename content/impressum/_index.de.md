@@ -16,7 +16,7 @@ Personenseite: <https://neokhala.com>
 
 ## Kontakt
 
-E-Mail: `info [at] maschinenschrift [dot] com`\
+E-Mail: `contact [at] maschinenschrift [dot] com`\
 Telefon: plus vier neun eins fünf sechs sieben acht drei drei neun drei vier neun
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV

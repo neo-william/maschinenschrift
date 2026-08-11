@@ -2,15 +2,19 @@
 <article class="single notiz">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+  {{ partial "quellen.html" . }}
   {{ with .Params.deklaration }}
-  {{/* Notiz mit eigener Selbstdeklaration: Coda-Siegel trägt die deklarierten Werte.
-       Die semantische Auskunft steht im Notiz-Text; das Glyph bleibt illustrativ. */}}
+  {{/* Notiz mit eigener Selbstdeklaration: Coda-Siegel traegt die deklarierten Werte.
+       Die Werte laufen ueber `zeichen.html` (ADR 0067) — kein Direktzugriff auf
+       Schema-Schluessel, sonst rendert eine v6-Notiz ihre tragende Achse als 0.
+       Die semantische Auskunft steht im Notiz-Text; das Glyph bleibt illustrativ.
+
+       Ohne `deklaration:`-Block rendert dieses Template kein Siegel. Auch nicht
+       das leere: das leere Siegel waere die Deklaration W 0 · G 0. Die Auskunft
+       wird gegeben, nicht vom Template erfunden. */}}
+  {{ $z := partial "zeichen.html" . }}
   <div class="notiz-coda" aria-hidden="true">
-    {{ partial "siegel.html" (dict "wortlaut" .wortlaut "geist" .geist "beleg" (default "belegt" .beleg) "class" "siegel-coda") }}
-  </div>
-  {{ else }}
-  <div class="notiz-coda" aria-hidden="true">
-    {{ partial "siegel.html" (dict "wortlaut" 5 "geist" 3 "beleg" "ausstehend" "class" "siegel-coda") }}
+    {{ partial "siegel.html" (dict "wortlaut" $z.wortlaut "geist" $z.geist "beleg" $z.beleg "class" "siegel-coda") }}
   </div>
   {{ end }}
 </article>

@@ -4,6 +4,21 @@ description: "Warum Maschinenschrift Sprachsubstrat sagt und nicht KI, LLM oder 
 seotitle: "Substrat, nicht Maschine — das Wort für das, was KI liefert"
 date: 2026-06-04
 bucket: lineage
+deklaration:
+  wortlaut: 5
+  geist: 3
+  beleg: belegt
+sources:
+  - title: "Problèmes de linguistique générale"
+    author: "Émile Benveniste"
+    date: 1966
+    type: book
+    note: "2 Bde., Gallimard, Paris. Deutsch: Probleme der allgemeinen Sprachwissenschaft, List. Belegstelle für die hier in Anspruch genommene Unterscheidung énoncé / énonciation: Bd. 2, L'appareil formel de l'énonciation (1970)."
+  - title: "Cours de linguistique générale"
+    author: "Ferdinand de Saussure"
+    date: 1916
+    type: book
+    note: "Hrsg. Charles Bally und Albert Sechehaye, Payot, Lausanne/Paris. Deutsch: Grundfragen der allgemeinen Sprachwissenschaft, de Gruyter. Belegstelle für die Unterscheidung signifiant / signifié: Teil I, Kap. I. Der Cours ist eine posthume Vorlesungsmitschrift."
 ---
 
 ## Die Entscheidung
@@ -55,3 +70,7 @@ Die anderen Wörter — *KI*, *LLM*, *Sprachmodell* — werden nicht verboten. S
 ---
 
 Mehr zur Sache: [Idee](/de/idee/). Mehr zur Form des Siegels und der Achsen Wortlaut · Geist · Beleg: ebenda. Eine erste Anwendung der hier hergeleiteten Position: [Die Hexenprobe](/de/notizen/2026-06-die-hexenprobe/).
+
+---
+
+*Selbstdeklaration dieser Notiz: **W 5 · G 3**. Die Wortentscheidung selbst und die drei Gründe für sie liegen beim Herausgeber; sie ist im Bestand des Projekts vorentschieden und wird hier nur ausgeschrieben. Herleitung und sprachliche Oberfläche substrat-vermittelt; die linguistischen Belegstellen sind im Quellenblock ausgewiesen und stehen im Lesekanon als ungelesen. Auswahl und Verantwortung beim Herausgeber.*

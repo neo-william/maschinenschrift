@@ -16,6 +16,8 @@ The seal documents three axes of the genesis of a text:
 
 Dots mean substrate mediation. Their absence means the author alone. The half-stroke is a marker for a pending bibliographic record, not a judgment of the work.
 
+**Textual notation.** A pending record is marked on two layers: in the glyph by the half-stroke, on the textual identifier by a trailing `†` (for instance `W 4 · G 2 · B ausstehend †`). The dagger stands beside the notation, not on the mark itself; the negative list below is unaffected. Basis: [Foundation §7](/foundation/#7-seal-axis-semantics).
+
 ## Parameters
 
 Three inputs:

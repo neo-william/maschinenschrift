@@ -46,7 +46,7 @@ Damit ist die Lage beschrieben. Es fehlt nicht an Technik und nicht an Moral. **
 Maschinenschrift ist ein offener Standard und ein Zeichen. Die Autorin erklärt selbst, in eigener Hand, was ein Sprachmodell zu ihrem Werk beigetragen hat — auf drei Achsen, in einer Notation, die auf einen Buchdeckel passt.
 
 - **Wortlaut (W)** — wie viel der sprachlichen Oberfläche vom Modell kam: Satzbau, Wortwahl, Rhythmus. Skala 0 bis 5.
-- **Geist (G)** — wie viel der Ideen, Argumente und strukturellen Entscheidungen vom Modell kam. Skala 0 bis 5.
+- **Geist (G)** — wie viel der Ideen, Argumente, Strukturentscheidungen, des Faktenmaterials und des Inhalts vom Modell kam. Skala 0 bis 5.
 - **Beleg (B)** — ob das Werk bibliografisch belegt und auffindbar ist. Zwei Zustände: belegt oder ausstehend.
 
 Das Zeichen selbst sind zwei eckige Klammern mit drei Zeilen und je fünf Feldern. Punkte zählen, was das Modell beigetragen hat. Ein **leeres Siegel** ist der Normalfall: die Autorin war allein. Diese Richtung ist die wichtigste Entscheidung der ganzen Konstruktion. Gezählt wird nicht die Leistung des Menschen, sondern der Anteil der Maschine. Wer ohne Modell schreibt, muss nichts nachweisen — er ist der unmarkierte Fall.
@@ -75,7 +75,7 @@ Die erste Version der Antwort war eine Behörde. Ein Register mit Anmeldeformula
 
 Der Name ist älter als das Projekt. *Maschinenschrift* hieß im zwanzigsten Jahrhundert das Ergebnis der Schreibmaschine — Text, der durch ein technisches Verfahren gegangen war, geschrieben von einem Menschen, vermittelt von einer Maschine. Niemand hat je behauptet, die Schreibmaschine sei die Autorin. Dieselbe Unterscheidung wird jetzt für die nächste Stufe gebraucht.
 
-Damit das Ganze nicht später einer Person gehört, ist es weggegeben, bevor es Wert hat: Inhalte und Notation stehen unter Creative Commons, der Code unter einer freien Lizenz, die Wortmarke bleibt schlafend. Wer den Standard heute benutzt, kann morgen nicht davon abgeschnitten werden — auch nicht von seinem Urheber. Das Verzeichnis liegt in Textdateien, nicht in einer Datenbank, die jemand betreiben muss. Es gibt keine Konten, keine Cookies, keine Tracker. Der laufende Betrieb kostet etwa so viel wie ein Abendessen im Jahr.
+Damit das Ganze nicht später einer Person gehört, ist es weggegeben, bevor es Wert hat. Zwei Teile sind unentziehbar: Inhalte und Notation stehen unter Creative Commons, der Code unter Apache 2.0. Beides ist vergeben und nicht zurückholbar, auch nicht vom Urheber — wer den Standard heute benutzt, kann davon morgen nicht abgeschnitten werden. Der dritte Teil ist es nicht. Die Wortmarke schläft und liegt beim Gründer; dass sie nicht gegen Adoptierende eingesetzt wird, ist eine offen ausgewiesene Selbstbindung — eine Verpflichtungserklärung, keine Unmöglichkeit. Zusage und Mittel, sie zu brechen, liegen in derselben Hand, und diese Seite sagt es. Das Verzeichnis liegt in Textdateien, nicht in einer Datenbank, die jemand betreiben muss. Es gibt keine Konten, keine Cookies, keine Tracker. Der laufende Betrieb kostet etwa so viel wie ein Abendessen im Jahr.
 
 Der Roman, mit dem alles anfing, deklariert **W 4 · G 2 · B ausstehend** — viel Maschine in der Sprache, wenig im Geist, keinen bibliografischen Beleg, weil Fiktion nichts belegt. Das ist die unbequemste Auskunft, die dieses Projekt zu geben hatte, und sie steht an seiner Spitze. Wer eine Form für Ehrlichkeit vorschlägt, hat zuerst selbst zu antworten.
 

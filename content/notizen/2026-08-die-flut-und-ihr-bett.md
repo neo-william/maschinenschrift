@@ -48,13 +48,13 @@ By now the bed is being built on purpose. A platform like NovelMint has serial f
 
 The study's most instructive finding is a linguistic one. Successful mediated titles overlap in rare turns of phrase markedly more with existing works than unmediated ones do — by seven percentage points in the best-selling tier — and the greater the overlap, the greater their revenue. For unmediated books no such relation holds. Prize-winning literature overlaps least of all.
 
-The seal of this project counts what the machine supplied, on three axes: **Wortlaut** — wording, how much of the linguistic surface came from the substrate. **Geist** — how much of the ideas, the structure, the content. **Beleg** — the record, whether the work stands in the bibliographic world. The study gives that order an empirical floor. Wording is the axis on which the substrate delivers most — and what it delivers is borrowed: statistical proximity to what was already written. What lifts a work out of the flood sits on the other axes — in the Geist that was not imported from the machine, and in the record that fixes the work in the bibliographic world.
+The seal of this project counts what the machine supplied, on three axes: **Wortlaut** — wording, how much of the linguistic surface came from the substrate. **Geist** — how much of the ideas, the arguments, the structural decisions, the factual material, the content. **Beleg** — the record, whether the work stands in the bibliographic world. The study gives that order an empirical floor. Wording is the axis on which the substrate delivers most — and what it delivers is borrowed: statistical proximity to what was already written. What lifts a work out of the flood sits on the other axes — in the Geist that was not imported from the machine, and in the record that fixes the work in the bibliographic world.
 
 ## The unmeasured quantity
 
 The study notes itself what its data cannot yield: whether readers choose differently when they know about the mediation. It could not be measured, because in this market there is nothing to know. Amazon has asked every submission since 2023 whether it contains machine-generated content; the answer stays in the house and appears on no product page. The account whose effect the study must leave open exists nowhere in this market in public.
 
-The flood is therefore to be named more precisely. <u>It does not consist of mediated books; it consists of mediated books that no one has declared.</u> Self-declaration is the counter-movement to this state of affairs: public instead of in-house, graded instead of ticked, given by the author instead of asserted by a tool. Whether the open account changes how readers choose is one of the open questions of this decade. The study shows that so far no one has had the chance to answer it.
+The flood is therefore to be named more precisely. <u>It does not consist of mediated books; it consists of mediated books that do not say so.</u> The flood is the undisclosed mass. Self-declaration is the counter-movement to this state of affairs: public instead of in-house, graded instead of ticked, given by the author instead of asserted by a tool. Whether the open account changes how readers choose is one of the open questions of this decade. The study shows that so far no one has had the chance to answer it.
 
 ## In the aggregate, at the single work
 
@@ -62,7 +62,9 @@ The study measured with a substrate detector — a tool that scans texts for mac
 
 ## Signal, not gate
 
-A registry stops no flood. It never promised to: signal, not gate. What a registry can do is record how a work was made and who stands behind it. The flood has no sender; that is what makes it a flood. Whoever declares steps out of it — not because the water falls, but because a name answers where otherwise there is only volume.
+A registry stops no flood. It never promised to: signal, not gate. What a registry can do is record how a work was made and who stands behind it. The flood has no sender; that is what makes it a flood. Whoever declares puts a name where otherwise there is only volume — **no acquittal and no exit ticket**, but an account given to the reader. What she makes of it is hers to decide.
+
+And the registry infers nothing from the absence of a declaration. It does not read silence, does not comment on it, and holds it against no one.
 
 Amazon dug the bed, the substrate filled it, and the next beds are under construction. The water level is not this project's concern. The account is.
 

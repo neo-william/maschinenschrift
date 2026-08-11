@@ -18,7 +18,7 @@ Personal site: <https://neokhala.com>
 
 ## Contact
 
-Email: `info [at] maschinenschrift [dot] com`\
+Email: `contact [at] maschinenschrift [dot] com`\
 Phone: plus four nine one five six seven eight three three nine three four nine
 
 ## Responsible for content per § 18 (2) MStV

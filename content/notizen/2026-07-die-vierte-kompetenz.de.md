@@ -5,8 +5,9 @@ seotitle: "Die vierte Kompetenz — AI Fluency und die Offenlegung"
 date: 2026-07-14
 bucket: aktuelle-anknuepfung
 deklaration:
-  diktion: 5
+  wortlaut: 5
   geist: 3
+  beleg: belegt
 sources:
   - title: "AI Fluency: Framework & Foundations"
     author: "Rick Dakan, Joseph Feller, Anthropic"
@@ -38,7 +39,7 @@ Der dritte Teil — die Wahl der Systeme — liegt außerhalb dessen, was Maschi
 
 „Everyone who needs to know" — bei einem Werk der Literatur ist das nicht die Kollegin im Projekt und nicht der Auftraggeber. Es ist die Leserin, auch die in dreißig Jahren, die das Buch antiquarisch findet und wissen will, wie es gemacht wurde. Die Autorin ist dann nicht mehr zu befragen, und ihre gute Absicht genügt nicht. Was genügt, ist <u>eine Notation, die am Werk bleibt: benennbar, vergleichbar, haltbar</u>.
 
-Das ist die Stelle, an der Maschinenschrift ansetzt. Das Siegel gibt der geforderten Ehrlichkeit eine Form: drei Achsen — *Wortlaut* (wie viel der sprachlichen Oberfläche das Substrat geliefert hat), *Geist* (wie viel der Ideen, Argumente, Strukturen) und *Beleg* (ob das Werk bibliografisch belegt ist). Das Framework verlangt die Auskunft. Das Siegel ist eine Sprache, in der sie gegeben werden kann — und die bleibt.
+Das ist die Stelle, an der Maschinenschrift ansetzt. Das Siegel gibt der geforderten Ehrlichkeit eine Form: drei Achsen — *Wortlaut* (wie viel der sprachlichen Oberfläche das Substrat geliefert hat), *Geist* (wie viel der Ideen, Argumente, Strukturentscheidungen, des Faktenmaterials, des Inhalts) und *Beleg* (ob das Werk bibliografisch belegt ist). Das Framework verlangt die Auskunft. Das Siegel ist eine Sprache, in der sie gegeben werden kann — und die bleibt.
 
 ## Die Differenz
 

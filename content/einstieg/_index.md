@@ -47,7 +47,7 @@ That is the situation. What is missing is not technology and not morality. **Wha
 *Maschinenschrift* (German: machine-script) is an open standard and a mark. The author states for herself, in her own hand, what a language model contributed to her work — on three axes, in a notation that fits on a book cover.
 
 - **Wortlaut (W)** — *wording*; how much of the linguistic surface came from the model: sentence construction, word choice, rhythm. Scale 0 to 5.
-- **Geist (G)** — German for spirit, intellectual presence: how much of the ideas, arguments, and structural decisions came from the model. Scale 0 to 5.
+- **Geist (G)** — German for spirit, intellectual presence: how much of the ideas, arguments, structural decisions, factual material, and content came from the model. Scale 0 to 5.
 - **Beleg (B)** — the *record*; whether the work is bibliographically documented and findable. Two states: documented or pending.
 
 The mark itself is two square brackets with three rows of five slots each. Dots count what the model contributed. An **empty seal** is the normal case: the author was alone. That direction is the most important decision in the whole construction. What is counted is not the human's achievement but the machine's share. Whoever writes without a model has nothing to demonstrate — she is the unmarked case.
@@ -76,7 +76,7 @@ The first version of the answer was an authority. A register with a submission f
 
 The name is older than the project. In the twentieth century, *Maschinenschrift* meant the product of the typewriter — text that had passed through a technical apparatus, written by a human, mediated by a machine. No one ever claimed the typewriter was the author. The same distinction is now needed one stage further on.
 
-So that none of this can later belong to one person, it was given away before it had value: content and notation under Creative Commons, the code under a free license, the word mark left dormant. Whoever uses the standard today cannot be cut off from it tomorrow — not even by its originator. The registry lives in text files, not in a database somebody has to operate. There are no accounts, no cookies, no trackers. Running it costs about as much per year as one dinner.
+So that none of this can later belong to one person, it was given away before it had value. Two parts are irrevocable: content and notation under Creative Commons, the code under Apache 2.0. Both are released and cannot be called back, not even by the originator — whoever uses the standard today cannot be cut off from that tomorrow. The third part is not. The word mark is dormant and held by the founder; that it will not be turned against adopters is an openly declared self-binding — an undertaking, not an impossibility. The promise and the means to break it lie in the same hand, and this page says so. The registry lives in text files, not in a database somebody has to operate. There are no accounts, no cookies, no trackers. Running it costs about as much per year as one dinner.
 
 The novel it all started with declares **W 4 · G 2 · B pending** — much machine in the language, little in the *Geist*, no bibliographic record, because fiction documents nothing. That is the most uncomfortable account this project had to give, and it stands at the top of it. Whoever proposes a form for honesty has to answer first.
 

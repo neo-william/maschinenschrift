@@ -6,8 +6,9 @@ date: 2026-07-18
 bucket: lineage
 url: /notes/2026-07-the-door-out/
 deklaration:
-  diktion: 5
+  wortlaut: 5
   geist: 3
+  beleg: belegt
 sources:
   - title: "Divergent creativity in humans and large language models"
     author: "Antoine Bellemare-Pepin, François Lespinasse, Philipp Thölke, Yann Harel, Kory Mathewson, Jay A. Olson, Yoshua Bengio, Karim Jerbi et al."
@@ -25,7 +26,7 @@ sources:
 
 ## More creative than the average
 
-In January 2026, *Scientific Reports* publishes the largest comparative study to date of human and machine creativity. A group around the neuroscientist Karim Jerbi (Université de Montréal, Mila) tests nine language models — among them GPT-4, Claude, and Gemini — against 100,000 people: association tasks, plus short writing forms such as haiku, synopses, flash fiction. The finding has two halves. The models surpass average human performance. And they stay below the more creative half of the participants — the study speaks of a ceiling, "a ceiling that current LLMs still fail to surpass." The press echo kept mostly the first half: "AI Is Now More Creative Than the Average Human." **Both halves are right, and they explain each other** — not through another measurement, but through a geometry.
+In January 2026, *Scientific Reports* publishes the largest comparative study to date of human and machine creativity. A group around the neuroscientist Karim Jerbi (Université de Montréal, Mila) tests nine language models against 100,000 people: association tasks, plus short writing forms such as haiku, synopses, flash fiction. The finding has two halves. The models surpass average human performance. And they stay below the more creative half of the participants — the study speaks of a ceiling, "a ceiling that current LLMs still fail to surpass." The press echo kept mostly the first half: "AI Is Now More Creative Than the Average Human." **Both halves are right, and they explain each other** — not through another measurement, but through a geometry.
 
 ## Surprise is relative
 

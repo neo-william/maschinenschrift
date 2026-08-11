@@ -5,6 +5,21 @@ seotitle: "Substrate, not Machine — The Word for What AI Delivers"
 date: 2026-06-04
 bucket: lineage
 url: /notes/2026-06-substrate-not-machine/
+deklaration:
+  wortlaut: 5
+  geist: 3
+  beleg: belegt
+sources:
+  - title: "Problèmes de linguistique générale"
+    author: "Émile Benveniste"
+    date: 1966
+    type: book
+    note: "2 vols., Gallimard, Paris. English: Problems in General Linguistics, University of Miami Press. Reference for the distinction claimed here between énoncé and énonciation: vol. 2, L'appareil formel de l'énonciation (1970)."
+  - title: "Cours de linguistique générale"
+    author: "Ferdinand de Saussure"
+    date: 1916
+    type: book
+    note: "Ed. Charles Bally and Albert Sechehaye, Payot, Lausanne/Paris. English: Course in General Linguistics. Reference for the distinction signifiant / signifié: part I, ch. I. The Cours is a posthumous compilation of lecture notes."
 ---
 
 ## The decision
@@ -56,3 +71,7 @@ The other words — *AI*, *LLM*, *language model* — are not forbidden. They ap
 ---
 
 More on the matter: [Idea](/idea/). More on the form of the seal and the axes Wortlaut · Geist · Beleg: there as well. A first application of the position derived here: [The Witch Trial](/notes/2026-06-the-witch-trial/).
+
+---
+
+*Self-declaration of this note: **W 5 · G 3**. The choice of word and the three grounds for it are the editor's; it was settled in the project's holdings and is only written out here. Derivation and linguistic surface substrate-mediated; the linguistic references are named in the source block and stand in the reading canon as unread. Selection and responsibility with the editor.*

@@ -5,8 +5,9 @@ seotitle: "Die Tür hinaus — sind KI-Sprachmodelle kreativ?"
 date: 2026-07-18
 bucket: lineage
 deklaration:
-  diktion: 5
+  wortlaut: 5
   geist: 3
+  beleg: belegt
 sources:
   - title: "Divergent creativity in humans and large language models"
     author: "Antoine Bellemare-Pepin, François Lespinasse, Philipp Thölke, Yann Harel, Kory Mathewson, Jay A. Olson, Yoshua Bengio, Karim Jerbi u. a."
@@ -24,7 +25,7 @@ sources:
 
 ## Kreativer als der Durchschnitt
 
-Im Januar 2026 erscheint in *Scientific Reports* die bislang größte Vergleichsstudie zu menschlicher und maschineller Kreativität. Eine Gruppe um den Neurowissenschaftler Karim Jerbi (Université de Montréal, Mila) testet neun Sprachmodelle — darunter GPT-4, Claude und Gemini — gegen 100.000 Menschen: Assoziationsaufgaben, dazu kurze Schreibformen wie Haiku, Synopsen, Kürzestgeschichten. Der Befund hat zwei Hälften. Die Modelle übertreffen die durchschnittliche menschliche Leistung. Und sie bleiben unter der kreativeren Hälfte der Teilnehmenden — die Studie spricht von einer Decke, „a ceiling that current LLMs still fail to surpass". Das Presse-Echo behielt vor allem die erste Hälfte: „AI Is Now More Creative Than the Average Human." **Beide Hälften sind richtig, und sie erklären einander** — nicht durch eine weitere Messung, sondern durch eine Geometrie.
+Im Januar 2026 erscheint in *Scientific Reports* die bislang größte Vergleichsstudie zu menschlicher und maschineller Kreativität. Eine Gruppe um den Neurowissenschaftler Karim Jerbi (Université de Montréal, Mila) testet neun Sprachmodelle gegen 100.000 Menschen: Assoziationsaufgaben, dazu kurze Schreibformen wie Haiku, Synopsen, Kürzestgeschichten. Der Befund hat zwei Hälften. Die Modelle übertreffen die durchschnittliche menschliche Leistung. Und sie bleiben unter der kreativeren Hälfte der Teilnehmenden — die Studie spricht von einer Decke, „a ceiling that current LLMs still fail to surpass". Das Presse-Echo behielt vor allem die erste Hälfte: „AI Is Now More Creative Than the Average Human." **Beide Hälften sind richtig, und sie erklären einander** — nicht durch eine weitere Messung, sondern durch eine Geometrie.
 
 ## Die Überraschung ist relativ
 

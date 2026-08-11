@@ -6,8 +6,9 @@ date: 2026-07-14
 bucket: current-response
 url: /notes/2026-07-the-fourth-competency/
 deklaration:
-  diktion: 5
+  wortlaut: 5
   geist: 3
+  beleg: belegt
 sources:
   - title: "AI Fluency: Framework & Foundations"
     author: "Rick Dakan, Joseph Feller, Anthropic"
@@ -39,7 +40,7 @@ The third part — the choice of systems — lies outside what Maschinenschrift 
 
 "Everyone who needs to know" — for a work of literature, that is not the colleague on the project and not the client. It is the reader, including the one thirty years from now who finds the book secondhand and wants to know how it was made. The author can no longer be asked, and her good intention is not enough. What suffices is <u>a notation that stays with the work: nameable, comparable, durable</u>.
 
-This is where Maschinenschrift begins. The seal gives the required honesty a form: three axes — *Wortlaut* (wording: how much of the linguistic surface the substrate supplied), *Geist* (German: spirit, intellectual presence — how much of the ideas, arguments, structures), and *Beleg* (the record: whether the work is bibliographically documented). The framework demands the account. The seal is a language in which it can be given — and which lasts.
+This is where Maschinenschrift begins. The seal gives the required honesty a form: three axes — *Wortlaut* (wording: how much of the linguistic surface the substrate supplied), *Geist* (German: spirit, intellectual presence — how much of the ideas, arguments, structural decisions, factual material, content), and *Beleg* (the record: whether the work is bibliographically documented). The framework demands the account. The seal is a language in which it can be given — and which lasts.
 
 ## The difference
 

@@ -1,0 +1,49 @@
+{{/*
+  Quellenblock einer Notiz — rendert den `sources`-Apparat aus dem Front Matter.
+
+  Muster ist der handgesetzte Quellenblock unter `einstieg` (EIN-32, Praezedenzfall
+  nach ADR 0029 §5); die Entscheidung, den Apparat ueberhaupt zu rendern, ist
+  ADR 0075. Bis dahin waren 17 `sources:`-Eintraege und 13 Permalinks im Front
+  Matter gepflegt und von keinem Layout ausgegeben.
+
+  Erwartet die Seite (`.`). Ohne `sources:` rendert das Partial nichts.
+
+  Je Eintrag, in dieser Reihenfolge ausgegeben:
+    author  str   optional  — Verfasser oder Publikation, vor dem Titel
+    title   str   Pflicht   — kursiv, mit `url` verlinkt
+    url     str   optional  — fehlt sie, steht der Titel unverlinkt (Buchbeleg)
+    date    any   optional  — YAML-Datum (time.Time) oder blanke Jahreszahl (int)
+    type    str   optional  — nicht gerendert; Sortier- und Pflegefeld
+    note    str   optional  — Anmerkung nach Gedankenstrich
+
+  Die `note:`-Zeile ist Teil der Ausgabe: sie traegt die Belegstelle, ohne die der
+  Permalink nur eine Adresse waere.
+*/}}
+{{- with .Params.sources }}
+<section class="notiz-quellen">
+  <h2>{{ i18n "sourcesHeading" }}</h2>
+  <ul>
+    {{- range . }}
+    {{- $e := . }}
+    {{- $datum := "" }}
+    {{- with $e.date }}
+      {{- if eq (printf "%T" .) "time.Time" }}
+        {{- $datum = time.Format "2006-01-02" . }}
+      {{- else }}
+        {{- $datum = printf "%v" . }}
+      {{- end }}
+    {{- end }}
+    <li>
+      {{- with $e.author }}{{ . }}: {{ end -}}
+      {{- if $e.url -}}
+        <a href="{{ $e.url }}"><em>{{ $e.title }}</em></a>
+      {{- else -}}
+        <em>{{ $e.title }}</em>
+      {{- end -}}
+      {{- with $datum }} ({{ . }}){{ end -}}
+      {{- with $e.note }} — {{ . }}{{ end -}}
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}

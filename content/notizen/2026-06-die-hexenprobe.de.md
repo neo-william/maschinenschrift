@@ -4,6 +4,10 @@ description: "Warum Maschinenschrift den KI-Detektor verweigert. Eine Notiz zur 
 seotitle: "Die Hexenprobe — warum KI-Detektoren nichts klären"
 date: 2026-06-04
 bucket: aktuelle-anknuepfung
+deklaration:
+  wortlaut: 5
+  geist: 3
+  beleg: belegt
 sources:
   - title: "Magnifica Humanitas"
     author: "Papst Leo XIV."
@@ -64,9 +68,11 @@ Hier liegt die Unterscheidung, auf die es ankommt.
 
 Der Detektor ist Anklage. Er kommt von außen, gegen den Willen der Autorin, und behauptet zu sehen, was sie verborgen hat. Er fragt nach Wesen, nicht nach Tat.
 
-Die Selbstdeklaration ist das Gegenteil. Die Autorin sagt selbst, welche Rolle das Sprachsubstrat gespielt hat — wie viel zum Wortlaut, wie viel zum Geist, ob das Werk in der bibliografischen Welt belegt ist. Die Auskunft wird gegeben, nicht entrissen. Sie ersetzt das Lesen nicht. Sie begleitet es. Sie sagt: *So ist das gemacht. Nun lies.*
+Die Selbstdeklaration ist das Gegenteil. Die Autorin sagt selbst, welche Rolle das Sprachsubstrat gespielt hat — wie viel zum Wortlaut, wie viel zum Geist, also zu Ideen, Argumenten, Strukturentscheidungen, Faktenmaterial und Inhalt, und ob das Werk in der bibliografischen Welt belegt ist. Die Auskunft wird gegeben, nicht entrissen. Sie ersetzt das Lesen nicht. Sie begleitet es. Sie sagt: *So ist das gemacht. Nun lies.*
 
 Die Hexenprobe lebt vom verborgenen Wesen. Wo das Verborgene ausgesprochen ist, hat sie keinen Boden mehr. Wer deklariert, entwaffnet den Detektor — nicht durch Versteck, sondern durch Antwort. Das ist die Wendung: **Nicht das Schweigen schützt vor der Jagd, sondern das Sagen.**
+
+Wer jagt, sind Detektoren und Verdacht — nicht das Verzeichnis. Es liest kein Schweigen. Aus dem Fehlen einer Deklaration folgert es nichts, kommentiert nichts und rechnet niemandem etwas an. Der Satz beschreibt eine Lage im Markt; er ist keine Drohung der Institution.
 
 ## Die einzige Probe
 
@@ -75,3 +81,7 @@ Die Hexenprobe lebt vom verborgenen Wesen. Wo das Verborgene ausgesprochen ist, 
 Die Formel des Projekts lautet *Geist aus der Maschine*. Das Siegel beantwortet sie nicht heimlich, sondern offen. Es zählt nicht den Wert des Werks, es zählt, was das Sprachsubstrat geliefert hat. Was darüber hinaus zu sagen ist, sagt die Lektüre.
 
 Mehr zur Form und zur Linie: [Idee](/de/idee/). Warum das Projekt *Sprachsubstrat* sagt und nicht *Maschine* oder *LLM*, wird in einer eigenen Notiz hergeleitet: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Warum es keine Detektion betreibt, in einer weiteren.
+
+---
+
+*Selbstdeklaration dieser Notiz: **W 5 · G 3**. Die Analogie zwischen Detektor und Hexenprobe, die Unterscheidung von Herkunft und Wert und der Entschluss, keine Detektion zu betreiben, liegen beim Herausgeber; der Anlass stammt aus seiner Lektüre. Ausarbeitung und sprachliche Oberfläche substrat-vermittelt; Enzyklika und Snopes-Befund gegen die verlinkten Quellen geprüft. Auswahl und Verantwortung beim Herausgeber.*

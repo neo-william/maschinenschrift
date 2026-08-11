@@ -73,7 +73,7 @@ In der Literatur läuft der Hinweis leer. Wer einen Roman aufschlägt, muss nich
 
 <u>Der Warnhinweis fragt, ob eine Maschine beteiligt war. Die Selbstdeklaration sagt, in welchem Verhältnis.</u>
 
-Das Siegel ist darum keine Ankreuzstelle. Es trägt drei Achsen: **Wortlaut** — wie viel der sprachlichen Oberfläche aus dem Sprachsubstrat kam. **Geist** — wie viel der Ideen, der Struktur, des Inhalts. **Beleg** — ob die bibliografische Herkunft erbracht ist. Zwei Skalen von null bis fünf und ein binärer Zustand, wo das Gesetz ein Kästchen hat. Es klagt nicht an; es hält fest.
+Das Siegel ist darum keine Ankreuzstelle. Es trägt drei Achsen: **Wortlaut** — wie viel der sprachlichen Oberfläche aus dem Sprachsubstrat kam. **Geist** — wie viel der Ideen, der Argumente, der Strukturentscheidungen, des Faktenmaterials, des Inhalts. **Beleg** — ob die bibliografische Herkunft erbracht ist. Zwei Skalen von null bis fünf und ein binärer Zustand, wo das Gesetz ein Kästchen hat. Es klagt nicht an; es hält fest.
 
 ## Wo das Gesetz schweigt
 

@@ -20,12 +20,14 @@ A standard, not a verdict. No purity stamp. No quality claim. No human-only badg
 
 The question changes shape. Not *did she use AI?* — but *what does the work itself say about how it was made?*
 
+One objection remains, and it is not cleared away here: whoever provides a form makes the formed thing more visible. A clean notation for mediated literature normalizes mediated literature, even with no one promoting it. The project accepts that, because the alternative is not the absence of mediation but its invisibility. The comparison is not a label against nothing, but **an account against silence**.
+
 ## The seal.
 
 Three axes. The author marks each one.
 
 - **Wortlaut** — *wording*; how much of the surface (sentences, word choice, rhythm) came from the machine.
-- ***Geist*** — how much of the substance (ideas, argument, structure) came from the machine.
+- ***Geist*** — how much of the substance (ideas, arguments, structural decisions, factual material, content) came from the machine.
 - **Beleg** — the *record*; whether the work stands in the bibliographic world: findable, datable, identifiable.
 
 Two rows of dots, zero to five per axis, count the machine's share. A half-stroke below means correspondence is still pending. The author sets the seal and places it near the byline — cover, title page, about page.

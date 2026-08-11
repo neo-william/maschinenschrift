@@ -3,8 +3,6 @@ title: Idea
 description: "What Maschinenschrift is: AI as writing technology in the line of the printing press and the typewriter — and what the seal on a declared book shows."
 seotitle: "The Idea — AI as Writing Technology, Not Co-Author"
 url: /idea/
-aliases:
-  - /foundation/
 ---
 
 ## Writing Technology
@@ -30,7 +28,7 @@ The seal is the notation in which a work declares its mediation. It consists of 
 Three axes carry the statement:
 
 - **Wortlaut** (W) — *wording*; how much the substrate contributed to the linguistic surface. Idiom, sentence flow, stylistic register. Scale 0–5.
-- ***Geist*** (G) — German for *spirit* in the sense of Hegel and *Geisteswissenschaften*; how much the substrate contributed to the work's *Geist*. Ideas, arguments, structural decisions, content. Scale 0–5.
+- ***Geist*** (G) — German for *spirit* in the sense of Hegel and *Geisteswissenschaften*; how much the substrate contributed to the work's *Geist*. Ideas, arguments, structural decisions, factual material, content. Scale 0–5.
 - **Beleg** (B) — the *record*; whether the work is documented in the bibliographic world. Binary: *belegt* (documented) or *ausstehend* (pending).
 
 An **empty seal** `[ ]` is the default position: the author was alone, no substrate involved. Dots count what was imported — not what was achieved. The axes measure the machine's contribution, not the human's. This polarity is the institution's foundational decision. The writing human is the unmarked default.

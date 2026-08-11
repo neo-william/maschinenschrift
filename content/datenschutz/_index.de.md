@@ -77,4 +77,4 @@ Ludwig-Erhard-Straße 22, 7. OG, 20459 Hamburg —
 ## 8. Änderungen
 
 Diese Erklärung kann angepasst werden, um geänderte Rechtslage oder Änderungen
-am Dienst widerzuspiegeln. Aktuelle Fassung: 3. Juni 2026.
+am Dienst widerzuspiegeln. Aktuelle Fassung: 11. August 2026.

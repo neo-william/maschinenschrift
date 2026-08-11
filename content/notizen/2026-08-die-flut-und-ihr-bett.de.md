@@ -47,13 +47,13 @@ Inzwischen wird das Bett eigens gebaut. Eine Plattform wie NovelMint lässt Fort
 
 Der aufschlussreichste Befund der Studie ist ein sprachlicher. Erfolgreiche vermittelte Titel überlappen in seltenen Wendungen deutlich stärker mit bestehenden Werken als unvermittelte — in der verkaufsstärksten Spitze um sieben Prozentpunkte —, und je größer die Überlappung, desto größer ihr Erlös. Bei unvermittelten Büchern besteht dieser Zusammenhang nicht. Preisgekrönte Literatur überlappt am wenigsten von allen.
 
-Das Siegel dieses Projekts zählt, was die Maschine zugeliefert hat, auf drei Achsen: **Wortlaut** — wie viel der sprachlichen Oberfläche aus dem Substrat kam. **Geist** — wie viel der Ideen, der Struktur, des Inhalts. **Beleg** — ob das Werk in der bibliografischen Welt steht. Die Studie liefert dieser Ordnung einen empirischen Boden. Der Wortlaut ist die Achse, auf der das Substrat am meisten liefert — und das Gelieferte ist geborgt: statistische Nähe zu dem, was schon geschrieben stand. Was ein Werk aus der Flut heraushebt, sitzt auf den anderen Achsen — im Geist, der nicht aus der Maschine importiert ist, und im Beleg, der das Werk in der bibliografischen Welt festmacht.
+Das Siegel dieses Projekts zählt, was die Maschine zugeliefert hat, auf drei Achsen: **Wortlaut** — wie viel der sprachlichen Oberfläche aus dem Substrat kam. **Geist** — wie viel der Ideen, der Argumente, der Strukturentscheidungen, des Faktenmaterials, des Inhalts. **Beleg** — ob das Werk in der bibliografischen Welt steht. Die Studie liefert dieser Ordnung einen empirischen Boden. Der Wortlaut ist die Achse, auf der das Substrat am meisten liefert — und das Gelieferte ist geborgt: statistische Nähe zu dem, was schon geschrieben stand. Was ein Werk aus der Flut heraushebt, sitzt auf den anderen Achsen — im Geist, der nicht aus der Maschine importiert ist, und im Beleg, der das Werk in der bibliografischen Welt festmacht.
 
 ## Die ungemessene Größe
 
 Die Studie vermerkt selbst, was ihre Daten nicht hergeben: ob Leserinnen anders wählen, wenn sie um die Vermittlung wissen. Gemessen werden konnte das nicht, weil es in diesem Markt nichts zu wissen gibt. Amazon fragt seit 2023 jede Einreichung ab, ob maschinell erzeugte Inhalte enthalten sind; die Antwort bleibt im Haus und erscheint auf keiner Produktseite. Die Auskunft, deren Wirkung die Studie offenlassen muss, existiert an keiner Stelle dieses Marktes öffentlich.
 
-Die Flut ist darum genauer zu benennen. <u>Sie besteht nicht aus vermittelten Büchern; sie besteht aus undeklariert vermittelten Büchern.</u> Die Selbstdeklaration ist zu dieser Lage die Gegenbewegung: öffentlich statt hausintern, abgestuft statt angekreuzt, von der Autorin gegeben statt vom Werkzeug behauptet. Ob die offene Auskunft das Wählen der Leserinnen verändert, ist eine der offenen Fragen dieses Jahrzehnts. Die Studie zeigt, dass bisher niemand die Gelegenheit hatte, sie zu beantworten.
+Die Flut ist darum genauer zu benennen. <u>Sie besteht nicht aus vermittelten Büchern; sie besteht aus vermittelten Büchern, die es nicht ausweisen.</u> Die Flut ist die unausgewiesene Masse. Die Selbstdeklaration ist zu dieser Lage die Gegenbewegung: öffentlich statt hausintern, abgestuft statt angekreuzt, von der Autorin gegeben statt vom Werkzeug behauptet. Ob die offene Auskunft das Wählen der Leserinnen verändert, ist eine der offenen Fragen dieses Jahrzehnts. Die Studie zeigt, dass bisher niemand die Gelegenheit hatte, sie zu beantworten.
 
 ## Im Aggregat, am Einzelwerk
 
@@ -61,7 +61,9 @@ Gemessen hat die Studie mit einem Substrat-Detektor — einem Werkzeug, das Text
 
 ## Signal, nicht Tor
 
-Ein Register hält keine Flut auf. Es hat das nie versprochen: Signal, nicht Tor. Was ein Register kann, ist verzeichnen, wie ein Werk gemacht ist und wer dafür einsteht. Die Flut hat keinen Absender; das macht sie zur Flut. Wer deklariert, tritt aus ihr heraus — nicht weil das Wasser sinkt, sondern weil ein Name antwortet, wo sonst Menge ist.
+Ein Register hält keine Flut auf. Es hat das nie versprochen: Signal, nicht Tor. Was ein Register kann, ist verzeichnen, wie ein Werk gemacht ist und wer dafür einsteht. Die Flut hat keinen Absender; das macht sie zur Flut. Wer deklariert, setzt einen Namen dorthin, wo sonst Menge ist — **kein Freispruch und keine Austrittskarte**, sondern eine Auskunft an die Leserin. Was sie daraus macht, ist ihre Sache.
+
+Und das Verzeichnis folgert aus dem Fehlen einer Deklaration nichts. Es liest kein Schweigen, kommentiert es nicht und rechnet es niemandem an.
 
 Amazon hat das Bett gegraben, das Substrat hat es gefüllt, und die nächsten Betten sind im Bau. Der Pegel ist nicht die Sache dieses Projekts. Die Auskunft ist es.
 

@@ -75,4 +75,4 @@ Ludwig-Erhard-Straße 22, 7. OG, 20459 Hamburg, Germany —
 ## 8. Changes
 
 This statement may be adapted to reflect changed legal situations or
-changes to the service. Current version: 3 June 2026.
+changes to the service. Current version: 11 August 2026.

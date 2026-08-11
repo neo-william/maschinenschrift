@@ -28,8 +28,9 @@ axis semantics.
 
 - [**Foundation**](/foundation/) — linguistic basis and axis semantics
   (W, G, B). Non-technical, but precedes every spec implementation.
-- [Data-model schema](/contribute/#2-write-the-yaml) — YAML structure of
-  a catalog entry. Part of the [Contribution guide](/contribute/).
+- [Submission](/submit/) — how a work enters the catalog: by email, on
+  self-declaration. The data-layer keys (`wortlaut`, `geist`, `beleg`) are
+  defined in [Foundation §9](/foundation/#9-data-layer-directives).
 
 ## Version discipline
 

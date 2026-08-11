@@ -5,6 +5,10 @@ seotitle: "The Witch Trial — Why AI Detectors Settle Nothing"
 date: 2026-06-04
 bucket: current-response
 url: /notes/2026-06-the-witch-trial/
+deklaration:
+  wortlaut: 5
+  geist: 3
+  beleg: belegt
 sources:
   - title: "Magnifica Humanitas"
     author: "Pope Leo XIV"
@@ -65,9 +69,11 @@ Here lies the distinction that matters.
 
 The detector is accusation. It comes from outside, against the author's will, and claims to see what she has concealed. It asks about being, not about deed.
 
-Self-declaration is the opposite. The author says herself what role the *Sprachsubstrat* — the language substrate — has played: how much of the Wortlaut, how much of the Geist, whether the work stands in the bibliographic world. The disclosure is given, not extracted. It does not replace reading. It accompanies it. It says: *This is how it was made. Now read.*
+Self-declaration is the opposite. The author says herself what role the *Sprachsubstrat* — the language substrate — has played: how much of the Wortlaut, how much of the Geist — the ideas, arguments, structural decisions, factual material, content — and whether the work stands in the bibliographic world. The disclosure is given, not extracted. It does not replace reading. It accompanies it. It says: *This is how it was made. Now read.*
 
 The witch trial lives on the hidden being. Where the hidden has been spoken, the trial has no ground left. Whoever declares disarms the detector — not by concealment, but by answer. That is the turn: **not silence protects against the hunt, but speech.**
+
+What hunts are detectors and suspicion — not the registry. It does not read silence. From the absence of a declaration it infers nothing, comments on nothing, and holds nothing against anyone. The sentence describes a condition in the market; it is not a threat from the institution.
 
 ## The only trial
 
@@ -76,3 +82,7 @@ The witch trial lives on the hidden being. Where the hidden has been spoken, the
 The project's diagnostic formula is *Geist aus der Maschine*. The seal answers it not in secret, but in the open. It does not count the worth of the work; it counts what the language substrate has supplied. What is to be said beyond that, reading says.
 
 More on the form and the lineage: [Idea](/idea/). Why the project says *Sprachsubstrat* rather than *machine* or *LLM* is derived in a note of its own: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). Why it runs no detection — in another.
+
+---
+
+*Self-declaration of this note: **W 5 · G 3**. The analogy between detector and witch trial, the distinction between provenance and worth, and the decision to run no detection are the editor's; the occasion comes from the editor's reading. Elaboration and linguistic surface substrate-mediated; encyclical and Snopes verdict checked against the linked sources. Selection and responsibility with the editor.*

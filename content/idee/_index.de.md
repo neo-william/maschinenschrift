@@ -2,8 +2,6 @@
 title: Idee
 description: "Was Maschinenschrift ist: KI als Schreibtechnik in der Linie von Druckerpresse und Schreibmaschine — und was das Siegel an einem Buch anzeigt."
 seotitle: "Die Idee — KI als Schreibtechnik, nicht als Co-Autor"
-aliases:
-  - /foundation/
 ---
 
 ## Schrifttechnik
@@ -29,7 +27,7 @@ Das Siegel ist die Notation, in der ein Werk seine Vermittlung erklärt. Es best
 Drei Achsen tragen die Aussage:
 
 - **Wortlaut** (W) — wie viel das Substrat zur sprachlichen Oberfläche beigetragen hat. Idiomatische Wendung, Satzfluss, Stilregister. Skala 0–5.
-- **Geist** (G) — wie viel das Substrat zum Geist des Werks beigetragen hat. Ideen, Argumente, strukturelle Entscheidungen, Inhalt. Skala 0–5.
+- **Geist** (G) — wie viel das Substrat zum Geist des Werks beigetragen hat. Ideen, Argumente, Strukturentscheidungen, Faktenmaterial, Inhalt. Skala 0–5.
 - **Beleg** (B) — ob das Werk in der bibliografischen Welt belegt ist. Binär: belegt oder ausstehend.
 
 Ein **leeres Siegel** `[ ]` ist die Default-Position: die Autorin war allein, kein Substrat beteiligt. Punkte zählen, was importiert wurde — nicht, was geleistet wurde. Die Achsen messen den Beitrag der Maschine, nicht den des Menschen. Diese Polarität ist die institutionelle Grundentscheidung. Der schreibende Mensch ist der unmarkierte Normalfall.
