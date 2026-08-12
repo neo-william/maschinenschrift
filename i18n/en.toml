@@ -96,6 +96,9 @@ other = "Email contact [at] maschinenschrift [dot] com: the title, at least one 
 other = "What is checked: findability under the named title, the visible seal, and the internal consistency of the declaration. Links in the email are not followed."
 
 # Werks-Detail
+[werkKatalognummer]
+other = "Catalog number"
+
 [werkGenre]
 other = "Genre"
 

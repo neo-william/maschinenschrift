@@ -414,18 +414,27 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
   text-indent: 0;
 }
 
-/* Werk des Tages */
+/* Werk des Tages. Doppellinie als Bilderrahmen: Border aussen (Rule),
+   Outline mit negativem Offset innen (Hairline). */
 .werk-des-tages {
   margin: 2.5rem 0;
-  padding: 1.5rem;
-  border: 1px solid var(--color-hairline);
+  padding: 1.75rem;
+  border: 1px solid var(--color-rule);
+  outline: 1px solid var(--color-hairline);
+  outline-offset: -5px;
   background: var(--color-panel-tint);
 }
 .werk-des-tages > header h2 { margin: 0 0 0.25rem; font-size: 1.05rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-muted); }
 .werk-des-tages .rotation-hint { margin: 0 0 1rem; font-size: 0.8rem; color: var(--color-faint); }
-.werk-des-tages-link {
+/* Karten-Link in Tinte, nicht im Link-Gruen: `main a:visited` schlaegt per
+   Spezifitaet das `color: inherit` der Klasse und faerbte Titel, Siegel und
+   den currentColor-Unterstrich des Blocks — deshalb :visited hier explizit
+   und der Link-Unterstrich aus `main a` abgeschaltet. */
+.werk-des-tages-link,
+.werk-des-tages-link:visited {
   display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; align-items: start;
-  text-decoration: none; color: inherit;
+  text-decoration: none; color: var(--color-ink);
+  border-bottom: 0; padding-bottom: 0;
 }
 .werk-des-tages-link:hover h3 { text-decoration: underline; }
 .werk-des-tages-text h3 { margin: 0 0 0.25rem; font-size: 1.35rem; }
@@ -436,7 +445,8 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
 .catalog-summary h2 { margin-top: 3rem; font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-muted); }
 .werke-list { list-style: none; padding: 0; margin: 1rem 0; }
 .werke-list li + li { margin-top: 0.75rem; }
-.werke-list a {
+.werke-list a,
+.werke-list a:visited {
   display: grid; grid-template-columns: auto 1fr auto; gap: 1rem; align-items: center;
   padding: 0.5rem 0.25rem; text-decoration: none; color: inherit;
   border-bottom: 1px solid var(--color-hairline);
@@ -476,7 +486,8 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
 .werke-section .werke-count { color: var(--color-muted); font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; margin: 1.5rem 0 0.5rem; }
 .werke-list-detail { list-style: none; padding: 0; margin: 0; }
 .werke-list-detail li + li { margin-top: 0.5rem; }
-.werke-list-entry {
+.werke-list-entry,
+.werke-list-entry:visited {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center; gap: 1.25rem;
@@ -486,6 +497,7 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
 }
 .werke-list-entry:hover { background: var(--color-panel-2); border-color: var(--color-line); }
 .werke-list-meta { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.werke-list-nr { font-family: ui-monospace, "Consolas", monospace; font-size: 0.72rem; letter-spacing: 0.08em; color: var(--color-faint); }
 .werke-list-title { font-weight: 500; font-size: 1.05rem; }
 .werke-list-author { color: var(--color-muted); font-size: 0.9rem; }
 .werke-list-genre { color: var(--color-faint); font-size: 0.8rem; }

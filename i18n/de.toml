@@ -95,6 +95,9 @@ other = "Mail an contact [at] maschinenschrift [dot] com: Titel, mindestens eine
 other = "Geprüft wird die Auffindbarkeit unter dem genannten Titel, das sichtbare Siegel und die Stimmigkeit der Deklaration. Links in der Mail werden nicht angeklickt."
 
 # Werks-Detail
+[werkKatalognummer]
+other = "Katalognummer"
+
 [werkGenre]
 other = "Gattung"
 

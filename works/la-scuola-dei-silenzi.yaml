@@ -1,4 +1,5 @@
 slug: la-scuola-dei-silenzi
+katalognummer: MS-0001
 title: La Scuola dei Silenzi
 author: I.O. Vargas
 year: 2026
@@ -48,4 +49,6 @@ declared_at: "2026-06-01"
 # „die sprachliche Oberfläche ist überwiegend substratvermittelt" steht weiter.
 # Die Deklaration sagt damit unverändert, was der Fall ist, und verzichtet
 # nicht mehr zusätzlich auf einen Anspruch.
+# Katalognummer MS-0001 vergeben am 2026-08-12 (ADR 0088): Format MS-NNNN,
+# fortlaufend bei Aufnahme in den Katalog, nie neu vergeben.
 updated_at: "2026-08-02"

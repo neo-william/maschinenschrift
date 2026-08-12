@@ -23,13 +23,12 @@
       <h1>{{ .Title }}</h1>
       <p class="werk-author">{{ .Params.author }}{{ with .Params.year }}, {{ . }}{{ end }}</p>
       <dl class="werk-facts">
+        {{ with .Params.katalognummer }}<dt>{{ i18n "werkKatalognummer" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{ with .Params.genre }}<dt>{{ i18n "werkGenre" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{ with .Params.language }}<dt>{{ i18n "werkLanguage" }}</dt><dd>{{ . }}</dd>{{ end }}
         <dt>{{ i18n "werkWortlautAxis" }}</dt><dd>{{ $z.wortlaut }} / 5</dd>
         <dt>{{ i18n "werkGeistAxis" }}</dt><dd>{{ $z.geist }} / 5</dd>
-        <dt>{{ i18n "werkBelegAxis" }}</dt><dd>
-          {{ $z.beleg }}{{ if eq $z.beleg "ausstehend" }} <abbr title="{{ i18n "ausstehendTitle" }}">†</abbr>{{ end }}
-        </dd>
+        <dt>{{ i18n "werkBelegAxis" }}</dt><dd>{{ $z.beleg }}</dd>
         {{ with .Params.declared_at }}<dt>{{ i18n "werkDeclared" }}</dt><dd><time datetime="{{ . }}">{{ . }}</time></dd>{{ end }}
       </dl>
     </div>

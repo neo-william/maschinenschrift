@@ -26,6 +26,7 @@
 {{- end -}}
 {{- return dict
     "slug" (.Params.slug | default .File.ContentBaseName)
+    "katalognummer" .Params.katalognummer
     "title" .Title
     "author" .Params.author
     "year" .Params.year

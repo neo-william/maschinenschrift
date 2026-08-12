@@ -69,6 +69,7 @@
               ) }}
             </span>
             <span class="werke-list-meta">
+              {{ with .Params.katalognummer }}<span class="werke-list-nr">{{ . }}</span>{{ end }}
               <span class="werke-list-title">{{ .Title }}</span>
               <span class="werke-list-author">{{ .Params.author }}{{ with .Params.year }}, {{ . }}{{ end }}</span>
               {{ with .Params.genre }}<span class="werke-list-genre">{{ . }}</span>{{ end }}
@@ -76,7 +77,7 @@
             <span class="werke-list-axes" aria-label="{{ i18n "axisLabel" }}">
               <span class="axis">W&nbsp;{{ $z.wortlaut }}</span>
               <span class="axis">G&nbsp;{{ $z.geist }}</span>
-              <span class="axis axis-b">B&nbsp;{{ $z.beleg }}{{ if eq $z.beleg "ausstehend" }}&nbsp;†{{ end }}</span>
+              <span class="axis axis-b">B&nbsp;{{ $z.beleg }}</span>
             </span>
           </a>
         </li>
