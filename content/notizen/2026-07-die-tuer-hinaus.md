@@ -56,7 +56,7 @@ What remains is quality — that good outputs do not merely surprise but land. V
 
 "More creative than the average" is therefore neither an alarm nor an all-clear, but a statement of place. The substrate fills the interior of the space more densely than any individual ever could — and stays inside it. Whatever a work contains beyond that came through a door only a human opens. **No one can tell from the finished text which door it was — only the one who sat at the desk knows.** From here, then, no path leads to the detector, but one does lead to the account: the seal declares how much of the linguistic surface and how much of the ideas come from the space — and the reader knows where to look for the truly new.
 
-More on the form: [Idea](/idea/). Why the project says *Sprachsubstrat* rather than *machine* or *LLM*: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). Why it refuses the detector: [The Witch Trial](/notes/2026-06-the-witch-trial/).
+More on the form: [Idea](/idea/). Why the project says *Sprachsubstrat* rather than *machine* or *LLM*: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). Why it refuses the detector: [The Witch Trial](/notes/2026-06-the-witch-trial/). The same border, drawn at the metaphor: [The Tear in the Net](/notes/2026-07-the-tear-in-the-net/).
 
 ---
 

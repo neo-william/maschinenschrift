@@ -21,6 +21,8 @@ In social terms, the substrate carries the form of an **aggregated anonymity** *
 
 Whoever writes through the substrate writes **mediated** — as all writing is mediated by writing technologies, only more densely and at a level unknown to earlier mediations. The act is *mediation*, the result is *machine-mediated writing*.
 
+Why the project says *Sprachsubstrat* rather than *machine* or *AI* is derived in a note of its own: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/).
+
 ## The Seal
 
 The seal is the notation in which a work declares its mediation. It consists of two square brackets and three rows — five slots per row, dots or empty.
@@ -76,3 +78,5 @@ Whoever adopts the standard sets the seal. Whoever wants to appear in the **regi
 The form is not new. The *Stationers' Register* recorded, from the sixteenth century onward, which printer printed which work. Maschinenschrift extends this tradition to the next stage of mediation: not *who printed* but *who mediated and to what degree*.
 
 A list of registered works stands under [Registry](/registry/).
+
+The canonical statement of this position — with the full axis semantics — stands under [Foundation](/foundation/).

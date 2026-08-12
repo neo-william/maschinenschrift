@@ -55,7 +55,7 @@ Das Framework selbst hält das Bild nicht durch. Die vierte Kompetenz weist die 
 
 Sie ist zugleich die Stelle, an der das Framework auf etwas außerhalb seiner selbst angewiesen ist. **Ehrlichkeit über die Rolle der Maschine braucht eine Form, in der sie gesagt werden kann.** Maschinenschrift ist eine solche Form.
 
-Mehr zur Form und zur Linie: [Idee](/de/idee/). Warum das Projekt *Sprachsubstrat* sagt und nicht *Maschine* oder *LLM*, ist in einer eigenen Notiz hergeleitet: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/).
+Mehr zur Form und zur Linie: [Idee](/de/idee/). Warum das Projekt *Sprachsubstrat* sagt und nicht *Maschine* oder *LLM*, ist in einer eigenen Notiz hergeleitet: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Zum Einstehen als dem Teil, der sich nicht abtreten lässt: [Wo das Kalkül beginnt](/de/notizen/2026-07-wo-das-kalkuel-beginnt/).
 
 ---
 

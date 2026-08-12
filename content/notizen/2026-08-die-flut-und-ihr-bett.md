@@ -68,7 +68,7 @@ And the registry infers nothing from the absence of a declaration. It does not r
 
 Amazon dug the bed, the substrate filled it, and the next beds are under construction. The water level is not this project's concern. The account is.
 
-On the form and the line: [Idea](/idea/). Why the single work is declared, not scanned: [The Witch Trial](/notes/2026-06-the-witch-trial/). The derivation of the term: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/).
+On the form and the line: [Idea](/idea/). Why the single work is declared, not scanned: [The Witch Trial](/notes/2026-06-the-witch-trial/). The derivation of the term: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). The more precise version of the sentence that wording is cheap: [What Cannot Be Accelerated](/notes/2026-08-what-cannot-be-accelerated/).
 
 ---
 

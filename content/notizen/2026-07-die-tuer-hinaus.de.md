@@ -55,7 +55,7 @@ Bleibt die Qualität — dass gute Ausgaben nicht nur überraschen, sondern sitz
 
 „Kreativer als der Durchschnitt" ist darum kein Alarm und keine Entwarnung, sondern eine Ortsangabe. Das Substrat füllt das Innere des Raums dichter, als eine Einzelne es je könnte — und bleibt darin. Was ein Werk darüber hinaus enthält, ist durch eine Tür gekommen, die nur ein Mensch öffnet. **Dem fertigen Text sieht niemand an, welche Tür das war — es weiß nur, wer am Schreibtisch saß.** Deshalb führt von hier kein Weg zum Detektor, wohl aber einer zur Auskunft: Das Siegel deklariert, wie viel der sprachlichen Oberfläche und wie viel der Ideen aus dem Raum kommen — und die Leserin weiß, wo sie das wirklich Neue zu suchen hat.
 
-Mehr zur Form: [Idee](/de/idee/). Warum das Projekt *Sprachsubstrat* sagt und nicht *Maschine* oder *LLM*: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Warum es den Detektor verweigert: [Die Hexenprobe](/de/notizen/2026-06-die-hexenprobe/).
+Mehr zur Form: [Idee](/de/idee/). Warum das Projekt *Sprachsubstrat* sagt und nicht *Maschine* oder *LLM*: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Warum es den Detektor verweigert: [Die Hexenprobe](/de/notizen/2026-06-die-hexenprobe/). Dieselbe Grenze, an der Metapher gezogen: [Der Riss im Netz](/de/notizen/2026-07-der-riss-im-netz/).
 
 ---
 

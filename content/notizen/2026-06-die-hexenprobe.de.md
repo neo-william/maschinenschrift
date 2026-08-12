@@ -80,7 +80,7 @@ Wer jagt, sind Detektoren und Verdacht — nicht das Verzeichnis. Es liest kein 
 
 Die Formel des Projekts lautet *Geist aus der Maschine*. Das Siegel beantwortet sie nicht heimlich, sondern offen. Es zählt nicht den Wert des Werks, es zählt, was das Sprachsubstrat geliefert hat. Was darüber hinaus zu sagen ist, sagt die Lektüre.
 
-Mehr zur Form und zur Linie: [Idee](/de/idee/). Warum das Projekt *Sprachsubstrat* sagt und nicht *Maschine* oder *LLM*, wird in einer eigenen Notiz hergeleitet: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Warum es keine Detektion betreibt, in einer weiteren.
+Mehr zur Form und zur Linie: [Idee](/de/idee/). Warum das Projekt *Sprachsubstrat* sagt und nicht *Maschine* oder *LLM*, wird in einer eigenen Notiz hergeleitet: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Warum es keine Detektion betreibt, in einer weiteren. Wo die Probe dennoch trägt — am Markt, nicht am Einzelwerk: [Die Flut und ihr Bett](/de/notizen/2026-08-die-flut-und-ihr-bett/).
 
 ---
 

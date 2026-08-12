@@ -44,7 +44,7 @@ Dafür braucht sie ein Außen — nicht im Sinne einer Tatsache, die verifiziert
 
 Die Diagnose-Formel, unter der dieses Projekt firmiert, lautet *Geist aus der Maschine* — wie viel des sichtbaren Geistes eines Textes aus dem Substrat importiert wurde. An der Metapher zeigt sich, was diese Formel meint, schärfer als anderswo. Was fehlt, wenn das Substrat allein schreibt, zeigt sich am wenigsten dort, wo Fakten fehlen. Es zeigt sich dort, wo die Risse fehlen — dort, wo ein Text nur die Nachbarschaften wiederholt, die das Netz ohnehin schon kannte, und keine neue zieht. Das Siegel hält fest, wie viel der sprachlichen Oberfläche und wie viel der Ideen aus der Kartierung stammen — und lässt damit sichtbar, wo ein Riss zu suchen wäre, der von außerhalb kam.
 
-Mehr zum Substrat-Begriff: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Über eine verwandte Grenze, von der Informationstheorie her gezogen: [Die Tür hinaus](/de/notizen/2026-07-die-tuer-hinaus/).
+Mehr zum Substrat-Begriff: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Über eine verwandte Grenze, von der Informationstheorie her gezogen: [Die Tür hinaus](/de/notizen/2026-07-die-tuer-hinaus/). Zur Form, in der das festgehalten wird: [Idee](/de/idee/).
 
 ---
 

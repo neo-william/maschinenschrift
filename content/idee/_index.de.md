@@ -20,6 +20,8 @@ In sozialer Hinsicht trägt das Substrat die Form einer **aggregierten Anonymit�
 
 Wer durch das Substrat schreibt, schreibt **vermittelt** — wie alles Schreiben durch Schrifttechniken vermittelt ist, nur dichter und auf einer Stufe, die früheren Vermittlungen unbekannt war. Der Akt heißt *Vermittlung*, das Ergebnis ist *maschinell vermittelte Schrift*.
 
+Warum das Projekt *Sprachsubstrat* sagt und nicht *Maschine* oder *KI*, ist in einer eigenen Notiz hergeleitet: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/).
+
 ## Das Siegel
 
 Das Siegel ist die Notation, in der ein Werk seine Vermittlung erklärt. Es besteht aus zwei eckigen Klammern und drei Zeilen — fünf Slots pro Zeile, Punkte oder leer.
@@ -75,3 +77,5 @@ Wer den Standard adoptiert, legt das Siegel an. Wer im **Verzeichnis** erscheine
 Die Form ist nicht neu. Das *Stationers' Register* hielt seit dem sechzehnten Jahrhundert fest, welcher Drucker welches Werk druckte. Maschinenschrift erweitert die Tradition auf die nächste Vermittlungsstufe: nicht *wer hat gedruckt*, sondern *wer hat vermittelt und in welchem Maß*.
 
 Eine Liste der eingetragenen Werke steht unter [Verzeichnis](/de/verzeichnis/).
+
+Die kanonische Fassung dieser Position — englisch, mit vollständiger Achsensemantik — steht unter [Foundation](/de/foundation/).

@@ -45,7 +45,7 @@ For that it needs an outside — not in the sense of a fact to be verified (that
 
 The diagnostic formula this project runs under is *Geist aus der Maschine* — how much of a text's visible Geist was imported from the substrate. In the metaphor, what that formula means shows more sharply than anywhere else. What is missing when the substrate writes alone shows least where facts are missing. It shows where the tears are missing — where a text only repeats the neighborhoods the net already knew, and draws no new one. The seal records how much of the linguistic surface and how much of the ideas come from the charting — and thereby leaves visible where a tear would have to be sought that came from outside.
 
-More on the substrate term: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). On a related border, drawn from information theory: [The Door Out](/notes/2026-07-the-door-out/).
+More on the substrate term: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). On a related border, drawn from information theory: [The Door Out](/notes/2026-07-the-door-out/). On the form in which this is recorded: [Idea](/idea/).
 
 ---
 

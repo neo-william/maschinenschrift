@@ -56,7 +56,7 @@ The framework itself does not sustain the image. The fourth competency assigns r
 
 It is also the point at which the framework depends on something outside itself. **Honesty about the machine's role needs a form in which it can be said.** Maschinenschrift is such a form.
 
-More on the form and the lineage: [Idea](/idea/). Why the project says *Sprachsubstrat* rather than *machine* or *LLM* is derived in a note of its own: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/).
+More on the form and the lineage: [Idea](/idea/). Why the project says *Sprachsubstrat* rather than *machine* or *LLM* is derived in a note of its own: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). On standing behind what is said as the part that cannot be handed over: [Where Calculation Begins](/notes/2026-07-where-calculation-begins/).
 
 ---
 

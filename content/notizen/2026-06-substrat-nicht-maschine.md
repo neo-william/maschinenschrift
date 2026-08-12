@@ -70,7 +70,7 @@ The other words — *AI*, *LLM*, *language model* — are not forbidden. They ap
 
 ---
 
-More on the matter: [Idea](/idea/). More on the form of the seal and the axes Wortlaut · Geist · Beleg: there as well. A first application of the position derived here: [The Witch Trial](/notes/2026-06-the-witch-trial/).
+More on the matter: [Idea](/idea/). More on the form of the seal and the axes Wortlaut · Geist · Beleg: there as well. A first application of the position derived here: [The Witch Trial](/notes/2026-06-the-witch-trial/). Where the substrate's border runs: [The Door Out](/notes/2026-07-the-door-out/) and [The Tear in the Net](/notes/2026-07-the-tear-in-the-net/).
 
 ---
 

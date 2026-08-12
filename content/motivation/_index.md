@@ -8,7 +8,7 @@ seotitle: "Motivation — Why AI-Assisted Books Are Declared"
 
 Many authors write with help from large language models. They use the machine for research, for polish, for brainstorming, sometimes for a passage. Most of them hide it. Saying so can cost a contract, a prize, a reputation.
 
-So nobody knows how much LLM-assisted writing is already in print. The number is dark, and suspicion fills the gap. Readers turn into investigators. Writers turn into suspects. Detection tools promise to settle it and don't — they flag the wrong people, especially writers whose prose sits outside the average.
+So nobody knows how much LLM-assisted writing is already in print. The number is dark, and suspicion fills the gap. Readers turn into investigators. Writers turn into suspects. Detection tools promise to settle it and don't — they flag the wrong people, especially writers whose prose sits outside the average. Why they cannot: [The Witch Trial](/notes/2026-06-the-witch-trial/).
 
 Under those conditions, lying wins. The honest author is punished. The careful liar gets away. The reader can't trust either signal.
 
@@ -20,7 +20,7 @@ A standard, not a verdict. No purity stamp. No quality claim. No human-only badg
 
 The question changes shape. Not *did she use AI?* — but *what does the work itself say about how it was made?*
 
-One objection remains, and it is not cleared away here: whoever provides a form makes the formed thing more visible. A clean notation for mediated literature normalizes mediated literature, even with no one promoting it. The project accepts that, because the alternative is not the absence of mediation but its invisibility. The comparison is not a label against nothing, but **an account against silence**.
+One objection remains, and it is not cleared away here: whoever provides a form makes the formed thing more visible. A clean notation for mediated literature normalizes mediated literature, even with no one promoting it. The project accepts that, because the alternative is not the absence of mediation but its invisibility. The comparison is not a label against nothing, but **an account against silence**. The size of the undeclared mass has since been measured: [The Flood and Its Bed](/notes/2026-08-the-flood-and-its-bed/).
 
 ## The seal.
 
@@ -34,4 +34,4 @@ Two rows of dots, zero to five per axis, count the machine's share. A half-strok
 
 That is the whole notation.
 
-[Configure your own seal](/seal/) · [Join the registry](/submit/)
+[Configure your own seal](/seal/) · [Join the registry](/submit/) · [The idea in full](/idea/)

@@ -62,7 +62,7 @@ The surrender is not a defeat. Calculation is labor, and labor can be handed on 
 
 **Calculation is the part that can be handed over. Standing behind what is said is the rest.**
 
-More on the substrate term: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). On the form in which the account is given: [Idea](/idea/).
+More on the substrate term: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). On the form in which the account is given: [Idea](/idea/). Why this rest cannot be accelerated either: [What Cannot Be Accelerated](/notes/2026-08-what-cannot-be-accelerated/).
 
 ---
 

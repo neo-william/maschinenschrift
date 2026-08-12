@@ -81,7 +81,7 @@ What hunts are detectors and suspicion — not the registry. It does not read si
 
 The project's diagnostic formula is *Geist aus der Maschine*. The seal answers it not in secret, but in the open. It does not count the worth of the work; it counts what the language substrate has supplied. What is to be said beyond that, reading says.
 
-More on the form and the lineage: [Idea](/idea/). Why the project says *Sprachsubstrat* rather than *machine* or *LLM* is derived in a note of its own: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). Why it runs no detection — in another.
+More on the form and the lineage: [Idea](/idea/). Why the project says *Sprachsubstrat* rather than *machine* or *LLM* is derived in a note of its own: [Substrate, not Machine](/notes/2026-06-substrate-not-machine/). Why it runs no detection — in another. Where the trial does hold — on a market, not on a single work: [The Flood and Its Bed](/notes/2026-08-the-flood-and-its-bed/).
 
 ---
 

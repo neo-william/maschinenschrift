@@ -69,7 +69,7 @@ Die anderen Wörter — *KI*, *LLM*, *Sprachmodell* — werden nicht verboten. S
 
 ---
 
-Mehr zur Sache: [Idee](/de/idee/). Mehr zur Form des Siegels und der Achsen Wortlaut · Geist · Beleg: ebenda. Eine erste Anwendung der hier hergeleiteten Position: [Die Hexenprobe](/de/notizen/2026-06-die-hexenprobe/).
+Mehr zur Sache: [Idee](/de/idee/). Mehr zur Form des Siegels und der Achsen Wortlaut · Geist · Beleg: ebenda. Eine erste Anwendung der hier hergeleiteten Position: [Die Hexenprobe](/de/notizen/2026-06-die-hexenprobe/). Wo die Grenze des Substrats verläuft: [Die Tür hinaus](/de/notizen/2026-07-die-tuer-hinaus/) und [Der Riss im Netz](/de/notizen/2026-07-der-riss-im-netz/).
 
 ---
 

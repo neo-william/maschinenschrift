@@ -61,7 +61,7 @@ Die Abtretung ist keine Niederlage. Das Kalkül ist Arbeit, und Arbeit ist über
 
 **Das Kalkül ist der Teil, der sich abtreten lässt. Das Einstehen ist der Rest.**
 
-Mehr zum Substrat-Begriff: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Zur Form, in der die Auskunft gegeben wird: [Idee](/de/idee/).
+Mehr zum Substrat-Begriff: [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Zur Form, in der die Auskunft gegeben wird: [Idee](/de/idee/). Warum dieser Rest sich auch nicht beschleunigen lässt: [Was sich nicht beschleunigen lässt](/de/notizen/2026-08-was-sich-nicht-beschleunigen-laesst/).
 
 ---
 

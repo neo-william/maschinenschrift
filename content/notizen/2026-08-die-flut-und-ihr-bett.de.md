@@ -67,7 +67,7 @@ Und das Verzeichnis folgert aus dem Fehlen einer Deklaration nichts. Es liest ke
 
 Amazon hat das Bett gegraben, das Substrat hat es gefüllt, und die nächsten Betten sind im Bau. Der Pegel ist nicht die Sache dieses Projekts. Die Auskunft ist es.
 
-Mehr zur Form und zur Linie: [Idee](/de/idee/). Warum am Einzelwerk nicht gescannt, sondern deklariert wird: [Die Hexenprobe](/de/notizen/2026-06-die-hexenprobe/). Begriffs-Herleitung in [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/).
+Mehr zur Form und zur Linie: [Idee](/de/idee/). Warum am Einzelwerk nicht gescannt, sondern deklariert wird: [Die Hexenprobe](/de/notizen/2026-06-die-hexenprobe/). Begriffs-Herleitung in [Substrat, nicht Maschine](/de/notizen/2026-06-substrat-nicht-maschine/). Die genauere Fassung des Satzes, der Wortlaut sei billig: [Was sich nicht beschleunigen lässt](/de/notizen/2026-08-was-sich-nicht-beschleunigen-laesst/).
 
 ---
 
