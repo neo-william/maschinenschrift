@@ -417,7 +417,7 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
 /* Werk des Tages. Doppellinie als Bilderrahmen: Border aussen (Rule),
    Outline mit negativem Offset innen (Hairline). */
 .werk-des-tages {
-  margin: 2.5rem 0;
+  margin: 3rem 0 2.5rem;
   padding: 1.75rem;
   border: 1px solid var(--color-rule);
   outline: 1px solid var(--color-hairline);
@@ -437,7 +437,8 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
   border-bottom: 0; padding-bottom: 0;
 }
 .werk-des-tages-link:hover h3 { text-decoration: underline; }
-.werk-des-tages-text h3 { margin: 0 0 0.25rem; font-size: 1.35rem; }
+/* Titel im Link-Gruen wie die Kachel-Titel; Siegel und Rest bleiben Tinte. */
+.werk-des-tages-text h3 { margin: 0 0 0.25rem; font-size: 1.35rem; color: var(--color-accent); }
 .werk-des-tages-author { margin: 0 0 0.75rem; color: var(--color-muted); }
 .werk-des-tages-narration { margin: 0; font-size: 0.95rem; }
 
@@ -486,6 +487,15 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
 .werke-section .werke-count { color: var(--color-muted); font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; margin: 1.5rem 0 0.5rem; }
 .werke-list-detail { list-style: none; padding: 0; margin: 0; }
 .werke-list-detail li + li { margin-top: 0.5rem; }
+/* Die Katalog-Liste ist keine Prosa-Liste: Panel, 3px-Balken und
+   Gedankenstrich-Marker der Artikel-Listen gelten hier nicht. */
+main > article > ul.werke-list-detail {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  background: none;
+  border-left: 0;
+}
+main > article > ul.werke-list-detail > li::before { content: none; }
 .werke-list-entry,
 .werke-list-entry:visited {
   display: grid;
@@ -496,8 +506,11 @@ svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
   transition: background 0.15s, border-color 0.15s;
 }
 .werke-list-entry:hover { background: var(--color-panel-2); border-color: var(--color-line); }
+.werke-list-entry:hover .werke-list-title { text-decoration: underline; }
 .werke-list-meta { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
 .werke-list-nr { font-family: ui-monospace, "Consolas", monospace; font-size: 0.72rem; letter-spacing: 0.08em; color: var(--color-faint); }
+/* Titel im Link-Gruen: das eine Klick-Signal der Kachel. */
+.werke-list-detail .werke-list-title { font-size: 1.15rem; color: var(--color-accent); }
 .werke-list-title { font-weight: 500; font-size: 1.05rem; }
 .werke-list-author { color: var(--color-muted); font-size: 0.9rem; }
 .werke-list-genre { color: var(--color-faint); font-size: 0.8rem; }
