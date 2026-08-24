@@ -12,7 +12,7 @@ Inclusion in the catalog happens by email. There is no form, no account, no fee.
 Write to `contact [at] maschinenschrift [dot] com` and include:
 
 1. **Title** of the work.
-2. **At least one platform** where the published EPUB or printed book is publicly findable (Amazon, Apple Books, your publisher's catalog, your own site — any verifiable listing).
+2. **At least one platform** where the published EPUB or printed book is publicly findable (Amazon, Apple Books, your publisher's catalog, your own site — any verifiable listing). Findability is an admission criterion of the catalog; since [Spec v8](/spec/siegel-v8/) it is **no longer a value on the seal** — the B-axis now records whether the factual statements were checked.
 3. **Confirmation that the seal is visibly placed** on the work itself, with the declared W/G/B values. State where the seal sits (cover, title page, colophon, about page, footer).
 
 No links to the work are followed from the email. Verification happens by searching for the title independently on the named platform.
@@ -26,6 +26,8 @@ If the entry is consistent with the declaration and the seal is present, the wor
 - The declaration is internally consistent.
 
 What is **not** checked: literary quality, commercial standing, the truth of factual claims in the work itself, the accuracy of the W/G/B assessment beyond plausibility.
+
+**The B value is not verified either.** It is the author's own statement about whether she held her factual claims against sources outside the substrate — like Wortlaut and Geist a declaration she answers for, not a confirmation by the registry. Maschinenschrift is a register-keeper, not an assay office.
 
 ## What an entry does not imply
 

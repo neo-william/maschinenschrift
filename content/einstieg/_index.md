@@ -48,7 +48,7 @@ That is the situation. What is missing is not technology and not morality. **Wha
 
 - **Wortlaut (W)** — *wording*; how much of the linguistic surface came from the model: sentence construction, word choice, rhythm. Scale 0 to 5.
 - **Geist (G)** — German for spirit, intellectual presence: how much of the ideas, arguments, structural decisions, factual material, and content came from the model. Scale 0 to 5.
-- **Beleg (B)** — the *record*; whether the work is bibliographically documented and findable. Two states: documented or pending.
+- **Beleg (B)** — the *record*; whether the work's factual statements were checked against sources outside the model. Two states: documented or pending.
 
 The mark itself is two square brackets with three rows of five slots each. Dots count what the model contributed. An **empty seal** is the normal case: the author was alone. That direction is the most important decision in the whole construction. What is counted is not the human's achievement but the machine's share. Whoever writes without a model has nothing to demonstrate — she is the unmarked case.
 

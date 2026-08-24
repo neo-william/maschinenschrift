@@ -1,10 +1,12 @@
 ---
 title: "Siegel-Spec v7"
 description: "Current canonical specification of the AI disclosure seal, since 2026-08-02: geometry, rendering rules, and the axes Wortlaut, Geist, Beleg (W/G/B)."
-seotitle: "Siegel-Spec v7 — Current Seal Specification (W/G/B)"
+seotitle: "Siegel-Spec v7 — Frozen Seal Specification (W/G/B)"
 ---
 
-**Status:** Current canonical (since 2026-08-02). Geometry is unchanged from v5; the axes are now **W/G/B — Wortlaut, *Geist*, Beleg** (in English contexts glossed *Wording*, *Geist*, *Record*), and the binary B-axis uses `belegt` / `ausstehend`. The letters follow the German canon, as *Geist* always has. The semantic basis lives in [Foundation §7](/foundation/#7-seal-axis-semantics). The predecessors v6 and v5 are frozen at [/spec/siegel-v6/](/spec/siegel-v6/) and [/spec/siegel-v5/](/spec/siegel-v5/).
+**Status:** Superseded by [Siegel-Spec v8](/spec/siegel-v8/) (2026-08-24). Frozen historical snapshot — content and path references are no longer maintained. Geometry, axis letters, field names and values are unchanged in v8; what changed is what the B-axis asserts. v7 notated bibliographic findability of the work; v8 notates whether the work's factual statements were checked against sources outside the substrate. A `belegt` on this page does not mean what a `belegt` under v8 means.
+
+**Historical status (2026-08-02):** Current canonical. Geometry is unchanged from v5; the axes are now **W/G/B — Wortlaut, *Geist*, Beleg** (in English contexts glossed *Wording*, *Geist*, *Record*), and the binary B-axis uses `belegt` / `ausstehend`. The letters follow the German canon, as *Geist* always has. The semantic basis lives in [Foundation §7](/foundation/#7-seal-axis-semantics). The predecessors v6 and v5 are frozen at [/spec/siegel-v6/](/spec/siegel-v6/) and [/spec/siegel-v5/](/spec/siegel-v5/).
 
 ## Axes
 

@@ -4,7 +4,7 @@ description: "Eingefrorener historischer Stand der Siegel-Spezifikation, 2026-05
 seotitle: "Siegel-Spec v6 — abgelöste Spezifikation (D/G/K)"
 ---
 
-**Status:** Abgelöst durch [Siegel-Spec v7](/de/spec/siegel-v7/) (2026-08-02). Eingefrorener historischer Stand — Inhalt und Pfad-Angaben werden nicht mehr nachgeführt. Die Geometrie ist unverändert, aber die Achsen heißen jetzt W/G/B (Wortlaut, *Geist*, Beleg), und die Asset-Dateinamen folgen dem Schema `w{W}-g{G}-{Zustand}.svg`. Siehe die aktuelle kanonische Spezifikation unter [/de/spec/siegel-v7/](/de/spec/siegel-v7/).
+**Status:** Abgelöst durch [Siegel-Spec v8](/de/spec/siegel-v8/) (2026-08-24); zwischenzeitlich galt [v7](/de/spec/siegel-v7/) (2026-08-02). Eingefrorener historischer Stand — Inhalt und Pfad-Angaben werden nicht mehr nachgeführt. Die Geometrie ist unverändert, aber die Achsen heißen jetzt W/G/B (Wortlaut, *Geist*, Beleg), und die Asset-Dateinamen folgen dem Schema `w{W}-g{G}-{Zustand}.svg`. Siehe die aktuelle kanonische Spezifikation unter [/de/spec/siegel-v8/](/de/spec/siegel-v8/).
 
 **Historischer Status (2026-05-24):** Aktuell kanonisch. Die Geometrie ist unverändert gegenüber v5; die Achsen heißen jetzt D/G/K (Diktion, *Geist*, Korrespondenz), und die binäre K-Achse verwendet `belegt` / `ausstehend` statt `verified` / `unverified`. Semantische Grundlage: [Foundation §7](/de/foundation/#7-seal-axis-semantics). Der Vorgänger v5 ist eingefroren unter [/de/spec/siegel-v5/](/de/spec/siegel-v5/).
 

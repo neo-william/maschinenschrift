@@ -60,4 +60,15 @@ declared_at: "2026-06-01"
 # Der Eintrag erklärte bis dahin die Prosa und schwieg über den Umschlag —
 # gegen „disclosed, not discovered" die eine offene Stelle. Werte unverändert
 # 5 / 3 / ausstehend; der Satz deklariert, er bewertet nicht neu.
-updated_at: "2026-08-17"
+#
+# 2026-08-24, Spec v8 (ADR 0160): die B-Achse hält nicht mehr die bibliografische
+# Auffindbarkeit fest, sondern ob die Faktenaussagen des Werks gegen Quellen
+# außerhalb des Substrats geprüft wurden. **Der Wert bleibt `ausstehend`, aber
+# aus einem anderen Grund.** Bis zum 23.08. stand er dort, weil es keine Listung
+# gab; seit dem 24.08. steht er dort, weil die Recherche nie gegengeprüft wurde —
+# die Narration sagt es seit dem 2026-08-02 wörtlich: „Recherchematerial wurde
+# über das Substrat strukturiert, nicht verifiziert." Die Zahlenwerte W und G
+# sind unberührt. Die Auffindbarkeit ist damit nicht entfallen, sondern
+# Aufnahmekriterium des Verzeichnisses; das Werk erfüllt sie seit dem
+# 2026-08-23 (ASIN B0HG85Q852).
+updated_at: "2026-08-24"

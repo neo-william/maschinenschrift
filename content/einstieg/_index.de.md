@@ -47,7 +47,7 @@ Maschinenschrift ist ein offener Standard und ein Zeichen. Die Autorin erklärt 
 
 - **Wortlaut (W)** — wie viel der sprachlichen Oberfläche vom Modell kam: Satzbau, Wortwahl, Rhythmus. Skala 0 bis 5.
 - **Geist (G)** — wie viel der Ideen, Argumente, Strukturentscheidungen, des Faktenmaterials und des Inhalts vom Modell kam. Skala 0 bis 5.
-- **Beleg (B)** — ob das Werk bibliografisch belegt und auffindbar ist. Zwei Zustände: belegt oder ausstehend.
+- **Beleg (B)** — ob die Faktenaussagen des Werks gegen Quellen außerhalb des Modells geprüft wurden. Zwei Zustände: belegt oder ausstehend.
 
 Das Zeichen selbst sind zwei eckige Klammern mit drei Zeilen und je fünf Feldern. Punkte zählen, was das Modell beigetragen hat. Ein **leeres Siegel** ist der Normalfall: die Autorin war allein. Diese Richtung ist die wichtigste Entscheidung der ganzen Konstruktion. Gezählt wird nicht die Leistung des Menschen, sondern der Anteil der Maschine. Wer ohne Modell schreibt, muss nichts nachweisen — er ist der unmarkierte Fall.
 

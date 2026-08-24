@@ -30,11 +30,15 @@ Drei Achsen tragen die Aussage:
 
 - **Wortlaut** (W) — wie viel das Substrat zur sprachlichen Oberfläche beigetragen hat. Idiomatische Wendung, Satzfluss, Stilregister. Skala 0–5.
 - **Geist** (G) — wie viel das Substrat zum Geist des Werks beigetragen hat. Ideen, Argumente, Strukturentscheidungen, Faktenmaterial, Inhalt. Skala 0–5.
-- **Beleg** (B) — ob das Werk in der bibliografischen Welt belegt ist. Binär: belegt oder ausstehend.
+- **Beleg** (B) — ob die Faktenaussagen des Werks gegen Quellen außerhalb des Substrats geprüft wurden. Binär: belegt oder ausstehend.
 
 Ein **leeres Siegel** `[ ]` ist die Default-Position: die Autorin war allein, kein Substrat beteiligt. Punkte zählen, was importiert wurde — nicht, was geleistet wurde. Die Achsen messen den Beitrag der Maschine, nicht den des Menschen. Diese Polarität ist die institutionelle Grundentscheidung. Der schreibende Mensch ist der unmarkierte Normalfall.
 
-Der Beleg steht in einer eigenen Logik. Wo Wortlaut und Geist Vermittlung messen, prüft der Beleg eine Relation: ob das Werk, auf das die Deklaration sich bezieht, in der bibliografischen Welt steht — findbar, datierbar, identifizierbar. Solange das nicht bestätigt ist, trägt das Siegel rechts unten einen **Halbstrich** — Marker für *ausstehend*. Die Achse ist keine Wertung; sie ist die schmale Stelle, an der Maschinenschrift sich kontrolliert in die Welt zurückbindet.
+Der Beleg steht in einer eigenen Logik. Wo Wortlaut und Geist messen, wie viel vermittelt wurde, fragt der Beleg, ob die Vermittlung je korrigiert worden ist: Sind die Faktenaussagen des Werks gegen etwas geprüft worden, das außerhalb des Substrats liegt — eine Quelle, ein Dokument, eine Messung, ein Mensch, der es weiß? Wo das nicht geschehen ist, trägt das Siegel rechts unten einen **Halbstrich** — Marker für *ausstehend*.
+
+*Unabhängig* heißt dabei außerhalb des Substrats, nicht außerhalb der Autorin. Wer seine Zitate selbst nachgeschlagen hat, hat unabhängig geprüft; wer das Modell gefragt hat, ob das Modell recht habe, nicht. Es braucht keine dritte Instanz, die es bestätigt — der Beleg ist Selbstauskunft wie Wortlaut und Geist.
+
+Die Achse ist keine Wertung, und *ausstehend* ist kein Vorwurf: es ist der häufigere Zustand, und ihn zu erklären kostet nichts. Sie ist die schmale Stelle, an der Maschinenschrift sich kontrolliert in die Welt zurückbindet. Das Substrat arbeitet kohärentiell — es erzeugt, was sich fügt, nicht was zutrifft. Die Konfabulation ist darum kein Defekt dieses Modus, sondern sein Normalfall überall dort, wo nichts von außen ihn hält. Der Beleg vermerkt, ob etwas von außen ihn gehalten hat.
 
 ## Geist aus der Maschine
 
@@ -50,7 +54,7 @@ Wortlaut und Bedeutung waren immer knapp. Wer korrekte, idiomatische, klar gemei
 
 Auf dieser Ebene fehlt dem Substrat etwas, und es ist nicht das Verstehen. Es geht keine Verpflichtung ein. Es behauptet nichts, denn Behaupten heißt, sich der Zurechnung auszusetzen, und es hat nichts zu verlieren. Was ohne diesen Akt anfällt, ist keine Rede, sondern Material — Sprache, die auf einen fremden Vollzug wartet. Daher das Wort *Substrat*: ein Substrat ist das, worauf jemand anderes arbeitet.
 
-Daher auch die Zahl drei. Wortlaut zählt, was an der sprachlichen Oberfläche importiert wurde, Geist, was an Ideen und Struktur hinzukam, Beleg, ob das Werk in der Welt belegt ist. Wofür jemand einsteht, wird nicht mitgezählt, denn es lässt sich nicht importieren. Das Einstehen ist keine vierte Achse; es ist der Akt, den das Siegel vollzieht. Wer es setzt, erklärt nicht, was gemeint war, sondern wer wofür geradesteht.
+Daher auch die Zahl drei. Wortlaut zählt, was an der sprachlichen Oberfläche importiert wurde, Geist, was an Ideen und Struktur hinzukam, Beleg, ob je etwas außerhalb der Maschine gegengehalten hat. Wofür jemand einsteht, wird nicht mitgezählt, denn es lässt sich nicht importieren. Das Einstehen ist keine vierte Achse; es ist der Akt, den das Siegel vollzieht. Wer es setzt, erklärt nicht, was gemeint war, sondern wer wofür geradesteht.
 
 ## Was Maschinenschrift adressiert — und was nicht
 

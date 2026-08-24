@@ -4,7 +4,7 @@ description: "Frozen historical snapshot of the Maschinenschrift seal specificat
 seotitle: "Siegel-Spec v6 — Superseded Seal Specification (D/G/K)"
 ---
 
-**Status:** Superseded by [Siegel-Spec v7](/spec/siegel-v7/) (2026-08-02). Frozen historical snapshot — content and path references are no longer maintained. The geometry is unchanged, but the axes are now W/G/B (Wortlaut, *Geist*, Beleg) and asset filenames follow `w{W}-g{G}-{state}.svg`. See the current canonical specification at [/spec/siegel-v7/](/spec/siegel-v7/).
+**Status:** Superseded by [Siegel-Spec v8](/spec/siegel-v8/) (2026-08-24); v7 applied in the interim ([v7](/spec/siegel-v7/), 2026-08-02). Frozen historical snapshot — content and path references are no longer maintained. The geometry is unchanged, but the axes are now W/G/B (Wortlaut, *Geist*, Beleg) and asset filenames follow `w{W}-g{G}-{state}.svg`. See the current canonical specification at [/spec/siegel-v8/](/spec/siegel-v8/).
 
 **Historical status (2026-05-24):** Current canonical. Geometry is unchanged from v5; the axes are now D/G/K (Diktion, *Geist*, Correspondence), and the binary K-axis uses `belegt` / `ausstehend` instead of `verified` / `unverified`. The semantic basis lives in [Foundation §7](/foundation/#7-seal-axis-semantics). The predecessor v5 is frozen at [/spec/siegel-v5/](/spec/siegel-v5/).
 

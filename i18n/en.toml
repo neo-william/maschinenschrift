@@ -139,7 +139,7 @@ other = "SVG (vector)"
 other = "License: CC BY 4.0. Use as origin mark requires public self-declaration in the Maschinenschrift standard."
 
 [ausstehendTitle]
-other = "Self-declared, bibliographic record pending"
+other = "Self-declared, fact-check pending"
 
 # Seal page
 [atlasLead]
@@ -151,7 +151,7 @@ other = "The three axes"
 [atlasAxes]
 other = """- **Wording** (W, 0–5) — how much of the surface (sentences, word choice, rhythm) came from the machine.
 - ***Geist*** (G, 0–5) — how much of the substance (ideas, arguments, structural decisions, factual material, content) came from the machine.
-- **Record** (B, binary) — whether the work stands in the bibliographic world: findable, datable, identifiable.
+- **Record** (B, binary) — whether the work's factual statements were checked against sources outside the machine.
 
 *Geist* stays in German. Hegel and *Geisteswissenschaften* stand behind the word. The gloss in English is *Ghost from the Machine*. The diagnostic formula is *Geist aus der Maschine*. Meaning and vocabulary belong to the [Idea](/idea/)."""
 

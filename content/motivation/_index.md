@@ -28,7 +28,7 @@ Three axes. The author marks each one.
 
 - **Wortlaut** — *wording*; how much of the surface (sentences, word choice, rhythm) came from the machine.
 - ***Geist*** — how much of the substance (ideas, arguments, structural decisions, factual material, content) came from the machine.
-- **Beleg** — the *record*; whether the work stands in the bibliographic world: findable, datable, identifiable.
+- **Beleg** — the *record*; whether the work's factual statements were checked against sources outside the substrate.
 
 Two rows of dots, zero to five per axis, count the machine's share. A half-stroke below means correspondence is still pending. The author sets the seal and places it near the byline — cover, title page, about page.
 

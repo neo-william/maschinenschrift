@@ -138,7 +138,7 @@ other = "SVG (vektor)"
 other = "Lizenz: CC BY 4.0. Verwendung als Herkunftszeichen setzt öffentliche Selbstdeklaration im Maschinenschrift-Standard voraus."
 
 [ausstehendTitle]
-other = "Selbstdeklaration, bibliografischer Beleg ausstehend"
+other = "Selbstdeklaration, Faktenprüfung ausstehend"
 
 # Siegel-Seite
 [atlasLead]
@@ -150,9 +150,9 @@ other = "Die drei Achsen"
 [atlasAxes]
 other = """- **Wortlaut** (W, 0–5) — wie viel der Oberfläche, also Sätze, Wortwahl, Rhythmus, von der Maschine kam.
 - ***Geist*** (G, 0–5) — wie viel der Substanz, also Ideen, Argumente, Strukturentscheidungen, Faktenmaterial, Inhalt, von der Maschine kam.
-- **Beleg** (B, binär) — ob das Werk in der bibliografischen Welt steht: findbar, datierbar, identifizierbar.
+- **Beleg** (B, binär) — ob die Faktenaussagen des Werks gegen Quellen außerhalb der Maschine geprüft wurden.
 
-Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: der Beleg steht noch aus.
+Zwei Reihen Punkte, null bis fünf pro Achse, zählen den Anteil der Maschine. Ein Halbstrich darunter heißt: geprüft wurde nicht.
 
 *Geist* bleibt deutsch. Das Wort trägt Hegel und die Geisteswissenschaften mit. Die Diagnose-Formel lautet *Geist aus der Maschine*. Vokabular: [Idee](/de/idee/)."""
 

@@ -1,10 +1,12 @@
 ---
 title: "Siegel-Spec v7"
 description: "Kanonische Spezifikation des KI-Siegels seit dem 2026-08-02: Geometrie, Rendering-Regeln und die Achsen Wortlaut, Geist, Beleg (W/G/B)."
-seotitle: "Siegel-Spec v7 — aktuelle Spezifikation (W/G/B)"
+seotitle: "Siegel-Spec v7 — eingefrorene Spezifikation (W/G/B)"
 ---
 
-**Status:** Aktuell kanonisch (seit 2026-08-02). Die Geometrie ist unverändert gegenüber v5; die Achsen heißen jetzt **W/G/B — Wortlaut, *Geist*, Beleg**, und die binäre B-Achse verwendet `belegt` / `ausstehend`. Semantische Grundlage: [Foundation §7](/de/foundation/#7-seal-axis-semantics). Die Vorgänger v6 und v5 sind eingefroren unter [/de/spec/siegel-v6/](/de/spec/siegel-v6/) und [/de/spec/siegel-v5/](/de/spec/siegel-v5/).
+**Status:** Abgelöst durch [Siegel-Spec v8](/de/spec/siegel-v8/) (2026-08-24). Eingefrorener historischer Stand — Inhalt und Pfad-Angaben werden nicht mehr nachgeführt. Geometrie, Achsenbuchstaben, Feldnamen und Werte sind in v8 unverändert; geändert hat sich, was die B-Achse aussagt. v7 notierte die bibliografische Auffindbarkeit des Werks, v8 notiert, ob die Faktenaussagen des Werks gegen Quellen außerhalb des Substrats geprüft wurden. Ein `belegt` auf dieser Seite bedeutet nicht, was ein `belegt` nach v8 bedeutet.
+
+**Historischer Status (2026-08-02):** Aktuell kanonisch. Die Geometrie ist unverändert gegenüber v5; die Achsen heißen jetzt **W/G/B — Wortlaut, *Geist*, Beleg**, und die binäre B-Achse verwendet `belegt` / `ausstehend`. Semantische Grundlage: [Foundation §7](/de/foundation/#7-seal-axis-semantics). Die Vorgänger v6 und v5 sind eingefroren unter [/de/spec/siegel-v6/](/de/spec/siegel-v6/) und [/de/spec/siegel-v5/](/de/spec/siegel-v5/).
 
 ## Achsen
 

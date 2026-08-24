@@ -11,7 +11,7 @@ Aufnahme in das Verzeichnis erfolgt per Mail. Kein Formular, kein Account, keine
 Schreiben Sie an `contact [at] maschinenschrift [dot] com` und nennen Sie:
 
 1. **Titel** des Werks.
-2. **Mindestens eine Plattform**, auf der das veröffentlichte EPUB oder gedruckte Buch öffentlich auffindbar ist (Amazon, Apple Books, Verlagskatalog, eigene Website — irgendeine verifizierbare Listung).
+2. **Mindestens eine Plattform**, auf der das veröffentlichte EPUB oder gedruckte Buch öffentlich auffindbar ist (Amazon, Apple Books, Verlagskatalog, eigene Website — irgendeine verifizierbare Listung). Die Auffindbarkeit ist Aufnahmekriterium des Verzeichnisses; seit [Spec v8](/de/spec/siegel-v8/) ist sie **kein Wert am Siegel mehr** — die B-Achse hält seither fest, ob die Faktenaussagen geprüft wurden.
 3. **Bestätigung, dass das Siegel sichtbar am Werk angebracht ist**, mit den deklarierten W/G/B-Werten. Nennen Sie die Stelle (Cover, Titelblatt, Kolophon, About-Seite, Footer).
 
 Links in der Mail werden grundsätzlich nicht angeklickt. Verifiziert wird durch eigene Suche nach dem Titel auf der genannten Plattform.
@@ -25,6 +25,8 @@ Ist der Eintrag stimmig und das Siegel vorhanden, wird das Werk in das [Verzeich
 - Die Deklaration ist in sich stimmig.
 
 Was **nicht** geprüft wird: literarische Qualität, kommerzieller Status, die Wahrheit von Tatsachenbehauptungen im Werk selbst, die Genauigkeit der W/G/B-Einschätzung über Plausibilität hinaus.
+
+**Auch der Beleg wird nicht nachgeprüft.** Er ist Selbstauskunft darüber, ob die Autorin ihre Faktenaussagen gegen Quellen außerhalb des Substrats gehalten hat — wie Wortlaut und Geist eine Erklärung, für die sie einsteht, und keine Bestätigung des Verzeichnisses. Maschinenschrift ist Registerführer, nicht Prüfstelle.
 
 ## Was ein Eintrag nicht impliziert
 
