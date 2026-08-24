@@ -77,7 +77,7 @@ Der Name ist älter als das Projekt. *Maschinenschrift* hieß im zwanzigsten Jah
 
 Damit das Ganze nicht später einer Person gehört, ist es weggegeben, bevor es Wert hat. Zwei Teile sind unentziehbar: Inhalte und Notation stehen unter Creative Commons, der Code unter Apache 2.0. Beides ist vergeben und nicht zurückholbar, auch nicht vom Urheber — wer den Standard heute benutzt, kann davon morgen nicht abgeschnitten werden. Der dritte Teil ist es nicht. Die Wortmarke schläft und liegt beim Gründer; dass sie nicht gegen Adoptierende eingesetzt wird, ist eine offen ausgewiesene Selbstbindung — eine Verpflichtungserklärung, keine Unmöglichkeit. Zusage und Mittel, sie zu brechen, liegen in derselben Hand, und diese Seite sagt es. Das Verzeichnis liegt in Textdateien, nicht in einer Datenbank, die jemand betreiben muss. Es gibt keine Konten, keine Cookies, keine Tracker. Der laufende Betrieb kostet etwa so viel wie ein Abendessen im Jahr.
 
-Der Roman, mit dem alles anfing, deklariert **W 4 · G 2 · B ausstehend** — viel Maschine in der Sprache, wenig im Geist, keinen bibliografischen Beleg, weil Fiktion nichts belegt. Das ist die unbequemste Auskunft, die dieses Projekt zu geben hatte, und sie steht an seiner Spitze. Wer eine Form für Ehrlichkeit vorschlägt, hat zuerst selbst zu antworten.
+Der Roman, mit dem alles anfing, deklariert **W 5 · G 3 · B ausstehend** — die sprachliche Oberfläche durchgehend aus der Maschine, der Geist zu erheblichem Teil, der Beleg ausstehend. Das ist die unbequemste Auskunft, die dieses Projekt zu geben hatte, und sie steht an seiner Spitze. Wer eine Form für Ehrlichkeit vorschlägt, hat zuerst selbst zu antworten.
 
 ## Der Einwand, der bleibt
 

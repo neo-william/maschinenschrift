@@ -78,7 +78,7 @@ The name is older than the project. In the twentieth century, *Maschinenschrift*
 
 So that none of this can later belong to one person, it was given away before it had value. Two parts are irrevocable: content and notation under Creative Commons, the code under Apache 2.0. Both are released and cannot be called back, not even by the originator — whoever uses the standard today cannot be cut off from that tomorrow. The third part is not. The word mark is dormant and held by the founder; that it will not be turned against adopters is an openly declared self-binding — an undertaking, not an impossibility. The promise and the means to break it lie in the same hand, and this page says so. The registry lives in text files, not in a database somebody has to operate. There are no accounts, no cookies, no trackers. Running it costs about as much per year as one dinner.
 
-The novel it all started with declares **W 4 · G 2 · B pending** — much machine in the language, little in the *Geist*, no bibliographic record, because fiction documents nothing. That is the most uncomfortable account this project had to give, and it stands at the top of it. Whoever proposes a form for honesty has to answer first.
+The novel it all started with declares **W 5 · G 3 · B pending** — the linguistic surface throughout from the machine, the *Geist* in substantial part, the record pending. That is the most uncomfortable account this project had to give, and it stands at the top of it. Whoever proposes a form for honesty has to answer first.
 
 ## The objection that remains
 
