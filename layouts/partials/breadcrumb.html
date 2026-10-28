@@ -1,8 +1,8 @@
 {{/*
   Breadcrumb-Partial — zeigt den Pfad zur aktuellen Seite.
   Erscheint nur, wenn der Pfad mindestens eine Zwischenstufe hat (also nicht
-  Home und nicht Top-Level-Sections wie /motivation/ oder /seal/, die nur
-  "Maschinenschrift › Motivation" wiederholen würden).
+  Home und nicht Top-Level-Sections wie /decisions/ oder /seal/, die nur
+  "Maschinenschrift › Decisions" wiederholen würden).
 */}}
 {{- $ancestors := .Ancestors -}}
 {{- if and (not .IsHome) (gt (len $ancestors) 1) -}}

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="single entscheidungen">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ with .Params.deklaration }}
+  {{/* Die einzige Kernseite mit eigener Selbstdeklaration (ADR 0352): der
+       Standard an sich selbst angewandt. Gleiche Mechanik wie die Notiz-Coda
+       (layouts/notizen/single.html): Werte laufen ueber `zeichen.html`
+       (ADR 0067); ohne `deklaration:` rendert kein Siegel, auch kein leeres. */}}
+  {{ $z := partial "zeichen.html" . }}
+  <div class="notiz-coda" aria-hidden="true">
+    {{ partial "siegel.html" (dict "wortlaut" $z.wortlaut "geist" $z.geist "beleg" $z.beleg "class" "siegel-coda") }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}
