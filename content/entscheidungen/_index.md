@@ -11,7 +11,20 @@ deklaration:
   beleg: belegt
 ---
 
-Anyone who wants to say how far a machine took part in a text finds a crowded field. Some twenty approaches stand side by side, several of them older than Maschinenschrift, most of them built for a field other than literature and well built for it. This page orders them by the question each one answers, tells which of their forms Maschinenschrift tried itself and gave up, and gives the reason for every omission. The names are in the register at the end, with the date they were checked.
+Anyone who wants to say how far a machine took part in a text finds a crowded field. Some twenty approaches stand side by side, several of them older than Maschinenschrift, most of them built for a field other than literature and well built for it. This page orders them by the question each one answers, gives the reason for every omission, takes one book through all the forms, and tells which of them Maschinenschrift tried itself and gave up.
+
+1. [**The problem**](#the-problem)\
+   Whoever says openly how much came from the model risks more than whoever stays silent.
+2. [**The answers in the field**](#the-answers-in-the-field)\
+   Some twenty approaches answer eight questions. Maschinenschrift answers a ninth.
+3. [**The omissions**](#the-omissions)\
+   Thirteen times, what is right elsewhere is left out here, each time for a reason.
+4. [**The test case**](#the-test-case)\
+   The same book taken through every form: most stay silent, flatten it or tell half.
+5. [**What was built and set aside**](#what-was-built-and-set-aside)\
+   The obvious was built more than once and given up again, and every decision against it is dated.
+6. [**The objection**](#the-objection)\
+   A notation normalises what it notates. The alternative is not less mediation but invisible mediation.
 
 ## The problem
 
@@ -21,16 +34,57 @@ What is missing is a form in which the author states herself how much of the sen
 
 ## The answers in the field
 
-| | Form | The question it answers |
-|---|---|---|
-| A | Detection | Does this text look machine-made? |
-| B | Process recording | Can the making be shown? |
-| C | Provenance signature | Which statement belongs to this file, and who signed it? |
-| D | Label | Was the book made by people? |
-| E | Tiered scale | Which class does it fall into? |
-| F | Process taxonomy | Which tasks did a tool take over, and how? |
-| G | Platform field | What does the retailer know? |
-| H | Co-authorship | Is the model on the cover? |
+The register orders the approaches by the question each one answers, and describes each one by what its own publications say. As of 28 October 2026. It is maintained; additions and corrections go to contact [at] maschinenschrift [dot] com.
+
+<table class="nachbarn">
+<thead><tr><th scope="col"><span class="sr-only">Form</span></th><th scope="col">Approach</th><th scope="col">Run by</th><th scope="col">What it states</th></tr></thead>
+<tbody>
+<tr><th scope="rowgroup">A</th><th scope="rowgroup" colspan="3">Detection <span class="frage">Does this text look machine-made?</span></th></tr>
+<tr><td></td><td><a href="https://www.pangram.com/">Pangram</a></td><td>Company</td><td>Likelihood that a text was machine-generated</td></tr>
+<tr><td></td><td><a href="https://gptzero.me/">GPTZero</a></td><td>Company</td><td>Likelihood that a text was machine-generated</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">B</th><th scope="rowgroup" colspan="3">Process recording <span class="frage">Can the making be shown?</span></th></tr>
+<tr><td></td><td><a href="https://www.grammarly.com/blog/company/grammarly-launches-grammarly-authorship/">Grammarly Authorship</a></td><td>Grammarly</td><td>Records the writing in the document and sorts the text: typed, pasted, generated or modified by AI; with a replay of how it was made</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">C</th><th scope="rowgroup" colspan="3">Provenance signature <span class="frage">Which statement belongs to this file, and who signed it?</span></th></tr>
+<tr><td></td><td><a href="https://c2pa.org/">C2PA / Content Credentials</a></td><td>Coalition for Content Provenance and Authenticity</td><td>Signed provenance statements bound to a media file</td></tr>
+<tr><td>C, E</td><td><a href="https://cv.iptc.org/newscodes/digitalsourcetype/">IPTC Digital Source Type</a></td><td>IPTC</td><td>Vocabulary for media files, including <em>Created using Generative AI</em> and <em>Edited using Generative AI</em></td></tr>
+<tr><td>C, E</td><td><a href="https://faia.liccium.com/">FAIA</a></td><td>Liccium with Leiden University and the GO FAIR Foundation</td><td>Declaration with three flags (<em>Human-Created</em>, <em>AI-Assisted</em>, <em>AI-Generated</em>), bound to the content by an ISCC code, optionally signed</td></tr>
+<tr><td>C, G</td><td><a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content">Code of Practice on AI-generated content</a></td><td>European Commission, Art. 50 AI Act</td><td>Voluntary code, final since 10 June 2026: machine-readable marking by providers, labelling of certain content by deployers; Art. 50 applies from 2 August 2026</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">D</th><th scope="rowgroup" colspan="3">Label <span class="frage">Was the book made by people?</span></th></tr>
+<tr><td></td><td><a href="https://authorsguild.org/human-authored/faq/">Human Authored</a></td><td>Authors Guild</td><td>Self-certification by contract for books published in the US, with a public database; spelling aids allowed, machine-generated text de minimis at most</td></tr>
+<tr><td></td><td><a href="https://avj-online.de/themen/von-menschen/">Von Menschen · geschrieben · gestaltet · geprüft</a></td><td>German children's and young adult publishers (avj)</td><td>Publishers' self-commitment that a book's creative core comes from people; explicitly no general verdict on AI</td></tr>
+<tr><td></td><td><a href="https://www.connexionfrance.com/news/human-made-book-labels-gain-ground-as-publisher-drops-novelist-at-centre-of-french-ai-row/823665">Organic Literature</a></td><td>Books By People</td><td>Certification mark for books whose writing comes from the author; spelling and grammar checks allowed; publishers pay to join</td></tr>
+<tr><td>A, D</td><td><a href="https://www.livreshebdo.fr/article/detection-de-lia-les-nouveaux-editeurs-deploient-le-label-creation-humaine-de-librinova">Création humaine</a></td><td>Librinova</td><td>Label after an analysis by detection software and an interview with an auditor</td></tr>
+<tr><td></td><td><a href="https://notbyai.fyi/">Not By AI</a></td><td>Not By AI</td><td>Badge for content that is, by the creator's own estimate, at least 90 per cent made by people</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">E</th><th scope="rowgroup" colspan="3">Tiered scale <span class="frage">Which class does it fall into?</span></th></tr>
+<tr><td></td><td><a href="https://www.newsfilecorp.com/release/229662">Content Origin Badges</a></td><td>Credtent</td><td>Three badges for disclosing whether and how AI took part in a piece of content</td></tr>
+<tr><td></td><td><a href="https://arxiv.org/abs/2412.09029">AI Assessment Scale</a></td><td>Perkins, Roe, Furze et al.</td><td>Five levels of AI use in assessment, in neutral colours since the revision</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">F</th><th scope="rowgroup" colspan="3">Process taxonomy <span class="frage">Which tasks did a tool take over, and how?</span></th></tr>
+<tr><td></td><td><a href="https://arxiv.org/abs/2303.03886">AI Usage Cards</a></td><td>Wahle, Ruas, Mohammad, Meuschke, Gipp</td><td>A form for reporting AI use in scientific work</td></tr>
+<tr><td></td><td><a href="https://niso.org/niso-io/2025/09/stm-releases-recommendations-classification-ai-use-manuscript-preparation">STM classification</a></td><td>STM, association of scholarly publishers</td><td>Nine categories of AI use in manuscript preparation, as a basis for publishers' policies</td></tr>
+<tr><td></td><td><a href="https://www.leidenmadtrics.nl/articles/gaidet-a-practical-taxonomy-for-declaring-ai-use-in-research-and-publishing">GAIDeT</a></td><td>Nazarovets, Tsybuliak, Teixeira da Silva, Suchikova</td><td>Which research tasks were delegated to generative AI at which stage; responsibility stays with the person</td></tr>
+<tr><td></td><td><a href="https://subjectguides.uwaterloo.ca/AIDFramework">AID Framework</a></td><td>Kari D. Weaver, University of Waterloo</td><td>A statement at the end of a paper, organised by stage of work; CC BY-SA 4.0</td></tr>
+<tr><td></td><td><a href="https://www.research.ibm.com/blog/AI-attribution-toolkit">AI Attribution Toolkit</a></td><td>IBM Research</td><td>A questionnaire that produces a statement: share of the work, what the AI contributed, who reviewed the result</td></tr>
+<tr><td></td><td><a href="https://arxiv.org/abs/2604.25346">Faceted attribution</a></td><td>Geraldo Xexéo, Universidade Federal do Rio de Janeiro</td><td>Six facets from editing to traceability, applicable down to the paragraph</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">G</th><th scope="rowgroup" colspan="3">Platform field <span class="frage">What does the retailer know?</span></th></tr>
+<tr><td>E, G</td><td><a href="https://kdp.amazon.com/en_US/help/topic/G200672390">AI disclosure at KDP</a></td><td>Amazon Kindle Direct Publishing</td><td>Required at publication when text, images or translation were created by an AI tool; AI-assisted content need not be disclosed</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">H</th><th scope="rowgroup" colspan="3">Co-authorship <span class="frage">Is the model on the cover?</span></th></tr>
+<tr><td></td><td><em>Pharmako-AI</em></td><td>K Allado-McDowell with GPT-3, 2020</td><td>A book that names the model as a contributor</td></tr>
+</tbody>
+</table>
 
 Maschinenschrift answers a ninth question: what the author says, under her own name, about how much of the sentences and how much of the ideas in this book came from a language model.
 
@@ -38,27 +92,7 @@ The nearest neighbours are the labels and the process taxonomies. With the label
 
 Outside this comparison lies the question of whether a text may be used to train models. It has its own signals and registers. Maschinenschrift does not address it.
 
-## What was built and set aside
-
-Maschinenschrift was itself made with a language model. Most of the sentences on this site came from the substrate, as they did in the novel the project began with. The history of the project therefore does not show that it was made without a model. It shows the decisions, which is what the *Geist* axis is about: which proposal stands and which falls.
-
-The project built or adopted several of the forms in the field itself, and gave them up again.
-
-| 2026 | Decision | Reason |
-|---|---|---|
-| 21 May | A **certification mark** on the model of quality seals is dropped, and so is a **registry with a review office** that had been built and tested: sign-up form, confirmation mail, editorial approval, running numbers, encryption, annual review. An open standard with a registry takes their place. | A standard that makes people ask for permission is not taken up. A medium needs no supervisory authority; it needs a language. |
-| 24 May | Maschinenschrift becomes a **register-keeper, not an assay office**: every value is the author's statement. | The project cannot check the values, so it does not certify them. |
-| 24 May | A **genesis register** is adopted and withdrawn on the same day: registration date, checksums of drafts, a weekly time anchor. | It can still be gamed, it forces authors into confirmation mails, and every such mail is a template for phishing. |
-| 3 June | An **imprint** under the standard's name is given up. | Whoever runs the standard does not publish, under that name, books that declare by it. |
-| May to August | The **axes** are renamed three times, until their names say what the numbers measure: Wortlaut, Geist, Beleg. The values stay as they were. | A name that promises something other than what the number measures is replaced. |
-| 2 August | The first book is **re-assessed**, from W 4 · G 2 to W 5 · G 3. | The finished version was more mediated than the first declaration. The declaration follows the work. |
-| 11 August | **No spot checks.** | A spot check without a means of checking would be an empty gesture, or detection through the back door. |
-| 24 August | The **Beleg** axis now asks whether the work's factual statements were checked against sources outside the model. | The factual layer is the one a model fills most confidently and least reliably. |
-| 29 September | The model gets **no contributor line**, on any platform. | A byline says who answers for the work, and a model cannot answer for anything. |
-
-In this field the obvious move is infrastructure: a registry, a review, a ladder with three rungs. Maschinenschrift built the obvious more than once. What sets it apart from its neighbours lies where it decided against it, and each of those decisions is dated.
-
-**This page declares itself**, the only one of the core pages to do so: **W 5 · G 3 · belegt**. The sentences came predominantly from the substrate. A substantial part of the order came as proposals from there; which proposal stood, which name fell and what the page does not claim was decided by the founder. Every statement about a neighbour has been checked against the neighbour's own publications, as of 28 October 2026. The seal stands at the end of the page.
+Rachel So gives an overview of the whole field in [*A Survey on Artificial Intelligence Attribution Badges*](https://project-rachel.4open.science/Rachel.So.A.Survey.on.Artificial.Intelligence.Attribution.Badges.pdf).
 
 ## The omissions
 
@@ -106,36 +140,27 @@ Maschinenschrift shares more with its neighbours than it leaves out: self-declar
 | Process taxonomies (F) | Expressible, as a list of work steps. Whose sentences and whose thoughts are on the page, the reader has to infer. |
 | Maschinenschrift | **W 5 · G 3 · ausstehend**, with eight sentences of narration in the author's own words, in the [catalog](/works/la-scuola-dei-silenzi/). |
 
-## Register of neighbours
+## What was built and set aside
 
-As of 28 October 2026. The register lists approaches that give an account of machine involvement in texts, and describes each one by what its own publications say. It is maintained; additions and corrections go to contact [at] maschinenschrift [dot] com.
+Maschinenschrift was itself made with a language model. Most of the sentences on this site came from the substrate, as they did in the novel the project began with. The history of the project therefore does not show that it was made without a model. It shows the decisions, which is what the *Geist* axis is about: which proposal stands and which falls.
 
-| Approach | Run by | Form | What it states |
-|---|---|---|---|
-| [Pangram](https://www.pangram.com/) | Company | A | Likelihood that a text was machine-generated |
-| [GPTZero](https://gptzero.me/) | Company | A | Likelihood that a text was machine-generated |
-| [Grammarly Authorship](https://www.grammarly.com/blog/company/grammarly-launches-grammarly-authorship/) | Grammarly | B | Records the writing in the document and sorts the text: typed, pasted, generated or modified by AI; with a replay of how it was made |
-| [C2PA / Content Credentials](https://c2pa.org/) | Coalition for Content Provenance and Authenticity | C | Signed provenance statements bound to a media file |
-| [IPTC Digital Source Type](https://cv.iptc.org/newscodes/digitalsourcetype/) | IPTC | C, E | Vocabulary for media files, including *Created using Generative AI* and *Edited using Generative AI* |
-| [FAIA](https://faia.liccium.com/) | Liccium with Leiden University and the GO FAIR Foundation | C, E | Declaration with three flags (*Human-Created*, *AI-Assisted*, *AI-Generated*), bound to the content by an ISCC code, optionally signed |
-| [Code of Practice on AI-generated content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content) | European Commission, Art. 50 AI Act | C, G | Voluntary code, final since 10 June 2026: machine-readable marking by providers, labelling of certain content by deployers; Art. 50 applies from 2 August 2026 |
-| [Human Authored](https://authorsguild.org/human-authored/faq/) | Authors Guild | D | Self-certification by contract for books published in the US, with a public database; spelling aids allowed, machine-generated text de minimis at most |
-| [Von Menschen · geschrieben · gestaltet · geprüft](https://avj-online.de/themen/von-menschen/) | German children's and young adult publishers (avj) | D | Publishers' self-commitment that a book's creative core comes from people; explicitly no general verdict on AI |
-| [Organic Literature](https://www.connexionfrance.com/news/human-made-book-labels-gain-ground-as-publisher-drops-novelist-at-centre-of-french-ai-row/823665) | Books By People | D | Certification mark for books whose writing comes from the author; spelling and grammar checks allowed; publishers pay to join |
-| [Création humaine](https://www.livreshebdo.fr/article/detection-de-lia-les-nouveaux-editeurs-deploient-le-label-creation-humaine-de-librinova) | Librinova | A, D | Label after an analysis by detection software and an interview with an auditor |
-| [Not By AI](https://notbyai.fyi/) | Not By AI | D | Badge for content that is, by the creator's own estimate, at least 90 per cent made by people |
-| [Content Origin Badges](https://www.newsfilecorp.com/release/229662) | Credtent | E | Three badges for disclosing whether and how AI took part in a piece of content |
-| [AI disclosure at KDP](https://kdp.amazon.com/en_US/help/topic/G200672390) | Amazon Kindle Direct Publishing | E, G | Required at publication when text, images or translation were created by an AI tool; AI-assisted content need not be disclosed |
-| [AI Assessment Scale](https://arxiv.org/abs/2412.09029) | Perkins, Roe, Furze et al. | E | Five levels of AI use in assessment, in neutral colours since the revision |
-| [AI Usage Cards](https://arxiv.org/abs/2303.03886) | Wahle, Ruas, Mohammad, Meuschke, Gipp | F | A form for reporting AI use in scientific work |
-| [STM classification](https://niso.org/niso-io/2025/09/stm-releases-recommendations-classification-ai-use-manuscript-preparation) | STM, association of scholarly publishers | F | Nine categories of AI use in manuscript preparation, as a basis for publishers' policies |
-| [GAIDeT](https://www.leidenmadtrics.nl/articles/gaidet-a-practical-taxonomy-for-declaring-ai-use-in-research-and-publishing) | Nazarovets, Tsybuliak, Teixeira da Silva, Suchikova | F | Which research tasks were delegated to generative AI at which stage; responsibility stays with the person |
-| [AID Framework](https://subjectguides.uwaterloo.ca/AIDFramework) | Kari D. Weaver, University of Waterloo | F | A statement at the end of a paper, organised by stage of work; CC BY-SA 4.0 |
-| [AI Attribution Toolkit](https://www.research.ibm.com/blog/AI-attribution-toolkit) | IBM Research | F | A questionnaire that produces a statement: share of the work, what the AI contributed, who reviewed the result |
-| [Faceted attribution](https://arxiv.org/abs/2604.25346) | Geraldo Xexéo, Universidade Federal do Rio de Janeiro | F | Six facets from editing to traceability, applicable down to the paragraph |
-| *Pharmako-AI* | K Allado-McDowell with GPT-3, 2020 | H | A book that names the model as a contributor |
+The project built or adopted several of the forms in the field itself, and gave them up again.
 
-Rachel So gives an overview of the whole field in [*A Survey on Artificial Intelligence Attribution Badges*](https://project-rachel.4open.science/Rachel.So.A.Survey.on.Artificial.Intelligence.Attribution.Badges.pdf).
+| 2026 | Decision | Reason |
+|---|---|---|
+| 21 May | A **certification mark** on the model of quality seals is dropped, and so is a **registry with a review office** that had been built and tested: sign-up form, confirmation mail, editorial approval, running numbers, encryption, annual review. An open standard with a registry takes their place. | A standard that makes people ask for permission is not taken up. A medium needs no supervisory authority; it needs a language. |
+| 24 May | Maschinenschrift becomes a **register-keeper, not an assay office**: every value is the author's statement. | The project cannot check the values, so it does not certify them. |
+| 24 May | A **genesis register** is adopted and withdrawn on the same day: registration date, checksums of drafts, a weekly time anchor. | It can still be gamed, it forces authors into confirmation mails, and every such mail is a template for phishing. |
+| 3 June | An **imprint** under the standard's name is given up. | Whoever runs the standard does not publish, under that name, books that declare by it. |
+| May to August | The **axes** are renamed three times, until their names say what the numbers measure: Wortlaut, Geist, Beleg. The values stay as they were. | A name that promises something other than what the number measures is replaced. |
+| 2 August | The first book is **re-assessed**, from W 4 · G 2 to W 5 · G 3. | The finished version was more mediated than the first declaration. The declaration follows the work. |
+| 11 August | **No spot checks.** | A spot check without a means of checking would be an empty gesture, or detection through the back door. |
+| 24 August | The **Beleg** axis now asks whether the work's factual statements were checked against sources outside the model. | The factual layer is the one a model fills most confidently and least reliably. |
+| 29 September | The model gets **no contributor line**, on any platform. | A byline says who answers for the work, and a model cannot answer for anything. |
+
+In this field the obvious move is infrastructure: a registry, a review, a ladder with three rungs. Maschinenschrift built the obvious more than once. What sets it apart from its neighbours lies where it decided against it, and each of those decisions is dated.
+
+**This page declares itself**, the only one of the core pages to do so: **W 5 · G 3 · belegt**. The sentences came predominantly from the substrate. A substantial part of the order came as proposals from there; which proposal stood, which name fell and what the page does not claim was decided by the founder. Every statement about a neighbour has been checked against the neighbour's own publications, as of 28 October 2026. The seal stands at the end of the page.
 
 ## The objection
 

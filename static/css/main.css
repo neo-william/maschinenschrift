@@ -244,6 +244,24 @@ main thead th {
 @media (max-width: 540px) {
   main table { display: block; overflow-x: auto; }
 }
+/* Register der Nachbarn (/entscheidungen/): eine Tabelle, je Bauform ein
+   tbody. Der Gruppenkopf nennt Buchstabe, Bauform und ihre Frage; er hebt
+   sich durch Abstand und eine dunklere Linie ab, nicht durch Flaeche. */
+main table.nachbarn tbody th {
+  padding-top: 1.4rem;
+  font-weight: 600;
+  border-bottom-color: var(--color-line);
+}
+main table.nachbarn tbody th .frage {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-muted);
+}
+main table.nachbarn tbody th .frage::before { content: "· "; font-style: normal; }
+main table.nachbarn td:first-child {
+  white-space: nowrap;
+  color: var(--color-faint);
+}
 
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;

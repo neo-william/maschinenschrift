@@ -10,7 +10,20 @@ deklaration:
   beleg: belegt
 ---
 
-Wer über die maschinelle Beteiligung an einem Text Auskunft geben will, findet ein volles Feld vor. Rund zwanzig Ansätze stehen nebeneinander, mehrere davon älter als Maschinenschrift, die meisten für ein anderes Feld gebaut als die Literatur und dort gut gebaut. Diese Seite ordnet sie nach der Frage, die sie beantworten, erzählt, welche ihrer Bauformen Maschinenschrift selbst erprobt und wieder aufgegeben hat, und begründet jeden Verzicht. Die Namen stehen im Register am Ende, mit Stand-Datum.
+Wer über die maschinelle Beteiligung an einem Text Auskunft geben will, findet ein volles Feld vor. Rund zwanzig Ansätze stehen nebeneinander, mehrere davon älter als Maschinenschrift, die meisten für ein anderes Feld gebaut als die Literatur und dort gut gebaut. Diese Seite ordnet sie nach der Frage, die sie beantworten, begründet jeden Verzicht, führt ein Buch durch alle Bauformen und erzählt, welche davon Maschinenschrift selbst erprobt und wieder aufgegeben hat.
+
+1. [**Das Problem**](#das-problem)\
+   Wer offen sagt, wie viel aus dem Modell kommt, riskiert mehr als wer schweigt.
+2. [**Die Antworten im Feld**](#die-antworten-im-feld)\
+   Rund zwanzig Ansätze beantworten acht Fragen. Maschinenschrift beantwortet eine neunte.
+3. [**Die Verzichte**](#die-verzichte)\
+   Dreizehnmal fehlt hier, was anderswo richtig ist, jedes Mal mit Grund.
+4. [**Der Probefall**](#der-probefall)\
+   Dasselbe Buch durch alle Bauformen geführt: die meisten schweigen, ebnen ein oder sagen die Hälfte.
+5. [**Was gebaut und verworfen wurde**](#was-gebaut-und-verworfen-wurde)\
+   Das Naheliegende wurde mehrfach gebaut und wieder aufgegeben, und jede Entscheidung dagegen ist datiert.
+6. [**Der Einwand**](#der-einwand)\
+   Eine Notation normalisiert, was sie notiert. Die Alternative ist nicht weniger Vermittlung, sondern unsichtbare.
 
 ## Das Problem
 
@@ -20,16 +33,57 @@ Es fehlt eine Form, in der die Autorin selbst sagt, wie viel der Sätze und wie 
 
 ## Die Antworten im Feld
 
-| | Bauform | Die Frage, die sie beantwortet |
-|---|---|---|
-| A | Detektion | Sieht dieser Text maschinell aus? |
-| B | Prozessaufzeichnung | Lässt sich die Entstehung vorzeigen? |
-| C | Herkunftssignatur | Welche Erklärung gehört zu dieser Datei, und wer hat sie signiert? |
-| D | Etikett | Ist das Buch von Menschen gemacht? |
-| E | Stufenleiter | In welche Klasse fällt es? |
-| F | Prozess-Taxonomie | Welche Aufgaben hat ein Werkzeug übernommen, und wie? |
-| G | Plattformfeld | Was weiß der Händler? |
-| H | Mitautorschaft | Steht das Modell auf dem Umschlag? |
+Das Register ordnet die Ansätze nach der Frage, die sie beantworten, und beschreibt jeden mit den Angaben seiner eigenen Veröffentlichungen. Stand: 28. Oktober 2026. Es wird gepflegt; Ergänzungen und Korrekturen gehen an contact [at] maschinenschrift [dot] com.
+
+<table class="nachbarn">
+<thead><tr><th scope="col"><span class="sr-only">Bauform</span></th><th scope="col">Ansatz</th><th scope="col">Träger</th><th scope="col">Was er erklärt</th></tr></thead>
+<tbody>
+<tr><th scope="rowgroup">A</th><th scope="rowgroup" colspan="3">Detektion <span class="frage">Sieht dieser Text maschinell aus?</span></th></tr>
+<tr><td></td><td><a href="https://www.pangram.com/">Pangram</a></td><td>Unternehmen</td><td>Wahrscheinlichkeit, dass ein Text maschinell erzeugt ist</td></tr>
+<tr><td></td><td><a href="https://gptzero.me/">GPTZero</a></td><td>Unternehmen</td><td>Wahrscheinlichkeit, dass ein Text maschinell erzeugt ist</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">B</th><th scope="rowgroup" colspan="3">Prozessaufzeichnung <span class="frage">Lässt sich die Entstehung vorzeigen?</span></th></tr>
+<tr><td></td><td><a href="https://www.grammarly.com/blog/company/grammarly-launches-grammarly-authorship/">Grammarly Authorship</a></td><td>Grammarly</td><td>Zeichnet das Schreiben im Dokument auf und ordnet den Text ein: getippt, eingefügt, von KI erzeugt oder bearbeitet; mit Wiedergabe der Entstehung</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">C</th><th scope="rowgroup" colspan="3">Herkunftssignatur <span class="frage">Welche Erklärung gehört zu dieser Datei, und wer hat sie signiert?</span></th></tr>
+<tr><td></td><td><a href="https://c2pa.org/">C2PA / Content Credentials</a></td><td>Coalition for Content Provenance and Authenticity</td><td>Signierte Herkunftsangaben, an eine Mediendatei gebunden</td></tr>
+<tr><td>C, E</td><td><a href="https://cv.iptc.org/newscodes/digitalsourcetype/">IPTC Digital Source Type</a></td><td>IPTC</td><td>Vokabular für Mediendateien, darunter <em>Created using Generative AI</em> und <em>Edited using Generative AI</em></td></tr>
+<tr><td>C, E</td><td><a href="https://faia.liccium.com/">FAIA</a></td><td>Liccium mit der Universität Leiden und der GO FAIR Foundation</td><td>Erklärung mit drei Flaggen (<em>Human-Created</em>, <em>AI-Assisted</em>, <em>AI-Generated</em>), über einen ISCC-Code an den Inhalt gebunden, optional signiert</td></tr>
+<tr><td>C, G</td><td><a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content">Verhaltenskodex zu KI-generierten Inhalten</a></td><td>Europäische Kommission, Art. 50 KI-Verordnung</td><td>Freiwilliger Kodex, endgültig seit 10. Juni 2026: maschinenlesbare Markierung durch Anbieter, Kennzeichnung bestimmter Inhalte durch Betreiber; Art. 50 gilt seit 2. August 2026</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">D</th><th scope="rowgroup" colspan="3">Etikett <span class="frage">Ist das Buch von Menschen gemacht?</span></th></tr>
+<tr><td></td><td><a href="https://authorsguild.org/human-authored/faq/">Human Authored</a></td><td>Authors Guild</td><td>Selbstzertifizierung per Vertrag für in den USA erschienene Bücher, mit öffentlicher Datenbank; Rechtschreibhilfen zulässig, maschinell erzeugter Text höchstens in geringstem Umfang</td></tr>
+<tr><td></td><td><a href="https://avj-online.de/themen/von-menschen/">Von Menschen · geschrieben · gestaltet · geprüft</a></td><td>Kinder- und Jugendbuchverlage der avj</td><td>Selbstverpflichtung der Verlage: der kreative Kern eines Buchs stammt von Menschen; ausdrücklich kein generelles Urteil über KI</td></tr>
+<tr><td></td><td><a href="https://www.connexionfrance.com/news/human-made-book-labels-gain-ground-as-publisher-drops-novelist-at-centre-of-french-ai-row/823665">Organic Literature</a></td><td>Books By People</td><td>Zertifizierungsmarke für Bücher, deren Text von der Autorin stammt; Rechtschreib- und Grammatikprüfung zulässig; Verlage zahlen einen Beitrag</td></tr>
+<tr><td>A, D</td><td><a href="https://www.livreshebdo.fr/article/detection-de-lia-les-nouveaux-editeurs-deploient-le-label-creation-humaine-de-librinova">Création humaine</a></td><td>Librinova</td><td>Label nach einer Analyse durch Detektor-Software und einem Gespräch mit einer Prüferin</td></tr>
+<tr><td></td><td><a href="https://notbyai.fyi/">Not By AI</a></td><td>Not By AI</td><td>Abzeichen für Inhalte, die nach eigener Schätzung zu mindestens 90 Prozent von Menschen stammen</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">E</th><th scope="rowgroup" colspan="3">Stufenleiter <span class="frage">In welche Klasse fällt es?</span></th></tr>
+<tr><td></td><td><a href="https://www.newsfilecorp.com/release/229662">Content Origin Badges</a></td><td>Credtent</td><td>Drei Abzeichen zur Offenlegung, ob und wie KI an einem Inhalt beteiligt war</td></tr>
+<tr><td></td><td><a href="https://arxiv.org/abs/2412.09029">AI Assessment Scale</a></td><td>Perkins, Roe, Furze u. a.</td><td>Fünf Stufen der KI-Nutzung in Prüfungen, seit der Überarbeitung in neutralen Farben</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">F</th><th scope="rowgroup" colspan="3">Prozess-Taxonomie <span class="frage">Welche Aufgaben hat ein Werkzeug übernommen, und wie?</span></th></tr>
+<tr><td></td><td><a href="https://arxiv.org/abs/2303.03886">AI Usage Cards</a></td><td>Wahle, Ruas, Mohammad, Meuschke, Gipp</td><td>Formular für die Angabe von KI-Nutzung in wissenschaftlicher Arbeit</td></tr>
+<tr><td></td><td><a href="https://niso.org/niso-io/2025/09/stm-releases-recommendations-classification-ai-use-manuscript-preparation">STM-Klassifikation</a></td><td>STM, Verband wissenschaftlicher Verlage</td><td>Neun Kategorien der KI-Nutzung bei der Manuskripterstellung, als Grundlage für Verlagsrichtlinien</td></tr>
+<tr><td></td><td><a href="https://www.leidenmadtrics.nl/articles/gaidet-a-practical-taxonomy-for-declaring-ai-use-in-research-and-publishing">GAIDeT</a></td><td>Nazarovets, Tsybuliak, Teixeira da Silva, Suchikova</td><td>Angabe, welche Forschungsaufgaben in welcher Phase an generative KI delegiert wurden; Verantwortung beim Menschen</td></tr>
+<tr><td></td><td><a href="https://subjectguides.uwaterloo.ca/AIDFramework">AID Framework</a></td><td>Kari D. Weaver, University of Waterloo</td><td>Erklärung am Ende eines Aufsatzes, gegliedert nach Arbeitsphasen; CC BY-SA 4.0</td></tr>
+<tr><td></td><td><a href="https://www.research.ibm.com/blog/AI-attribution-toolkit">AI Attribution Toolkit</a></td><td>IBM Research</td><td>Fragebogen, aus dem eine Angabe entsteht: Anteil der Arbeit, Beitrag der KI, wer das Ergebnis geprüft hat</td></tr>
+<tr><td></td><td><a href="https://arxiv.org/abs/2604.25346">Facettierte Attribution</a></td><td>Geraldo Xexéo, Universidade Federal do Rio de Janeiro</td><td>Sechs Facetten von der Bearbeitung bis zur Nachvollziehbarkeit, anwendbar bis zum Absatz</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">G</th><th scope="rowgroup" colspan="3">Plattformfeld <span class="frage">Was weiß der Händler?</span></th></tr>
+<tr><td>E, G</td><td><a href="https://kdp.amazon.com/en_US/help/topic/G200672390">KI-Angabe bei KDP</a></td><td>Amazon Kindle Direct Publishing</td><td>Pflichtangabe bei Veröffentlichung, wenn Text, Bilder oder Übersetzung von einem KI-Werkzeug erzeugt wurden; KI-unterstützte Inhalte sind nicht anzugeben</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup">H</th><th scope="rowgroup" colspan="3">Mitautorschaft <span class="frage">Steht das Modell auf dem Umschlag?</span></th></tr>
+<tr><td></td><td><em>Pharmako-AI</em></td><td>K Allado-McDowell mit GPT-3, 2020</td><td>Ein Buch, das das Modell als Mitwirkenden führt</td></tr>
+</tbody>
+</table>
 
 Maschinenschrift beantwortet eine neunte Frage: was die Autorin mit ihrem Namen darüber sagt, wie viel der Sätze und wie viel der Ideen dieses Buchs aus einem Sprachmodell kommen.
 
@@ -37,27 +91,7 @@ Am nächsten liegen die Etiketten und die Prozess-Taxonomien. Mit den Etiketten 
 
 Außerhalb dieses Vergleichs liegt die Frage, ob ein Text zum Training von Modellen verwendet werden darf. Dafür gibt es eigene Signale und Register. Maschinenschrift adressiert sie nicht.
 
-## Was gebaut und verworfen wurde
-
-Maschinenschrift ist selbst mit einem Sprachmodell entstanden. Der größte Teil der Sätze dieser Site kam aus dem Substrat, wie bei dem Roman, mit dem das Projekt begann. Die Entstehungsgeschichte zeigt deshalb nicht, dass ohne Modell gearbeitet wurde. Sie zeigt die Entscheidungen, also das, was die Achse *Geist* meint: welcher Vorschlag gilt und welcher fällt.
-
-Mehrere Bauformen aus dem Feld hat das Projekt selbst gebaut oder beschlossen und wieder aufgegeben.
-
-| 2026 | Entscheidung | Grund |
-|---|---|---|
-| 21. Mai | Eine **Zertifizierungsmarke** nach dem Vorbild von Gütesiegeln wird verworfen, ebenso ein fertig gebautes und getestetes **Register mit Prüfinstanz**: Anmeldeformular, Bestätigungsmail, Redaktionsfreigabe, laufende Nummern, Verschlüsselung, Jahresprüfung. An ihre Stelle tritt ein offener Standard mit Verzeichnis. | Ein Standard, der um Erlaubnis bitten lässt, wird nicht angenommen. Ein Medium braucht keine Aufsichtsbehörde, es braucht eine Sprache. |
-| 24. Mai | Maschinenschrift wird **Registerführer, nicht Prüfstelle**: jede Angabe ist eine Aussage der Autorin. | Das Projekt kann die Werte nicht prüfen, also bescheinigt es sie nicht. |
-| 24. Mai | Ein **Genese-Register** wird beschlossen und am selben Tag zurückgenommen: Anmeldetag, Prüfsummen von Zwischenständen, ein wöchentlicher Zeitanker. | Es bleibt zu überlisten, es zwingt Autorinnen in Bestätigungsmails, und jede solche Mail ist eine Vorlage für Phishing. |
-| 3. Juni | Ein **Verlagsname** unter dem Namen des Standards wird aufgegeben. | Wer den Standard betreibt, gibt unter diesem Namen keine Bücher heraus, die nach ihm deklarieren. |
-| Mai bis August | Die **Achsen** werden dreimal umbenannt, bis ihre Namen sagen, was die Zahlen messen: Wortlaut, Geist, Beleg. Die Werte bleiben dabei, wie sie waren. | Ein Name, der etwas anderes verspricht, als die Zahl misst, wird ersetzt. |
-| 2. August | Das erste Buch wird **neu bewertet**, von W 4 · G 2 auf W 5 · G 3. | Die fertige Fassung war stärker vermittelt als die erste Erklärung. Die Deklaration folgt dem Werk. |
-| 11. August | **Keine Stichproben.** | Eine Stichprobe ohne Prüfmittel wäre eine leere Geste oder Detektion durch die Hintertür. |
-| 24. August | Die Achse **Beleg** fragt seitdem, ob die Faktenaussagen gegen Quellen außerhalb des Modells geprüft wurden. | Die Faktenschicht ist die, die ein Modell am sichersten füllt und am wenigsten verlässlich. |
-| 29. September | Das Modell bekommt **keine Mitwirkendenzeile**, auf keiner Plattform. | Eine Verfasserzeile sagt, wer für das Werk einsteht, und ein Modell kann nicht einstehen. |
-
-Das Naheliegende ist in diesem Feld die Infrastruktur: ein Register, eine Prüfung, eine Leiter mit drei Stufen. Maschinenschrift hat das Naheliegende mehrfach gebaut. Was es von den Nachbarn unterscheidet, steht dort, wo dagegen entschieden wurde, und jede dieser Entscheidungen ist datiert.
-
-**Diese Seite deklariert sich selbst**, als einzige der Kernseiten: **W 5 · G 3 · belegt**. Die Sätze kamen überwiegend aus dem Substrat. Ein erheblicher Teil der Ordnung kam als Vorschlag von dort; welcher Vorschlag galt, welcher Name fiel und was die Seite nicht behauptet, entschied der Gründer. Jede Aussage über einen Nachbarn ist an dessen eigenen Veröffentlichungen geprüft, Stand 28. Oktober 2026. Das Siegel steht am Ende der Seite.
+Einen Überblick über das ganze Feld gibt Rachel So, [*A Survey on Artificial Intelligence Attribution Badges*](https://project-rachel.4open.science/Rachel.So.A.Survey.on.Artificial.Intelligence.Attribution.Badges.pdf).
 
 ## Die Verzichte
 
@@ -105,36 +139,27 @@ Mit den Nachbarn teilt Maschinenschrift mehr, als es weglässt: die Selbstauskun
 | Prozess-Taxonomien (F) | Ausdrückbar, als Liste von Arbeitsschritten. Wessen Sätze und wessen Gedanken vorliegen, muss die Leserin daraus erschließen. |
 | Maschinenschrift | **W 5 · G 3 · ausstehend**, dazu acht Sätze Narration in den Worten des Autors, im [Katalog](/de/werke/la-scuola-dei-silenzi/). |
 
-## Register der Nachbarn
+## Was gebaut und verworfen wurde
 
-Stand: 28. Oktober 2026. Das Register nennt Ansätze, die über maschinelle Beteiligung an Texten Auskunft geben, und beschreibt sie mit den Angaben ihrer eigenen Veröffentlichungen. Es wird gepflegt; Ergänzungen und Korrekturen gehen an contact [at] maschinenschrift [dot] com.
+Maschinenschrift ist selbst mit einem Sprachmodell entstanden. Der größte Teil der Sätze dieser Site kam aus dem Substrat, wie bei dem Roman, mit dem das Projekt begann. Die Entstehungsgeschichte zeigt deshalb nicht, dass ohne Modell gearbeitet wurde. Sie zeigt die Entscheidungen, also das, was die Achse *Geist* meint: welcher Vorschlag gilt und welcher fällt.
 
-| Ansatz | Träger | Bauform | Was er erklärt |
-|---|---|---|---|
-| [Pangram](https://www.pangram.com/) | Unternehmen | A | Wahrscheinlichkeit, dass ein Text maschinell erzeugt ist |
-| [GPTZero](https://gptzero.me/) | Unternehmen | A | Wahrscheinlichkeit, dass ein Text maschinell erzeugt ist |
-| [Grammarly Authorship](https://www.grammarly.com/blog/company/grammarly-launches-grammarly-authorship/) | Grammarly | B | Zeichnet das Schreiben im Dokument auf und ordnet den Text ein: getippt, eingefügt, von KI erzeugt oder bearbeitet; mit Wiedergabe der Entstehung |
-| [C2PA / Content Credentials](https://c2pa.org/) | Coalition for Content Provenance and Authenticity | C | Signierte Herkunftsangaben, an eine Mediendatei gebunden |
-| [IPTC Digital Source Type](https://cv.iptc.org/newscodes/digitalsourcetype/) | IPTC | C, E | Vokabular für Mediendateien, darunter *Created using Generative AI* und *Edited using Generative AI* |
-| [FAIA](https://faia.liccium.com/) | Liccium mit der Universität Leiden und der GO FAIR Foundation | C, E | Erklärung mit drei Flaggen (*Human-Created*, *AI-Assisted*, *AI-Generated*), über einen ISCC-Code an den Inhalt gebunden, optional signiert |
-| [Verhaltenskodex zu KI-generierten Inhalten](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content) | Europäische Kommission, Art. 50 KI-Verordnung | C, G | Freiwilliger Kodex, endgültig seit 10. Juni 2026: maschinenlesbare Markierung durch Anbieter, Kennzeichnung bestimmter Inhalte durch Betreiber; Art. 50 gilt seit 2. August 2026 |
-| [Human Authored](https://authorsguild.org/human-authored/faq/) | Authors Guild | D | Selbstzertifizierung per Vertrag für in den USA erschienene Bücher, mit öffentlicher Datenbank; Rechtschreibhilfen zulässig, maschinell erzeugter Text höchstens in geringstem Umfang |
-| [Von Menschen · geschrieben · gestaltet · geprüft](https://avj-online.de/themen/von-menschen/) | Kinder- und Jugendbuchverlage der avj | D | Selbstverpflichtung der Verlage: der kreative Kern eines Buchs stammt von Menschen; ausdrücklich kein generelles Urteil über KI |
-| [Organic Literature](https://www.connexionfrance.com/news/human-made-book-labels-gain-ground-as-publisher-drops-novelist-at-centre-of-french-ai-row/823665) | Books By People | D | Zertifizierungsmarke für Bücher, deren Text von der Autorin stammt; Rechtschreib- und Grammatikprüfung zulässig; Verlage zahlen einen Beitrag |
-| [Création humaine](https://www.livreshebdo.fr/article/detection-de-lia-les-nouveaux-editeurs-deploient-le-label-creation-humaine-de-librinova) | Librinova | A, D | Label nach einer Analyse durch Detektor-Software und einem Gespräch mit einer Prüferin |
-| [Not By AI](https://notbyai.fyi/) | Not By AI | D | Abzeichen für Inhalte, die nach eigener Schätzung zu mindestens 90 Prozent von Menschen stammen |
-| [Content Origin Badges](https://www.newsfilecorp.com/release/229662) | Credtent | E | Drei Abzeichen zur Offenlegung, ob und wie KI an einem Inhalt beteiligt war |
-| [KI-Angabe bei KDP](https://kdp.amazon.com/en_US/help/topic/G200672390) | Amazon Kindle Direct Publishing | E, G | Pflichtangabe bei Veröffentlichung, wenn Text, Bilder oder Übersetzung von einem KI-Werkzeug erzeugt wurden; KI-unterstützte Inhalte sind nicht anzugeben |
-| [AI Assessment Scale](https://arxiv.org/abs/2412.09029) | Perkins, Roe, Furze u. a. | E | Fünf Stufen der KI-Nutzung in Prüfungen, seit der Überarbeitung in neutralen Farben |
-| [AI Usage Cards](https://arxiv.org/abs/2303.03886) | Wahle, Ruas, Mohammad, Meuschke, Gipp | F | Formular für die Angabe von KI-Nutzung in wissenschaftlicher Arbeit |
-| [STM-Klassifikation](https://niso.org/niso-io/2025/09/stm-releases-recommendations-classification-ai-use-manuscript-preparation) | STM, Verband wissenschaftlicher Verlage | F | Neun Kategorien der KI-Nutzung bei der Manuskripterstellung, als Grundlage für Verlagsrichtlinien |
-| [GAIDeT](https://www.leidenmadtrics.nl/articles/gaidet-a-practical-taxonomy-for-declaring-ai-use-in-research-and-publishing) | Nazarovets, Tsybuliak, Teixeira da Silva, Suchikova | F | Angabe, welche Forschungsaufgaben in welcher Phase an generative KI delegiert wurden; Verantwortung beim Menschen |
-| [AID Framework](https://subjectguides.uwaterloo.ca/AIDFramework) | Kari D. Weaver, University of Waterloo | F | Erklärung am Ende eines Aufsatzes, gegliedert nach Arbeitsphasen; CC BY-SA 4.0 |
-| [AI Attribution Toolkit](https://www.research.ibm.com/blog/AI-attribution-toolkit) | IBM Research | F | Fragebogen, aus dem eine Angabe entsteht: Anteil der Arbeit, Beitrag der KI, wer das Ergebnis geprüft hat |
-| [Facettierte Attribution](https://arxiv.org/abs/2604.25346) | Geraldo Xexéo, Universidade Federal do Rio de Janeiro | F | Sechs Facetten von der Bearbeitung bis zur Nachvollziehbarkeit, anwendbar bis zum Absatz |
-| *Pharmako-AI* | K Allado-McDowell mit GPT-3, 2020 | H | Ein Buch, das das Modell als Mitwirkenden führt |
+Mehrere Bauformen aus dem Feld hat das Projekt selbst gebaut oder beschlossen und wieder aufgegeben.
 
-Einen Überblick über das ganze Feld gibt Rachel So, [*A Survey on Artificial Intelligence Attribution Badges*](https://project-rachel.4open.science/Rachel.So.A.Survey.on.Artificial.Intelligence.Attribution.Badges.pdf).
+| 2026 | Entscheidung | Grund |
+|---|---|---|
+| 21. Mai | Eine **Zertifizierungsmarke** nach dem Vorbild von Gütesiegeln wird verworfen, ebenso ein fertig gebautes und getestetes **Register mit Prüfinstanz**: Anmeldeformular, Bestätigungsmail, Redaktionsfreigabe, laufende Nummern, Verschlüsselung, Jahresprüfung. An ihre Stelle tritt ein offener Standard mit Verzeichnis. | Ein Standard, der um Erlaubnis bitten lässt, wird nicht angenommen. Ein Medium braucht keine Aufsichtsbehörde, es braucht eine Sprache. |
+| 24. Mai | Maschinenschrift wird **Registerführer, nicht Prüfstelle**: jede Angabe ist eine Aussage der Autorin. | Das Projekt kann die Werte nicht prüfen, also bescheinigt es sie nicht. |
+| 24. Mai | Ein **Genese-Register** wird beschlossen und am selben Tag zurückgenommen: Anmeldetag, Prüfsummen von Zwischenständen, ein wöchentlicher Zeitanker. | Es bleibt zu überlisten, es zwingt Autorinnen in Bestätigungsmails, und jede solche Mail ist eine Vorlage für Phishing. |
+| 3. Juni | Ein **Verlagsname** unter dem Namen des Standards wird aufgegeben. | Wer den Standard betreibt, gibt unter diesem Namen keine Bücher heraus, die nach ihm deklarieren. |
+| Mai bis August | Die **Achsen** werden dreimal umbenannt, bis ihre Namen sagen, was die Zahlen messen: Wortlaut, Geist, Beleg. Die Werte bleiben dabei, wie sie waren. | Ein Name, der etwas anderes verspricht, als die Zahl misst, wird ersetzt. |
+| 2. August | Das erste Buch wird **neu bewertet**, von W 4 · G 2 auf W 5 · G 3. | Die fertige Fassung war stärker vermittelt als die erste Erklärung. Die Deklaration folgt dem Werk. |
+| 11. August | **Keine Stichproben.** | Eine Stichprobe ohne Prüfmittel wäre eine leere Geste oder Detektion durch die Hintertür. |
+| 24. August | Die Achse **Beleg** fragt seitdem, ob die Faktenaussagen gegen Quellen außerhalb des Modells geprüft wurden. | Die Faktenschicht ist die, die ein Modell am sichersten füllt und am wenigsten verlässlich. |
+| 29. September | Das Modell bekommt **keine Mitwirkendenzeile**, auf keiner Plattform. | Eine Verfasserzeile sagt, wer für das Werk einsteht, und ein Modell kann nicht einstehen. |
+
+Das Naheliegende ist in diesem Feld die Infrastruktur: ein Register, eine Prüfung, eine Leiter mit drei Stufen. Maschinenschrift hat das Naheliegende mehrfach gebaut. Was es von den Nachbarn unterscheidet, steht dort, wo dagegen entschieden wurde, und jede dieser Entscheidungen ist datiert.
+
+**Diese Seite deklariert sich selbst**, als einzige der Kernseiten: **W 5 · G 3 · belegt**. Die Sätze kamen überwiegend aus dem Substrat. Ein erheblicher Teil der Ordnung kam als Vorschlag von dort; welcher Vorschlag galt, welcher Name fiel und was die Seite nicht behauptet, entschied der Gründer. Jede Aussage über einen Nachbarn ist an dessen eigenen Veröffentlichungen geprüft, Stand 28. Oktober 2026. Das Siegel steht am Ende der Seite.
 
 ## Der Einwand
 
