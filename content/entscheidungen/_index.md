@@ -13,18 +13,18 @@ deklaration:
 
 Anyone who wants to say how far a machine took part in a text finds a crowded field. Some twenty approaches stand side by side, several of them older than Maschinenschrift, most of them built for a field other than literature and well built for it. This page orders them by the question each one answers, gives the reason for every omission, takes one book through all the forms, and tells which of them Maschinenschrift tried itself and gave up.
 
-1. [**The problem**](#the-problem)\
-   Whoever says openly how much came from the model risks more than whoever stays silent.
-2. [**The answers in the field**](#the-answers-in-the-field)\
-   Some twenty approaches answer eight questions. Maschinenschrift answers a ninth.
-3. [**The omissions**](#the-omissions)\
-   Thirteen times, what is right elsewhere is left out here, each time for a reason.
-4. [**The test case**](#the-test-case)\
-   The same book taken through every form: most stay silent, flatten it or tell half.
-5. [**What was built and set aside**](#what-was-built-and-set-aside)\
-   The obvious was built more than once and given up again, and every decision against it is dated.
-6. [**The objection**](#the-objection)\
-   A notation normalises what it notates. The alternative is not less mediation but invisible mediation.
+1. [**1. The problem**](#the-problem)\
+   *Whoever says openly how much came from the model risks more than whoever stays silent.*
+2. [**2. The answers in the field**](#the-answers-in-the-field)\
+   *Some twenty approaches answer eight questions. Maschinenschrift answers a ninth.*
+3. [**3. The omissions**](#the-omissions)\
+   *Thirteen times, what is right elsewhere is left out here, each time for a reason.*
+4. [**4. The test case**](#the-test-case)\
+   *The same book taken through every form: most stay silent, flatten it or tell half.*
+5. [**5. What was built and set aside**](#what-was-built-and-set-aside)\
+   *The obvious was built more than once and given up again, and every decision against it is dated.*
+6. [**6. The objection**](#the-objection)\
+   *A notation normalises what it notates. The alternative is not less mediation but invisible mediation.*
 
 ## The problem
 
@@ -132,12 +132,12 @@ Maschinenschrift shares more with its neighbours than it leaves out: self-declar
 
 | Form | What it can say about this book |
 |---|---|
-| Detector (A) | It reads the surface, and the surface is largely machine-made. About the originating idea, the characters and the decisions it says nothing. |
-| Process recording (B) | Nothing. The writing was not recorded, and it cannot be recorded afterwards. |
-| Labels (D) | No statement. The labels admit machine-generated text in small amounts at most; the book has to stay silent. |
-| KDP's platform question (E, G) | *AI-generated*: text created by a tool counts as generated there, even after substantial editing. It is the same answer as for a text in which no one decided anything, and it goes to the platform. |
-| FAIA's three flags (C, E) | Each flag fits one half. *AI-Assisted* fits the structure the author answers for, *AI-Generated* the sentences that came largely from the model. Whichever flag is chosen leaves the other half unsaid. |
-| Process taxonomies (F) | Expressible, as a list of work steps. Whose sentences and whose thoughts are on the page, the reader has to infer. |
+| Detector (A) | It reads the surface, and the surface is **largely machine-made**. About the originating idea, the characters and the decisions **it says nothing**. |
+| Process recording (B) | **Nothing.** The writing was not recorded, and it cannot be recorded afterwards. |
+| Labels (D) | **No statement.** The labels admit machine-generated text in small amounts at most; **the book has to stay silent**. |
+| KDP's platform question (E, G) | ***AI-generated***: text created by a tool counts as generated there, even after substantial editing. It is **the same answer as for a text in which no one decided anything**, and it goes to the platform. |
+| FAIA's three flags (C, E) | **Each flag fits only one half.** *AI-Assisted* fits the structure the author answers for, *AI-Generated* the sentences that came largely from the model. Whichever flag is chosen **leaves the other half unsaid**. |
+| Process taxonomies (F) | **Expressible, as a list of work steps.** Whose sentences and whose thoughts are on the page, **the reader has to infer**. |
 | Maschinenschrift | **W 5 · G 3 · ausstehend**, with eight sentences of narration in the author's own words, in the [catalog](/works/la-scuola-dei-silenzi/). |
 
 ## What was built and set aside

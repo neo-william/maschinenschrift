@@ -12,18 +12,18 @@ deklaration:
 
 Wer über die maschinelle Beteiligung an einem Text Auskunft geben will, findet ein volles Feld vor. Rund zwanzig Ansätze stehen nebeneinander, mehrere davon älter als Maschinenschrift, die meisten für ein anderes Feld gebaut als die Literatur und dort gut gebaut. Diese Seite ordnet sie nach der Frage, die sie beantworten, begründet jeden Verzicht, führt ein Buch durch alle Bauformen und erzählt, welche davon Maschinenschrift selbst erprobt und wieder aufgegeben hat.
 
-1. [**Das Problem**](#das-problem)\
-   Wer offen sagt, wie viel aus dem Modell kommt, riskiert mehr als wer schweigt.
-2. [**Die Antworten im Feld**](#die-antworten-im-feld)\
-   Rund zwanzig Ansätze beantworten acht Fragen. Maschinenschrift beantwortet eine neunte.
-3. [**Die Verzichte**](#die-verzichte)\
-   Dreizehnmal fehlt hier, was anderswo richtig ist, jedes Mal mit Grund.
-4. [**Der Probefall**](#der-probefall)\
-   Dasselbe Buch durch alle Bauformen geführt: die meisten schweigen, ebnen ein oder sagen die Hälfte.
-5. [**Was gebaut und verworfen wurde**](#was-gebaut-und-verworfen-wurde)\
-   Das Naheliegende wurde mehrfach gebaut und wieder aufgegeben, und jede Entscheidung dagegen ist datiert.
-6. [**Der Einwand**](#der-einwand)\
-   Eine Notation normalisiert, was sie notiert. Die Alternative ist nicht weniger Vermittlung, sondern unsichtbare.
+1. [**1. Das Problem**](#das-problem)\
+   *Wer offen sagt, wie viel aus dem Modell kommt, riskiert mehr als wer schweigt.*
+2. [**2. Die Antworten im Feld**](#die-antworten-im-feld)\
+   *Rund zwanzig Ansätze beantworten acht Fragen. Maschinenschrift beantwortet eine neunte.*
+3. [**3. Die Verzichte**](#die-verzichte)\
+   *Dreizehnmal fehlt hier, was anderswo richtig ist, jedes Mal mit Grund.*
+4. [**4. Der Probefall**](#der-probefall)\
+   *Dasselbe Buch durch alle Bauformen geführt: die meisten schweigen, ebnen ein oder sagen die Hälfte.*
+5. [**5. Was gebaut und verworfen wurde**](#was-gebaut-und-verworfen-wurde)\
+   *Das Naheliegende wurde mehrfach gebaut und wieder aufgegeben, und jede Entscheidung dagegen ist datiert.*
+6. [**6. Der Einwand**](#der-einwand)\
+   *Eine Notation normalisiert, was sie notiert. Die Alternative ist nicht weniger Vermittlung, sondern unsichtbare.*
 
 ## Das Problem
 
@@ -131,12 +131,12 @@ Mit den Nachbarn teilt Maschinenschrift mehr, als es weglässt: die Selbstauskun
 
 | Bauform | Was sie über dieses Buch sagen kann |
 |---|---|
-| Detektor (A) | Er liest die Oberfläche, und die ist weitgehend maschinell. Über Ausgangsgedanke, Figuren und Entscheidungen sagt er nichts. |
-| Prozessaufzeichnung (B) | Nichts. Das Schreiben wurde nicht aufgezeichnet, und nachträglich lässt es sich nicht aufzeichnen. |
-| Etiketten (D) | Keine Angabe. Die Etiketten lassen maschinell erzeugten Text höchstens in geringem Umfang zu; das Buch muss schweigen. |
-| Plattformabfrage von KDP (E, G) | *KI-generiert*: Text, den ein Werkzeug erzeugt hat, gilt dort als generiert, auch nach umfangreicher Bearbeitung. Es ist dieselbe Angabe wie für einen Text, an dem niemand etwas entschieden hat, und sie geht an die Plattform. |
-| Drei Flaggen von FAIA (C, E) | Jede Flagge trifft eine Hälfte. *KI-unterstützt* passt zum Bau, den der Autor verantwortet, *KI-generiert* zu den Sätzen, die überwiegend aus dem Modell kommen. Wer eine Flagge wählt, verschweigt die andere Hälfte. |
-| Prozess-Taxonomien (F) | Ausdrückbar, als Liste von Arbeitsschritten. Wessen Sätze und wessen Gedanken vorliegen, muss die Leserin daraus erschließen. |
+| Detektor (A) | Er liest die Oberfläche, und die ist **weitgehend maschinell**. Über Ausgangsgedanke, Figuren und Entscheidungen **sagt er nichts**. |
+| Prozessaufzeichnung (B) | **Nichts.** Das Schreiben wurde nicht aufgezeichnet, und nachträglich lässt es sich nicht aufzeichnen. |
+| Etiketten (D) | **Keine Angabe.** Die Etiketten lassen maschinell erzeugten Text höchstens in geringem Umfang zu; **das Buch muss schweigen**. |
+| Plattformabfrage von KDP (E, G) | ***KI-generiert***: Text, den ein Werkzeug erzeugt hat, gilt dort als generiert, auch nach umfangreicher Bearbeitung. Es ist **dieselbe Angabe wie für einen Text, an dem niemand etwas entschieden hat**, und sie geht an die Plattform. |
+| Drei Flaggen von FAIA (C, E) | **Jede Flagge trifft nur eine Hälfte.** *KI-unterstützt* passt zum Bau, den der Autor verantwortet, *KI-generiert* zu den Sätzen, die überwiegend aus dem Modell kommen. Wer eine Flagge wählt, **verschweigt die andere Hälfte**. |
+| Prozess-Taxonomien (F) | **Ausdrückbar, als Liste von Arbeitsschritten.** Wessen Sätze und wessen Gedanken vorliegen, **muss die Leserin daraus erschließen**. |
 | Maschinenschrift | **W 5 · G 3 · ausstehend**, dazu acht Sätze Narration in den Worten des Autors, im [Katalog](/de/werke/la-scuola-dei-silenzi/). |
 
 ## Was gebaut und verworfen wurde
