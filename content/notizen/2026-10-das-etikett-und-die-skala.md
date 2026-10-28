@@ -68,7 +68,7 @@ That last provision is precise. It separates two things a book can draw from the
 
 ## The zero point
 
-This project's seal records origin on two scales from zero to five: *Wortlaut* — how much of the linguistic surface came from the substrate; *Geist* — how much of the ideas, the arguments, the construction. Then *Beleg*: whether the factual claims were checked against sources outside the substrate. **On this scale, *Human Authored* is not a special case but a value: W 0 · G 0.** A book that rightly carries the label can declare that value and lose nothing. The reverse does not hold. <u>The label prescribes the origin. The scale prescribes only the account.</u>
+The seal of this project, Maschinenschrift, records origin on two scales from zero to five: *Wortlaut* — how much of the linguistic surface came from the substrate; *Geist* — how much of the ideas, the arguments, the construction. Then *Beleg*: whether the factual claims were checked against sources outside the substrate. **On this scale, *Human Authored* is not a special case but a value: W 0 · G 0.** A book that rightly carries the label can declare that value and lose nothing. The reverse does not hold. <u>The label prescribes the origin. The scale prescribes only the account.</u>
 
 This project has a norm too: that what is the case be said. How a book ought to be made, it does not prescribe. The label does — and so the author whose outline a substrate smoothed, or whose sentences it helped phrase, is left without a place. She is not condemned. She is simply not described. She can stay silent or round down, and silence becomes suspect: whether a book without the mark will come to count as machine-made is a question Jane Friedman passed on to the Guild from her readers; the Guild's reply does not take it up. **Whoever has something to declare finds no place for it on the label.** Sebastian Guggolz, head of the German Publishers and Booksellers Association, put it to AFP in the week of the fair: *“There's no simple ‘with AI’ or ‘without AI.’”*
 
@@ -76,7 +76,7 @@ This project has a norm too: that what is the case be said. How a book ought to 
 
 The Guild itself treats its mark as an interim measure. Labelling AI-generated content, its CEO Mary Rasenberger writes, would be *“of course preferable”*; the Guild keeps fighting for it.
 
-And whoever shares the labels' stance needs the scale most. Only someone who is told can choose; only someone who is told what there is to avoid can avoid it. The share of manuscripts that touch no substrate anywhere will not grow. A label that knows only yes loses not rigour but reach. A scale has a value for every book to come — the one written entirely by hand included.
+And whoever shares the labels' stance needs Maschinenschrift's scale most. Only someone who is told can choose; only someone who is told what there is to avoid can avoid it. The share of manuscripts that touch no substrate anywhere will not grow. A label that knows only yes loses not rigour but reach. A scale has a value for every book to come — the one written entirely by hand included.
 
 The authors who wanted the Guild's mark wanted to stand behind their work. The label gives them a form in which to stand for a stance; only those who meet it can vouch on that basis. On the scale, anyone can. **The label says what someone stands for. The scale says what someone stands behind.**
 
