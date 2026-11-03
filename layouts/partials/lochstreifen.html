@@ -1,0 +1,44 @@
+{{- /*
+  Lochstreifen (ADR 0381, Nachtrag 3) — Band unter dem Kopf.
+
+  Locht den Seitentitel im Fernschreibcode ITA2 (Baudot-Murray): fuenf
+  Datenloecher je Zeichen, Transportloch zwischen Spur 2 und 3. Die
+  Startseite locht "Maschinenschrift", jede andere Seite ihren eigenen
+  Titel; der Streifen laeuft wiederholt ueber die Breite und wird am Rand
+  abgeschnitten. Unter jeder Spalte steht der gelochte Buchstabe.
+
+  Umlaute werden wie am Fernschreiber umschrieben (Ae, Oe, Ue, ss); alles
+  ausser A–Z wird Zwischenraum (ITA2 kennt Ziffern nur nach Umschaltung).
+  Rein schmueckend fuer Screenreader (aria-hidden) — der Titel steht als h1.
+*/ -}}
+{{- $titel := cond .IsHome site.Title .Title -}}
+{{- $t := upper $titel -}}
+{{- range slice (slice "Ä" "AE") (slice "Ö" "OE") (slice "Ü" "UE") (slice "ß" "SS") (slice "ẞ" "SS") (slice "É" "E") (slice "È" "E") (slice "À" "A") (slice "Ç" "C") -}}
+  {{- $t = replace $t (index . 0) (index . 1) -}}
+{{- end -}}
+{{- $t = trim (replaceRE `[^A-Z]+` " " $t) " " -}}
+{{- if not $t }}{{ $t = "MASCHINENSCHRIFT" }}{{ end -}}
+{{- $zeichen := first 44 (split (strings.Repeat 6 (printf "%s " $t)) "") -}}
+{{- $ita := dict
+    "A" "11000" "B" "10011" "C" "01110" "D" "10010" "E" "10000" "F" "10110"
+    "G" "01011" "H" "00101" "I" "01100" "J" "11010" "K" "11110" "L" "01001"
+    "M" "00111" "N" "00110" "O" "00011" "P" "01101" "Q" "11101" "R" "01010"
+    "S" "10100" "T" "00001" "U" "11100" "V" "01111" "W" "11001" "X" "10111"
+    "Y" "10101" "Z" "10001" " " "00100" -}}
+{{- $spuren := slice 21 34 54 67 80 -}}
+<div class="lochband" aria-hidden="true">
+  <svg viewBox="0 0 1100 118" preserveAspectRatio="xMinYMid slice" focusable="false">
+    <rect class="loch-streifen" x="0" y="8" width="1100" height="84"/>
+    {{- range $i, $c := $zeichen }}
+      {{- $x := add 20 (mul $i 26) }}
+      {{- with index $ita $c }}
+        {{- $code := . }}
+        {{- range $j, $y := $spuren }}
+          {{- if eq (substr $code $j 1) "1" }}<circle class="loch" cx="{{ $x }}" cy="{{ $y }}" r="5"/>{{ end }}
+        {{- end }}
+      {{- end }}
+      <circle class="loch" cx="{{ $x }}" cy="44" r="2.1"/>
+      {{- if ne $c " " }}<text class="loch-zeichen" x="{{ $x }}" y="110" text-anchor="middle">{{ $c }}</text>{{ end }}
+    {{- end }}
+  </svg>
+</div>
