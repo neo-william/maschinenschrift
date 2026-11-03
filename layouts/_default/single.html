@@ -1,6 +1,11 @@
 {{ define "main" }}
-<article class="single">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+<article class="blatt">
+  <section class="blk blk-kopf">
+    {{ partial "kopflabel.html" . }}
+    <div class="blk-body">
+      <h1>{{ .Title }}</h1>
+      {{ partial "bloecke.html" (dict "html" .Content) | safeHTML }}
+    </div>
+  </section>
 </article>
 {{ end }}

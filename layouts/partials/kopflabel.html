@@ -1,0 +1,22 @@
+{{- /*
+  Randspalte des Kopfblocks (ADR 0381): Rubrik der Seite statt Brotkrumen.
+  Unterseiten nennen ihre Elternseite (Notizen, Katalog, Spezifikationen),
+  Notizen dazu Datum und Rubrik, Katalogeintraege ihre Nummer. Seiten der
+  obersten Ebene lassen die Spalte leer — der Kopf nennt sie schon.
+*/ -}}
+{{- $p := . -}}
+{{- $eltern := false -}}
+{{- with $p.Parent }}{{ if not .IsHome }}{{ $eltern = . }}{{ end }}{{ end -}}
+{{- if $eltern }}
+<div class="blk-label">
+  <a class="blk-name" href="{{ $eltern.RelPermalink }}">{{ $eltern.Title }}</a>
+  {{- if and $p.IsPage (eq $p.Section "notizen") }}
+  <p class="blk-meta"><time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006-01-02" }}</time>{{ with $p.Params.bucket }}<br>{{ i18n (printf "bucket-%s" .) | default . }}{{ end }}</p>
+  {{- end }}
+  {{- with $p.Params.katalognummer }}
+  <p class="blk-meta blk-mono">{{ . }}</p>
+  {{- end }}
+</div>
+{{- else }}
+<div class="blk-label blk-leer" aria-hidden="true"></div>
+{{- end }}

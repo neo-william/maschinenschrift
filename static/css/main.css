@@ -1,4 +1,9 @@
-/* Maschinenschrift - minimale Basisformatierung. */
+/* Maschinenschrift — Normblatt (ADR 0381).
+   Die Seite liegt als Bogen auf dem Tisch. Kopf = Schriftfeld, darunter die
+   Reiterzeile. Inhalt in Bloecken: links die Randueberschrift mit gruener
+   Marke und §-Nummer, rechts der Text; die Bloecke wechseln zwischen hellem
+   und dunklerem Papier. Gruen orientiert und fuehrt (Marken, Hauptlinks),
+   es ist nie Flaeche. */
 
 /* EB Garamond (SIL OFL 1.1).
    Lizenz: static/fonts/eb-garamond/OFL.txt
@@ -35,29 +40,36 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-/* Farb-Token. Helle Palette = Papier und Tinte; die dunkle Palette unten
-   invertiert sie warm (kein reines Schwarz, kein reines Weiss). */
+/* Farb-Token. Tisch, Bogen, Band = drei Papiertoene; Tinte; ein Gruen.
+   Die dunkle Palette unten invertiert warm (kein reines Schwarz/Weiss). */
 :root {
   color-scheme: light dark;
+  --color-desk: #e8e7e1;      /* Tisch um den Bogen; = theme-color, theme.js */
+  --color-page: #fdfdfb;      /* Bogen, helle Bloecke */
+  --color-band: #f4f3ed;      /* dunklere Bloecke */
+  --color-edge: #d3d2cb;      /* Bogenkante */
   --color-ink: #1a1a1a;
   --color-ink-soft: #3c3c38;
-  --color-page: #fdfdfb;
-  --color-accent: #1e8e4a;
+  --color-muted: #55544f;
+  --color-faint: #6b6a64;
+  --color-accent: #1d6b43;    /* vertieftes Gruen: Marken, Links */
   --color-accent-hover: var(--color-ink);
-  --color-mark: #f8f251; /* Textmarker-Zitronengelb, nur für ::selection */
+  --color-mark: #f8f251;      /* Textmarker-Zitronengelb, nur für ::selection */
   --color-mark-ink: #1a1a1a;
-  --color-muted: #555;
-  --color-faint: #888;
-  --color-rule: #aaa;      /* 3px-Balken an Kästen */
-  --color-line: #ccc;      /* Trenner, Hover-Rahmen */
-  --color-hairline: #ddd;
-  --color-hairline-warm: #e0e0d8;
-  --color-panel: #f8f8f3;
-  --color-panel-2: #f5f5f0;
-  --color-panel-tint: #fafaf6;
+  --color-rule: #9e9d96;      /* Bezugslinien */
+  --color-line: #c9c8c1;      /* Kartenrahmen, Trenner */
+  --color-hairline: #dcdbd4;
+  --color-hairline-warm: #e3e2db;
+  --color-panel: #f4f3ed;
+  --color-panel-2: #efeee8;
+  --color-panel-tint: #f8f7f2;
   --color-raised: #fff;
   --color-glyph-backdrop: transparent;
   --color-glyph-frame: transparent;
+
+  --rand: 2rem;               /* Innenrand des Bogens */
+  --spalte: 190px;            /* Randspalte */
+  --luft: 2.5rem;             /* Abstand Randspalte → Text */
 }
 
 /* Schema-Override durch den Header-Toggle (ADR 0057): data-theme auf <html>
@@ -71,48 +83,54 @@
    muessen identisch bleiben. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
+    --color-desk: #0e0e0d;
+    --color-page: #151513;
+    --color-band: #1c1b18;
+    --color-edge: #2a2924;
     --color-ink: #e7e5de;
     --color-ink-soft: #c9c7bf;
-    --color-page: #151513;
-    --color-accent: #2ea25d;
+    --color-muted: #a9a59c;
+    --color-faint: #8f8b83;
+    --color-accent: #5bb383;
     --color-mark: #4da6ff; /* Textmarker-Azurblau im Dark Mode, aufgehellt (ADR 0058) */
     --color-mark-ink: #0e0e0c;
-    --color-muted: #a39f96;
-    --color-faint: #807d75;
-    --color-rule: #56544e;
+    --color-rule: #5d5b55;
     --color-line: #4a4943;
     --color-hairline: #383732;
-    --color-hairline-warm: #3a3830;
-    --color-panel: #1e1d1a;
+    --color-hairline-warm: #33322d;
+    --color-panel: #1c1b18;
     --color-panel-2: #24231f;
-    --color-panel-tint: #1c1b18;
+    --color-panel-tint: #1a1917;
     --color-raised: #2a2924;
     --color-glyph-backdrop: #fdfdfb;
     --color-glyph-frame: var(--color-line);
   }
 }
 :root[data-theme="dark"] {
+  --color-desk: #0e0e0d;
+  --color-page: #151513;
+  --color-band: #1c1b18;
+  --color-edge: #2a2924;
   --color-ink: #e7e5de;
   --color-ink-soft: #c9c7bf;
-  --color-page: #151513;
-  --color-accent: #2ea25d;
+  --color-muted: #a9a59c;
+  --color-faint: #8f8b83;
+  --color-accent: #5bb383;
   --color-mark: #4da6ff; /* Textmarker-Azurblau im Dark Mode, aufgehellt (ADR 0058) */
   --color-mark-ink: #0e0e0c;
-  --color-muted: #a39f96;
-  --color-faint: #807d75;
-  --color-rule: #56544e;
+  --color-rule: #5d5b55;
   --color-line: #4a4943;
   --color-hairline: #383732;
-  --color-hairline-warm: #3a3830;
-  --color-panel: #1e1d1a;
+  --color-hairline-warm: #33322d;
+  --color-panel: #1c1b18;
   --color-panel-2: #24231f;
-  --color-panel-tint: #1c1b18;
+  --color-panel-tint: #1a1917;
   --color-raised: #2a2924;
   --color-glyph-backdrop: #fdfdfb;
   --color-glyph-frame: var(--color-line);
 }
 
-/* Markieren wie mit dem Textmarker: die Geste des Lesers auf dem Dokument.
+/* Markieren wie mit dem Textmarker: die Geste der Leserin auf dem Dokument.
    Der Marker deckt, die Schrift bleibt dunkel — auch auf dunklem Grund. */
 ::selection {
   background: var(--color-mark);
@@ -122,21 +140,175 @@
 html {
   font-family: "EB Garamond", "Sabon", Garamond, "Adobe Garamond Pro", Georgia, "Times New Roman", serif;
   font-size: 19px;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--color-ink);
-  background: var(--color-page);
+  background: var(--color-desk);
   font-feature-settings: "kern", "liga", "onum";
   text-rendering: optimizeLegibility;
 }
+body { margin: 0; background: var(--color-desk); }
 
-/* Auszeichnung im Fließtext: Fett nutzt die echte Garamond-Semibold (600,
-   Browser-Default 700 würde synthetisch verbreitern); Unterstreichung in
-   Tinte mit Abstand — klar getrennt vom grünen Link-Unterstrich. */
-main strong { font-weight: 600; }
-main u {
-  text-decoration-thickness: 0.055em;
-  text-underline-offset: 0.16em;
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
+
+/* ---------- Bogen ---------- */
+.bogen {
+  max-width: 1100px;
+  margin: 2.5rem auto 3.5rem;
+  background: var(--color-page);
+  border: 1px solid var(--color-edge);
+  box-shadow: 0 1px 2px rgba(26, 26, 26, 0.05);
+}
+
+/* ---------- Kopf: Schriftfeld + Reiterzeile ---------- */
+.schriftfeld {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--color-hairline);
+}
+.sf-zelle {
+  min-width: 0;
+  padding: 1rem var(--rand);
+  border-right: 1px solid var(--color-hairline);
+}
+.sf-marke {
+  flex: 1 1 300px;
+  display: flex; align-items: center; gap: 1rem;
+  padding-top: 1.25rem; padding-bottom: 1.25rem;
+  color: var(--color-ink); text-decoration: none;
+}
+.sf-marke svg.site-logo { width: 60px; height: auto; display: block; flex: none; }
+.sf-name { font-weight: 600; font-size: 1.05rem; letter-spacing: 0.17em; text-transform: uppercase; }
+.sf-gegenstand { flex: 2 1 320px; }
+.sf-fassung { flex: 0 1 210px; border-right: 0; }
+.sf-label {
+  margin: 0;
+  font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--color-faint);
+}
+.sf-wert { margin: 0.25rem 0 0; font-size: 0.9rem; line-height: 1.4; text-wrap: balance; }
+.sf-wert a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-line); }
+.sf-wert a:hover { color: var(--color-accent); border-bottom-color: currentColor; }
+
+.nav-zeile {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.5rem 1.5rem;
+  padding: 0.75rem var(--rand);
+  border-bottom: 1px solid var(--color-ink);
+}
+.site-nav {
+  display: flex; flex-wrap: wrap; gap: 0.35rem 1.5rem;
+  font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.site-nav a {
+  color: var(--color-muted); text-decoration: none;
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+  transition: color 100ms ease, border-color 100ms ease;
+}
+.site-nav a:hover { color: var(--color-ink); }
+.site-nav a.aktiv { color: var(--color-ink); border-bottom-color: var(--color-accent); }
+.nav-rechts { margin-left: auto; display: flex; align-items: center; gap: 1rem; }
+.lang-switch {
+  display: flex; align-items: center;
+  font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.lang-switch a { color: var(--color-faint); text-decoration: none; }
+.lang-switch a + a { margin-left: 0.6rem; padding-left: 0.6rem; border-left: 1px solid var(--color-line); }
+.lang-switch a:hover, .lang-switch a.current { color: var(--color-ink); }
+
+/* Schema-Toggle (ADR 0057): Kreis aus heller und dunkler Haelfte. Nur mit JS
+   sichtbar (hidden-Attribut faellt in theme.js), sonst gilt das System. */
+.theme-toggle {
+  border: 0; padding: 0; background: none; line-height: 0;
+  color: var(--color-faint); cursor: pointer;
+  transition: color 100ms ease;
+}
+.theme-toggle:hover { color: var(--color-ink); }
+.theme-toggle:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.theme-toggle svg { width: 17px; height: 17px; display: block; }
+
+/* ---------- Bloecke ---------- */
+.blatt { counter-reset: abschnitt; }
+.blk {
+  display: flex; flex-wrap: wrap;
+  gap: 0.75rem var(--luft);
+  padding: 4rem var(--rand) 4.25rem;
+  border-top: 1px solid var(--color-hairline);
+}
+.blatt > .blk:first-child { border-top: 0; }
+.blatt > .blk:nth-of-type(even) { background: var(--color-band); }
+
+.blk-label {
+  flex: 0 0 var(--spalte);
+  align-self: flex-start;
+  min-width: 0;
+  padding-top: 0.7rem;
+  border-top: 2px solid var(--color-accent);
+}
+.blk-label.blk-leer { border-top: 0; padding: 0; }
+.blk-label h2,
+.blk-name {
+  margin: 0;
+  font-weight: 600; font-size: 0.95rem; line-height: 1.3; letter-spacing: 0;
+  color: var(--color-ink);
+  text-align: left; hyphens: manual;
+  scroll-margin-top: 1rem;
+}
+main a.blk-name, main a.blk-name:visited {
+  display: block; color: var(--color-ink);
+  border-bottom: 0; padding-bottom: 0;
+}
+main a.blk-name:hover { color: var(--color-accent); }
+.blk-num {
+  display: block; margin-bottom: 0.25rem;
+  font-size: 0.74rem; letter-spacing: 0.06em;
+  color: var(--color-accent);
+  font-feature-settings: "lnum", "tnum";
+}
+.blk-sec { counter-increment: abschnitt; }
+.blk-sec .blk-num::before { content: "§\00a0" counter(abschnitt); }
+.blk-ohne-nr .blk-num { display: none; }
+.blk-meta {
+  margin: 0.4rem 0 0;
+  font-size: 0.74rem; line-height: 1.45; letter-spacing: 0.06em;
+  color: var(--color-faint);
+  font-feature-settings: "lnum", "tnum";
+}
+.blk-mono { font-family: ui-monospace, "Consolas", monospace; font-size: 0.82em; letter-spacing: 0.06em; }
+/* Feldnamen der Startseite: kurze Woerter, als Versalien gesperrt. */
+.blk-kurz .blk-label h2,
+.blk-kurz .blk-name { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
+
+.blk-body {
+  flex: 999 1 26rem;
+  min-width: 0;
+  max-width: 36em;
+  hyphens: auto; -webkit-hyphens: auto;
+  text-align: justify; text-justify: inter-word;
+}
+.blk-body > :first-child { margin-top: 0; }
+.blk-body > :last-child { margin-bottom: 0; }
+
+/* ---------- Text im Block ---------- */
+.blk-body p { margin: 0 0 0.85rem; }
+.blk-body p + p { text-indent: 1.4em; margin-top: 0; }
+.blk-body h1 {
+  margin: 0 0 1.6rem;
+  font-weight: 400; font-size: clamp(2rem, 4.2vw, 2.75rem); line-height: 1.1; letter-spacing: -0.005em;
+  text-align: left; hyphens: manual;
+}
+.blk-body h3 {
+  margin: 2rem 0 0.5rem;
+  font-weight: 600; font-size: 0.9rem; letter-spacing: 0.12em; text-transform: uppercase;
+  text-align: left; hyphens: manual;
+}
+.blk-body h4 { margin: 1.5rem 0 0.4rem; font-weight: 600; font-size: 1rem; text-align: left; }
+.blk-body h1 + p, .blk-body h3 + p, .blk-body h4 + p,
+.blk-body ul + p, .blk-body ol + p, .blk-body table + p, .blk-body blockquote + p { text-indent: 0; }
+.blk-body strong { font-weight: 600; }
+.blk-body u { text-decoration-thickness: 0.055em; text-underline-offset: 0.16em; }
 
 main a {
   color: var(--color-accent);
@@ -147,76 +319,29 @@ main a {
 }
 main a:hover { color: var(--color-accent-hover); }
 main a:visited { color: var(--color-accent); }
-body { margin: 0; }
 
-main {
-  max-width: 36em;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  text-align: justify;
-  text-justify: inter-word;
-}
+.blk-body ul, .blk-body ol { margin: 1.1rem 0; padding-left: 1.5em; text-align: left; hyphens: manual; }
+.blk-body ul { list-style: none; }
+.blk-body ul > li { position: relative; }
+.blk-body ul > li::before { content: "—"; position: absolute; left: -1.5em; color: var(--color-faint); }
+.blk-body ol > li::marker { color: var(--color-accent); font-feature-settings: "lnum"; }
+.blk-body li + li { margin-top: 0.4rem; }
+.blk-body li > p { margin: 0; text-indent: 0; }
 
-main p { margin: 0 0 0.85rem; }
-main p + p { text-indent: 1.4em; margin-top: 0; }
-main h1, main h2, main h3, main h4 { text-align: left; hyphens: manual; }
-main h1 {
-  width: fit-content;
-  margin: 0.5rem auto 2.5rem;
-  font-weight: 400; font-size: 1.35rem;
-  text-transform: uppercase; letter-spacing: 0.22em;
-  text-align: center;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--color-ink);
+.blk-body blockquote {
+  margin: 1.4rem 0; padding: 0 0 0 1.2em;
+  border-left: 2px solid var(--color-hairline);
+  color: var(--color-ink-soft);
 }
-main h1 + p { text-indent: 0; }
-main h2 {
-  margin-top: 2.75rem; margin-bottom: 1rem;
-  font-weight: 600; font-size: 1rem;
-  text-transform: uppercase; letter-spacing: 0.18em;
-  text-align: center;
+.blk-body blockquote p { text-indent: 0; }
+.blk-body code {
+  font-family: ui-monospace, "Consolas", monospace; font-size: 0.82em;
+  background: var(--color-panel-2); padding: 0.05em 0.3em;
 }
-main h2 + p, main h2 + ul, main h2 + ol { text-indent: 0; }
-main h3 {
-  margin-top: 2rem; margin-bottom: 0.5rem;
-  font-weight: 600; font-size: 0.9rem;
-  text-transform: uppercase; letter-spacing: 0.12em;
-}
-main ul, main ol { text-align: left; hyphens: manual; }
-main > article > ul,
-main > article > ol,
-main > article > .section-intro ul,
-main > article > .section-intro ol,
-main > article > section > ul,
-main > article > section > ol {
-  margin: 1.5rem 0;
-  padding: 1rem 1.25rem 1rem 2.5rem;
-  background: var(--color-panel);
-  border-left: 3px solid var(--color-rule);
-  list-style: none;
-}
-main > article > ul li + li,
-main > article > ol li + li,
-main > article > .section-intro ul li + li,
-main > article > .section-intro ol li + li,
-main > article > section > ul li + li,
-main > article > section > ol li + li { margin-top: 0.4rem; }
-
-main > article > ul > li,
-main > article > .section-intro ul > li,
-main > article > section > ul > li {
-  position: relative;
-}
-main > article > ul > li::before,
-main > article > .section-intro ul > li::before,
-main > article > section > ul > li::before {
-  content: "—";
-  position: absolute;
-  left: -1.5em;
-  color: var(--color-faint);
-}
+.blk-body pre { overflow-x: auto; background: var(--color-panel-2); padding: 0.9rem 1rem; font-size: 0.8rem; text-align: left; }
+.blk-body pre code { background: none; padding: 0; }
+.blk-body hr { border: 0; border-top: 1px solid var(--color-hairline); margin: 2rem 0; }
+.blk-body > hr:last-child { display: none; }
 
 /* Tabellen im Fliesstext (Foundation, Spec, Entscheidungen).
    Haarlinien, keine Flaechen, keine Farbe: eine Tabelle ordnet, sie wertet
@@ -230,6 +355,7 @@ main table {
   font-size: 0.86rem;
   line-height: 1.45;
   text-align: left;
+  hyphens: manual;
 }
 main th, main td {
   padding: 0.5rem 0.75rem 0.5rem 0;
@@ -243,10 +369,13 @@ main thead th {
 }
 @media (max-width: 540px) {
   main table { display: block; overflow-x: auto; }
+  main table.karte-felder { display: table; }
 }
 /* Register der Nachbarn (/entscheidungen/): eine Tabelle, je Bauform ein
    tbody. Der Gruppenkopf nennt Buchstabe, Bauform und ihre Frage; er hebt
-   sich durch Abstand und eine dunklere Linie ab, nicht durch Flaeche. */
+   sich durch Abstand und eine dunklere Linie ab, nicht durch Flaeche.
+   Die Tabelle darf breiter laufen als die Textspalte. */
+.entscheidungen .blk-body:has(table.nachbarn) { max-width: none; }
 main table.nachbarn tbody th {
   padding-top: 1.4rem;
   font-weight: 600;
@@ -263,135 +392,133 @@ main table.nachbarn td:first-child {
   color: var(--color-faint);
 }
 
-.sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+/* ---------- Haupt- und Nebenlinks ---------- */
+main a.cta, main a.cta:visited {
+  color: var(--color-accent);
+  border-bottom: 1.5px solid currentColor; padding-bottom: 2px;
 }
+main a.cta:hover { color: var(--color-ink); }
+main a.cta-leise, main a.cta-leise:visited {
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-line); padding-bottom: 2px;
+}
+main a.cta-leise:hover { border-bottom-color: var(--color-accent); }
+.cta-zeile { display: flex; flex-wrap: wrap; gap: 0.75rem 2rem; margin: 2rem 0 0; }
+.blk-body .cta-zeile, .blk-body .weiter { text-indent: 0; text-align: left; }
+.weiter { margin: 1.4rem 0 0; font-size: 0.9rem; }
 
-/* Header */
-.site-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: start;
-  gap: 2.5rem;
-  max-width: 38em; margin: 0 auto; padding: 2.25rem 1.5rem 1.25rem;
-  border-bottom: 1px solid var(--color-ink);
-}
-.site-brand {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: start;
-  gap: 1.25rem;
-  text-decoration: none; color: inherit;
-}
-.site-brand-mark { color: var(--color-ink); line-height: 0; padding-top: 0.15rem; }
-.site-brand-mark .site-logo { height: 3rem; width: auto; display: block; }
-.site-brand-text { display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
-.site-brand-title {
-  font-weight: 600; font-size: 1.25rem; letter-spacing: 0.14em;
-  text-transform: uppercase; line-height: 1.1;
-}
-.site-brand-subtitle {
-  font-style: italic; font-size: 0.85rem; color: var(--color-muted);
-  line-height: 1.4; text-wrap: balance;
-}
-.site-header-meta {
-  display: flex; flex-direction: column; align-items: flex-end; gap: 0.65rem;
-  padding-top: 0.25rem;
-}
-.site-nav {
-  display: flex; flex-direction: column; align-items: flex-end;
-  font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--color-muted); gap: 0.35rem;
-}
-.site-nav a { color: inherit; text-decoration: none; }
-.site-nav a:hover { color: var(--color-ink); }
-.lang-switch {
-  display: flex; gap: 0; font-size: 0.75rem; letter-spacing: 0.08em;
-  text-transform: uppercase; align-items: center;
-  margin-top: 0.4rem; padding-top: 0.6rem; border-top: 1px solid var(--color-hairline);
-  align-self: stretch; justify-content: flex-end;
-}
-.lang-switch a { color: var(--color-faint); text-decoration: none; padding: 0; }
-.lang-switch a + a { margin-left: 0.6rem; padding-left: 0.6rem; border-left: 1px solid var(--color-line); }
-.lang-switch a:hover { color: var(--color-ink); }
-.lang-switch a[aria-current="true"], .lang-switch a.current { color: var(--color-ink); }
-
-/* Schema-Toggle (ADR 0057): Kreis aus heller und dunkler Haelfte. Nur mit JS
-   sichtbar (hidden-Attribut faellt in theme.js), sonst gilt das System. */
-.theme-toggle {
-  border: 0; padding: 0; background: none; line-height: 0;
-  color: var(--color-faint); cursor: pointer;
-  transition: color 100ms ease;
-}
-.theme-toggle:hover { color: var(--color-ink); }
-.theme-toggle:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
-.theme-toggle svg { width: 17px; height: 17px; display: block; }
-
-/* Breadcrumb (über dem Footer) */
-.breadcrumb {
-  max-width: 38em; margin: 4rem auto 0; padding: 0 1.5rem;
-  font-size: 0.95rem;
-  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem;
-}
-.breadcrumb a {
-  color: var(--color-accent); text-decoration: none;
-  border-bottom: 1px solid currentColor; padding-bottom: 1px;
-  transition: color 100ms ease, border-color 100ms ease;
-}
-.breadcrumb a:hover { color: var(--color-ink); }
-.breadcrumb-sep { color: var(--color-line); }
-.breadcrumb-current { color: var(--color-ink); }
-
-/* Footer */
-.site-footer {
-  max-width: 38em; margin: 4rem auto 1.5rem; padding: 1rem 1.5rem;
-  border-top: 1px solid var(--color-hairline); font-size: 0.85rem; color: var(--color-muted);
-  text-align: left;
-}
-.breadcrumb + .site-footer { margin-top: 1.5rem; }
-.site-footer a { color: inherit; transition: color 100ms ease; }
-.site-footer a:hover { color: var(--color-ink); }
-.footer-nav a { margin-right: 1rem; }
-
-/* Hero / Section intros */
-.hero p { font-size: 1.05rem; }
-.hero-cta { margin-top: 1.5rem; font-size: 0.95rem; }
-.hero-cta a { color: var(--color-ink); text-decoration: none; border-bottom: 1px solid var(--color-faint); padding-bottom: 1px; }
-.hero-cta a:hover { border-bottom-color: var(--color-ink); }
-
-/* Today's pick (auf der Homepage in der Katalog-Sektion) */
-.todays-pick { margin: 0.5rem 0 1rem; font-size: 0.9rem; color: var(--color-muted); }
-.todays-pick-label { color: var(--color-faint); margin-right: 0.5rem; }
-.todays-pick a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--color-faint); }
-.todays-pick a:hover { color: var(--color-ink); border-bottom-color: var(--color-ink); }
-
-/* Drei Beispiel-Zustände (Homepage, zwischen Hero und Catalog) */
-.states {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem 0;
-  border-top: 1px solid var(--color-hairline-warm);
-  border-bottom: 1px solid var(--color-hairline-warm);
-}
-.states[hidden] { display: none; }
-.state { text-align: center; }
-.state svg.siegel-state { margin: 0 auto 0.75rem; display: block; }
-.state-caption {
-  font-size: 0.9rem;
-  color: var(--color-muted);
-  line-height: 1.4;
-  margin: 0;
+/* ---------- Startseite ---------- */
+.blk-body h1.zweck {
+  font-size: clamp(1.75rem, 3.9vw, 2.6rem); line-height: 1.14;
+  max-width: 17em; margin-bottom: 1.5rem;
   text-wrap: balance;
 }
-@media (max-width: 540px) {
-  .states {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
+.zweck-lead p {
+  font-size: 1.1rem; line-height: 1.55; color: var(--color-ink-soft);
+  text-align: left; hyphens: manual;
 }
+.blk-body .zweck-lead p + p { text-indent: 0; margin-top: 0.6rem; }
+
+/* Notation: das Siegel als technische Zeichnung, Bezugslinien zu den
+   Erlaeuterungen. Masse fest (Siegel 300 px), ab schmaler Spalte
+   untereinander ohne Linien. */
+.legende { position: relative; width: 684px; max-width: 100%; height: 320px; margin: 0; }
+.legende-siegel { position: absolute; left: 0; top: 40px; width: 300px; color: var(--color-ink); }
+.legende-siegel svg { width: 100%; height: auto; display: block; }
+.legende-linien { position: absolute; left: 0; top: 0; width: 340px; height: 320px; overflow: visible; }
+.legende-linien polyline { fill: none; stroke: var(--color-rule); stroke-width: 1; }
+.legende-text { position: absolute; left: 348px; width: 336px; transform: translateY(-50%); text-align: left; hyphens: manual; }
+.lt-w { top: 50px; }
+.lt-g { top: 155px; }
+.lt-b { top: 270px; }
+.blk-body .lt-name {
+  margin: 0; text-indent: 0;
+  font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--color-ink);
+}
+.blk-body .lt-text { margin: 0.15rem 0 0; text-indent: 0; font-size: 0.9rem; line-height: 1.4; color: var(--color-ink-soft); }
+.blk-body .legende-note { margin: 1.75rem 0 0; text-indent: 0; font-style: italic; color: var(--color-ink-soft); }
+@media (max-width: 1000px) {
+  .legende { height: auto; width: 100%; }
+  .legende-linien { display: none; }
+  .legende-siegel { position: static; width: 240px; margin-bottom: 1.25rem; }
+  .legende-text { position: static; transform: none; width: auto; padding: 0.75rem 0; border-top: 1px solid var(--color-hairline); }
+}
+
+/* Karteikarte eines Katalogeintrags: Felder, kein Titelbild. */
+.karte {
+  margin: 0 0 1.25rem;
+  padding: 1.25rem 1.5rem 1.4rem;
+  background: var(--color-page);
+  border: 1px solid var(--color-line);
+}
+.blatt > .blk:nth-of-type(odd) .karte { background: var(--color-panel-tint); }
+main table.karte-felder { margin: 0; font-size: 0.9rem; line-height: 1.4; }
+main .karte-felder th {
+  width: 6.5rem; padding: 0.5rem 1rem 0.5rem 0;
+  font-weight: 400; font-size: 0.63rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--color-faint);
+  border-bottom: 1px solid var(--color-hairline);
+  vertical-align: baseline;
+}
+main .karte-felder td { padding: 0.5rem 0; border-bottom: 1px solid var(--color-hairline); vertical-align: baseline; }
+main .karte-felder tr:last-child th,
+main .karte-felder tr:last-child td { border-bottom: 0; vertical-align: middle; }
+.karte-titel { font-style: italic; font-size: 1.35rem; line-height: 1.2; }
+main .karte-titel a, main .karte-titel a:visited { color: var(--color-ink); border-bottom: 0; padding-bottom: 0; }
+main .karte-titel a:hover { color: var(--color-accent); }
+.karte-siegel { display: inline-flex; align-items: center; gap: 0.75rem; }
+svg.siegel-karte { width: 56px; height: auto; display: block; color: var(--color-ink); }
+.blk-body .karte-link { margin: 1rem 0 0; font-size: 0.95rem; text-indent: 0; text-align: left; }
+
+/* Die drei juengsten Notizen. */
+.notiz-zeile {
+  display: flex; flex-wrap: wrap; gap: 0.25rem 1.75rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.notiz-zeile:first-child { padding-top: 0; }
+.notiz-zeile time {
+  flex: 0 0 6.5rem; padding-top: 0.3rem;
+  font-size: 0.8rem; color: var(--color-faint);
+  font-feature-settings: "lnum", "tnum";
+}
+.notiz-zeile > div { flex: 1 1 18rem; min-width: 0; }
+.blk-body .notiz-zeile h3 {
+  margin: 0;
+  font-weight: 400; font-size: 1.2rem; line-height: 1.3; letter-spacing: 0; text-transform: none;
+}
+main .notiz-zeile h3 a, main .notiz-zeile h3 a:visited { color: var(--color-ink); border-bottom: 0; padding-bottom: 0; }
+main .notiz-zeile h3 a:hover { color: var(--color-accent); }
+.blk-body .notiz-zeile p {
+  margin: 0.35rem 0 0; text-indent: 0;
+  font-size: 0.9rem; line-height: 1.5; color: var(--color-ink-soft);
+  text-align: left; hyphens: manual;
+}
+
+/* ---------- Notizen ---------- */
+/* Register: jede Notiz ein Band, Datum in der Randspalte. */
+.blk-eintrag { padding-top: 2.25rem; padding-bottom: 2.4rem; }
+.blk-eintrag .blk-name { font-weight: 400; font-size: 0.85rem; letter-spacing: 0.04em; font-feature-settings: "lnum", "tnum"; }
+.blk-eintrag .blk-meta { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.66rem; }
+.reg-title {
+  margin: 0;
+  font-weight: 400; font-size: 1.45rem; line-height: 1.25;
+  text-align: left; hyphens: manual;
+}
+main .reg-title a, main .reg-title a:visited { color: var(--color-ink); border-bottom: 0; padding-bottom: 0; }
+main .reg-title a:hover { color: var(--color-accent); }
+.blk-body .reg-desc {
+  margin: 0.5rem 0 0; text-indent: 0;
+  font-size: 0.95rem; line-height: 1.5; color: var(--color-ink-soft);
+  text-align: left; hyphens: manual;
+}
+
+/* Notiz: Selbstdeklaration als eigener Block, Quellen als Apparat. */
+.blk-dekl .blk-body p { font-size: 0.95rem; }
+.notiz-coda { margin: 2rem 0 0; }
+.blk-quellen .quellen-liste { font-size: 0.85rem; line-height: 1.5; }
+.blk-quellen .quellen-liste li + li { margin-top: 0.55rem; }
 
 /* Siegel groessenklassen */
 svg.siegel-detail      { width: 180px; height: auto; }
@@ -400,180 +527,33 @@ svg.siegel-small       { width: 52px;  height: auto; }
 svg.siegel-large       { width: 240px; height: auto; }
 svg.siegel-list        { width: 72px;  height: auto; }
 svg.siegel-state       { width: 110px; height: auto; }
-svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); }
+svg.siegel-coda        { width: 90px;  height: auto; color: var(--color-ink); display: block; }
 
-/* Schluss-Marke unter Notiz-Artikeln */
-.notiz-coda { margin: 3rem 0 0; text-align: center; }
-
-/* Quellenblock unter Notiz-Artikeln (ADR 0075).
-   Traegt den `sources`-Apparat in der Form des handgesetzten Blocks unter
-   `einstieg`; die Aufzaehlung erbt den Panel-Kasten aus
-   `main > article > section > ul`, die Trennlinie ersetzt dessen <hr>. */
-.notiz-quellen {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--color-hairline-warm);
+/* ---------- Verzeichnis und Werke ---------- */
+.blk-body .werk-author { margin: -0.6rem 0 0; font-size: 1.1rem; color: var(--color-muted); text-indent: 0; text-align: left; }
+.werk-header { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; align-items: flex-start; }
+.werk-glyph { color: var(--color-ink); }
+.werk-glyph svg { display: block; }
+.werk-facts {
+  display: grid; grid-template-columns: max-content 1fr; gap: 0.3rem 1.25rem;
+  margin: 0; font-size: 0.9rem; text-align: left; hyphens: manual;
 }
-.notiz-quellen > h2 { margin-top: 0; }
-
-/* Notizen-Register (Uebersicht /notizen/ bzw. /notes/).
-   Eintraege dreizeilig: Datum + Rubrik, Titel, Beschreibungssatz.
-   Haarlinien statt Kasten; die Overrides loesen die Liste aus dem
-   generischen `main > article > ul`-Aufzaehlungskasten. */
-.notizen-register {
-  list-style: none;
-  margin: 2.2rem 0 0;
-  padding: 0;
-  background: none;
-  border-left: 0;
-  border-bottom: 1px solid var(--color-hairline-warm);
-  text-align: left;
-}
-.notizen-register > li { border-top: 1px solid var(--color-hairline-warm); padding: 1.2rem 0 1.35rem; }
-.notizen-register > li + li { margin-top: 0; }
-.notizen-register > li::before { content: none; }
-.reg-meta {
-  margin: 0;
-  font-size: 0.76rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--color-faint);
-  font-feature-settings: "kern", "liga", "lnum", "tnum";
-  text-indent: 0;
-}
-.reg-title {
-  margin: 0.4rem 0 0.35rem;
-  font-size: 1.3rem;
-  line-height: 1.25;
-  text-indent: 0;
-}
-/* Titel in Tinte, wie die Eintraege im Werkverzeichnis. */
-.reg-title a,
-.reg-title a:visited { color: var(--color-ink); }
-.reg-desc {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: var(--color-ink-soft);
-  max-width: 33em;
-  text-indent: 0;
-}
-
-/* Werk des Tages. Doppellinie als Bilderrahmen: Border aussen (Rule),
-   Outline mit negativem Offset innen (Hairline). */
-.werk-des-tages {
-  margin: 3rem 0 2.5rem;
-  padding: 1.75rem;
-  border: 1px solid var(--color-rule);
-  outline: 1px solid var(--color-hairline);
-  outline-offset: -5px;
-  background: var(--color-panel-tint);
-}
-.werk-des-tages > header h2 { margin: 0 0 0.25rem; font-size: 1.05rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-muted); }
-.werk-des-tages .rotation-hint { margin: 0 0 1rem; font-size: 0.8rem; color: var(--color-faint); }
-/* Karten-Link in Tinte, nicht im Link-Gruen: `main a:visited` schlaegt per
-   Spezifitaet das `color: inherit` der Klasse und faerbte Titel, Siegel und
-   den currentColor-Unterstrich des Blocks — deshalb :visited hier explizit
-   und der Link-Unterstrich aus `main a` abgeschaltet. */
-.werk-des-tages-link,
-.werk-des-tages-link:visited {
-  display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; align-items: start;
-  text-decoration: none; color: var(--color-ink);
-  border-bottom: 0; padding-bottom: 0;
-}
-.werk-des-tages-link:hover h3 { text-decoration: underline; }
-/* Titel im Link-Gruen wie die Kachel-Titel; Siegel und Rest bleiben Tinte. */
-.werk-des-tages-text h3 { margin: 0 0 0.25rem; font-size: 1.35rem; color: var(--color-accent); }
-.werk-des-tages-author { margin: 0 0 0.75rem; color: var(--color-muted); }
-.werk-des-tages-narration { margin: 0; font-size: 0.95rem; }
-
-/* Katalog-Liste */
-.catalog-summary h2 { margin-top: 3rem; font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-muted); }
-.werke-list { list-style: none; padding: 0; margin: 1rem 0; }
-.werke-list li + li { margin-top: 0.75rem; }
-.werke-list a,
-.werke-list a:visited {
-  display: grid; grid-template-columns: auto 1fr auto; gap: 1rem; align-items: center;
-  padding: 0.5rem 0.25rem; text-decoration: none; color: inherit;
-  border-bottom: 1px solid var(--color-hairline);
-}
-.werke-list a:hover { background: var(--color-panel-2); }
-.werke-list-title { font-weight: 500; }
-.werke-list-author { color: var(--color-muted); font-size: 0.9rem; }
-
-/* Werks-Detail */
-.werk-detail .werk-header {
-  display: grid; grid-template-columns: auto 1fr; gap: 2rem;
-  margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-hairline);
-}
-.werk-glyph { padding-top: 0.5rem; }
-.werk-meta h1 {
-  width: auto; margin: 0 0 0.5rem;
-  font-size: 1.35rem; font-weight: 400;
-  text-transform: uppercase; letter-spacing: 0.12em;
-  text-align: left;
-  padding-bottom: 0; border-bottom: 0;
-}
-.werk-author { margin: 0 0 1rem; color: var(--color-muted); }
-.werk-facts { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1rem; margin: 0; font-size: 0.9rem; }
 .werk-facts dt { color: var(--color-muted); }
 .werk-facts dd { margin: 0; }
-.werk-narration { margin: 2rem 0; }
-.werk-links li { margin: 0.25rem 0; }
-.werk-downloads { margin-top: 3rem; padding: 1rem 1.25rem; background: var(--color-panel-2); border-left: 3px solid var(--color-rule); }
-.werk-downloads h2 { margin-top: 0; font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-muted); }
-.werk-downloads ul { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; gap: 1rem; flex-wrap: wrap; }
-.license-hint { font-size: 0.8rem; color: var(--color-muted); margin-bottom: 0; }
-
-/* Section list (fallback) — H1 inherits centered Tschichold style from `main h1`. */
-
-/* Werke section (Katalog-Listing) */
-.werke-section header { margin-bottom: 2rem; }
-.werke-section .werke-count { color: var(--color-muted); font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; margin: 1.5rem 0 0.5rem; }
-.werke-list-detail { list-style: none; padding: 0; margin: 0; }
-.werke-list-detail li + li { margin-top: 0.5rem; }
-/* Die Katalog-Liste ist keine Prosa-Liste: Panel, 3px-Balken und
-   Gedankenstrich-Marker der Artikel-Listen gelten hier nicht. */
-main > article > ul.werke-list-detail {
-  margin: 0.75rem 0 0;
-  padding: 0;
-  background: none;
-  border-left: 0;
+.blk-body .werke-count {
+  margin: 0 0 1rem; text-indent: 0;
+  font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-faint);
 }
-main > article > ul.werke-list-detail > li::before { content: none; }
-.werke-list-entry,
-.werke-list-entry:visited {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center; gap: 1.25rem;
-  padding: 0.75rem 0.75rem; text-decoration: none; color: inherit;
-  border: 1px solid var(--color-hairline-warm); background: var(--color-raised);
-  transition: background 0.15s, border-color 0.15s;
-}
-.werke-list-entry:hover { background: var(--color-panel-2); border-color: var(--color-line); }
-.werke-list-entry:hover .werke-list-title { text-decoration: underline; }
-.werke-list-meta { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
-.werke-list-nr { font-family: ui-monospace, "Consolas", monospace; font-size: 0.72rem; letter-spacing: 0.08em; color: var(--color-faint); }
-/* Titel im Link-Gruen: das eine Klick-Signal der Kachel. */
-.werke-list-detail .werke-list-title { font-size: 1.15rem; color: var(--color-accent); }
-.werke-list-title { font-weight: 500; font-size: 1.05rem; }
-.werke-list-author { color: var(--color-muted); font-size: 0.9rem; }
-.werke-list-genre { color: var(--color-faint); font-size: 0.8rem; }
-.werke-list-axes { display: flex; gap: 0.75rem; font-family: ui-monospace, "Consolas", monospace; font-size: 0.85rem; color: var(--color-muted); white-space: nowrap; }
-.werke-list-axes .axis { padding: 0.1rem 0.4rem; background: var(--color-panel-2); border-radius: 2px; }
-.werke-list-axes .axis-b { color: var(--color-ink-soft); }
+.blk-body .rotation-hint { margin: 0 0 0.75rem; font-size: 0.8rem; color: var(--color-faint); text-indent: 0; }
+.blk-body .wdt-titel { margin: 0; font-weight: 400; font-style: italic; font-size: 1.35rem; letter-spacing: 0; text-transform: none; }
+main .wdt-titel a, main .wdt-titel a:visited { color: var(--color-ink); border-bottom: 0; padding-bottom: 0; }
+main .wdt-titel a:hover { color: var(--color-accent); }
+.blk-body .wdt-author { margin: 0.2rem 0 0.75rem; color: var(--color-muted); text-indent: 0; }
+.blk-body .wdt-narration { font-size: 0.95rem; text-indent: 0; }
+.blk-body .werk-narration p { text-indent: 0; }
 
-.werke-section-aside { margin-top: 3rem; padding: 1rem 1.25rem; background: var(--color-panel); border-left: 3px solid var(--color-rule); }
-.werke-section-aside h2 { margin-top: 0; font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-muted); }
-.werke-section-aside ol { padding-left: 1.25rem; margin: 0.5rem 0 0; }
-.werke-section-aside li + li { margin-top: 0.35rem; }
-.werke-section-aside code { background: var(--color-raised); padding: 0.1rem 0.3rem; border: 1px solid var(--color-hairline); font-size: 0.9em; }
-
-/* Siegel-Seite (auf /siegel/ bzw. /seal/) */
-.siegel-page header { margin-bottom: 2rem; }
-.siegel-use { margin: 1.5rem 0 2rem; max-width: 38rem; }
-.siegel-license { margin-top: 2rem; padding: 1rem 1.25rem; background: var(--color-panel); border-left: 3px solid var(--color-rule); font-size: 0.9rem; }
-.siegel-license h2 { margin-top: 0; font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-muted); }
+/* ---------- Siegel-Seite ---------- */
+.siegel-use p { text-indent: 0; }
 
 /* Siegel-Generator (Builder mit Live-Preview) */
 .siegel-preview { margin: 1.5rem 0 2.5rem; padding: 1.5rem; background: var(--color-panel-tint); border: 1px solid var(--color-hairline); }
@@ -683,50 +663,49 @@ main > article > ul.werke-list-detail > li::before { content: none; }
 }
 .siegel-preview .preview-output-row button:hover { background: var(--color-panel-2); }
 
-/* Mini-Generator auf der Startseite (progressives Enhancement:
-   ersetzt die drei statischen Beispiel-Zustaende, wenn JS laeuft) */
-.home-generator {
-  margin: 3rem 0;
-  padding: 2rem 0 1.75rem;
-  border-top: 1px solid var(--color-hairline-warm);
-  border-bottom: 1px solid var(--color-hairline-warm);
-}
-.home-generator .preview-glyph { display: flex; justify-content: center; margin: 0 0 0.75rem; }
-.home-generator .preview-glyph svg { width: 180px; height: auto; }
-.home-generator-caption {
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--color-muted);
-  margin: 0 0 1.5rem;
-}
-.home-generator .preview-controls { display: grid; gap: 0.75rem; max-width: 340px; margin: 0 auto; }
-.home-generator .preview-controls label { display: flex; align-items: center; gap: 0.75rem; }
-.home-generator .preview-controls input[type="range"] { flex: 1; accent-color: var(--color-accent); }
-.home-generator .preview-controls output { font-family: ui-monospace, "Consolas", monospace; min-width: 1.5em; }
-.home-generator .preview-k { border: none; padding: 0; margin: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
-.home-generator .preview-k legend { font-weight: 500; padding: 0; margin-right: 0.5rem; }
-.home-generator .preview-k input[type="radio"] { accent-color: var(--color-accent); }
-.home-generator-cta { text-align: center; margin: 1.5rem 0 0; font-size: 0.95rem; }
-.home-generator-cta a { color: var(--color-ink); text-decoration: none; border-bottom: 1px solid var(--color-faint); padding-bottom: 1px; }
-.home-generator-cta a:hover { border-bottom-color: var(--color-ink); }
 
-/* 404 */
-.not-found { text-align: center; padding: 4rem 0; }
+/* Der Generator sitzt im Block: Papierflaeche, kein Blocksatz. */
+.siegel-preview { text-align: left; hyphens: manual; margin: 0; background: var(--color-page); }
+
+/* ---------- 404 ---------- */
 .not-found h1 { font-size: 2.5rem; margin: 0 0 0.5rem; }
-.not-found .seal-decoration { display: flex; justify-content: center; margin: 2rem 0; opacity: 0.5; }
-.not-found .seal-decoration svg { width: 130px; height: auto; }
+.not-found .seal-decoration { margin: 0 0 1.5rem; opacity: 0.5; color: var(--color-ink); }
+.not-found .seal-decoration svg { width: 130px; height: auto; display: block; }
+.not-found p { text-indent: 0; text-align: left; }
 
-/* Responsive */
-@media (max-width: 540px) {
-  .site-header { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.75rem 1.25rem 0.75rem; }
-  .site-brand-mark .site-logo { height: 2.4rem; }
-  .site-brand-title { font-size: 1.05rem; letter-spacing: 0.1em; }
-  .site-brand-subtitle { font-size: 0.8rem; }
-  .site-header-meta { align-items: flex-start; }
-  .site-nav { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 0 1rem; }
-  .lang-switch { justify-content: flex-start; }
-  .werk-des-tages-link { grid-template-columns: 1fr; }
-  .werk-detail .werk-header { grid-template-columns: 1fr; }
-  .werke-list a { grid-template-columns: auto 1fr; }
-  .werke-list-author { grid-column: 2; font-size: 0.85rem; }
+/* ---------- Kolophon ---------- */
+.site-footer {
+  display: flex; flex-wrap: wrap;
+  gap: 0.5rem var(--luft);
+  padding: 2rem var(--rand) 2.25rem;
+  border-top: 1px solid var(--color-ink);
+  font-size: 0.8rem; line-height: 1.6;
+  color: var(--color-muted);
+}
+.site-footer .blk-label { border-top: 0; padding-top: 0; }
+.site-footer .blk-name { font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.site-footer .blk-body { text-align: left; hyphens: manual; }
+.site-footer p { margin: 0; }
+.footer-nav { margin-top: 0.4rem; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+.site-footer a { color: inherit; transition: color 100ms ease; }
+.site-footer a:hover { color: var(--color-ink); }
+
+/* ---------- Schmale Schirme ---------- */
+@media (max-width: 700px) {
+  :root { --rand: 1.25rem; --luft: 1.5rem; }
+  html { font-size: 18px; }
+  .bogen { margin: 0; border: 0; box-shadow: none; }
+  .sf-zelle { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+  .sf-marke { flex-basis: 100%; border-right: 0; border-bottom: 1px solid var(--color-hairline); }
+  .sf-gegenstand { flex: 1 1 0; }
+  .sf-fassung { flex: 0 0 auto; }
+  .sf-wert { font-size: 0.8rem; }
+  /* Blocksatz reisst in schmaler Spalte Loecher: hier Flattersatz. */
+  .blk-body { text-align: left; }
+  .sf-marke svg.site-logo { width: 48px; }
+  .sf-name { font-size: 0.95rem; }
+  .blk { padding-top: 2.75rem; padding-bottom: 3rem; }
+  .blk-eintrag { padding-top: 1.75rem; padding-bottom: 2rem; }
+  .karte { padding: 1rem 1.1rem 1.2rem; }
+  main .karte-felder th { width: 5rem; }
 }

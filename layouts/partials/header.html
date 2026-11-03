@@ -1,33 +1,47 @@
+{{- /* Kopf als Schriftfeld eines Normblatts (ADR 0381): Marke, Gegenstand,
+       Fassung; darunter die Reiterzeile mit Sprache und Schema-Knopf. */ -}}
+{{- $cur := .RelPermalink -}}
+{{- $lang := .Lang -}}
 <header class="site-header">
-  <a class="site-brand" href="{{ "/" | relLangURL }}">
-    <span class="site-brand-mark">
+  <div class="schriftfeld">
+    <a class="sf-zelle sf-marke" href="{{ "/" | relLangURL }}">
       {{ partial "siegel.html" (dict "wortlaut" 5 "geist" 3 "beleg" "ausstehend" "class" "site-logo") }}
-    </span>
-    <span class="site-brand-text">
-      <span class="site-brand-title">Maschinenschrift</span>
-      <span class="site-brand-subtitle">{{ i18n "siteDescription" }}</span>
-    </span>
-  </a>
-  <div class="site-header-meta">
-    <nav class="site-nav">
-      {{ with .Site.GetPage "/einstieg" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-      {{ with .Site.GetPage "/siegel" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-      {{ with .Site.GetPage "/verzeichnis" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-      {{ with .Site.GetPage "/entscheidungen" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-      {{ with .Site.GetPage "/notizen" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+      <span class="sf-name">Maschinenschrift</span>
+    </a>
+    <div class="sf-zelle sf-gegenstand">
+      <p class="sf-label">{{ i18n "headerSubject" }}</p>
+      <p class="sf-wert">{{ i18n "siteDescription" }}</p>
+    </div>
+    <div class="sf-zelle sf-fassung">
+      <p class="sf-label">{{ i18n "headerVersion" }}</p>
+      {{- $v := site.Params.spec_aktuell }}
+      <p class="sf-wert">{{ with site.GetPage (printf "/spec/siegel-%s" $v) }}<a href="{{ .RelPermalink }}">{{ i18n "headerSpec" }} {{ $v }}</a>{{ else }}{{ i18n "headerSpec" }} {{ $v }}{{ end }}</p>
+    </div>
+  </div>
+  <div class="nav-zeile">
+    <nav class="site-nav" aria-label="{{ i18n "navAria" }}">
+      {{- range slice "/einstieg" "/siegel" "/verzeichnis" "/entscheidungen" "/notizen" }}
+        {{- with site.GetPage . }}
+          {{- $aktiv := hasPrefix $cur .RelPermalink }}
+          {{- if and (eq .Section "verzeichnis") (not $aktiv) }}{{ with site.GetPage "/werke" }}{{ $aktiv = hasPrefix $cur .RelPermalink }}{{ end }}{{ end }}
+      <a href="{{ .RelPermalink }}"{{ if $aktiv }} class="aktiv" aria-current="page"{{ end }}>{{ .Title }}</a>
+        {{- end }}
+      {{- end }}
     </nav>
-    {{ if .AllTranslations }}
+    <div class="nav-rechts">
+      {{- if .AllTranslations }}
       <nav class="lang-switch" aria-label="{{ i18n "langSwitchAria" }}">
-        {{ range .AllTranslations }}
-          <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
-        {{ end }}
+        {{- range .AllTranslations }}
+        <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}"{{ if eq .Lang $lang }} class="current"{{ end }}>{{ .Language.Label }}</a>
+        {{- end }}
       </nav>
-    {{ end }}
-    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="{{ i18n "themeToggleAria" }}" aria-pressed="false" hidden>
-      <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-        <circle cx="10" cy="10" r="8.25" fill="none" stroke="currentColor" stroke-width="1.5"/>
-        <path d="M10 1.75A8.25 8.25 0 0 0 10 18.25Z" fill="currentColor"/>
-      </svg>
-    </button>
+      {{- end }}
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="{{ i18n "themeToggleAria" }}" aria-pressed="false" hidden>
+        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <circle cx="10" cy="10" r="8.25" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 1.75A8.25 8.25 0 0 0 10 18.25Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>

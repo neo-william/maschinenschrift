@@ -1,38 +1,34 @@
 {{ define "main" }}
-<article class="section-list">
-  <h1>{{ .Title }}</h1>
-  {{ with .Content }}
-    <div class="section-intro">{{ . }}</div>
-  {{ end }}
-
-  {{ if eq .Section "werke" }}
-    <ul class="werke-list">
-      {{ range .Pages }}
-        {{ $z := partial "zeichen.html" .Params.zeichen }}
-        <li>
-          <a href="{{ .RelPermalink }}">
-            <span class="werke-list-glyph">
-              {{ partial "siegel.html" (dict
-                  "wortlaut" $z.wortlaut
-                  "geist" $z.geist
-                  "beleg" $z.beleg
-                  "class" "siegel-small"
-              ) }}
-            </span>
-            <span class="werke-list-title">{{ .Title }}</span>
-            <span class="werke-list-author">{{ .Params.author }}{{ with .Params.year }}, {{ . }}{{ end }}</span>
-          </a>
-        </li>
-      {{ end }}
-    </ul>
-  {{ else }}
-    {{ with .Pages }}
-      <ul>
-        {{ range . }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
+{{- /* Kernseiten (Einstieg, Idee, Eintragen, Spec, Pflichtseiten …) als
+       Normblatt (ADR 0381): Kopfblock mit Titel und Vorspann, jede h2 ein
+       eigener Block mit Randueberschrift. */ -}}
+<article class="blatt">
+  <section class="blk blk-kopf">
+    {{ partial "kopflabel.html" . }}
+    <div class="blk-body">
+      <h1>{{ .Title }}</h1>
+      {{ partial "bloecke.html" (dict "html" .Content) | safeHTML }}
+      {{- if and .Pages (ne .Section "verzeichnis") }}
+      <ul class="unterseiten">
+        {{- range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{- end }}
       </ul>
-    {{ end }}
-  {{ end }}
+      {{- end }}
+    </div>
+  </section>
+
+  {{- /* Das Verzeichnis zeigt seine Eintraege selbst, statt nur auf die
+         Liste zu verweisen. */}}
+  {{- if eq .Section "verzeichnis" }}
+  {{- with where site.RegularPages "Section" "werke" }}
+  <section class="blk blk-sec">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "werkeListHeading" }}</h2></div>
+    <div class="blk-body">
+      {{- range . }}{{ partial "werk-karte.html" . }}{{ end }}
+    </div>
+  </section>
+  {{- end }}
+  {{- end }}
 </article>
 {{ end }}

@@ -1,0 +1,24 @@
+{{- /*
+  Karteikarte eines Katalogeintrags (ADR 0381): Felder statt Werbeflaeche,
+  bewusst ohne Titelbild. Erwartet die Werkseite (`.`).
+*/ -}}
+{{- $z := partial "zeichen.html" .Params.zeichen -}}
+{{- $gattung := slice -}}
+{{- with .Params.genre }}{{ $gattung = $gattung | append . }}{{ end -}}
+{{- with .Params.year }}{{ $gattung = $gattung | append (string .) }}{{ end -}}
+<article class="karte">
+  <table class="karte-felder">
+    <tbody>
+      {{- with .Params.katalognummer }}
+      <tr><th scope="row">{{ i18n "cardNr" }}</th><td class="blk-mono">{{ . }}</td></tr>
+      {{- end }}
+      <tr><th scope="row">{{ i18n "cardTitle" }}</th><td class="karte-titel"><a href="{{ .RelPermalink }}">{{ .Title }}</a></td></tr>
+      <tr><th scope="row">{{ i18n "cardName" }}</th><td>{{ .Params.author }}</td></tr>
+      {{- with $gattung }}
+      <tr><th scope="row">{{ i18n "cardGenre" }}</th><td>{{ delimit . " · " }}</td></tr>
+      {{- end }}
+      <tr><th scope="row">{{ i18n "cardSeal" }}</th><td><span class="karte-siegel">{{ partial "siegel.html" (dict "wortlaut" $z.wortlaut "geist" $z.geist "beleg" $z.beleg "class" "siegel-karte") }}<span>W {{ $z.wortlaut }} · G {{ $z.geist }} · B {{ $z.beleg }}</span></span></td></tr>
+    </tbody>
+  </table>
+  <p class="karte-link"><a class="cta" href="{{ .RelPermalink }}">{{ i18n "homeReadEntry" }}</a></p>
+</article>

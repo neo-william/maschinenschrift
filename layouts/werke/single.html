@@ -8,22 +8,29 @@
     {{ $narration = index . "en" }}
   {{ end }}
 {{ end }}
-<article class="werk-detail">
-  <header class="werk-header">
-    <div class="werk-glyph">
-      {{ partial "siegel.html" (dict
-          "wortlaut" $z.wortlaut
-          "geist" $z.geist
-          "beleg" $z.beleg
-          "class" "siegel-detail"
-          "label" (printf "Siegel: W=%d G=%d B=%s" $z.wortlaut $z.geist $z.beleg)
-      ) }}
-    </div>
-    <div class="werk-meta">
+<article class="blatt werk-detail">
+  <section class="blk blk-kopf">
+    {{ partial "kopflabel.html" . }}
+    <div class="blk-body">
       <h1>{{ .Title }}</h1>
       <p class="werk-author">{{ .Params.author }}{{ with .Params.year }}, {{ . }}{{ end }}</p>
+    </div>
+  </section>
+
+  <section class="blk blk-sec">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "werkSealHeading" }}</h2></div>
+    <div class="blk-body werk-header">
+      <div class="werk-glyph">
+        {{ partial "siegel.html" (dict
+            "wortlaut" $z.wortlaut
+            "geist" $z.geist
+            "beleg" $z.beleg
+            "class" "siegel-detail"
+            "label" (printf "Siegel: W=%d G=%d B=%s" $z.wortlaut $z.geist $z.beleg)
+        ) }}
+      </div>
       <dl class="werk-facts">
-        {{ with .Params.katalognummer }}<dt>{{ i18n "werkKatalognummer" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with .Params.katalognummer }}<dt>{{ i18n "werkKatalognummer" }}</dt><dd class="blk-mono">{{ . }}</dd>{{ end }}
         {{ with .Params.genre }}<dt>{{ i18n "werkGenre" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{ with .Params.language }}<dt>{{ i18n "werkLanguage" }}</dt><dd>{{ . }}</dd>{{ end }}
         <dt>{{ i18n "werkWortlautAxis" }}</dt><dd>{{ $z.wortlaut }} / 5</dd>
@@ -32,24 +39,27 @@
         {{ with .Params.declared_at }}<dt>{{ i18n "werkDeclared" }}</dt><dd><time datetime="{{ . }}">{{ . }}</time></dd>{{ end }}
       </dl>
     </div>
-  </header>
+  </section>
 
   {{ with $narration }}
-    <section class="werk-narration">
-      <h2>{{ i18n "werkNarrationHeading" }}</h2>
+  <section class="blk blk-sec werk-narration">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "werkNarrationHeading" }}</h2></div>
+    <div class="blk-body">
       <p>{{ . | safeHTML }}</p>
-    </section>
+    </div>
+  </section>
   {{ end }}
 
   {{ with .Params.links }}
-    <section class="werk-links">
-      <h2>{{ i18n "werkLinksHeading" }}</h2>
+  <section class="blk blk-sec werk-links">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "werkLinksHeading" }}</h2></div>
+    <div class="blk-body">
       <ul>
         {{ with .canonical }}<li><a href="{{ . }}" rel="external">{{ i18n "werkLinkCanonical" }}</a></li>{{ end }}
         {{ with .author_site }}<li><a href="{{ . }}" rel="external">{{ i18n "werkLinkAuthor" }}</a></li>{{ end }}
       </ul>
-    </section>
+    </div>
+  </section>
   {{ end }}
-
 </article>
 {{ end }}

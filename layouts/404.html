@@ -1,17 +1,20 @@
 {{ define "main" }}
-<article class="not-found">
-  <div class="seal-decoration" aria-hidden="true">
-    {{ partial "siegel.html" (dict "wortlaut" 0 "geist" 0 "beleg" "belegt") }}
-  </div>
-
-  <h1>{{ i18n "notFoundHeading" }}</h1>
-  <p>{{ i18n "notFoundBody" }}</p>
-
-  <p>
-    <a href="{{ "/" | relLangURL }}">{{ i18n "notFoundLinkHome" }}</a> &middot;
-    {{ with .Site.GetPage "/werke" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &middot;{{ end }}
-    {{ with .Site.GetPage "/foundation" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &middot;{{ end }}
-    {{ with .Site.GetPage "/siegel" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-  </p>
+<article class="blatt not-found">
+  <section class="blk blk-kopf">
+    <div class="blk-label blk-leer" aria-hidden="true"></div>
+    <div class="blk-body">
+      <div class="seal-decoration" aria-hidden="true">
+        {{ partial "siegel.html" (dict "wortlaut" 0 "geist" 0 "beleg" "belegt") }}
+      </div>
+      <h1>{{ i18n "notFoundHeading" }}</h1>
+      <p>{{ i18n "notFoundBody" }}</p>
+      <p>
+        <a href="{{ "/" | relLangURL }}">{{ i18n "notFoundLinkHome" }}</a> &middot;
+        {{ with .Site.GetPage "/werke" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &middot;{{ end }}
+        {{ with .Site.GetPage "/foundation" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &middot;{{ end }}
+        {{ with .Site.GetPage "/siegel" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+      </p>
+    </div>
+  </section>
 </article>
 {{ end }}

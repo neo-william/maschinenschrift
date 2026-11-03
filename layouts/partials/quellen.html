@@ -20,9 +20,10 @@
   Permalink nur eine Adresse waere.
 */}}
 {{- with .Params.sources }}
-<section class="notiz-quellen">
-  <h2>{{ i18n "sourcesHeading" }}</h2>
-  <ul>
+<section class="blk blk-quellen">
+  <div class="blk-label"><h2 class="blk-name">{{ i18n "sourcesHeading" }}</h2></div>
+  <div class="blk-body">
+  <ul class="quellen-liste">
     {{- range . }}
     {{- $e := . }}
     {{- $datum := "" }}
@@ -45,5 +46,6 @@
     </li>
     {{- end }}
   </ul>
+  </div>
 </section>
 {{- end }}

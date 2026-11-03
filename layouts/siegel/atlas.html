@@ -1,31 +1,45 @@
 {{ define "main" }}
-<article class="siegel-page">
-  <header>
-    <h1>{{ .Title }}</h1>
-    <p>{{ i18n "atlasLead" }}</p>
-  </header>
+<article class="blatt siegel-page">
+  <section class="blk blk-kopf">
+    {{ partial "kopflabel.html" . }}
+    <div class="blk-body">
+      <h1>{{ .Title }}</h1>
+      <p>{{ i18n "atlasLead" }}</p>
+    </div>
+  </section>
 
   <!-- Das Werkzeug zuerst; die Erklaerung folgt. -->
-  <section id="siegel-preview" class="siegel-preview" aria-live="polite">
-    <noscript>
-      <p>{{ i18n "siegelNoscript" | safeHTML }}</p>
-    </noscript>
+  <section class="blk blk-sec">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "atlasGenHeading" }}</h2></div>
+    <div class="blk-body">
+      <div id="siegel-preview" class="siegel-preview" aria-live="polite">
+        <noscript>
+          <p>{{ i18n "siegelNoscript" | safeHTML }}</p>
+        </noscript>
+      </div>
+    </div>
   </section>
 
-  <section class="siegel-use">
-    <h2>{{ i18n "atlasUseHeading" }}</h2>
-    <p>{{ i18n "siegelUseIntro" }}</p>
+  <section class="blk blk-sec siegel-use">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "atlasUseHeading" }}</h2></div>
+    <div class="blk-body">
+      <p>{{ i18n "siegelUseIntro" }}</p>
+    </div>
   </section>
 
-  <section class="siegel-axes">
-    <h2>{{ i18n "atlasAxesHeading" }}</h2>
-    {{ i18n "atlasAxes" | markdownify }}
+  <section class="blk blk-sec siegel-axes">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "atlasAxesHeading" }}</h2></div>
+    <div class="blk-body">
+      {{ i18n "atlasAxes" | markdownify }}
+    </div>
   </section>
 
-  <aside class="siegel-license">
-    <h2>{{ i18n "atlasLicenseHeading" }}</h2>
-    {{ i18n "atlasLicenseBody" | markdownify }}
-  </aside>
+  <section class="blk blk-sec siegel-license">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "atlasLicenseHeading" }}</h2></div>
+    <div class="blk-body">
+      {{ i18n "atlasLicenseBody" | markdownify }}
+    </div>
+  </section>
 
   <script src="/js/live-preview.js?v={{ substr (md5 (readFile "static/js/live-preview.js")) 0 8 }}" defer></script>
 </article>

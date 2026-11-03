@@ -1,74 +1,74 @@
 {{ define "main" }}
-<section class="lead">
-  <p>{{ i18n "homeLead" }}</p>
-</section>
+{{- /* Startseite als Normblatt (ADR 0381, Entwurf C): § 1 Zweck, § 2 Notation,
+       § 3 Verzeichnis, § 4 Notizen. Der Mini-Generator ist vom Blatt
+       genommen; "Siegel setzen" fuehrt zum vollen Generator. */ -}}
+<article class="blatt startseite">
 
-<!-- Mini-Generator: das lebende Siegel. Ohne JS bleibt er versteckt,
-     und die drei statischen Beispiel-Zustaende darunter sind die Baseline. -->
-<section class="home-generator" id="home-generator" hidden aria-label="{{ i18n "homeGenAria" }}">
-  <div id="home-generator-ui"></div>
-  <p class="home-generator-cta">
-    <a id="home-generator-link" href="{{ (.Site.GetPage "/siegel").RelPermalink }}">{{ i18n "homeGenDownload" }}</a>
-  </p>
-</section>
+  <section class="blk blk-sec blk-kurz">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><p class="blk-name">{{ i18n "homePurpose" }}</p></div>
+    <div class="blk-body">
+      <h1 class="zweck">{{ .Params.heading | default .Title }}</h1>
+      <div class="zweck-lead">{{ .Content }}</div>
+      <p class="cta-zeile">
+        {{ with .Site.GetPage "/siegel" }}<a class="cta" href="{{ .RelPermalink }}">{{ i18n "homeSetSeal" }}</a>{{ end }}
+        {{ with .Site.GetPage "/eintragen" }}<a class="cta-leise" href="{{ .RelPermalink }}">{{ i18n "homeDeclare" }}</a>{{ end }}
+      </p>
+    </div>
+  </section>
 
-<section class="states" id="home-states" aria-label="Example seal states">
-  <div class="state">
-    {{ partial "siegel.html" (dict "wortlaut" 0 "geist" 0 "beleg" "belegt" "class" "siegel-state") }}
-    <p class="state-caption">{{ i18n "stateEmpty" }}</p>
-  </div>
-  <div class="state">
-    {{ partial "siegel.html" (dict "wortlaut" 2 "geist" 3 "beleg" "belegt" "class" "siegel-state") }}
-    <p class="state-caption">{{ i18n "stateMid" }}</p>
-  </div>
-  <div class="state">
-    {{ partial "siegel.html" (dict "wortlaut" 5 "geist" 5 "beleg" "ausstehend" "class" "siegel-state") }}
-    <p class="state-caption">{{ i18n "stateFull" }}</p>
-  </div>
-</section>
+  <section class="blk blk-sec blk-kurz">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "homeNotation" }}</h2></div>
+    <div class="blk-body">
+      <figure class="legende">
+        <div class="legende-siegel" role="img" aria-label="{{ i18n "homeSealAria" }}">
+          {{ partial "siegel.html" (dict "wortlaut" 5 "geist" 3 "beleg" "ausstehend") }}
+        </div>
+        <svg class="legende-linien" aria-hidden="true" focusable="false" viewBox="0 0 340 320">
+          <polyline points="212,123 284,123 322,50 338,50"/>
+          <polyline points="156,155 338,155"/>
+          <polyline points="220,188 284,188 322,270 338,270"/>
+        </svg>
+        <div class="legende-text lt-w">
+          <p class="lt-name">Wortlaut · 5</p>
+          <p class="lt-text">{{ i18n "homeAxisWText" }}</p>
+        </div>
+        <div class="legende-text lt-g">
+          <p class="lt-name">Geist · 3</p>
+          <p class="lt-text">{{ i18n "homeAxisGText" }}</p>
+        </div>
+        <div class="legende-text lt-b">
+          <p class="lt-name">Beleg · {{ i18n "homeAxisB" }}</p>
+          <p class="lt-text">{{ i18n "homeAxisBText" }}</p>
+        </div>
+      </figure>
+      <p class="legende-note">{{ i18n "homeNotationNote" }}</p>
+    </div>
+  </section>
 
-<section class="hero">
-  {{ .Content }}
-  {{ with .Site.GetPage "/eintragen" }}
-    <p class="hero-cta"><a href="{{ .RelPermalink }}">{{ i18n "heroAdoptCta" }}</a></p>
-  {{ end }}
-</section>
+  <section class="blk blk-sec blk-kurz">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "homeRegistry" }}</h2></div>
+    <div class="blk-body">
+      {{ $werke := where .Site.RegularPages "Section" "werke" }}
+      {{ range first 3 $werke }}{{ partial "werk-karte.html" . }}{{ else }}<p>{{ i18n "catalogEmpty" }}</p>{{ end }}
+      {{ with .Site.GetPage "/verzeichnis" }}<p class="weiter"><a class="cta-leise" href="{{ .RelPermalink }}">{{ i18n "homeToRegistry" }}</a></p>{{ end }}
+    </div>
+  </section>
 
-{{ $werke := where .Site.RegularPages "Section" "werke" }}
-{{ $count := len $werke }}
-<section class="catalog-summary">
-  <h2>{{ i18n "catalogHeading" }}</h2>
-  {{ if gt $count 0 }}
-    {{ $doy := now.YearDay }}
-    {{ $idx := mod $doy $count }}
-    {{ $featured := index $werke $idx }}
-    <p class="todays-pick">
-      <span class="todays-pick-label">{{ i18n "todaysPick" }}</span>
-      <a href="{{ $featured.RelPermalink }}">{{ $featured.Title }}</a>
-    </p>
-    <ul class="werke-list">
-      {{ range $werke }}
-        {{ $wz := partial "zeichen.html" .Params.zeichen }}
-        <li>
-          <a href="{{ .RelPermalink }}">
-            <span class="werke-list-glyph">
-              {{ partial "siegel.html" (dict
-                  "wortlaut" $wz.wortlaut
-                  "geist" $wz.geist
-                  "beleg" $wz.beleg
-                  "class" "siegel-small"
-              ) }}
-            </span>
-            <span class="werke-list-title">{{ .Title }}</span>
-            <span class="werke-list-author">{{ .Params.author }}</span>
-          </a>
-        </li>
+  <section class="blk blk-sec blk-kurz">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "homeNotes" }}</h2></div>
+    <div class="blk-body">
+      {{ $notizen := where .Site.RegularPages "Section" "notizen" }}
+      {{ range first 3 $notizen.ByDate.Reverse }}
+      <article class="notiz-zeile">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        <div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </article>
       {{ end }}
-    </ul>
-  {{ else }}
-    <p>{{ i18n "catalogEmpty" }}</p>
-  {{ end }}
-</section>
-
-<script src="/js/live-preview.js?v={{ substr (md5 (readFile "static/js/live-preview.js")) 0 8 }}" defer></script>
+      {{ with .Site.GetPage "/notizen" }}<p class="weiter"><a class="cta-leise" href="{{ .RelPermalink }}">{{ i18n "homeAllNotes" }}</a></p>{{ end }}
+    </div>
+  </section>
+</article>
 {{ end }}

@@ -62,8 +62,8 @@
   <meta name="twitter:title" content="{{ $title }}">
   <meta name="twitter:description" content="{{ $desc }}">
 
-  <meta name="theme-color" content="#fdfdfb" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#151513" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#e8e7e1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   {{- /* Synchron, ohne defer: setzt einen gespeicherten Schema-Override auf
          <html data-theme>, bevor der erste Paint laeuft (kein Aufblitzen).
@@ -83,13 +83,17 @@
   {{ end }}
 </head>
 <body>
-  {{ partial "header.html" . }}
+  {{- /* Normblatt (ADR 0381): die Seite liegt als Bogen auf dem Tisch.
+         Die Brotkrumen sind in die Randspalte des Kopfblocks gewandert
+         (partials/kopflabel.html). */}}
+  <div class="bogen">
+    {{ partial "header.html" . }}
 
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
 
-  {{ partial "breadcrumb.html" . }}
-  {{ partial "footer.html" . }}
+    {{ partial "footer.html" . }}
+  </div>
 </body>
 </html>

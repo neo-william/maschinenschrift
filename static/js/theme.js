@@ -8,8 +8,8 @@
 
   var root = document.documentElement;
   var KEY = 'theme';
-  /* Muss --color-page in main.css entsprechen (hell/dunkel). */
-  var PAGE = { light: '#fdfdfb', dark: '#151513' };
+  /* Muss --color-desk in main.css entsprechen (hell/dunkel). */
+  var PAGE = { light: '#e8e7e1', dark: '#0e0e0d' };
 
   var stored = null;
   try { stored = localStorage.getItem(KEY); } catch (e) { /* Storage gesperrt: Toggle wirkt dann nur pro Seite. */ }

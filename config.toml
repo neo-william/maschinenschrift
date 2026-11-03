@@ -14,6 +14,9 @@ disableKinds = ["taxonomy", "term"]
   # sagt, nach welcher Fassung sie gebaut ist. Bei einer neuen Spec hier
   # nachziehen — die Versionsdisziplin steht in content/spec/_index.md.
   spec_version = "v7"
+  # Fassung im Schriftfeld des Kopfs (layouts/partials/header.html): verlinkt
+  # auf /spec/siegel-<spec_aktuell>/. Bei einer neuen Siegel-Spec nachziehen.
+  spec_aktuell = "v8"
 
 [languages.en]
   label = "English"

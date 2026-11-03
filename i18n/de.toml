@@ -225,3 +225,91 @@ other = "Lineage"
 
 [bucket-standards-update]
 other = "Standards"
+
+# Normblatt-Layout (ADR 0381)
+[headerSubject]
+other = "Gegenstand"
+
+[headerVersion]
+other = "Fassung"
+
+[headerSpec]
+other = "Spezifikation"
+
+[navAria]
+other = "Hauptnavigation"
+
+[colophonHeading]
+other = "Kolophon"
+
+[deklarationHeading]
+other = "Deklaration"
+
+[homePurpose]
+other = "Zweck"
+
+[homeNotation]
+other = "Notation"
+
+[homeRegistry]
+other = "Verzeichnis"
+
+[homeNotes]
+other = "Notizen"
+
+[homeSetSeal]
+other = "Siegel setzen →"
+
+[homeDeclare]
+other = "Eigenes Werk deklarieren"
+
+[homeSealAria]
+other = "Siegel mit Wortlaut 5, Geist 3, Beleg ausstehend"
+
+[homeAxisB]
+other = "ausstehend"
+
+[homeAxisWText]
+other = "Die Oberfläche: die Sätze, der Tonfall, die Wortwahl."
+
+[homeAxisGText]
+other = "Ideen, Argumente, Strukturentscheidungen, Faktenmaterial."
+
+[homeAxisBText]
+other = "Ob die Faktenaussagen gegen Quellen außerhalb des Substrats geprüft wurden."
+
+[homeNotationNote]
+other = "Punkte zählen, was die Maschine zugeliefert hat; ein Halbstrich heißt, dass ungeprüfte Maschinen-Ausgabe im Werk steht. Ein leeres Siegel heißt: alleine geschrieben."
+
+[homeReadEntry]
+other = "Eintrag lesen →"
+
+[homeToRegistry]
+other = "Zum Verzeichnis"
+
+[homeAllNotes]
+other = "Alle Notizen"
+
+[cardNr]
+other = "Nr."
+
+[cardTitle]
+other = "Titel"
+
+[cardName]
+other = "Name"
+
+[cardGenre]
+other = "Gattung"
+
+[cardSeal]
+other = "Siegel"
+
+[werkSealHeading]
+other = "Siegel"
+
+[werkeListHeading]
+other = "Werke"
+
+[atlasGenHeading]
+other = "Generator"

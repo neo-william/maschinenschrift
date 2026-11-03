@@ -224,3 +224,91 @@ other = "Lineage"
 
 [bucket-standards-update]
 other = "Standards"
+
+# Normblatt layout (ADR 0381)
+[headerSubject]
+other = "Subject"
+
+[headerVersion]
+other = "Version"
+
+[headerSpec]
+other = "Specification"
+
+[navAria]
+other = "Main navigation"
+
+[colophonHeading]
+other = "Colophon"
+
+[deklarationHeading]
+other = "Declaration"
+
+[homePurpose]
+other = "Purpose"
+
+[homeNotation]
+other = "Notation"
+
+[homeRegistry]
+other = "Registry"
+
+[homeNotes]
+other = "Notes"
+
+[homeSetSeal]
+other = "Set your seal →"
+
+[homeDeclare]
+other = "Declare your own work"
+
+[homeSealAria]
+other = "Seal with Wortlaut 5, Geist 3, Beleg pending"
+
+[homeAxisB]
+other = "pending"
+
+[homeAxisWText]
+other = "The surface: the sentences, the cadence, the choice of words."
+
+[homeAxisGText]
+other = "Ideas, arguments, structural decisions, factual material."
+
+[homeAxisBText]
+other = "Whether the factual statements were checked against sources outside the substrate."
+
+[homeNotationNote]
+other = "Dots count what the machine contributed; a half-stroke means unchecked machine output stands in the work. An empty seal means the author wrote alone."
+
+[homeReadEntry]
+other = "Read the entry →"
+
+[homeToRegistry]
+other = "To the registry"
+
+[homeAllNotes]
+other = "All notes"
+
+[cardNr]
+other = "No."
+
+[cardTitle]
+other = "Title"
+
+[cardName]
+other = "Name"
+
+[cardGenre]
+other = "Genre"
+
+[cardSeal]
+other = "Seal"
+
+[werkSealHeading]
+other = "Seal"
+
+[werkeListHeading]
+other = "Works"
+
+[atlasGenHeading]
+other = "Generator"

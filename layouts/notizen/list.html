@@ -1,23 +1,28 @@
 {{ define "main" }}
-<article class="section-list notizen">
-  <h1>{{ .Title }}</h1>
-  {{ with .Content }}
-    <div class="section-intro">{{ . }}</div>
-  {{ end }}
+{{- /* Notizen-Register (ADR 0381): jede Notiz ein Band, Datum und Rubrik in
+       der Randspalte, Titel und Beschreibungssatz rechts. */ -}}
+<article class="blatt notizen">
+  <section class="blk blk-kopf">
+    {{ partial "kopflabel.html" . }}
+    <div class="blk-body">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </div>
+  </section>
 
-  {{ $pieces := .Pages }}
-  {{ if gt (len $pieces) 0 }}
-    <ul class="notizen-register">
-      {{ range $pieces.ByDate.Reverse }}
-        <li>
-          <p class="reg-meta">
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.bucket }} · <span class="reg-bucket">{{ i18n (printf "bucket-%s" .) | default . }}</span>{{ end }}
-          </p>
-          <p class="reg-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-          {{ with .Description }}<p class="reg-desc">{{ . }}</p>{{ end }}
-        </li>
-      {{ end }}
-    </ul>
-  {{ end }}
+  {{- range .Pages.ByDate.Reverse }}
+  <section class="blk blk-eintrag">
+    <div class="blk-label">
+      <p class="blk-name"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></p>
+      {{- with .Params.bucket }}
+      <p class="blk-meta">{{ i18n (printf "bucket-%s" .) | default . }}</p>
+      {{- end }}
+    </div>
+    <div class="blk-body">
+      <h2 class="reg-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Description }}<p class="reg-desc">{{ . }}</p>{{ end }}
+    </div>
+  </section>
+  {{- end }}
 </article>
 {{ end }}

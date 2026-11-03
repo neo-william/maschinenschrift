@@ -1,54 +1,31 @@
 {{ define "main" }}
-<article class="werke-section">
-  <header>
-    <h1>{{ .Title }}</h1>
-    <p>{{ i18n "catalogIntro" }}</p>
-  </header>
+{{ $werke := .Pages }}
+{{ $count := len $werke }}
+<article class="blatt werke-section">
+  <section class="blk blk-kopf">
+    {{ partial "kopflabel.html" . }}
+    <div class="blk-body">
+      <h1>{{ .Title }}</h1>
+      <p>{{ i18n "catalogIntro" }}</p>
+    </div>
+  </section>
 
-  {{ $werke := .Pages }}
-  {{ $count := len $werke }}
-
-  {{ if eq $count 0 }}
-    <p>{{ i18n "catalogEmpty" }}</p>
-  {{ else }}
-    <p class="werke-count">{{ i18n "worksCount" (dict "Count" $count) }}</p>
-
-    <ul class="werke-list werke-list-detail">
-      {{ range $werke }}
-        {{ $z := partial "zeichen.html" .Params.zeichen }}
-        <li>
-          <a href="{{ .RelPermalink }}" class="werke-list-entry">
-            <span class="werke-list-glyph">
-              {{ partial "siegel.html" (dict
-                  "wortlaut" $z.wortlaut
-                  "geist" $z.geist
-                  "beleg" $z.beleg
-                  "class" "siegel-list"
-                  "label" (printf "Siegel: W=%d G=%d B=%s" $z.wortlaut $z.geist $z.beleg)
-              ) }}
-            </span>
-            <span class="werke-list-meta">
-              {{ with .Params.katalognummer }}<span class="werke-list-nr">{{ . }}</span>{{ end }}
-              <span class="werke-list-title">{{ .Title }}</span>
-              <span class="werke-list-author">{{ .Params.author }}{{ with .Params.year }}, {{ . }}{{ end }}</span>
-              {{ with .Params.genre }}<span class="werke-list-genre">{{ . }}</span>{{ end }}
-            </span>
-            <span class="werke-list-axes" aria-label="{{ i18n "axisLabel" }}">
-              <span class="axis">W&nbsp;{{ $z.wortlaut }}</span>
-              <span class="axis">G&nbsp;{{ $z.geist }}</span>
-              <span class="axis axis-b">B&nbsp;{{ $z.beleg }}</span>
-            </span>
-          </a>
-        </li>
+  <section class="blk blk-sec">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "werkeListHeading" }}</h2></div>
+    <div class="blk-body">
+      {{ if eq $count 0 }}
+        <p>{{ i18n "catalogEmpty" }}</p>
+      {{ else }}
+        <p class="werke-count">{{ i18n "worksCount" (dict "Count" $count) }}</p>
+        {{ range $werke }}{{ partial "werk-karte.html" . }}{{ end }}
       {{ end }}
-    </ul>
-  {{ end }}
+    </div>
+  </section>
 
   {{ if gt $count 0 }}
     {{ $doy := now.YearDay }}
     {{ $idx := mod $doy $count }}
     {{ $featured := index $werke $idx }}
-    {{ $z := partial "zeichen.html" $featured.Params.zeichen }}
     {{ $lang := .Site.Language.Lang }}
     {{ $narration := "" }}
     {{ with $featured.Params.narration }}
@@ -57,42 +34,29 @@
         {{ $narration = index . "en" }}
       {{ end }}
     {{ end }}
-    <aside class="werk-des-tages" aria-labelledby="werk-des-tages-heading">
-      <header>
-        <h2 id="werk-des-tages-heading">{{ i18n "workOfTheDay" }}</h2>
-        <p class="rotation-hint">{{ i18n "rotationHint" (dict "Count" $count) }}</p>
-      </header>
-      <div class="werk-des-tages-card">
-        <a class="werk-des-tages-link" href="{{ $featured.RelPermalink }}">
-          <div class="werk-des-tages-glyph">
-            {{ partial "siegel.html" (dict
-                "wortlaut" $z.wortlaut
-                "geist" $z.geist
-                "beleg" $z.beleg
-                "class" "siegel-featured"
-                "label" (printf "Siegel: W=%d G=%d B=%s" $z.wortlaut $z.geist $z.beleg)
-            ) }}
-          </div>
-          <div class="werk-des-tages-text">
-            <h3>{{ $featured.Title }}</h3>
-            <p class="werk-des-tages-author">{{ $featured.Params.author }}{{ with $featured.Params.year }}, {{ . }}{{ end }}</p>
-            {{ with $narration }}
-              <p class="werk-des-tages-narration">{{ . | safeHTML | truncate 280 }}</p>
-            {{ end }}
-          </div>
-        </a>
-      </div>
-    </aside>
+  <section class="blk blk-sec werk-des-tages" aria-labelledby="werk-des-tages-heading">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2 id="werk-des-tages-heading">{{ i18n "workOfTheDay" }}</h2></div>
+    <div class="blk-body">
+      <p class="rotation-hint">{{ i18n "rotationHint" (dict "Count" $count) }}</p>
+      <h3 class="wdt-titel"><a href="{{ $featured.RelPermalink }}">{{ $featured.Title }}</a></h3>
+      <p class="wdt-author">{{ $featured.Params.author }}{{ with $featured.Params.year }}, {{ . }}{{ end }}</p>
+      {{ with $narration }}
+        <p class="wdt-narration">{{ . | safeHTML | truncate 280 }}</p>
+      {{ end }}
+    </div>
+  </section>
   {{ end }}
 
-  <aside class="werke-section-aside">
-    <h2>{{ i18n "contributeAsideHeading" }}</h2>
-    <p>{{ i18n "contributeAsideIntro" }}</p>
-    <ol>
-      <li>{{ i18n "contributeStep1" }}</li>
-      <li>{{ i18n "contributeStep2" }}</li>
-      <li>{{ i18n "contributeStep3" }}</li>
-    </ol>
-  </aside>
+  <section class="blk blk-sec">
+    <div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2>{{ i18n "contributeAsideHeading" }}</h2></div>
+    <div class="blk-body">
+      <p>{{ i18n "contributeAsideIntro" }}</p>
+      <ol>
+        <li>{{ i18n "contributeStep1" }}</li>
+        <li>{{ i18n "contributeStep2" }}</li>
+        <li>{{ i18n "contributeStep3" }}</li>
+      </ol>
+    </div>
+  </section>
 </article>
 {{ end }}
