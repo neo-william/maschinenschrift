@@ -24,7 +24,10 @@
         {{- with site.GetPage . }}
           {{- $aktiv := hasPrefix $cur .RelPermalink }}
           {{- if and (eq .Section "verzeichnis") (not $aktiv) }}{{ with site.GetPage "/werke" }}{{ $aktiv = hasPrefix $cur .RelPermalink }}{{ end }}{{ end }}
-      <a href="{{ .RelPermalink }}"{{ if $aktiv }} class="aktiv" aria-current="page"{{ end }}>{{ .Title }}</a>
+          {{- $cls := slice }}
+          {{- if eq .Section "siegel" }}{{ $cls = $cls | append "nav-generator" }}{{ end }}
+          {{- if $aktiv }}{{ $cls = $cls | append "aktiv" }}{{ end }}
+      <a href="{{ .RelPermalink }}"{{ with $cls }} class="{{ delimit . " " }}"{{ end }}{{ if $aktiv }} aria-current="page"{{ end }}>{{ .Title }}</a>
         {{- end }}
       {{- end }}
     </nav>

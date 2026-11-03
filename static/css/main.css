@@ -54,6 +54,9 @@
   --color-faint: #6b6a64;
   --color-accent: #1d6b43;    /* vertieftes Gruen: Marken, Links */
   --color-accent-hover: var(--color-ink);
+  --color-signal: #b84f1a;    /* Siegellack-Orange: nur der Generator-Reiter */
+  --color-signal-hover: #9a4116;
+  --color-signal-ink: #fdfdfb;
   --color-mark: #f8f251;      /* Textmarker-Zitronengelb, nur für ::selection */
   --color-mark-ink: #1a1a1a;
   --color-rule: #9e9d96;      /* Bezugslinien */
@@ -68,7 +71,7 @@
   --color-glyph-frame: transparent;
 
   --rand: 2rem;               /* Innenrand des Bogens */
-  --spalte: 190px;            /* Randspalte */
+  --spalte: 210px;            /* Randspalte */
   --luft: 2.5rem;             /* Abstand Randspalte → Text */
 }
 
@@ -92,6 +95,9 @@
     --color-muted: #a9a59c;
     --color-faint: #8f8b83;
     --color-accent: #5bb383;
+    --color-signal: #e8834a;
+    --color-signal-hover: #f0905a;
+    --color-signal-ink: #151513;
     --color-mark: #4da6ff; /* Textmarker-Azurblau im Dark Mode, aufgehellt (ADR 0058) */
     --color-mark-ink: #0e0e0c;
     --color-rule: #5d5b55;
@@ -116,6 +122,9 @@
   --color-muted: #a9a59c;
   --color-faint: #8f8b83;
   --color-accent: #5bb383;
+  --color-signal: #e8834a;
+  --color-signal-hover: #f0905a;
+  --color-signal-ink: #151513;
   --color-mark: #4da6ff; /* Textmarker-Azurblau im Dark Mode, aufgehellt (ADR 0058) */
   --color-mark-ink: #0e0e0c;
   --color-rule: #5d5b55;
@@ -209,6 +218,21 @@ body { margin: 0; background: var(--color-desk); }
 }
 .site-nav a:hover { color: var(--color-ink); }
 .site-nav a.aktiv { color: var(--color-ink); border-bottom-color: var(--color-accent); }
+/* Der Generator ist das Werkzeug der Site: als einziger Reiter ein
+   Siegellack-Feld, damit Blick und Klick dorthin gehen. Orange bleibt diesem
+   Reiter vorbehalten; Gruen fuehrt weiter durch den Text. */
+.site-nav a.nav-generator {
+  margin: -0.3rem 0;
+  padding: 0.3rem 0.7rem 0.28rem;
+  border-bottom: 0;
+  font-weight: 600;
+  color: var(--color-signal-ink);
+  background: var(--color-signal);
+  transition: background 100ms ease;
+}
+.site-nav a.nav-generator:hover { color: var(--color-signal-ink); background: var(--color-signal-hover); }
+.site-nav a.nav-generator.aktiv { box-shadow: inset 0 -2px 0 var(--color-signal-ink); }
+.site-nav a.nav-generator:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 2px; }
 .nav-rechts { margin-left: auto; display: flex; align-items: center; gap: 1rem; }
 .lang-switch {
   display: flex; align-items: center;
@@ -248,17 +272,22 @@ body { margin: 0; background: var(--color-desk); }
   border-top: 2px solid var(--color-accent);
 }
 .blk-label.blk-leer { border-top: 0; padding: 0; }
+/* Randueberschrift: deutlich groesser als der Grundtext (19 px), damit sie
+   sich abhebt. Die Elternseite im Kopfblock bleibt kleiner — sie ist Rubrik,
+   keine Ueberschrift. */
 .blk-label h2,
 .blk-name {
   margin: 0;
-  font-weight: 600; font-size: 0.95rem; line-height: 1.3; letter-spacing: 0;
+  font-weight: 600; font-size: 1.25rem; line-height: 1.22; letter-spacing: -0.005em;
   color: var(--color-ink);
   text-align: left; hyphens: manual;
   scroll-margin-top: 1rem;
+  text-wrap: balance;
 }
 main a.blk-name, main a.blk-name:visited {
   display: block; color: var(--color-ink);
   border-bottom: 0; padding-bottom: 0;
+  font-size: 0.95rem; line-height: 1.3; letter-spacing: 0;
 }
 main a.blk-name:hover { color: var(--color-accent); }
 .blk-num {
@@ -279,7 +308,7 @@ main a.blk-name:hover { color: var(--color-accent); }
 .blk-mono { font-family: ui-monospace, "Consolas", monospace; font-size: 0.82em; letter-spacing: 0.06em; }
 /* Feldnamen der Startseite: kurze Woerter, als Versalien gesperrt. */
 .blk-kurz .blk-label h2,
-.blk-kurz .blk-name { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.blk-kurz .blk-name { font-size: 0.9rem; letter-spacing: 0.14em; text-transform: uppercase; }
 
 .blk-body {
   flex: 999 1 26rem;
@@ -438,7 +467,7 @@ main a.cta-leise:hover { border-bottom-color: var(--color-accent); }
 }
 .blk-body .lt-text { margin: 0.15rem 0 0; text-indent: 0; font-size: 0.9rem; line-height: 1.4; color: var(--color-ink-soft); }
 .blk-body .legende-note { margin: 1.75rem 0 0; text-indent: 0; font-style: italic; color: var(--color-ink-soft); }
-@media (max-width: 1000px) {
+@media (max-width: 1040px) {
   .legende { height: auto; width: 100%; }
   .legende-linien { display: none; }
   .legende-siegel { position: static; width: 240px; margin-bottom: 1.25rem; }
