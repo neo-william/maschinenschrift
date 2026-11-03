@@ -55,7 +55,7 @@
   --color-accent: #1d6b43;    /* vertieftes Gruen: Marken, Links */
   --color-accent-hover: var(--color-ink);
   --color-signal: #b84f1a;    /* Siegellack-Orange: nur der Generator-Reiter */
-  --color-signal-hover: #9a4116;
+  --color-signal-text: #a3461a;
   --color-signal-ink: #fdfdfb;
   --color-mark: #f8f251;      /* Textmarker-Zitronengelb, nur für ::selection */
   --color-mark-ink: #1a1a1a;
@@ -96,7 +96,7 @@
     --color-faint: #8f8b83;
     --color-accent: #5bb383;
     --color-signal: #e8834a;
-    --color-signal-hover: #f0905a;
+    --color-signal-text: #e8834a;
     --color-signal-ink: #151513;
     --color-mark: #4da6ff; /* Textmarker-Azurblau im Dark Mode, aufgehellt (ADR 0058) */
     --color-mark-ink: #0e0e0c;
@@ -123,7 +123,7 @@
   --color-faint: #8f8b83;
   --color-accent: #5bb383;
   --color-signal: #e8834a;
-  --color-signal-hover: #f0905a;
+  --color-signal-text: #e8834a;
   --color-signal-ink: #151513;
   --color-mark: #4da6ff; /* Textmarker-Azurblau im Dark Mode, aufgehellt (ADR 0058) */
   --color-mark-ink: #0e0e0c;
@@ -183,14 +183,14 @@ body { margin: 0; background: var(--color-desk); }
   border-right: 1px solid var(--color-hairline);
 }
 .sf-marke {
-  flex: 1 1 300px;
+  flex: 0 0 auto;             /* so breit wie Siegel + Name, nie schmaler */
   display: flex; align-items: center; gap: 1rem;
   padding-top: 1.25rem; padding-bottom: 1.25rem;
   color: var(--color-ink); text-decoration: none;
 }
-.sf-marke svg.site-logo { width: 60px; height: auto; display: block; flex: none; }
-.sf-name { font-weight: 600; font-size: 1.05rem; letter-spacing: 0.17em; text-transform: uppercase; }
-.sf-gegenstand { flex: 2 1 320px; }
+.sf-marke svg.site-logo { width: 66px; height: auto; display: block; flex: none; }
+.sf-name { font-weight: 600; font-size: 1.32rem; line-height: 1.1; letter-spacing: 0.14em; text-transform: uppercase; }
+.sf-gegenstand { flex: 1 1 260px; }
 .sf-fassung { flex: 0 1 210px; border-right: 0; }
 .sf-label {
   margin: 0;
@@ -218,20 +218,21 @@ body { margin: 0; background: var(--color-desk); }
 }
 .site-nav a:hover { color: var(--color-ink); }
 .site-nav a.aktiv { color: var(--color-ink); border-bottom-color: var(--color-accent); }
-/* Der Generator ist das Werkzeug der Site: als einziger Reiter ein
-   Siegellack-Feld, damit Blick und Klick dorthin gehen. Orange bleibt diesem
-   Reiter vorbehalten; Gruen fuehrt weiter durch den Text. */
+/* Der Generator ist das Werkzeug der Site: als einziger Reiter gestempelt —
+   Siegellack-Rahmen und -Schrift, keine Flaeche (ADR 0381, Nachtrag 2).
+   Erst beim Zeigen und auf der eigenen Seite fuellt sich der Stempel.
+   Orange bleibt diesem Reiter vorbehalten; Gruen fuehrt durch den Text. */
 .site-nav a.nav-generator {
   margin: -0.3rem 0;
-  padding: 0.3rem 0.7rem 0.28rem;
-  border-bottom: 0;
+  padding: 0.25rem 0.63rem 0.2rem;
+  border: 1.5px solid var(--color-signal);
   font-weight: 600;
-  color: var(--color-signal-ink);
-  background: var(--color-signal);
-  transition: background 100ms ease;
+  color: var(--color-signal-text);
+  background: transparent;
+  transition: background 100ms ease, color 100ms ease;
 }
-.site-nav a.nav-generator:hover { color: var(--color-signal-ink); background: var(--color-signal-hover); }
-.site-nav a.nav-generator.aktiv { box-shadow: inset 0 -2px 0 var(--color-signal-ink); }
+.site-nav a.nav-generator:hover,
+.site-nav a.nav-generator.aktiv { color: var(--color-signal-ink); background: var(--color-signal); }
 .site-nav a.nav-generator:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 2px; }
 .nav-rechts { margin-left: auto; display: flex; align-items: center; gap: 1rem; }
 .lang-switch {
@@ -732,7 +733,7 @@ main .wdt-titel a:hover { color: var(--color-accent); }
   /* Blocksatz reisst in schmaler Spalte Loecher: hier Flattersatz. */
   .blk-body { text-align: left; }
   .sf-marke svg.site-logo { width: 48px; }
-  .sf-name { font-size: 0.95rem; }
+  .sf-name { font-size: 1.1rem; letter-spacing: 0.12em; }
   .blk { padding-top: 2.75rem; padding-bottom: 3rem; }
   .blk-eintrag { padding-top: 1.75rem; padding-bottom: 2rem; }
   .karte { padding: 1rem 1.1rem 1.2rem; }
