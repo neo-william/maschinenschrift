@@ -1,7 +1,7 @@
 ---
 title: "The Field, Measured"
-description: "Some twenty approaches now state how much language model there is in a text. Coded on seven features and translated into one shared grid, they show which question each one answers, and where a book finds no place."
-seotitle: "The Field, Measured — AI Disclosure for Books Compared: Labels, Ladders, Taxonomies"
+description: "Some twenty approaches now state how much language model there is in a text. Translated into one shared grid, they show where a book finds no statement of its own."
+seotitle: "The Field, Measured — AI Disclosure for Books Compared: Labels, Ladders, Classifications"
 date: 2026-11-04
 bucket: lineage
 url: /notes/2026-11-the-field-measured/
@@ -73,7 +73,7 @@ sources:
 
 Anyone who wants to say how much of a text came from a language model now has a choice: labels for human-made books, ladders with three flags, forms from academia, mandatory fields at retailers, detectors. This project's [register of neighbours](/decisions/) lists twenty-two approaches. Read side by side, they answer different questions.
 
-This note lays them over one another. It describes each approach on seven features and translates the classes of the labels and ladders into the grid in which Maschinenschrift declares. **The grid is this project's measuring instrument, not the neighbours' own description of themselves.** Where a boundary is a reading, it says so. Coding as of 4 November 2026.
+This note lays them over one another. It translates the classes of the labels, ladders and classifications into the grid in which Maschinenschrift declares. **The grid is this project's measuring instrument, not the neighbours' own description of themselves.** Where a boundary is a reading, it says so. Coding as of 4 November 2026.
 
 ## One book, seven grids
 
@@ -85,30 +85,8 @@ Every other system cuts this area its own way. The label gives one corner a mark
 
 **A book whose sentences come largely from the model, but whose ideas do not, has almost nowhere a statement of its own.** The labels require it to stay silent. FAIA and Credtent file it as *AI-Assisted*, in the same class as a book in which a model only smoothed a few sentences. KDP puts it in the same class as a fully generated text, STM in the same category as a book with a single generated paragraph. None of the systems says anything about *Beleg*.
 
-## Seven features
-
-The grid compares only what can be mapped onto *Wortlaut* and *Geist*. The thread chart takes in all twenty-two approaches and describes them on seven features: what the statement is about, who makes it, whom it addresses, where it appears, how finely it distinguishes, who stands behind it, and what it costs. Each line is one approach. Where lines share the same values they form bundles, and the register's families appear without anyone setting them.
-
-{{< feld "faden" >}}
-
-Maschinenschrift runs with the labels: a work, the author speaks, the reader is addressed, the statement is on the cover. Only at resolution do the lines part. On guarantee, Maschinenschrift sits with plain self-declaration, without contract, assessor or signature. Whoever looks for a third party to stand behind the statement will not find one here. That is [a decision](/decisions/), not an oversight.
-
-## Information against length
-
-A third view asks how much a statement distinguishes and how long it is for it. Horizontally, the number of possible statements in bits; vertically, the length of what the reader gets to see, in characters. Free text has no fixed number of states and stands in a column of its own. Not shown: KDP, whose statement goes to the retailer, and statements mainly for machines: C2PA, IPTC, the EU code and FAIA.
-
-{{< feld "laenge" >}}
-
-This is the most self-promoting of the three charts, so the objections stand beside it rather than in a footnote. It shows a gap: between the label's single bit and a form's standard page there is little. Whether Maschinenschrift fills that gap well is not something a chart can decide when Maschinenschrift chose its axes.
-
-## Codebook
-
-All three charts come from one table. Every cell is a reading, drawn from the approaches' own publications. The approaches in the grid were checked against the originals on 4 November; the other rows rest on the research for the register of 28 October. What could not be established is marked “unknown”. The register takes corrections: contact [at] maschinenschrift [dot] com.
-
-{{< feld-codebuch >}}
-
-Not coded: the AI Assessment Scale, because it sets rules for assessments and declares no work, and training-data signals, because they answer a different question.
+The boundaries on each panel were checked against the systems' own publications on 4 November; where a boundary remains a reading, the panel says so. The register's other approaches, detectors, signatures and process taxonomies, answer different questions and cannot be mapped onto *Wortlaut* and *Geist*. The register takes corrections: contact [at] maschinenschrift [dot] com.
 
 ---
 
-*Self-declaration of this note: **W 5 · G 3**. Occasion with the editor, who wanted to see the field rather than have it described; the choice of charts, the reading of the grids and the objections developed in conversation between editor and substrate; coding, programming and linguistic surface substrate-mediated. The approaches in the grid were checked against the originals on 4 November, the other rows against the register's sources of 28 October; estimates are marked as such. Selection and responsibility with the editor.*
+*Self-declaration of this note: **W 5 · G 3**. Occasion with the editor, who wanted to see the field rather than have it described; the presentation and the reading of the grids developed in conversation between editor and substrate; programming and linguistic surface substrate-mediated. The boundaries in the grid were checked against the systems' publications on 4 November. Selection and responsibility with the editor.*

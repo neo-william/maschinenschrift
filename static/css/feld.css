@@ -1,4 +1,4 @@
-/* Feld-Grafiken der Notiz „Das Feld, vermessen“ (ADR 0385).
+/* Feld-Grafik der Notiz „Das Feld, vermessen“ (ADR 0385).
    Nur Tinte, Ton und Schraffur: keine Farbe, die bewertet (Verzicht 11).
    Alle Regeln unter .fv, damit nichts mit main.css kollidiert. */
 
@@ -22,8 +22,6 @@
 
 .fv p, .blk-body .fv p + p { text-indent: 0; margin: 0 0 .5rem; }
 .fv .fv-tafel h3 { text-transform: none; letter-spacing: 0; font-size: 1rem; }
-.fv-faden-svg, .fv-lk-svg { background: var(--page); border: 1px solid var(--hair); }
-.fv-lk .fv-lbl { paint-order: stroke; stroke: var(--page); stroke-width: 6px; stroke-linejoin: round; }
 .fv-ohne-js { font-style: italic; color: var(--faint); }
 .fv button { font: inherit; color: var(--ink); background: var(--page); border: 0; cursor: pointer; }
 .fv button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -71,59 +69,7 @@
 .fv-zelle { cursor: pointer; }
 .fv-zelle:hover { stroke: var(--ink); stroke-width: 1.4; }
 
-/* Fadenbild */
-.fv-chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 1rem; }
-.fv .fv-chip { font-family: var(--mono); font-size: .64rem; letter-spacing: .03em; border: 1px solid var(--rule) !important; padding: .3rem .55rem; }
-.fv-chip[aria-pressed="true"] { background: var(--ink) !important; color: var(--page) !important; border-color: var(--ink) !important; }
-.fv-scroller { overflow-x: auto; -webkit-overflow-scrolling: touch; position: relative; }
-.fv-faden-svg { min-width: 760px; width: 100%; height: auto; display: block; }
-.fv-faden .fv-linie { fill: none; stroke: var(--ink-soft); stroke-width: 1.15; opacity: .62; transition: opacity .15s, stroke-width .15s; }
-.fv-faden.fv-fokus .fv-linie { opacity: .1; }
-.fv-faden.fv-fokus .fv-linie.fv-an { opacity: 1; stroke: var(--ink); stroke-width: 2.1; }
-.fv-faden .fv-treffer { fill: none; stroke: transparent; stroke-width: 10; cursor: pointer; pointer-events: stroke; }
-.fv-faden .fv-knoten { fill: var(--ink); }
-.fv-faden .fv-kat { font-family: var(--mono); font-size: 10.5px; fill: var(--ink-soft); paint-order: stroke; stroke: var(--page); stroke-width: 4px; stroke-linejoin: round; }
-.fv-faden .fv-kopf { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; fill: var(--muted); }
-.fv-faden .fv-name { font-family: var(--serif); font-size: 11.5px; fill: var(--ink-soft); }
-.fv-faden .fv-fam { font-family: var(--mono); font-size: 9.5px; fill: var(--faint); }
-.fv-faden.fv-fokus .fv-name, .fv-faden.fv-fokus .fv-fam { opacity: .25; }
-.fv-faden.fv-fokus .fv-name.fv-an, .fv-faden.fv-fokus .fv-fam.fv-an { opacity: 1; fill: var(--ink); font-weight: 600; }
-.fv-faden .fv-achslinie { stroke: var(--hair); stroke-width: 1; }
-
-/* Information gegen Länge */
-.fv-lk-svg { min-width: 680px; width: 100%; height: auto; display: block; }
-.fv-lk .fv-gitter { stroke: var(--hair); stroke-width: 1; }
-.fv-lk .fv-norm { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 2 3; }
-.fv-lk .fv-ax { stroke: var(--ink); stroke-width: 1.2; }
-.fv-lk .fv-tick { font-family: var(--mono); font-size: 10px; fill: var(--muted); }
-.fv-lk .fv-tick2 { font-family: var(--mono); font-size: 9px; fill: var(--faint); }
-.fv-lk .fv-titel { font-family: var(--mono); font-size: 10px; letter-spacing: .07em; fill: var(--muted); }
-.fv-lk .fv-lbl { font-family: var(--serif); font-size: 13px; fill: var(--ink-soft); }
-.fv-lk .fv-leit { stroke: var(--rule); stroke-width: .8; fill: none; }
-.fv-lk .fv-kante { stroke: var(--ink); stroke-width: 1.3; stroke-dasharray: 5 4; fill: none; }
-.fv-lk .fv-kante-t { font-family: var(--serif); font-style: italic; font-size: 13.5px; fill: var(--ink); }
-.fv-lk .fv-band { fill: var(--tone); opacity: .55; }
-.fv-lk .fv-pkt { fill: var(--ink); stroke: var(--page); stroke-width: 1.5; }
-.fv-lk .fv-pkt.fv-hohl { fill: var(--page); stroke: var(--ink); stroke-width: 1.5; }
-.fv-lk .fv-hit { fill: transparent; cursor: pointer; }
-.fv-lk.fv-ohne-kante .fv-kante, .fv-lk.fv-ohne-kante .fv-kante-t { display: none; }
-.fv-schalter { display: inline-flex; gap: .45rem; align-items: center; font-family: var(--mono); font-size: .68rem; color: var(--muted); margin: 0 0 .9rem; cursor: pointer; }
-.fv-schalter input { accent-color: var(--ink); width: 15px; height: 15px; }
-.fv-vorsicht { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem 1.6rem; margin-top: 1.3rem; }
-.fv-vorsicht div { border-top: 1px solid var(--ink); padding-top: .45rem; font-size: .84rem; line-height: 1.4; min-width: 0; }
-.fv-vorsicht b { display: block; font-family: var(--mono); font-size: .62rem; letter-spacing: .05em; text-transform: uppercase; font-weight: 500; color: var(--muted); margin-bottom: .2rem; }
-
-/* Codebuch */
-.fv-tab { overflow-x: auto; border-top: 1px solid var(--ink); }
-.fv .fv-tabelle { display: table; border-collapse: collapse; width: 100%; min-width: 960px; margin: 0; font-size: .74rem; line-height: 1.3; }
-.fv-tabelle th, .fv-tabelle td { text-align: left; vertical-align: top; padding: .35rem .55rem .35rem 0; border-bottom: 1px solid var(--hair); }
-.fv-tabelle thead th { font-family: var(--mono); font-size: .58rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--rule); }
-.fv-tabelle td.fv-f { font-family: var(--mono); font-size: .64rem; color: var(--muted); }
-.fv-tabelle tr.fv-ms td { font-weight: 600; }
-.fv-tabelle td.fv-anm { color: var(--faint); }
-.fv-quelle { font-family: var(--mono); font-size: .64rem; color: var(--muted); margin-top: .6rem !important; }
-
-@media (max-width: 1040px) {
+\1 {
   .fv-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .fv-koerper { grid-template-columns: minmax(0, 1fr); }
   .fv-koerper svg { max-width: 360px; }
@@ -132,6 +78,4 @@
   .fv-raster { grid-template-columns: minmax(0, 1fr); }
   .fv-tafel svg { max-width: 280px; }
   .fv-unter { min-height: 0; }
-  .fv-vorsicht { grid-template-columns: minmax(0, 1fr); }
 }
-@media (prefers-reduced-motion: reduce) { .fv-faden .fv-linie { transition: none; } }

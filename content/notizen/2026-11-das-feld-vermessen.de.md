@@ -1,7 +1,7 @@
 ---
 title: "Das Feld, vermessen"
-description: "Rund zwanzig Ansätze erklären inzwischen, wie viel Sprachmodell in einem Text steckt. Nach sieben Merkmalen kodiert und in ein gemeinsames Raster übersetzt, zeigt sich, welche Frage jeder beantwortet und wo ein Buch keinen Ort findet."
-seotitle: "Das Feld, vermessen — KI-Kennzeichnung für Bücher im Vergleich: Etiketten, Stufenleitern, Taxonomien"
+description: "Rund zwanzig Ansätze erklären inzwischen, wie viel Sprachmodell in einem Text steckt. In ein gemeinsames Raster übersetzt, zeigt sich, wo ein Buch keine eigene Angabe findet."
+seotitle: "Das Feld, vermessen — KI-Kennzeichnung für Bücher im Vergleich: Etiketten, Stufenleitern, Klassifikationen"
 date: 2026-11-04
 bucket: lineage
 stile:
@@ -72,7 +72,7 @@ sources:
 
 Wer heute angeben will, wie viel eines Texts aus einem Sprachmodell kommt, hat die Wahl: Etiketten für menschengemachte Bücher, Stufenleitern mit drei Flaggen, Formulare aus der Wissenschaft, Pflichtfelder bei Händlern, Detektoren. Das [Register der Nachbarn](/de/entscheidungen/) dieses Projekts führt zweiundzwanzig Ansätze. Nebeneinander gelesen, beantworten sie verschiedene Fragen.
 
-Diese Notiz legt sie übereinander. Sie beschreibt jeden Ansatz nach sieben Merkmalen und übersetzt die Klassen der Etiketten und Stufenleitern in das Raster, in dem Maschinenschrift deklariert. **Das Raster ist ein Messgerät dieses Projekts, nicht die Selbstbeschreibung der Nachbarn.** Wo eine Grenze eine Lesart ist, steht es dabei. Stand der Kodierung: 4. November 2026.
+Diese Notiz legt sie übereinander. Sie übersetzt die Klassen der Etiketten, Stufenleitern und Klassifikationen in das Raster, in dem Maschinenschrift deklariert. **Das Raster ist ein Messgerät dieses Projekts, nicht die Selbstbeschreibung der Nachbarn.** Wo eine Grenze eine Lesart ist, steht es dabei. Stand der Kodierung: 4. November 2026.
 
 ## Ein Buch, sieben Raster
 
@@ -84,30 +84,8 @@ Jedes andere System schneidet diese Fläche auf seine Weise. Das Etikett gibt ei
 
 **Ein Buch, dessen Sätze weitgehend aus dem Modell kommen, dessen Gedanken aber nicht, hat fast nirgends eine eigene Angabe.** Bei den Etiketten muss es schweigen. Bei FAIA und Credtent steht es unter *AI-Assisted*, in derselben Klasse wie ein Buch, an dem ein Modell nur einzelne Sätze geglättet hat. Bei KDP steht es in derselben Klasse wie ein vollständig generierter Text, bei STM in derselben Kategorie wie ein Buch mit einem einzigen generierten Absatz. Zum Beleg sagt keines der Systeme etwas.
 
-## Sieben Merkmale
-
-Das Raster vergleicht nur, was sich auf Wortlaut und Geist abbilden lässt. Das Fadenbild nimmt alle zweiundzwanzig Ansätze auf und beschreibt sie nach sieben Merkmalen: worüber die Angabe spricht, wer sie macht, an wen sie sich richtet, wo sie steht, wie fein sie unterscheidet, wer für sie bürgt und was sie kostet. Jede Linie ist ein Ansatz. Wo Linien dieselben Ausprägungen teilen, bilden sie Bündel, und die Familien des Registers zeigen sich, ohne dass jemand sie setzt.
-
-{{< feld "faden" >}}
-
-Maschinenschrift läuft mit den Etiketten: ein Werk, die Autorin spricht, gemeint ist die Leserin, die Angabe steht auf dem Umschlag. Erst bei der Auflösung trennen sich die Linien. Bei der Bürgschaft steht Maschinenschrift bei der bloßen Selbstauskunft, ohne Vertrag, ohne Prüfstelle, ohne Signatur. Wer eine dritte Stelle sucht, die für die Angabe einsteht, findet sie hier nicht. Das ist [eine Entscheidung](/de/entscheidungen/), kein Versehen.
-
-## Information gegen Länge
-
-Ein dritter Blick fragt, wie viel eine Angabe unterscheidet und wie lang sie dafür ist. Waagerecht steht die Zahl der möglichen Angaben in Bit, senkrecht die Länge dessen, was die Leserin zu sehen bekommt, in Zeichen. Freitext hat keine feste Zahl von Zuständen und steht in einer eigenen Spalte. Nicht eingezeichnet sind KDP, dessen Angabe an den Händler geht, und Angaben vor allem für Maschinen: C2PA, IPTC, der EU-Kodex und FAIA.
-
-{{< feld "laenge" >}}
-
-Diese Grafik ist die werblichste der drei; die Einwände stehen deshalb neben ihr und nicht in einer Fußnote. Sie zeigt eine Lücke: Zwischen dem einen Bit des Etiketts und der Normseite eines Formulars liegt wenig. Ob Maschinenschrift diese Lücke gut füllt, kann eine Grafik nicht entscheiden, deren Achsen Maschinenschrift gewählt hat.
-
-## Codebuch
-
-Alle drei Grafiken entstehen aus einer Tabelle. Jede Zelle ist eine Lesart, gewonnen aus den Veröffentlichungen der Ansätze. Die Ansätze im Raster sind am 4. November am Original geprüft, die übrigen Zeilen stützen sich auf die Recherche zum Register vom 28. Oktober. Was sich nicht ermitteln ließ, steht als „unbekannt“. Korrekturen nimmt das Register entgegen: contact [at] maschinenschrift [dot] com.
-
-{{< feld-codebuch >}}
-
-Nicht kodiert sind die AI Assessment Scale, weil sie Regeln für Prüfungen setzt und kein Werk deklariert, und Signale zu Trainingsdaten, weil sie eine andere Frage beantworten.
+Die Grenzen an jeder Tafel sind am 4. November an den Veröffentlichungen der Systeme geprüft; wo eine Grenze Lesart bleibt, steht es an der Tafel. Die übrigen Ansätze des Registers, Detektoren, Signaturen und Prozess-Taxonomien, beantworten andere Fragen und lassen sich nicht auf Wortlaut und Geist abbilden. Korrekturen nimmt das Register entgegen: contact [at] maschinenschrift [dot] com.
 
 ---
 
-*Selbstdeklaration dieser Notiz: **W 5 · G 3**. Anlass beim Herausgeber, der das Feld sehen wollte, statt es beschrieben zu bekommen; Wahl der Grafiken, die Lesart der Raster und die Einwände im Gespräch zwischen Herausgeber und Substrat entwickelt; Kodierung, Programmierung und sprachliche Oberfläche substrat-vermittelt. Die Ansätze im Raster sind am 4. November am Original geprüft, die übrigen Zeilen gegen die Quellen des Registers vom 28. Oktober; Schätzungen sind als solche ausgewiesen. Auswahl und Verantwortung beim Herausgeber.*
+*Selbstdeklaration dieser Notiz: **W 5 · G 3**. Anlass beim Herausgeber, der das Feld sehen wollte, statt es beschrieben zu bekommen; Darstellung und Lesart der Raster im Gespräch zwischen Herausgeber und Substrat entwickelt; Programmierung und sprachliche Oberfläche substrat-vermittelt. Die Grenzen im Raster sind am 4. November an den Veröffentlichungen der Systeme geprüft. Auswahl und Verantwortung beim Herausgeber.*

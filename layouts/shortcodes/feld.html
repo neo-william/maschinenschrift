@@ -3,14 +3,9 @@
 
   Setzt einen leeren Behaelter, den static/js/feld.js fuellt:
     {{< feld "raster" >}}   Koerper + sieben Tafeln Wortlaut × Geist
-    {{< feld "faden" >}}    Fadenbild, 22 Ansaetze ueber sieben Merkmale
-    {{< feld "laenge" >}}   Information gegen Laenge
-
-  Die Daten liest das Skript aus dem Codebuch ({{< feld-codebuch >}}), das
-  dieselbe CSV (static/daten/feld-kodierung.csv) auch als Tabelle ausgibt.
-  Ohne JavaScript bleibt der Hinweis stehen; die Tabelle traegt alle Werte.
+  Ohne JavaScript bleibt der Hinweis stehen.
 */ -}}
 {{- $art := .Get 0 -}}
 <div class="fv fv-breit" data-fv="{{ $art }}">
-  <p class="fv-ohne-js">{{ if eq .Page.Language.Lang "de" }}Diese Grafik braucht JavaScript. Dieselben Werte stehen im Codebuch unten.{{ else }}This chart needs JavaScript. The same values are in the codebook below.{{ end }}</p>
+  <p class="fv-ohne-js">{{ if eq .Page.Language.Lang "de" }}Diese Grafik braucht JavaScript.{{ else }}This chart needs JavaScript.{{ end }}</p>
 </div>
