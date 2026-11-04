@@ -29,8 +29,11 @@
 <div class="lochband" aria-hidden="true">
   <svg viewBox="0 0 1100 118" preserveAspectRatio="xMinYMid slice" focusable="false">
     <rect class="loch-streifen" x="0" y="8" width="1100" height="84"/>
+    {{- /* Jede Spalte eine Gruppe; --i traegt ihre Position fuer das
+           Stanzen beim Laden (CSS, nur ohne reduzierte Bewegung). */}}
     {{- range $i, $c := $zeichen }}
       {{- $x := add 20 (mul $i 26) }}
+      <g class="spalte" style="--i:{{ $i }}">
       {{- with index $ita $c }}
         {{- $code := . }}
         {{- range $j, $y := $spuren }}
@@ -39,6 +42,7 @@
       {{- end }}
       <circle class="loch" cx="{{ $x }}" cy="44" r="2.1"/>
       {{- if ne $c " " }}<text class="loch-zeichen" x="{{ $x }}" y="110" text-anchor="middle">{{ $c }}</text>{{ end }}
+      </g>
     {{- end }}
   </svg>
 </div>

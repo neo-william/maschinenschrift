@@ -266,6 +266,19 @@ body { margin: 0; background: var(--color-desk); }
   font-family: "EB Garamond", Garamond, Georgia, serif;
   font-size: 11px; letter-spacing: 0.04em;
 }
+/* Stanzen beim Laden: Spalte fuer Spalte von links, ~1 s, danach Ruhe.
+   Kein Loop. Wer weniger Bewegung eingestellt hat, sieht sofort den
+   fertigen Streifen (die Regel greift dann gar nicht). */
+@media (prefers-reduced-motion: no-preference) {
+  .lochband .spalte {
+    animation: stanzen 140ms ease-out both;
+    animation-delay: calc(120ms + var(--i) * 22ms);
+  }
+}
+@keyframes stanzen {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 /* ---------- Bloecke ---------- */
 .blatt { counter-reset: abschnitt; }
