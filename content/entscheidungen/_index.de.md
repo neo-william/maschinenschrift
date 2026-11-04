@@ -127,7 +127,7 @@ Mit den Nachbarn teilt Maschinenschrift mehr, als es weglässt: die Selbstauskun
 
 ## Der Probefall
 
-*La Scuola dei Silenzi* ist der erste Eintrag im Verzeichnis und das Buch des Gründers, erschienen unter dem Namen I.O. Vargas. Deklariert ist es mit **W 5 · G 3 · ausstehend**: die Sätze weitgehend aus dem Modell; Ausgangsgedanke, Figuren, Regeln und alle Entscheidungen vom Autor; die Recherche über das Modell strukturiert und nicht gegengeprüft. Dasselbe Buch, durch die Bauformen des Feldes geführt, Stand 28. Oktober 2026, jede Zeile nach der Definition, die das jeweilige System selbst veröffentlicht:
+*La Scuola dei Silenzi* ist der erste Eintrag im Verzeichnis und das Buch des Gründers, erschienen unter dem Namen I.O. Vargas. Deklariert ist es mit **W 5 · G 3 · ausstehend**: die Sätze weitgehend aus dem Modell; Ausgangsgedanke, Figuren, Regeln und alle Entscheidungen vom Autor; die Recherche über das Modell strukturiert und nicht gegengeprüft. Dasselbe Buch, durch die Bauformen des Feldes geführt, Stand 28. Oktober 2026, FAIA nachgeprüft am 4. November, jede Zeile nach der Definition, die das jeweilige System selbst veröffentlicht:
 
 | Bauform | Was sie über dieses Buch sagen kann |
 |---|---|
@@ -135,7 +135,7 @@ Mit den Nachbarn teilt Maschinenschrift mehr, als es weglässt: die Selbstauskun
 | Prozessaufzeichnung (B) | **Nichts.** Das Schreiben wurde nicht aufgezeichnet, und nachträglich lässt es sich nicht aufzeichnen. |
 | Etiketten (D) | **Keine Angabe.** Die Etiketten lassen maschinell erzeugten Text höchstens in geringem Umfang zu; **das Buch muss schweigen**. |
 | Plattformabfrage von KDP (E, G) | ***KI-generiert***: Text, den ein Werkzeug erzeugt hat, gilt dort als generiert, auch nach umfangreicher Bearbeitung. Es ist **dieselbe Angabe wie für einen Text, an dem niemand etwas entschieden hat**, und sie geht an die Plattform. |
-| Drei Flaggen von FAIA (C, E) | **Jede Flagge trifft nur eine Hälfte.** *KI-unterstützt* passt zum Bau, den der Autor verantwortet, *KI-generiert* zu den Sätzen, die überwiegend aus dem Modell kommen. Wer eine Flagge wählt, **verschweigt die andere Hälfte**. |
+| Drei Flaggen von FAIA (C, E) | ***AI-Assisted***: Der Mensch bleibt hauptsächlicher Urheber, die KI hat „in unterschiedlichem Maß“ beigetragen. Es ist **dieselbe Flagge wie für ein Buch, an dem ein Modell einzelne Sätze geglättet hat**; wie viel der Sätze aus dem Modell kommt, sagt sie nicht. |
 | Prozess-Taxonomien (F) | **Ausdrückbar, als Liste von Arbeitsschritten.** Wessen Sätze und wessen Gedanken vorliegen, **muss die Leserin daraus erschließen**. |
 | Maschinenschrift | **W 5 · G 3 · ausstehend**, dazu acht Sätze Narration in den Worten des Autors, im [Katalog](/de/werke/la-scuola-dei-silenzi/). |
 

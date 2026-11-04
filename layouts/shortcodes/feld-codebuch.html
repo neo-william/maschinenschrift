@@ -1,0 +1,59 @@
+{{- /*
+  Codebuch der Notiz „Das Feld, vermessen“ (ADR 0385).
+
+  Einzige Quelle: static/daten/feld-kodierung.csv (Semikolon, UTF-8). Daraus
+  entstehen beim Build die Tabelle und das data-Attribut, aus dem feld.js die
+  Grafiken zeichnet. Wer die Kodierung aendert, aendert nur die CSV.
+
+  Kategorien stehen in der CSV deutsch; fuer die englische Seite uebersetzt
+  $en sie. Neue Kategorie in der CSV → hier und in feld.js (UEB) nachtragen.
+*/ -}}
+{{- $csv := readFile "static/daten/feld-kodierung.csv" -}}
+{{- $rows := transform.Unmarshal (dict "delimiter" ";") $csv -}}
+{{- $kopf := index $rows 0 -}}
+{{- $daten := slice -}}
+{{- range after 1 $rows -}}
+  {{- $r := . -}}
+  {{- $m := dict -}}
+  {{- range $i, $k := $kopf -}}{{- $m = merge $m (dict $k (index $r $i)) -}}{{- end -}}
+  {{- $daten = $daten | append $m -}}
+{{- end -}}
+{{- $de := eq .Page.Language.Lang "de" -}}
+{{- $en := dict
+  "Werk" "Work" "Schreibprozess" "Writing process" "Datei" "File" "Textoberfläche" "Text surface"
+  "Autorin" "Author" "Verlag" "Publisher" "Dritte Stelle" "Third party" "Software" "Software"
+  "Leserin" "Reader" "Fachwelt" "Scholars" "Maschinen" "Machines" "Händler" "Retailer" "Prüfende" "Assessors"
+  "Umschlag/Impressum" "Cover/imprint" "Anhang/Erklärung" "Statement" "Metadaten" "Metadata" "Plattformkonto" "Platform account" "Prüfbericht" "Report"
+  "rund 70" "about 70" "offen" "open" "stetig" "continuous"
+  "Selbstauskunft" "Self-declaration" "Pflicht/Vertrag" "Duty/contract" "Prüfung durch Dritte" "Third-party check" "Signatur" "Signature" "Aufzeichnung" "Recording" "Statistik" "Statistics"
+  "frei" "free" "Konto/Software" "Account/software" "Mitgliedschaft/Vertrag" "Membership/contract" "Gebühr" "Fee" "unbekannt" "unknown"
+-}}
+{{- $spalten := slice "gegenstand" "sprecherin" "adressat" "ort" "aufloesung" "buergschaft" "huerde" -}}
+{{- $titel := cond $de
+  (dict "gegenstand" "Gegenstand" "sprecherin" "Sprecherin" "adressat" "Adressat" "ort" "Ort" "aufloesung" "Auflösung" "buergschaft" "Bürgschaft" "huerde" "Hürde")
+  (dict "gegenstand" "Object" "sprecherin" "Speaker" "adressat" "Addressee" "ort" "Place" "aufloesung" "Resolution" "buergschaft" "Guarantee" "huerde" "Barrier") -}}
+{{- $csvPfad := printf "/daten/feld-kodierung.csv?v=%s" (substr (md5 $csv) 0 8) -}}
+<div class="fv fv-breit fv-codebuch" id="fv-daten" data-rows="{{ $daten | jsonify }}">
+  <div class="fv-tab">
+  <table class="fv-tabelle">
+    <thead><tr>
+      <th scope="col">{{ cond $de "Ansatz" "Approach" }}</th>
+      <th scope="col">{{ cond $de "Fam." "Fam." }}</th>
+      {{- range $spalten }}<th scope="col">{{ index $titel . }}</th>{{ end }}
+      <th scope="col">{{ cond $de "Anmerkung" "Note" }}</th>
+    </tr></thead>
+    <tbody>
+    {{- range $daten }}
+      {{- $z := . }}
+      <tr{{ if eq $z.familie "M" }} class="fv-ms"{{ end }}>
+        <td>{{ $z.ansatz }}</td>
+        <td class="fv-f">{{ $z.familie }}</td>
+        {{- range $spalten }}{{ $v := index $z . }}<td>{{ if $de }}{{ $v }}{{ else }}{{ index $en $v | default $v }}{{ end }}</td>{{ end }}
+        <td class="fv-anm">{{ if $de }}{{ $z.anmerkung }}{{ else }}{{ $z.anmerkung_en }}{{ end }}</td>
+      </tr>
+    {{- end }}
+    </tbody>
+  </table>
+  </div>
+  <p class="fv-quelle"><a href="{{ $csvPfad }}" download="feld-kodierung.csv">{{ cond $de "Codebuch als CSV" "Codebook as CSV" }}</a> · {{ cond $de "Semikolon-getrennt, UTF-8, Kategorien deutsch" "semicolon-separated, UTF-8, categories in German" }}</p>
+</div>

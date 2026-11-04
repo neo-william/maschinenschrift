@@ -72,6 +72,15 @@
   {{- /* Content-Hash als Cache-Buster: /css/* ist immutable-gecacht (siehe static/_headers),
          ohne Versionierung erreichen CSS-Aenderungen den Browser nie. */}}
   <link rel="stylesheet" href="/css/main.css?v={{ substr (md5 (readFile "static/css/main.css")) 0 8 }}">
+  {{- /* Seitenbezogene Stile und Skripte (ADR 0385): Front Matter `stile` und
+         `skripte` nennen Dateien unter static/css bzw. static/js; Content-Hash
+         wie oben, weil /css/* und /js/* immutable gecacht sind. */}}
+  {{- range .Params.stile }}
+  <link rel="stylesheet" href="/css/{{ . }}?v={{ substr (md5 (readFile (printf "static/css/%s" .))) 0 8 }}">
+  {{- end }}
+  {{- range .Params.skripte }}
+  <script src="/js/{{ . }}?v={{ substr (md5 (readFile (printf "static/js/%s" .))) 0 8 }}" defer></script>
+  {{- end }}
   {{ with .OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
   {{ end }}

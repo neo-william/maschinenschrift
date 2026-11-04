@@ -128,7 +128,7 @@ Maschinenschrift shares more with its neighbours than it leaves out: self-declar
 
 ## The test case
 
-*La Scuola dei Silenzi* is the first entry in the registry and the founder's own book, published under the name I.O. Vargas. It is declared **W 5 · G 3 · ausstehend**: the sentences largely from the model; the originating idea, characters, rules and every decision from the author; the research structured through the model and not checked. The same book, taken through the forms of the field, as of 28 October 2026, each line following the definition the system itself publishes:
+*La Scuola dei Silenzi* is the first entry in the registry and the founder's own book, published under the name I.O. Vargas. It is declared **W 5 · G 3 · ausstehend**: the sentences largely from the model; the originating idea, characters, rules and every decision from the author; the research structured through the model and not checked. The same book, taken through the forms of the field, as of 28 October 2026, FAIA re-checked on 4 November, each line following the definition the system itself publishes:
 
 | Form | What it can say about this book |
 |---|---|
@@ -136,7 +136,7 @@ Maschinenschrift shares more with its neighbours than it leaves out: self-declar
 | Process recording (B) | **Nothing.** The writing was not recorded, and it cannot be recorded afterwards. |
 | Labels (D) | **No statement.** The labels admit machine-generated text in small amounts at most; **the book has to stay silent**. |
 | KDP's platform question (E, G) | ***AI-generated***: text created by a tool counts as generated there, even after substantial editing. It is **the same answer as for a text in which no one decided anything**, and it goes to the platform. |
-| FAIA's three flags (C, E) | **Each flag fits only one half.** *AI-Assisted* fits the structure the author answers for, *AI-Generated* the sentences that came largely from the model. Whichever flag is chosen **leaves the other half unsaid**. |
+| FAIA's three flags (C, E) | ***AI-Assisted***: the human remains the primary creator, with AI contributing “to various degrees”. It is **the same flag as for a book in which a model smoothed a few sentences**; how much of the sentences came from the model, it does not say. |
 | Process taxonomies (F) | **Expressible, as a list of work steps.** Whose sentences and whose thoughts are on the page, **the reader has to infer**. |
 | Maschinenschrift | **W 5 · G 3 · ausstehend**, with eight sentences of narration in the author's own words, in the [catalog](/works/la-scuola-dei-silenzi/). |
 
