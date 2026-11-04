@@ -1,0 +1,31 @@
+{{- /*
+  Block "Weiterlesen" unter einer Notiz (ADR 0381, Nachtrag 5): Stempel-Knopf
+  zurueck zur Uebersicht, darunter die zeitlich benachbarten Notizen.
+  Steht zwischen letztem Abschnitt und Deklaration (Einsetzen ueber
+  partials/bloecke.html, Parameter "vor"). Nachbarn per Datum ermittelt,
+  nicht ueber .Next/.Prev (deren Richtung ist in Hugo vertauscht).
+*/ -}}
+{{- $p := . -}}
+{{- $liste := $p.CurrentSection.RegularPages.ByDate -}}
+{{- $i := -1 -}}
+{{- range $k, $q := $liste }}{{ if eq $q.RelPermalink $p.RelPermalink }}{{ $i = $k }}{{ end }}{{ end -}}
+{{- $aelter := false -}}
+{{- $neuer := false -}}
+{{- if gt $i 0 }}{{ $aelter = index $liste (sub $i 1) }}{{ end -}}
+{{- if and (ge $i 0) (lt $i (sub (len $liste) 1)) }}{{ $neuer = index $liste (add $i 1) }}{{ end -}}
+<section class="blk blk-weiter">
+  <div class="blk-label"><p class="blk-name">{{ i18n "notizWeiter" }}</p></div>
+  <div class="blk-body">
+    <p class="weiter-knopf"><a class="stempel" href="{{ $p.CurrentSection.RelPermalink }}">{{ i18n "notizAlle" }}</a></p>
+    {{- if or $aelter $neuer }}
+    <nav class="notiz-nachbarn" aria-label="{{ i18n "notizNachbarnAria" }}">
+      {{- with $aelter }}
+      <a class="nachbar nachbar-aelter" href="{{ .RelPermalink }}"><span class="nachbar-art">← {{ i18n "notizAelter" }} · {{ .Date.Format "2006-01-02" }}</span><span class="nachbar-titel">{{ .Title }}</span></a>
+      {{- end }}
+      {{- with $neuer }}
+      <a class="nachbar nachbar-neuer" href="{{ .RelPermalink }}"><span class="nachbar-art">{{ i18n "notizNeuer" }} · {{ .Date.Format "2006-01-02" }} →</span><span class="nachbar-titel">{{ .Title }}</span></a>
+      {{- end }}
+    </nav>
+    {{- end }}
+  </div>
+</section>

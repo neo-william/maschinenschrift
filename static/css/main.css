@@ -570,6 +570,39 @@ main .reg-title a:hover { color: var(--color-accent); }
   text-align: left; hyphens: manual;
 }
 
+/* Notiz: Weiterlesen (ADR 0381, Nachtrag 5) — Stempel-Knopf zur Uebersicht
+   wie der Generator-Reiter, darunter aeltere und neuere Notiz. */
+main a.stempel, main a.stempel:visited {
+  display: inline-block;
+  padding: 0.55rem 1.1rem 0.5rem;
+  border: 1.5px solid var(--color-signal);
+  font-weight: 600; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--color-signal-text);
+  background: transparent;
+  transition: background 100ms ease, color 100ms ease;
+}
+main a.stempel:hover { color: var(--color-signal-ink); background: var(--color-signal); }
+main a.stempel:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 2px; }
+.blk-body .weiter-knopf { margin: 0; text-indent: 0; text-align: left; }
+.notiz-nachbarn {
+  display: flex; flex-wrap: wrap; gap: 1rem 2rem;
+  margin-top: 1.75rem; padding-top: 1.25rem;
+  border-top: 1px solid var(--color-line);
+}
+main a.nachbar, main a.nachbar:visited {
+  flex: 1 1 14rem; min-width: 0;
+  display: flex; flex-direction: column; gap: 0.2rem;
+  color: var(--color-ink); border-bottom: 0; padding-bottom: 0;
+  text-align: left; hyphens: manual;
+}
+main a.nachbar-neuer { text-align: right; align-items: flex-end; }
+main a.nachbar:hover .nachbar-titel { color: var(--color-accent); }
+.nachbar-art {
+  font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--color-faint); font-feature-settings: "lnum", "tnum";
+}
+.nachbar-titel { font-size: 1.1rem; line-height: 1.3; transition: color 100ms ease; }
+
 /* Notiz: Selbstdeklaration als eigener Block, Quellen als Apparat. */
 .blk-dekl .blk-body p { font-size: 0.95rem; }
 .notiz-coda { margin: 2rem 0 0; }

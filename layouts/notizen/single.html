@@ -7,7 +7,9 @@
     {{ partial "kopflabel.html" . }}
     <div class="blk-body">
       <h1>{{ .Title }}</h1>
-      {{ partial "bloecke.html" (dict "html" .Content "hr" (i18n "deklarationHeading")) | safeHTML }}
+      {{- $nav := partial "notiz-nav.html" . }}
+      {{- $hatLinie := findRE `<hr>` .Content 1 }}
+      {{ partial "bloecke.html" (dict "html" .Content "hr" (i18n "deklarationHeading") "vor" (string $nav)) | safeHTML }}
       {{ with .Params.deklaration }}
       {{/* Notiz mit eigener Selbstdeklaration: Coda-Siegel traegt die deklarierten Werte.
            Die Werte laufen ueber `zeichen.html` (ADR 0067) — kein Direktzugriff auf
@@ -24,6 +26,8 @@
       {{ end }}
     </div>
   </section>
+  {{- /* Notiz ohne Schlusslinie: Weiterlesen steht dann nach dem letzten Abschnitt. */}}
+  {{- if not $hatLinie }}{{ $nav }}{{ end }}
   {{ partial "quellen.html" . }}
 </article>
 {{ end }}

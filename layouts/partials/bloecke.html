@@ -11,6 +11,8 @@
     html   str  gerendertes .Content
     hr     str  optional — Label fuer einen Schlussblock: die LETZTE <hr>
                 wird zum Block mit diesem Label (Notizen: Selbstdeklaration).
+    vor    str  optional — fertiger Block (HTML), der direkt vor diesem
+                Schlussblock eingesetzt wird (Notizen: Weiterlesen).
 
   Eine <hr> direkt vor einer <h2> faellt immer weg: der Blockwechsel trennt.
 
@@ -24,8 +26,9 @@
   {{- $cls = "blk blk-sec blk-ohne-nr" -}}
 {{- end -}}
 {{- $html = replaceRE `<hr>\s*(<h2)` "$1" $html -}}
+{{- $vor := default "" .vor -}}
 {{- with .hr -}}
-  {{- $neu := printf `</div></section><section class="blk blk-dekl"><div class="blk-label"><p class="blk-name">%s</p></div><div class="blk-body">` . -}}
+  {{- $neu := printf `</div></section>%s<section class="blk blk-dekl"><div class="blk-label"><p class="blk-name">%s</p></div><div class="blk-body">` $vor . -}}
   {{- $html = replaceRE `(?s)^(.*)<hr>` (printf "${1}%s" $neu) $html -}}
 {{- end -}}
 {{- $html = replaceRE `(?s)<h2([^>]*)>(.*?)</h2>` (printf `</div></section><section class="%s"><div class="blk-label"><span class="blk-num" aria-hidden="true"></span><h2${1}>${2}</h2></div><div class="blk-body">` $cls) $html -}}

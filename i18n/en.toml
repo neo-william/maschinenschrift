@@ -312,3 +312,19 @@ other = "Works"
 
 [atlasGenHeading]
 other = "Generator"
+
+# "Read on" block below a note (ADR 0381, addendum 5)
+[notizWeiter]
+other = "Read on"
+
+[notizAlle]
+other = "All notes"
+
+[notizNachbarnAria]
+other = "Adjacent notes"
+
+[notizAelter]
+other = "Older note"
+
+[notizNeuer]
+other = "Newer note"

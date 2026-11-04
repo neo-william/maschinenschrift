@@ -313,3 +313,19 @@ other = "Werke"
 
 [atlasGenHeading]
 other = "Generator"
+
+# Block "Weiterlesen" unter einer Notiz (ADR 0381, Nachtrag 5)
+[notizWeiter]
+other = "Weiterlesen"
+
+[notizAlle]
+other = "Alle Notizen"
+
+[notizNachbarnAria]
+other = "Benachbarte Notizen"
+
+[notizAelter]
+other = "Ältere Notiz"
+
+[notizNeuer]
+other = "Neuere Notiz"
